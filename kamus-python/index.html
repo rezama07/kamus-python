@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamus Python - Dokumentasi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="../index.html" class="back-link">&larr; Kembali ke Beranda Utama</a>
+        <header class="page-header">
+            <h1 class="page-title">Kamus Python</h1>
+            <p style="color: var(--text-secondary);">Panduan belajar Python dari dasar hingga mahir.</p>
+        </header>
+        
+        <div class="intro-sections" style="margin-bottom: 4rem;">
+            <!-- Bagian A -->
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <h2 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><span>📘</span> BAGIAN A: CARA MEMAKAI KAMUS INI (Aturan Main)</h2>
+                <p style="margin-bottom: 1rem;">Selamat datang di Dapur Python!<br>Sebelum Anda mulai memakai kamus ini, ada 3 aturan main yang harus Anda tahu:</p>
+                <ol style="margin-left: 1.5rem; color: var(--text-secondary); line-height: 1.8;">
+                    <li>Kamus ini dibuat untuk dicontek, bukan untuk dihafal untuk ujian. Kalau lupa, buka lagi bukunya.</li>
+                    <li><strong style="color: #fbbf24;">Perhatikan Ikon Peringatan (⚠️)</strong><br>Python itu sangat cerewet soal tata bahasa. Bagian "Aturan Wajib" adalah tempat di mana 90% pemula sering melakukan kesalahan. Baca pelan-pelan bagian ini.</li>
+                    <li><strong style="color: var(--text-primary);">Besar-Kecil Huruf Sangat Berpengaruh (Case Sensitive)</strong><br>Bagi manusia, "Budi" dan "budi" adalah orang yang sama. Bagi Python, keduanya adalah dua wujud entitas alien yang 100% berbeda! Selalu ketik kode persis seperti contoh.</li>
+                </ol>
+            </div>
+
+            <!-- Halaman Nol -->
+            <div class="card" style="border-left: 4px solid #fbbf24; padding: 2rem;">
+                <h2 style="color: #fbbf24; margin-bottom: 1rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><span>🚦</span> HALAMAN NOL: Rambu Lalu Lintas Python</h2>
+                <p style="margin-bottom: 1.5rem;">Di jalan raya, Anda melihat lampu merah berarti berhenti. Di Python, komputer juga punya rambu lalu lintas berupa tanda baca. Jika Anda salah menaruh tanda, komputer akan kecelakaan (Error). Berikut adalah 5 rambu paling sering muncul:</p>
+                
+                <div style="display: grid; gap: 1rem;">
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">1. Tanda Sama Dengan ( = ) &rarr; "TUKANG ISI"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Di matematika, <code>=</code> artinya hasil akhir. Di Python, <code>=</code> artinya "memasukkan data ke dalam kotak".</p>
+                        <div style="margin-top: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.75rem 1rem; border-radius: 0.5rem; border-left: 2px solid #a78bfa;">
+                            <code>nama = "Budi"</code> <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">(Artinya: Masukkan teks Budi ke dalam kotak bernama nama)</div>
+                        </div>
+                    </div>
+                    
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Tanda Koma ( , ) &rarr; "PEMISAH ANTREAN"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Komputer tidak bisa membedakan mana barang pertama dan kedua jika digabung. Koma wajib dipakai untuk memisahkan data yang berjejer agar tidak saling tabrak.</p>
+                        <div style="margin-top: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.75rem 1rem; border-radius: 0.5rem; border-left: 2px solid #a78bfa;">
+                            <code>[Apel, Jeruk, Mangga]</code>
+                        </div>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">3. Tanda Kutip ( " " atau ' ' ) &rarr; "PENANDA TEKS"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Rambu wajib untuk memberi tahu komputer, "Hei, ini cuma teks biasa ya, tolong jangan dihitung secara matematika!" (Ini disebut String).</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">4. Tanda Pagar ( # ) &rarr; "TUTUP MATA"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Rambu khusus untuk komputer agar pura-pura tidak melihat tulisan di sebelahnya. Gunakan ini untuk menulis pesan rahasia ke sesama manusia. (Ini disebut Comment).</p>
+                    </div>
+
+                    <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">5. Tanda Kurung ( (), [], {} ) &rarr; "BUNGKUSAN BEDA FUNGSI"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem;">Python itu cerewet soal bungkusan.</p>
+                        <ul style="color: var(--text-secondary); font-size: 0.95rem; margin-left: 1.5rem; line-height: 1.6;">
+                            <li><code>[ ]</code> (Kurung Siku) untuk daftar biasa (List).</li>
+                            <li><code>( )</code> (Kurung Biasa) untuk daftar yang dikunci mati (Tuple).</li>
+                            <li><code>{ }</code> (Kurung Kurawal) untuk daftar yang berpasangan (Dictionary).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="font-size: 1.75rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--card-border);">Daftar Bab Kamus</h2>
+
+        <div class="cards-grid">
+            <a href="bab-1.html" class="card" style="padding: 2rem;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--accent);">Bab 1: Bahan Baku & Wadah </h3>
+                <p style="font-size: 0.95rem;">(Data & Variabel)</p>
+            </a>
+            <a href="bab-2.html" class="card" style="padding: 2rem;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--accent);">Bab 2: KOMPOR & PISAU </h3>
+                <p style="font-size: 0.95rem;">(Aksi & Output)</p>
+            </a>
+            <a href="bab-3.html" class="card" style="padding: 2rem;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--accent);">Bab 3: ATURAN RESEP </h3>
+                <p style="font-size: 0.95rem;">(Logika Keputusan JIKA-MAKA)</p>
+            </a>
+            <a href="bab-4.html" class="card" style="padding: 2rem;">
+                <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem; color: var(--accent);">Bab 4: PENGULANGAN PEKERJAAN </h3>
+                <p style="font-size: 0.95rem;">(Loops)</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

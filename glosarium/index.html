@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosarium - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .intro-box {
+            background: var(--card-bg);
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .term-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .term-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .term-title {
+            font-size: 1.15rem;
+            color: var(--accent);
+            margin-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .term-desc {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="../index.html" class="back-link">&larr; Kembali ke Halaman Utama</a>
+        <header class="page-header">
+            <h1 class="page-title">GLOSARIUM PYTHON</h1>
+            <p style="color: var(--text-secondary);">Kumpulan Lengkap Istilah & Bahasa Gaul Pemrograman</p>
+        </header>
+
+        <div class="intro-box">
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                Pemula sering bingung bukan karena kodenya, tapi karena istilah gaul/slang yang diucapkan oleh para senior atau mentor di kelas. Bagian ini khusus dibuat untuk menerjemahkan bahasa gaul tersebut. Saat Anda masuk ke komunitas coding, Anda pasti akan sering mendengar kata-kata ini:
+            </p>
+        </div>
+        
+        <div class="glossary-grid">
+            
+            <div class="term-card">
+                <div class="term-title">1. Ngoding / Coding</div>
+                <p class="term-desc">Kegiatan mengetik instruksi (resep) untuk komputer.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">2. Run / Execute</div>
+                <p class="term-desc">Tombol sakelar untuk menyuruh komputer "Ayo jalan! Kerjakan tugas yang baru saja saya ketik!".</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">3. Bug <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: Bag)</span></div>
+                <p class="term-desc">Harafiahnya berarti Serangga/Kutu. Di dunia IT, ini artinya ada "kecacatan" atau kesalahan logika di dalam kode Anda yang membuat program berjalan tidak semestinya.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">4. Debugging <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: Di-ba-ging)</span></div>
+                <p class="term-desc">Kegiatan mencari dan membasmi si "Kutu" (Bug) tadi sampai programnya lancar kembali. Kegiatan ini memakan 80% waktu seorang programmer.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">5. Deploy <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: Di-ploy)</span></div>
+                <p class="term-desc">Meng-online-kan aplikasi. Membawa program Anda dari laptop pribadi Anda, ke internet agar bisa dipakai oleh seluruh orang di dunia.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">6. Library / Package</div>
+                <p class="term-desc">"Kotak peralatan ekstra" buatan orang lain yang bisa Anda pinjam ke dalam kode Anda (lewat perintah import), agar Anda tidak perlu membuat semuanya dari nol.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">7. API <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Application Prog. Interface)</span></div>
+                <p class="term-desc">Jembatan komunikasi atau "Pelayan Pembawa Pesan". Misalnya, kode di laptop Anda menyuruh API pergi ke server Google untuk meminta jawaban AI, lalu API membawa jawaban itu kembali ke layar Anda.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">8. Terminal / CLI</div>
+                <p class="term-desc">Layar hitam berisi teks putih tempat Anda mengetikkan perintah langsung ke "jantung" sistem komputer.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">9. Repo / Repository</div>
+                <p class="term-desc">Gudang penyimpanan digital (biasanya menggunakan website GitHub) untuk menyimpan seluruh file kodingan Anda agar aman dan bisa dikerjakan bersama tim.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">10. Local vs Production</div>
+                <p class="term-desc">Lokal berarti program Anda baru bisa berjalan aman di laptop sendiri. Production berarti program tersebut sudah rilis ke internet dan dipakai oleh pengguna sungguhan.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">11. Prompting</div>
+                <p class="term-desc">Seni menyusun kalimat perintah (prompt) yang spesifik kepada AI agar AI memberikan jawaban yang akurat dan tidak berhalusinasi.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">12. Frontend <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Front-end)</span></div>
+                <p class="term-desc">Bagian "Etalase". Semua tampilan seperti tombol, warna, dan teks di aplikasi yang bisa dilihat langsung oleh pengguna.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">13. Backend <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Back-end)</span></div>
+                <p class="term-desc">Bagian "Dapur". Mesin tak terlihat di belakang layar yang sibuk menghitung data dan berpikir.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">14. Server</div>
+                <p class="term-desc">Komputer super yang menyala 24 jam tanpa henti untuk menaruh aplikasi kita agar selalu bisa diakses orang lain lewat internet.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">15. Database <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(DB)</span></div>
+                <p class="term-desc">Gudang digital raksasa tempat menyimpan semua data (seperti nama user, riwayat chat, atau dokumen) secara permanen.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">16. Open Source</div>
+                <p class="term-desc">Program gratisan yang "resep" kodingannya dibuka untuk umum. Siapa saja boleh melihat, mencontek, atau memodifikasinya tanpa perlu membayar lisensi.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">17. Token</div>
+                <p class="term-desc">Hitungan "potongan kata" yang dibaca oleh AI. Semakin panjang Anda mengobrol dengan AI, semakin banyak token yang dikuras.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">18. Environment <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Env)</span></div>
+                <p class="term-desc">Ruangan kerja terisolasi di dalam laptop. Tujuannya agar alat-alat masak (Library) untuk Proyek A tidak tercampur dan merusak alat-alat di Proyek B.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">19. Framework</div>
+                <p class="term-desc">Kerangka kerja setengah jadi. Ibarat membangun rumah, pondasi dan tiangnya sudah dibikinkan, Anda tinggal mengisi temboknya saja agar lebih cepat selesai.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">20. Model <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Model AI)</span></div>
+                <p class="term-desc">"Otak" digital dari sebuah AI yang sudah selesai diajari untuk melakukan tugas tertentu (seperti menjawab pertanyaan, menerjemahkan bahasa, atau mengenali gambar).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">21. LLM <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Large Language Model)</span></div>
+                <p class="term-desc">Jenis Model AI raksasa yang dikhususkan hanya untuk memahami dan memproduksi teks bahasa manusia (contohnya ChatGPT, Gemini, atau Claude).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">22. Dataset</div>
+                <p class="term-desc">Kumpulan data mentah (bisa berupa jutaan teks, tabel, atau dokumen) yang digunakan sebagai "buku pelajaran" untuk memberi makan dan melatih AI.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">23. RAG <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Retrieval-Augmented Gen.)</span></div>
+                <p class="term-desc">Teknik memberi "buku contekan" kepada AI. RAG memaksa AI membaca dokumen rahasia kita dulu sebelum menjawab agar tidak halusinasi.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">24. Cloud <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Komputasi Awan)</span></div>
+                <p class="term-desc">Menyewa komputer super canggih milik perusahaan besar lewat internet, sehingga kita tidak perlu membeli komputer/server fisik yang mahal.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">25. Git & GitHub</div>
+                <p class="term-desc">Git adalah alat "mesin waktu" untuk merekam perubahan kode. GitHub adalah semacam Google Drive khusus programmer untuk menyimpan dan memamerkan kode ke internet.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">26. Algoritma <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Algorithm)</span></div>
+                <p class="term-desc">Urutan langkah-langkah logis untuk menyelesaikan suatu masalah. Ibarat resep masakan dari tahap persiapan hingga makanan siap dihidangkan.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">27. IDE / Code Editor</div>
+                <p class="term-desc">Perangkat lunak atau aplikasi tempat Anda mengetik, mengedit, dan menjalankan kode (contoh: Visual Studio Code, PyCharm).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">28. PIP <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Python Package Installer)</span></div>
+                <p class="term-desc">"Toko aplikasi" bawaan Python. Alat ini bertugas untuk mengunduh dan memasang Library tambahan dari internet ke dalam laptop Anda.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">29. Hardcode <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Hard-coding)</span></div>
+                <p class="term-desc">Praktik menuliskan data secara permanen langsung ke dalam kode. (Contoh: Menulis nama "Budi" langsung di kode, ketimbang memakai input()).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">30. Clean Code</div>
+                <p class="term-desc">Praktik menulis kodingan yang rapi, terstruktur, dan mudah dipahami oleh manusia (programmer lain), bukan hanya sekadar bisa dibaca oleh komputer.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">31. Script / Scripting</div>
+                <p class="term-desc">Sebuah file tunggal (biasanya berakhiran .py) yang berisi rentetan perintah kode Python untuk melakukan satu tugas otomatis.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">32. Web Scraping</div>
+                <p class="term-desc">Teknik membuat program Python yang bisa menyedot, menyalin, dan mengumpulkan data dari suatu halaman website secara otomatis.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">33. OOP <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Object-Oriented Prog.)</span></div>
+                <p class="term-desc">Gaya penulisan kode yang menganggap komponen di dalam program sebagai "Benda/Objek" dunia nyata (misal: objek "Mobil" punya warna dan punya mesin).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">34. Path / Directory</div>
+                <p class="term-desc">Alamat pasti lokasi sebuah file atau folder di dalam sistem komputer Anda (contoh: C:/Dokumen/proyek_python/).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">35. Syntax Sugar</div>
+                <p class="term-desc">Cara penulisan kode di Python yang dirancang sangat singkat dan manis (mudah dibaca), untuk menggantikan cara penulisan lama yang panjang dan rumit.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">36. Virtual Environment</div>
+                <p class="term-desc">Ruangan kerja terisolasi di dalam laptop (seperti venv atau conda). Tujuannya agar alat-alat masak (Library) antar Proyek tidak saling merusak.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">37. PEP 8 <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: pep-eight)</span></div>
+                <p class="term-desc">Buku pedoman resmi tata krama penulisan Python sedunia. Jika kode tidak PEP 8, artinya kodingan Anda berantakan dan tidak sesuai standar internasional.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">38. JSON <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(JavaScript Object Not.)</span></div>
+                <p class="term-desc">Format teks universal untuk tukar-menukar data di internet. Bentuknya 99% mirip dengan Dictionary di Python (memakai { }).</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">39. Refactoring <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Refaktor)</span></div>
+                <p class="term-desc">Kegiatan "bersih-bersih bengkel". Merapikan dan menyederhanakan kode yang sudah jalan agar lebih cepat dan enak dibaca, tanpa mengubah hasil akhirnya.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">40. Try-Except <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Error Handling)</span></div>
+                <p class="term-desc">Sabuk pengaman dalam coding. "Coba (Try) jalankan ini, kalau gagal/error, Tangkap (Except) dan jalankan rencana cadangan" agar program tidak mati total.</p>
+            </div>
+            
+            <div class="term-card">
+                <div class="term-title">41. Boilerplate</div>
+                <p class="term-desc">Teks "Kop Surat" atau template kode standar yang panjang dan terpaksa harus diketik berulang-ulang setiap kali membuat proyek baru.</p>
+            </div>
+
+        </div> <!-- glossary-grid -->
+    </div> <!-- container -->
+</body>
+</html>

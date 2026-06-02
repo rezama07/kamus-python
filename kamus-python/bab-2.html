@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2: Kompor & Pisau - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .word-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .word-title {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
+        .word-section {
+            margin-bottom: 1.25rem;
+        }
+        .word-section:last-child {
+            margin-bottom: 0;
+        }
+        .word-section h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        .word-section p, .word-section ul {
+            color: var(--text-secondary);
+            margin-left: 1.7rem;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-left: 3px solid var(--accent);
+            font-family: 'Consolas', monospace;
+            margin-left: 1.7rem;
+            margin-top: 0.5rem;
+            color: #e2e8f0;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+        .code-comment {
+            color: #94a3b8;
+            font-family: 'Inter', sans-serif;
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <header class="page-header">
+            <h1 class="page-title">BAB 2: KOMPOR & PISAU</h1>
+            <p style="color: var(--text-secondary);">Bagian 1 / Kamus Python (Aksi & Output)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di bab ini, kita tidak lagi sekadar menaruh data di dalam kotak (Variable). Kita akan menyuruh komputer melakukan sesuatu dengan data tersebut.</p>
+            </div>
+
+            <!-- Kata 13 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 13: print <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: print)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Menampilkan sesuatu ke layar. Tanpa perintah ini, komputer sebenarnya berhitung di dalam otaknya, tapi kita sebagai manusia tidak akan bisa melihat hasilnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan koki di dapur (komputer) sudah selesai memasak nasi goreng. Jika tidak ada pelayan yang mengantar nasi goreng itu ke meja tamu (<code>print</code>), maka si tamu tidak akan pernah melihat makanannya. <code>print</code> adalah sang pelayan.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Wajib menggunakan huruf kecil semua dan diikuti kurung biasa <code>( )</code>. Apapun yang ingin Anda tampilkan ke layar, taruh di dalam kurung tersebut.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">print("Halo Dunia!") <span class="code-comment">(Layar komputer akan memunculkan tulisan: Halo Dunia!)</span>
+print(umur) <span class="code-comment">(Layar akan memunculkan angka yang tersimpan di dalam kotak/variabel bernama umur).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 14 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 14: input <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: in-put)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Meminta pengguna (user) mengetikkan sesuatu di keyboard, lalu komputer akan menangkap tulisan itu untuk diproses.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti kasir kafe yang menyodorkan tablet dan bertanya, "Atas nama siapa Kak pesanannya?" Anda menjawab "Budi", lalu nama itu dicatat oleh kasir.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Di dalam kurung <code>( )</code>, Anda bisa menyelipkan teks pertanyaan (String) agar user tahu mereka harus mengetik apa. Perhatian: Apapun yang diketik oleh user (walaupun mereka mengetik angka), komputer akan selalu menangkapnya sebagai teks (String).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">nama_pelanggan = input("Siapa nama Anda? ")
+<span class="code-comment">(Saat kode ini jalan, program akan berhenti sejenak, memunculkan pertanyaan "Siapa nama Anda?", dan menunggu Anda mengetik jawaban di keyboard).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 15 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 15: Function <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: fang-syen / Fungsi)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Kumpulan langkah atau perintah kerja yang dibungkus menjadi satu nama, supaya tidak perlu diketik ulang capek-capek dari nol.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti Buku SOP "Cara Bikin Kopi". Daripada Anda mengajari karyawan baru setiap hari: 1. Ambil gelas, 2. Masukkan kopi, 3. Tuang air panas, Anda cukup membuat satu SOP bernama <code>bikin_kopi</code>. Kapanpun Anda butuh kopi, Anda tinggal teriak: "Bikin kopi!", dan karyawan akan menjalankan ketiga langkah tadi secara otomatis.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Untuk menciptakan fungsi baru, Anda wajib mengawalinya dengan kata sandi <code>def</code> (singkatan dari define / tetapkan), lalu ikuti dengan nama fungsinya, kurung biasa <code>( )</code>, dan diakhiri titik dua ( <code>:</code> ).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">def bikin_kopi():
+    print("Ambil gelas")
+    print("Tuang air panas")</div>
+                </div>
+            </div>
+
+            <!-- Kata 16 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 16: Parameter <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pa-ra-me-ter)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Request khusus atau bahan tambahan yang Anda lempar ke dalam sebuah Function (Fungsi) agar hasilnya bisa disesuaikan.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda memanggil pelayan: "Tolong jalankan fungsi bikin_kopi, TAPI gulanya sedikit saja ya!". Nah, kalimat "gulanya sedikit" itu adalah Parameter. Jadi instruksinya sama, tapi hasil akhirnya bisa disesuaikan dengan permintaan.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Parameter diletakkan di dalam kurung <code>( )</code> saat Anda membuat fungsi.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">def sapa_tamu(nama_tamu):
+    print("Selamat datang, ", nama_tamu)
+<span class="code-comment">(Di sini, nama_tamu adalah Parameter. Nanti saat program dijalankan, kita bisa mengganti nama_tamu dengan "Budi", "Andi", atau siapapun tanpa harus membuat fungsi baru).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 17 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 17: Return <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ri-tern)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Menyerahkan hasil akhir dari dalam Function (Fungsi) kembali ke tangan si peminta.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda menyuruh akuntan di dalam ruang tertutup: "Tolong hitung 5 ditambah 5".</p>
+                    <ul style="margin-left: 2.5rem; margin-bottom: 0.5rem; margin-top: 0.5rem;">
+                        <li>Kalau akuntan itu pakai <code>print</code>, dia cuma akan teriak dari dalam kamar: "SEPULUHHH!" (Anda cuma dengar, tapi Anda tidak memegang angka itu untuk dihitung lagi).</li>
+                        <li>Kalau akuntan itu pakai <code>return</code>, dia akan menulis angka 10 di selembar kertas, lalu menyerahkan kertas itu langsung ke tangan Anda. Anda bisa menyimpan kertas itu di saku Anda untuk dipakai jajan nanti.</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
+                    <ul style="margin-left: 2.5rem;">
+                        <li>1. Ketik kata <code>return</code> diikuti dengan apa yang mau diserahkan (bisa berupa angka langsung, atau nama Variabel/kotak yang berisi hasil kerjanya).</li>
+                        <li>2. <code>return</code> adalah Garis Finish. Begitu komputer membaca baris yang ada kata return, pekerjaan langsung dihentikan (si akuntan keluar ruangan). Jangan menulis kode apapun lagi di bawah baris return karena komputer akan mengabaikannya.</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">def tambah_angka():
+    hasil = 5 + 5 <span class="code-comment">(Komputer menghitung 5+5 dan menaruh angka 10 di dalam kotak bernama 'hasil')</span>
+    return hasil <span class="code-comment">(Komputer menyerahkan isi kotak 'hasil' kepada Anda)</span>
+    print("Halo") <span class="code-comment">(Tulisan Halo ini TIDAK AKAN PERNAH muncul, karena posisinya ada di bawah 'return'. Komputer sudah berhenti bekerja).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 18 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 18: len <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: len / singkatan dari kata bahasa Inggris Length yang berarti panjang)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Menghitung jumlah isi data.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti satpam pemegang alat clicker di pintu masuk. Ia tidak peduli siapa namanya, ia cuma peduli jumlahnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
+                    <p>Ketik <code>len</code> lalu ikuti dengan kurung biasa <code>( )</code>. Cara komputer berhitung akan berubah otomatis tergantung jenis bungkusan yang Anda masukkan:</p>
+                    <ul style="margin-left: 2.5rem; margin-top: 0.5rem;">
+                        <li>Jika yang di dalam kurung adalah teks/String (memakai tanda kutip <code>" "</code>), komputer akan menghitung jumlah hurufnya.</li>
+                        <li>Jika yang di dalam kurung adalah daftar/List (memakai kurung siku <code>[ ]</code>), komputer akan berhenti menghitung huruf, dan beralih menghitung jumlah barang (item) yang dipisahkan oleh tanda koma.</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">len("Budi") <span class="code-comment">(Komputer melihat tanda kutip, jadi dia menghitung huruf. Hasilnya: 4).</span>
+len(["Apel", "Jeruk", "Mangga"]) <span class="code-comment">(Komputer melihat kurung siku, jadi dia menghitung jumlah barang. Hasilnya: 3).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 19 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 19: append <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: a-pend)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Menambahkan satu data baru ke dalam sebuah List (daftar). Data baru ini otomatis ditaruh di urutan paling belakang.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan antrean di kasir minimarket. Orang yang baru datang pasti akan disuruh masuk ke barisan paling belakang, bukan menyela di depan. <code>append</code> adalah perintah untuk mendaftarkan barang baru ke antrean paling belakang.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (RUMUS PENULISAN):</h4>
+                    <p>Anda tidak bisa mengetik kata <code>append</code> sendirian. Anda wajib menyebutkan nama keranjangnya dulu. Posisinya harus di baris baru setelah keranjangnya dibuat.</p>
+                    <p style="margin-top: 0.5rem; font-weight: 600;">Rumus Pasti: <code>nama_keranjang.append("data_baru")</code></p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">keranjang = ["Apel", "Jeruk"] <span class="code-comment">(Baris 1: Kita bikin keranjangnya dulu)</span>
+keranjang.append("Mangga") <span class="code-comment">(Baris 2: Kita panggil keranjangnya, tempelkan titik, lalu ketik append. Sekarang Mangga masuk ke urutan paling belakang).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 20 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 20: type <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: taip / tipe)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Alat detektor untuk mengecek jenis data (apakah ini String, Integer, Float, atau List?).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti mesin scanner X-Ray di bandara. Saat koper dimasukkan ke mesin itu, layar akan menampilkan wujud asli isi koper tersebut. Di Python, kadang kita butuh meyakinkan diri data apa yang sedang kita olah.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (CARA PAKAI):</h4>
+                    <p>Ketik <code>type</code> diikuti kurung biasa <code>( )</code>. HATI-HATI: Alat ini bekerja dalam diam. Jika Anda mengetiknya sendirian, hasilnya tidak akan muncul di layar. Agar Anda bisa melihat hasilnya, posisi <code>type</code> biasanya dimasukkan ke dalam perut perintah <code>print</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">print( type(25) ) <span class="code-comment">(Komputer mendeteksi angka 25, lalu pelayan (print) menampilkannya ke layar: Ini adalah Integer).</span>
+print( type("25") ) <span class="code-comment">(Komputer mendeteksi tanda kutip, lalu pelayan (print) menampilkannya ke layar: Ini adalah String).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 21 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 21: import <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: im-port)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Meminjam alat tambahan dari luar yang tidak disediakan Python secara bawaan.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda sedang di dapur masak (Python), lalu bos minta Anda memanggang pizza. Tapi dapur Anda cuma punya kompor standar. Anda langsung menelepon gudang: "Tolong kirimkan (import) alat Oven ke dapur saya!" Setelah oven datang, barulah Anda bisa memanggang pizza.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Ketik kata <code>import</code> (huruf kecil semua), beri satu spasi, lalu ketik nama alatnya. Anda TIDAK PERLU mengetikkan link website atau sumber URL-nya, karena komputer sudah tahu di mana harus mencarinya di dalam sistem. Posisinya wajib diketik di baris paling atas (Baris Nomor 1) pada kodingan Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">import math <span class="code-comment">(Ini cukup. Anda meminjam alat matematika canggih).</span>
+import pandas <span class="code-comment">(Ini cukup. Anda meminjam alat pengolah tabel).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 22 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 22: Operator Matematika <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(+, -, *, /)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Simbol kalkulator dasar untuk menyuruh komputer berhitung.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Persis seperti kalkulator warung. Tambah (+) dan kurang (-) bentuknya sama seperti di dunia nyata. TAPI, komputer tidak kenal huruf "x" untuk mengali atau titik dua ":" untuk membagi.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <ul style="margin-left: 2.5rem;">
+                        <li>1. Gunakan tanda bintang ( <code>*</code> ) untuk DIKALI.</li>
+                        <li>2. Gunakan tanda garis miring ( <code>/</code> ) untuk DIBAGI.</li>
+                        <li>3. Hati-hati tanda kutip: Jika angkanya Anda jepit dengan tanda kutip, komputer akan menganggapnya teks dan menolak berhitung!</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">print(5 * 2) <span class="code-comment">(Komputer akan berhitung dan menampilkan angka 10).</span>
+print("5 * 2") <span class="code-comment">(Komputer melihat tanda kutip, jadi dia tidak berhitung, melainkan cuma menampilkan teks "5 * 2" apa adanya ke layar).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 23 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 23: upper dan lower <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: a-per / lo-wer)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Alat untuk mengubah teks menjadi huruf KAPITAL SEMUA (<code>upper</code>) atau huruf kecil semua (<code>lower</code>).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti tombol Caps Lock di keyboard. Kadang user mengetik namanya berantakan (contoh: "bUdI"). Ketimbang kita marah, kita suruh saja mesin <code>upper</code> menyetrikanya agar rapi menjadi "BUDI".</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Tempelkan di belakang teks atau nama variabel menggunakan titik ( <code>.</code> ), dan wajib diakhiri dengan kurung kosong <code>( )</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">nama = "budi"
+print( nama.upper() ) <span class="code-comment">(Layar akan menampilkan: BUDI)</span>
+print( nama.lower() ) <span class="code-comment">(Layar akan menampilkan: budi)</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 24 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 24: f-string <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ef-string)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Cara paling instan dan anti-ribet untuk menggabungkan kata-kata biasa dengan data dari dalam kotak (Variabel).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan selembar sertifikat kelulusan yang sudah dicetak dari pabrik: "Selamat, ........ telah lulus!". Titik-titik kosong itu sengaja disisakan agar panitia bisa menuliskan nama siapapun di sana. <code>f-string</code> adalah cara kita membuat titik-titik kosong tersebut di Python.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
+                    <ul style="margin-left: 2.5rem;">
+                        <li>1. Wajib menaruh huruf <code>f</code> kecil menempel persis SEBELUM tanda kutip pembuka teks.</li>
+                        <li>2. Gunakan kurung kurawal <code>{ }</code> di tengah teks sebagai pengganti "titik-titik kosong", lalu isi kurung itu dengan nama variabel yang mau dipanggil.</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">nama = "Andi"
+umur = 20
+print( f"Halo {nama}, umur kamu {umur} tahun." )
+<span class="code-comment">(Perhatikan huruf 'f' di depan. Saat dijalankan, komputer otomatis menukar kurung kurawal dengan isinya. Layar akan memunculkan: Halo Andi, umur kamu 20 tahun).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 25 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 25: int() dan str() <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Casting Pengubah Wujud)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Alat sulap untuk memaksa data berubah wujud. <code>int()</code> mengubah Teks menjadi Angka Bulat. Sedangkan <code>str()</code> mengubah Angka menjadi Teks biasa.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan Anda menerima kiriman paket berupa es batu (Teks), padahal Anda butuh air untuk diminum (Angka). Anda tidak bisa meminum es batu. Anda butuh alat pemanas untuk mengubah wujud es batu itu menjadi air agar bisa diteguk. <code>int()</code> adalah alat pemanas tersebut.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Ketik <code>int</code> atau <code>str</code>, lalu masukkan data yang ingin diubah wujudnya ke dalam kurung <code>( )</code>. Ini HUKUMNYA WAJIB dipakai setelah Anda menggunakan perintah <code>input()</code> jika tebakan/jawaban user ingin dihitung secara matematika.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">umur_teks = "25" <span class="code-comment">(Komputer menganggap ini teks biasa karena ada tanda kutip)</span>
+umur_angka = int(umur_teks) <span class="code-comment">(Alat int menyetrika tanda kutipnya! Sekarang 25 berubah jadi angka murni)</span>
+print(umur_angka + 5) <span class="code-comment">(Komputer mau berhitung, dan layar menampilkan angka 30)</span></div>
+                </div>
+            </div>
+
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 3: Aturan Resep - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .word-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .word-title {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
+        .word-section {
+            margin-bottom: 1.25rem;
+        }
+        .word-section:last-child {
+            margin-bottom: 0;
+        }
+        .word-section h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        .word-section p, .word-section ul {
+            color: var(--text-secondary);
+            margin-left: 1.7rem;
+            line-height: 1.6;
+        }
+        .code-box {
+            background: rgba(0,0,0,0.3);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border-left: 3px solid var(--accent);
+            font-family: 'Consolas', monospace;
+            margin-left: 1.7rem;
+            margin-top: 0.5rem;
+            color: #e2e8f0;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+        .code-comment {
+            color: #94a3b8;
+            font-family: 'Inter', sans-serif;
+            display: block;
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <header class="page-header">
+            <h1 class="page-title">BAB 3: ATURAN RESEP</h1>
+            <p style="color: var(--text-secondary);">Bagian 1 / Kamus Python (Logika Keputusan JIKA-MAKA)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di Bab 1 dan 2, komputer kita masih seperti robot bodoh yang cuma jalan lurus. Di Bab 3 ini, kita akan mengajari komputer cara berpikir dan membuat keputusan sendiri berdasarkan kondisi tertentu.</p>
+            </div>
+
+            <!-- Kata 26 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 26: if <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: if / artinya: Jika)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Perintah untuk menyuruh komputer mengecek sebuah syarat. JIKA syaratnya terpenuhi (Benar/True), maka lakukan pekerjaan ini.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti satpam penjaga bioskop yang diberi aturan mutlak: "JIKA pengunjung bawa tiket, silakan buka pintunya". Satpam akan mengecek tangan pengunjung satu per satu.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
+                    <ul style="margin-left: 2.5rem;">
+                        <li>1. Ketik kata <code>if</code>, beri spasi, lalu masukkan syaratnya.</li>
+                        <li>2. <strong>JEBAKAN PEMULA:</strong> Saat mengecek syarat, Anda WAJIB menggunakan tanda sama dengan dua kali (<code>==</code>). Ingat, satu <code>=</code> artinya "memasukkan data", sedangkan dua <code>==</code> artinya "mengecek/bertanya".</li>
+                        <li>3. Tutup baris tersebut dengan tanda titik dua ( <code>:</code> ).</li>
+                        <li>4. Baris di bawahnya WAJIB MENJOROK KE DALAM (ditekan tombol Tab/Spasi). Baris yang menjorok ini adalah "pekerjaan rahasia" yang hanya akan dilakukan kalau syaratnya benar.</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">bawa_tiket = True <span class="code-comment">(Baris 1: Ini perintah memakai satu = untuk mengisi kotak)</span>
+if bawa_tiket == True: <span class="code-comment">(Baris 2: Ini pengecekan memakai dua == untuk bertanya: "Apakah benar dia bawa tiket?")</span>
+    print("Silakan masuk ke bioskop!") <span class="code-comment">(Baris 3: Tulisan ini akan muncul karena syaratnya terpenuhi)</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 27 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 27: else <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: els / artinya: Kalau Tidak)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Ini adalah "Rencana B" atau jalan buntu. Perintah ini dipanggil ketika syarat dari <code>if</code> di atasnya ternyata GAGAL terpenuhi (Salah/False).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Lanjutan dari satpam tadi: "JIKA pengunjung bawa tiket, buka pintunya. KALAU TIDAK bawa tiket (<code>else</code>), usir mereka!".</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Kata <code>else</code> tidak butuh syarat lagi (karena dia otomatis menampung semua sisa saringan dari <code>if</code>). Ketik <code>else</code>, langsung tempelkan titik dua ( <code>:</code> ). Baris di bawahnya juga wajib menjorok ke dalam.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">bawa_tiket = False <span class="code-comment">(User ternyata tidak bawa tiket)</span>
+if bawa_tiket == True:
+    print("Silakan masuk!") <span class="code-comment">(Baris ini dilewati oleh komputer)</span>
+else:
+    print("Maaf, silakan pulang!") <span class="code-comment">(Layar akan memunculkan tulisan usiran ini)</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 28 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 28: elif <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: e-lif / Singkatan dari: Else If atau "Atau Jika")</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Ini adalah "Rencana Cadangan" atau pilihan kedua, ketiga, keempat, dan seterusnya sebelum akhirnya menyerah ke <code>else</code> (jalan buntu).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Kembali ke satpam bioskop. Aturannya sekarang bertambah panjang:</p>
+                    <ul style="margin-left: 2.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">
+                        <li><code>if</code> (JIKA) tiketnya VVIP, silakan masuk ke Pintu Merah.</li>
+                        <li><code>elif</code> (ATAU JIKA) tiketnya Reguler, silakan masuk ke Pintu Biru.</li>
+                        <li><code>else</code> (KALAU TIDAK bawa tiket sama sekali), silakan pulang!</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Posisinya WAJIB berada di tengah-tengah (di bawah <code>if</code>, tapi di atas <code>else</code>). Sama seperti <code>if</code>, <code>elif</code> juga membutuhkan syarat dan diakhiri dengan titik dua ( <code>:</code> ).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">tiket = "Reguler"
+if tiket == "VVIP":
+    print("Masuk Pintu Merah")
+elif tiket == "Reguler":
+    print("Masuk Pintu Biru") <span class="code-comment">(Karena tiketnya Reguler, komputer akan memilih jalur ini).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 29 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 29: Operator Pembanding <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(>, <, >=, <=, !=)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Alat ukur untuk mengecek apakah sebuah data lebih besar, lebih kecil, atau tidak sama dengan data lainnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti polisi yang mengecek batas kecepatan di jalan tol. "Apakah kecepatan mobil ini Lebih Besar dari 100 km/jam?"</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (DAFTAR SIMBOL):</h4>
+                    <p>Digunakan di dalam baris <code>if</code> atau <code>elif</code>.</p>
+                    <ul style="margin-left: 2.5rem; margin-top: 0.5rem;">
+                        <li><code>></code> artinya Lebih Besar.</li>
+                        <li><code><</code> artinya Lebih Kecil.</li>
+                        <li><code>>=</code> artinya Lebih Besar atau Sama Dengan (angka batasnya dihitung lolos).</li>
+                        <li><code><=</code> artinya Lebih Kecil atau Sama Dengan.</li>
+                        <li><code>!=</code> artinya TIDAK SAMA DENGAN (Ini unik! Python memakai tanda seru dan sama dengan untuk bilang "Tidak Sama").</li>
+                    </ul>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">kecepatan = 120
+if kecepatan > 100:
+    print("Anda kena tilang!")</div>
+                </div>
+            </div>
+
+            <!-- Kata 30 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 30: and <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: end / artinya: Dan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Syarat ketat. Mengharuskan SEMUA syarat harus Benar (<code>True</code>) agar bisa lolos. Jika ada satu saja yang salah, maka dianggap Gagal.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Syarat naik wahana Roller Coaster. Pengunjung bisa naik JIKA: (Bawa Tiket) AND (Tinggi badan di atas 150 cm).<br>
+                    Punya tiket tapi pendek = Ditolak.<br>
+                    Tinggi tapi tidak punya tiket = Ditolak. Harus dua-duanya!</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Diketik di antara dua buah syarat pada baris <code>if</code> atau <code>elif</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">bawa_tiket = True
+tinggi = 140
+if bawa_tiket == True and tinggi > 150:
+    print("Boleh Naik!")
+else:
+    print("Dilarang Naik!") <span class="code-comment">(Komputer akan memilih jalan ini karena syarat tinggi tidak terpenuhi).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 31 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 31: or <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: or / artinya: Atau)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Syarat santai. Asalkan SALAH SATU syaratnya Benar (<code>True</code>), maka sudah dianggap Lolos.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Syarat masuk jalur khusus di bandara. Anda boleh lewat jalur khusus JIKA: (Penyandang Disabilitas) OR (Membawa Bayi). Anda tidak perlu menjadi disabilitas yang membawa bayi sekaligus. Punya salah satu kriteria saja sudah cukup untuk lolos.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Diketik di antara dua buah syarat pada baris <code>if</code> atau <code>elif</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">bawa_bayi = True
+disabilitas = False
+if bawa_bayi == True or disabilitas == True:
+    print("Silakan lewat jalur khusus!") <span class="code-comment">(Komputer akan meloloskan ini karena salah satu syarat, yaitu bawa bayi, bernilai True).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 32 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 32: not <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: not / artinya: Tidak / Bukan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Pembalik fakta. Jika sebuah syarat aslinya Benar (<code>True</code>), diberi kata <code>not</code> akan berubah menjadi Salah (<code>False</code>), begitu pula sebaliknya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Persis seperti Kartu Putar Balik (Reverse) di permainan kartu UNO. Atau seperti anak kecil yang sedang tantrum: kalau Anda bilang "Iya", dia akan teriak "TIDAK!". Kata ini dipakai kalau kita justru ingin mencari tahu ketidakhadiran sesuatu.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Cukup ketik kata <code>not</code> tepat di depan syarat yang ingin Anda balikkan faktanya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">hujan = True
+if not hujan: <span class="code-comment">(Cara bacanya: JIKA TIDAK hujan...)</span>
+    print("Ayo main di luar!")
+<span class="code-comment">(Karena aslinya sedang hujan, maka syarat "TIDAK HUJAN" menjadi Salah. Komputer tidak akan mencetak tulisan tersebut).</span></div>
+                </div>
+            </div>
+
+            <!-- Kata 33 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 33: in <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: in / artinya: Di dalam)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Mesin pencari kilat. Menggantikan tugas kita untuk mengecek satu per satu apakah sebuah data/barang ada di dalam sebuah keranjang (List) atau di dalam sebuah teks (String).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti guru yang sedang mengecek daftar absensi kelas. Ketimbang guru itu membaca seluruh nama murid dari A sampai Z, ia cukup bertanya: "Apakah nama 'Budi' ADA DI DALAM daftar ini?"</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Posisinya harus diapit: <code>[Barang yang dicari] in [Nama Keranjangnya]</code>. Paling sering digabungkan dengan perintah <code>if</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <div class="code-box">keranjang = ["Apel", "Jeruk", "Mangga"]
+if "Apel" in keranjang: <span class="code-comment">(Komputer otomatis membongkar keranjang untuk mencari Apel)</span>
+    print("Yeay, kita punya Apel!")</div>
+                </div>
+            </div>
+
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+</body>
+</html>

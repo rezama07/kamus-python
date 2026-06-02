@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peringatan Error - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .intro-box {
+            background: var(--card-bg);
+            border-left: 4px solid #ef4444; /* Merah lembut untuk tema error */
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .error-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border-left: 4px solid #ef4444;
+            transition: transform 0.3s ease;
+        }
+
+        .error-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .error-title {
+            font-size: 1.5rem;
+            color: #ef4444;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .error-section {
+            margin-bottom: 1.25rem;
+        }
+        .error-section:last-child {
+            margin-bottom: 0;
+        }
+        .error-section h4 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-primary);
+        }
+        .error-section p {
+            color: var(--text-secondary);
+            margin-left: 1.7rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="../index.html" class="back-link">&larr; Kembali ke Halaman Utama</a>
+        <header class="page-header">
+            <h1 class="page-title" style="color: #ef4444;">PERINGATAN ERROR</h1>
+            <p style="color: var(--text-secondary);">Menerjemahkan Teks Merah Menjadi Bahasa Manusia</p>
+        </header>
+
+        <div class="intro-box">
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                <strong>Jangan panik</strong> kalau layar Anda tiba-tiba penuh teks merah dan komputer berteriak ERROR! Itu bukan berarti laptop Anda rusak. Komputer hanya sedang kebingungan dan minta tolong.<br><br>
+                Berikut adalah 4 "Penyakit" paling sering muncul dan obatnya:
+            </p>
+        </div>
+        
+        <div class="content-body">
+            
+            <div class="error-card">
+                <h3 class="error-title">🔴 1. SyntaxError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Ejaan/Tanda Baca)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, ejaannya salah nih! Coba cek lagi, ada tanda baca yang kurang gak?"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Cek baris kode Anda. Biasanya Anda lupa menaruh tanda kutip ("), lupa tutup kurung ), atau lupa tanda titik dua (:).</p>
+                </div>
+            </div>
+
+            <div class="error-card">
+                <h3 class="error-title">🔴 2. NameError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Manggil Nama Ga Dikenal)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh saya nyari data bernama 'Budi', tapi saya cari-cari di sistem gak ada yang namanya 'Budi'!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Ini biasanya karena Anda Typo (salah ketik). Kemarin Anda menamai kotaknya <code>nama_tamu</code>, tapi sekarang Anda malah memanggil <code>nama_tammu</code>. Cek lagi ejaan nama variabelnya!</p>
+                </div>
+            </div>
+
+            <div class="error-card">
+                <h3 class="error-title">🔴 3. TypeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Wujud Data)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh saya mencampur Air dengan Minyak! Ya gak bisa bersatu dong!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Ini terjadi karena Anda mencoba mengawinkan dua jenis data yang menolak digabung. Contoh paling sering: Anda mencoba menjumlahkan Teks dengan Angka (Misal: <code>"Budi" + 10</code>). Gunakan alat sulap <code>int()</code> atau <code>str()</code> di Bab 2 untuk menyamakan wujud mereka dulu.</p>
+                </div>
+            </div>
+
+            <div class="error-card">
+                <h3 class="error-title">🔴 4. IndentationError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Spasi Berantakan)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Python itu penderita OCD (Obsessive Compulsive Disorder). Kalau spasinya gak rata, saya gak mau kerja!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Di Bab 3 dan 4 (if, for, while), kita wajib memajukan teks menjorok ke dalam (di-Tab). Kalau ada satu baris saja yang kurang maju atau kelebihan spasi, Python akan ngambek. Rapikan lagi spasi Anda supaya sejajar!</p>
+                </div>
+            </div>
+
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+</body>
+</html>
