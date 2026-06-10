@@ -315,8 +315,21 @@ footer {
 .nav-btn.next-btn { margin-left: auto; }
 
 /* --- PRISM.JS CODE OVERRIDES --- */
-pre[class*="language-"] { border-radius: 0.5rem !important; margin-left: 1.7rem !important; border-left: 3px solid var(--accent) !important; background: rgba(0,0,0,0.3) !important; }
-code[class*="language-"] { font-family: 'Consolas', monospace !important; font-size: 0.95rem !important; text-shadow: none !important; }
+pre[class*="language-"] { 
+    border-radius: 0.5rem !important; 
+    margin-left: 1.7rem !important; 
+    border-left: 3px solid var(--accent) !important; 
+    background: rgba(0,0,0,0.3) !important; 
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+}
+code[class*="language-"] { 
+    font-family: 'Consolas', monospace !important; 
+    font-size: 0.95rem !important; 
+    text-shadow: none !important; 
+    white-space: pre-wrap !important;
+    word-break: break-word !important;
+}
 
 /* --- TRINKET EMBED --- */
 .embed-container { margin-top: 3rem; margin-bottom: 1rem; border-radius: 1rem; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.5); border: 1px solid var(--card-border); }
