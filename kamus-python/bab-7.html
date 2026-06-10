@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 7: Kotak P3K Dapur - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 7 dari 8 &mdash; Kotak P3K Dapur (Exception Handling)</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 7: KOTAK P3K DAPUR</h1>
+            <p style="color: var(--text-secondary);">Bab 7 / Kamus Python (Penanganan Error / Exception Handling)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Saat belajar memasak, pasti ada kalanya masakan gosong atau Anda tanpa sengaja menumpahkan minyak. Di Python, hal tersebut disebut sebagai Error. Daripada dapur Anda kebakaran (program mati total), kita bisa menyiapkan "Kotak P3K" untuk menangani tumpahan minyak tersebut dengan tenang.</p>
+            </div>
+
+            <!-- Kata 48 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 48: try <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: trai / artinya: Coba lakukan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, aku tahu instruksi ini agak berisiko dan mungkin bisa gagal. Jadi, coba saja dulu secara perlahan. Kalau gagal, jangan langsung marah dan mematikan program, ya!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti Anda sedang menyuruh anak kecil belajar memecahkan telur di atas wajan. Anda bilang, "Coba (<code>try</code>) pecahkan telurnya ke wajan. Kalau ternyata cangkangnya ikut jatuh, tidak apa-apa, jangan menangis (jangan crash)."</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Perintah <code>try</code> tidak bisa berdiri sendiri. Ia wajib dipasangkan dengan perintah <code>except</code> di bawahnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">try:
+    # Komputer mencoba membagi angka dengan NOL (Ini adalah tindakan ilegal di matematika!)
+    hasil = 10 / 0
+    print(hasil)</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 49 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 49: except <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ek-sep / artinya: Kecuali / Tangkap)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Rencana B (Rencana Cadangan). "Kalau instruksi di dalam kotak <code>try</code> tadi benar-benar gagal/error, segera tangkap error-nya dan jalankan instruksi penyelamatan di bawah ini!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Menyambung analogi telur tadi.<br>Coba pecahkan telurnya ke wajan (<code>try</code>). Jika gagal (<code>except</code>) karena cangkangnya ikut jatuh, segera ambil sendok dan buang cangkangnya. Ini adalah rencana cadangan agar proses memasak tetap bisa dilanjutkan.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Letakkan di bawah blok <code>try</code>. Pastikan Anda memajukan teks (Tab) untuk instruksi di dalamnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">try:
+    hasil = 10 / 0
+    print(hasil)
+except:
+    # Karena pembagian nol itu error, komputer melompat ke baris ini:
+    print("Waduh Bos, angka tidak bisa dibagi dengan nol!")</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 50 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 50: finally <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: fai-ne-li / artinya: Akhirnya / Bagaimanapun juga)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Instruksi mutlak sang "tukang bersih-bersih". "Komputer, tidak peduli apakah proses tadi berhasil dengan mulus atau berujung gagal/error, pokoknya kamu wajib menjalankan instruksi terakhir ini sebelum pergi!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda selesai memasak. Entah masakannya enak (berhasil) atau gosong total (error), ada satu aturan mutlak di dapur: "Bagaimanapun juga (<code>finally</code>), kompor harus dimatikan dan dapur harus disapu!"<br><br>Di dunia koding, <code>finally</code> sering dipakai untuk memastikan komputer "menutup koneksi database" atau "menutup file" agar memori laptop tidak penuh, terlepas dari programnya error atau tidak.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Diletakkan paling bawah, setelah <code>try</code> dan <code>except</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">try:
+    print("Sedang merebus air...")
+    # Anggap ada error disini
+except:
+    print("Gagal merebus air!")
+finally:
+    print("Matikan kompor!") # Baris ini AKAN SELALU dicetak, apapun yang terjadi di atas.</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 51 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 51: else <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dalam blok try-except) (dibaca: els / artinya: Jika Tidak Ada Masalah)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, ini hadiah atau langkah ekstra yang HANYA boleh kamu lakukan JIKA instruksi di dalam <code>try</code> tadi sukses 100% tanpa ada error sedikitpun."</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Kembali ke analogi memasak telur.<br>Anda bilang: "Coba (<code>try</code>) pecahkan telur ke wajan. Jika cangkangnya jatuh (<code>except</code>), buang cangkangnya. TAPI JIKA SEMUANYA LANCAR (<code>else</code>) tanpa ada cangkang yang jatuh, taburkan garam dan lada ke atas telur itu!"<br><br>Langkah menaburkan garam (<code>else</code>) ini hanya masuk akal dilakukan kalau telurnya berhasil dipecahkan dengan sempurna. Kalau telurnya gagal/tumpah, menaburkan garam jadi tidak ada gunanya, bukan?</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Harus diletakkan setelah blok <code>except</code> dan sebelum blok <code>finally</code> (jika ada).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">try:
+    # Komputer mencoba membagi angka yang benar
+    hasil = 10 / 2
+except:
+    print("Ada yang salah dengan perhitunganmu!")
+else:
+    # Karena pembagian di atas berhasil (tidak error), baris ini dijalankan:
+    print("Perhitungan sukses! Hasilnya adalah:", hasil)</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 52 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 52: except Exception as e <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ek-sep ek-sep-syen es i / artinya: Tangkap dan Baca Laporannya)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, kalau ada error, tolong jangan cuma bilang 'Gagal!', tapi tangkap pesan asli dari error tersebut, masukkan ke dalam amplop berlabel <code>e</code>, dan bacakan ke aku agar aku tahu penyebab pastinya!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan paket belanjaan Anda gagal dikirim. Kalau kurir cuma bilang "Paket gagal dikirim", Anda pasti bingung (apakah karena alamat salah, rumah kosong, atau tersasar?). Tapi dengan <code>Exception as e</code>, kurir itu memberi Anda surat resminya: "Paket gagal dikirim KARENA (e) rumah Anda terkunci dan digembok."</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Huruf <code>e</code> sebenarnya bebas diganti apa saja (seperti <code>as error</code> atau <code>as masalah</code>), tapi 99% programmer sedunia sepakat menggunakan huruf <code>e</code> sebagai singkatan universal dari error atau exception.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">try:
+    hasil = 10 / 0
+except Exception as e:
+    print("Waduh, gagal masak bos!")
+    print("Alasan dari mesin:", e) # Layar mencetak pesan error aslinya: division by zero</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 53 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 53: raise <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: reis / artinya: Angkat Bendera Merah / Bunyikan Alarm)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, aku tahu secara sistem ini bukan error, tapi menurut aturan bisnisku ini sangat fatal! Tolong bunyikan alarm error sekarang juga dan hentikan semuanya!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Koki di dapur melihat ada daging yang sudah busuk. Mengolah daging busuk mungkin tidak akan merusak wajan atau membuat kompor meledak (bukan error sistem), tapi ini melanggar standar restoran! Koki tersebut dengan sengaja menekan tombol alarm kebakaran (<code>raise</code>) untuk menghentikan seluruh dapur agar tidak ada yang keracunan.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p><code>raise</code> dipakai saat Anda sengaja ingin membuat program error demi keamanan.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">def buat_kopi(jumlah_gula):
+    if jumlah_gula > 10:
+        # Kita sengaja membunyikan alarm karena ini berbahaya untuk kesehatan
+        raise Exception("Gila, ini sih mau bikin diabetes!")
+    print("Kopi sedang dibuat...")
+
+buat_kopi(15) # Program akan langsung mati dan menampilkan pesan error merah: "Gila, ini sih mau bikin diabetes!"</code></pre>
+                </div>
+            </div>
+
+            <div class="embed-container" id="trinket-container">
+                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="bab-6.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+                <a href="bab-8.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
+            </div>
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>

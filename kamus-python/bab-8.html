@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 8: Membangun Pabrik Cetakan - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 8 dari 8 &mdash; Membangun Pabrik Cetakan (Pengenalan OOP)</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 8 (OPSIONAL): MEMBANGUN PABRIK CETAKAN</h1>
+            <p style="color: var(--text-secondary);">Bab 8 / Kamus Python (Pengenalan OOP / Class)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Saat Anda sudah lelah memasak satu per satu, Anda mulai berpikir untuk membuat "Pabrik". Di bab ini, kita akan belajar kosa kata untuk membuat cetakan otomatis, sehingga Anda bisa menciptakan ribuan "benda" yang sama dengan cepat. Konsep ini di dunia IT disebut OOP (Object-Oriented Programming).</p>
+            </div>
+
+            <!-- Kata 54 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 54: class <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: klas / artinya: Cetakan / Cetak Biru)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, aku tidak mau bikin barang satu per satu lagi. Tolong buatkan aku satu cetakan raksasa. Semua barang yang keluar dari cetakan ini nanti akan memiliki sifat dan kemampuan yang sama."</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan Anda punya Cetakan Kue berbentuk Bintang. Cetakan itu sendiri terbuat dari besi dan tidak bisa dimakan. Tapi, cetakan itu adalah rancangan wajib untuk membuat kue. Di Python, <code>class</code> adalah cetakan besinya.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Berbeda dengan aturan penamaan lain di Python yang menggunakan huruf kecil, penamaan sebuah <code>class</code> wajib diawali dengan Huruf Kapital tanpa spasi (sering disebut PascalCase atau CamelCase).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># Membuat cetakan (belum ada kuenya yang nyata)
+class KueBintang:
+    bentuk = "Bintang"</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 55 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 55: object / instance <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: objek atau in-stens / artinya: Barang Nyata)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Hasil jadi yang keluar dari cetakan class dan sudah berbentuk nyata, bisa dipegang, dan bisa dimodifikasi.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Kalau class adalah cetakan besinya, maka object adalah kue sungguhan yang sudah keluar dari oven, harum, dan siap dimakan! Dari satu cetakan class KueBintang, Anda bisa mencetak ribuan object kue.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Untuk menciptakan object dari sebuah class, Anda cukup memanggil nama class tersebut ditambah kurung buka-tutup <code>()</code>, lalu menyimpannya ke dalam sebuah wadah (variabel).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># Mencetak kue pertama (object) dari cetakan
+kue_coklat = KueBintang()
+
+# Mencetak kue kedua (object) dari cetakan yang sama
+kue_keju = KueBintang()</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 56 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 56: __init__ <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: dunder in-it / singkatan dari: Initialization / artinya: Pengaturan Awal)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, setiap kali ada barang baru yang selesai dicetak dari pabrik ini, tolong langsung otomatis jalankan instruksi awal ini sebelum barangnya kuserahkan ke pelanggan!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan pos "Quality Control" (QC) di pabrik mobil. Setiap kali ada mobil baru keluar dari mesin cetak, tugas petugas QC ini adalah otomatis memasang roda, menempel stiker logo, dan mengecat warna dasarnya. Petugas QC ini bekerja tanpa perlu disuruh lagi. Di Python, <code>__init__</code> adalah si petugas QC tersebut.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Tulisannya harus diapit oleh dua garis bawah (underscore) di kiri dan dua di kanan: <code>__init__</code>. Ini adalah fungsi ajaib (Sihir) bawaan Python yang akan dipanggil otomatis.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">class RobotAI:
+    # Fungsi ini otomatis jalan saat robot baru diciptakan
+    def __init__(self, nama_robot):
+        print("Bip bop! Robot", nama_robot, "telah dihidupkan!")
+
+# Begitu kita mencetak robot, tulisan "Bip bop..." langsung muncul!
+robot_satu = RobotAI("Gemini")</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 57 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 57: self <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: self / artinya: Diriku Sendiri)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Kata ganti penunjuk "aku" atau "milikku". Digunakan agar cetakan tidak bingung sedang berurusan dengan barang (object) yang mana.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda punya 10 anak anjing hasil kloning yang bentuknya sama persis. Tiba-tiba Anda memegang salah satu anak anjing dan berkata, "Pasangkan kalung merah di lehernya!". Nah, <code>self</code> itu ibarat tangan Anda yang sedang menunjuk "anjing yang ini" (dirinya sendiri). Jadi komputer tidak akan salah memakaikan kalung merah ke anjing yang lain.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Di dalam sebuah class, kata <code>self</code> wajib diletakkan sebagai parameter pertama di dalam kurung pada setiap fungsi. Ini adalah aturan emas yang tidak boleh dilanggar.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">class Kucing:
+    def __init__(self, nama):
+        self.nama_kucing = nama  # "Nama milikKU adalah nama yang dimasukkan user"
+
+    def mengeong(self):
+        print(self.nama_kucing, "berkata: Miaww!") # Menyebut namanya SENDIRI
+
+peliharaan_baru = Kucing("Oyen")
+peliharaan_baru.mengeong() # Layar mencetak: Oyen berkata: Miaww!</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 58 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 58: Attribute / Property <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: a-tri-but / artinya: Sifat Bawaan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Data, informasi, atau ciri-ciri fisik yang menempel permanen pada sebuah barang (object) yang sudah dicetak.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Jika object-nya adalah sebuah Oven Pintar, maka atributnya adalah hal-hal yang mendeskripsikan oven tersebut: merek, warna, suhu_maksimal, dan status_menyala. Atribut adalah "kata benda" dari sebuah objek.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Untuk melihat atau mengubah sifat bawaan ini, kita menggunakan tanda titik (<code>.</code>) setelah nama objeknya, TANPA tanda kurung di belakangnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">oven_saya = OvenPintar()
+
+# Melihat atribut warna oven
+print(oven_saya.warna)
+
+# Mengubah atribut suhu
+oven_saya.suhu = 180</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 59 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 59: Method <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: me-tod / artinya: Kemampuan / Aksi)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Fungsi (<code>def</code>) yang hidup dan hanya bisa digunakan di dalam sebuah cetakan (class). Ini adalah daftar aksi yang "bisa dilakukan" oleh barang tersebut.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Menyambung analogi Oven Pintar tadi. Jika atribut adalah "kata benda" (warna, merek), maka method adalah "tombol aksi" (kata kerja) yang ada di mesin tersebut. Misalnya tombol <code>panaskan_makanan()</code>, <code>matikan_mesin()</code>, atau <code>bunyikan_alarm()</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Karena ini adalah sebuah aksi/fungsi, Anda wajib menambahkan tanda kurung <code>()</code> saat memanggilnya menggunakan tanda titik (<code>.</code>).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">oven_saya = OvenPintar()
+
+# Menekan tombol/method untuk memanaskan makanan
+oven_saya.panaskan_makanan()</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 60 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 60: Inheritance <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: in-he-ri-tens / artinya: Pewarisan Cetakan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>"Komputer, aku mau bikin cetakan baru, tapi aku malas bikin dari nol. Tolong jiplak 100% cetakan yang lama, lalu aku akan tambahkan sedikit modifikasi pada jiplakan ini tanpa merusak cetakan aslinya!"</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Pabrik Anda sudah punya cetakan untuk membuat MobilBiasa. Suatu hari, bos minta Anda memproduksi MobilBalap. Daripada merancang pintu, roda, dan setir dari nol, Anda tinggal mewarisi (menjiplak) cetakan MobilBiasa, lalu tinggal menambahkan atribut baru yaitu "Tabung Turbo".</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Tulis nama cetakan induk (yang mau dijiplak) di dalam tanda kurung persis di sebelah nama cetakan baru Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># Cetakan Induk
+class RobotPelayan:
+    def sapa(self):
+        print("Halo, ada yang bisa dibantu?")
+
+# Cetakan Anak (Menjiplak RobotPelayan)
+class RobotKasir(RobotPelayan):
+    def terima_uang(self):
+        print("Terima kasih atas pembayarannya!")
+
+# RobotKasir otomatis BISA menyapa, padahal kita tidak menulis ulang kode sapa()
+r2d2 = RobotKasir()
+r2d2.sapa()</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 61 -->
+            <div class="word-card">
+                <h3 class="word-title">📖 KATA 61: super() <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: su-per / artinya: Panggil Bos Induk)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Perintah khusus yang diteriakkan oleh cetakan "Anak" untuk meminta bantuan kepada cetakan "Induk"-nya saat sedang mengatur barang baru.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anak pemilik restoran (Cetakan Anak) ditugaskan membuka cabang baru. Saat bingung mengatur dapur, si anak menelepon ayahnya (<code>super()</code>) dan berkata: "Ayah, tolong aturkan meja dapurnya persis seperti di restoran pusat, nanti sisanya aku yang dekorasi sendiri!"</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Biasanya diletakkan di dalam fungsi <code>__init__</code> milik cetakan anak, agar si anak tidak perlu mengetik ulang pengaturan awal yang sudah susah payah dibuat oleh cetakan induk.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">class KokiPemula(MasterChef):
+    def __init__(self, nama):
+        # Minta MasterChef (Induk) untuk mengatur seragam dan pisau standar
+        super().__init__(nama)
+
+        # Setelah itu, baru si anak menambahkan ciri khasnya sendiri
+        self.buku_catatan = "Buku Resep Pemula"</code></pre>
+                </div>
+            </div>
+
+            <div class="embed-container" id="trinket-container">
+                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="bab-7.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+            </div>
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
