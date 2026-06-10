@@ -6,69 +6,15 @@
     <title>Bab 3: Aturan Resep - Kamus Python</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .word-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-        }
-        .word-title {
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 0.5rem;
-        }
-        .word-section {
-            margin-bottom: 1.25rem;
-        }
-        .word-section:last-child {
-            margin-bottom: 0;
-        }
-        .word-section h4 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-            color: var(--text-primary);
-        }
-        .word-section p, .word-section ul {
-            color: var(--text-secondary);
-            margin-left: 1.7rem;
-            line-height: 1.6;
-        }
-        .code-box {
-            background: rgba(0,0,0,0.3);
-            padding: 1rem;
-            border-radius: 0.5rem;
-            border-left: 3px solid var(--accent);
-            font-family: 'Consolas', monospace;
-            margin-left: 1.7rem;
-            margin-top: 0.5rem;
-            color: #e2e8f0;
-            white-space: pre-wrap;
-            line-height: 1.5;
-        }
-        .code-comment {
-            color: #94a3b8;
-            font-family: 'Inter', sans-serif;
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-        }
-    </style>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
 <body>
     <div class="container" style="padding-top: 2rem;">
         <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 3 dari 4 &mdash; Aturan Resep (Logika Keputusan JIKA-MAKA)</div>
         <header class="page-header">
             <h1 class="page-title">BAB 3: ATURAN RESEP</h1>
             <p style="color: var(--text-secondary);">Bagian 1 / Kamus Python (Logika Keputusan JIKA-MAKA)</p>
@@ -102,9 +48,12 @@
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">bawa_tiket = True <span class="code-comment">(Baris 1: Ini perintah memakai satu = untuk mengisi kotak)</span>
-if bawa_tiket == True: <span class="code-comment">(Baris 2: Ini pengecekan memakai dua == untuk bertanya: "Apakah benar dia bawa tiket?")</span>
-    print("Silakan masuk ke bioskop!") <span class="code-comment">(Baris 3: Tulisan ini akan muncul karena syaratnya terpenuhi)</span></div>
+                    <pre><code class="language-python">bawa_tiket = True 
+# Baris 1: Ini perintah memakai satu = untuk mengisi kotak
+if bawa_tiket == True: 
+# Baris 2: Ini pengecekan memakai dua == untuk bertanya: "Apakah benar dia bawa tiket?"
+    print("Silakan masuk ke bioskop!") 
+# Baris 3: Tulisan ini akan muncul karena syaratnya terpenuhi</code></pre>
                 </div>
             </div>
 
@@ -125,11 +74,14 @@ if bawa_tiket == True: <span class="code-comment">(Baris 2: Ini pengecekan memak
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">bawa_tiket = False <span class="code-comment">(User ternyata tidak bawa tiket)</span>
+                    <pre><code class="language-python">bawa_tiket = False 
+# User ternyata tidak bawa tiket
 if bawa_tiket == True:
-    print("Silakan masuk!") <span class="code-comment">(Baris ini dilewati oleh komputer)</span>
+    print("Silakan masuk!") 
+# Baris ini dilewati oleh komputer
 else:
-    print("Maaf, silakan pulang!") <span class="code-comment">(Layar akan memunculkan tulisan usiran ini)</span></div>
+    print("Maaf, silakan pulang!") 
+# Layar akan memunculkan tulisan usiran ini</code></pre>
                 </div>
             </div>
 
@@ -155,11 +107,12 @@ else:
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">tiket = "Reguler"
+                    <pre><code class="language-python">tiket = "Reguler"
 if tiket == "VVIP":
     print("Masuk Pintu Merah")
 elif tiket == "Reguler":
-    print("Masuk Pintu Biru") <span class="code-comment">(Karena tiketnya Reguler, komputer akan memilih jalur ini).</span></div>
+    print("Masuk Pintu Biru") 
+# (Karena tiketnya Reguler, komputer akan memilih jalur ini).</code></pre>
                 </div>
             </div>
 
@@ -187,9 +140,9 @@ elif tiket == "Reguler":
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">kecepatan = 120
+                    <pre><code class="language-python">kecepatan = 120
 if kecepatan > 100:
-    print("Anda kena tilang!")</div>
+    print("Anda kena tilang!")</code></pre>
                 </div>
             </div>
 
@@ -212,12 +165,13 @@ if kecepatan > 100:
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">bawa_tiket = True
+                    <pre><code class="language-python">bawa_tiket = True
 tinggi = 140
 if bawa_tiket == True and tinggi > 150:
     print("Boleh Naik!")
 else:
-    print("Dilarang Naik!") <span class="code-comment">(Komputer akan memilih jalan ini karena syarat tinggi tidak terpenuhi).</span></div>
+    print("Dilarang Naik!") 
+# (Komputer akan memilih jalan ini karena syarat tinggi tidak terpenuhi).</code></pre>
                 </div>
             </div>
 
@@ -238,10 +192,11 @@ else:
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">bawa_bayi = True
+                    <pre><code class="language-python">bawa_bayi = True
 disabilitas = False
 if bawa_bayi == True or disabilitas == True:
-    print("Silakan lewat jalur khusus!") <span class="code-comment">(Komputer akan meloloskan ini karena salah satu syarat, yaitu bawa bayi, bernilai True).</span></div>
+    print("Silakan lewat jalur khusus!") 
+# (Komputer akan meloloskan ini karena salah satu syarat, yaitu bawa bayi, bernilai True).</code></pre>
                 </div>
             </div>
 
@@ -262,10 +217,12 @@ if bawa_bayi == True or disabilitas == True:
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">hujan = True
-if not hujan: <span class="code-comment">(Cara bacanya: JIKA TIDAK hujan...)</span>
+                    <pre><code class="language-python">hujan = True
+if not hujan: 
+# Cara bacanya: JIKA TIDAK hujan...
     print("Ayo main di luar!")
-<span class="code-comment">(Karena aslinya sedang hujan, maka syarat "TIDAK HUJAN" menjadi Salah. Komputer tidak akan mencetak tulisan tersebut).</span></div>
+
+# (Karena aslinya sedang hujan, maka syarat "TIDAK HUJAN" menjadi Salah. Komputer tidak akan mencetak tulisan tersebut).</code></pre>
                 </div>
             </div>
 
@@ -286,13 +243,24 @@ if not hujan: <span class="code-comment">(Cara bacanya: JIKA TIDAK hujan...)</sp
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">keranjang = ["Apel", "Jeruk", "Mangga"]
-if "Apel" in keranjang: <span class="code-comment">(Komputer otomatis membongkar keranjang untuk mencari Apel)</span>
-    print("Yeay, kita punya Apel!")</div>
+                    <pre><code class="language-python">keranjang = ["Apel", "Jeruk", "Mangga"]
+if "Apel" in keranjang: 
+# Komputer otomatis membongkar keranjang untuk mencari Apel
+    print("Yeay, kita punya Apel!")</code></pre>
                 </div>
             </div>
 
+        
+        <div class="embed-container">
+            <iframe src="https://trinket.io/embed/python3?toggleCode=true&runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="chapter-navigation">
+            <a href="bab-2.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+            <a href="bab-4.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
+        </div>
         </div> <!-- content-body -->
     </div> <!-- container -->
 </body>
 </html>
+

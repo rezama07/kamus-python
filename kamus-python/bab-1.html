@@ -6,69 +6,15 @@
     <title>Bab 1: Bahan Baku & Wadah - Kamus Python</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <style>
-        .word-card {
-            background: var(--card-bg);
-            border: 1px solid var(--card-border);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            backdrop-filter: blur(10px);
-        }
-        .word-title {
-            font-size: 1.5rem;
-            color: var(--accent);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            border-bottom: 1px solid rgba(255,255,255,0.1);
-            padding-bottom: 0.5rem;
-        }
-        .word-section {
-            margin-bottom: 1.25rem;
-        }
-        .word-section:last-child {
-            margin-bottom: 0;
-        }
-        .word-section h4 {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-            color: var(--text-primary);
-        }
-        .word-section p, .word-section ul {
-            color: var(--text-secondary);
-            margin-left: 1.7rem;
-            line-height: 1.6;
-        }
-        .code-box {
-            background: rgba(0,0,0,0.3);
-            padding: 1rem;
-            border-radius: 0.5rem;
-            border-left: 3px solid var(--accent);
-            font-family: 'Consolas', monospace;
-            margin-left: 1.7rem;
-            margin-top: 0.5rem;
-            color: #e2e8f0;
-            white-space: pre-wrap;
-            line-height: 1.5;
-        }
-        .code-comment {
-            color: #94a3b8;
-            font-family: 'Inter', sans-serif;
-            display: block;
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-        }
-    </style>
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+        <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
 <body>
     <div class="container">
         <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 1 dari 4 &mdash; Bahan Baku & Wadah</div>
         <header class="page-header">
             <h1 class="page-title">BAB 1: BAHAN BAKU & WADAH</h1>
             <p style="color: var(--text-secondary);">Bagian 1 / Kamus Python (Data & Variabel)</p>
@@ -93,8 +39,9 @@
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">nama_peserta = "Budi"
-<span class="code-comment">(Keterangan: Di sini, kata <code>nama_peserta</code> itulah yang disebut sebagai Variable. Sedangkan "Budi" adalah isi di dalam kotaknya).</span></div>
+                    <pre><code class="language-python">nama_peserta = "Budi"
+
+# (Keterangan: Di sini, kata nama_peserta itulah yang disebut sebagai Variable. Sedangkan "Budi" adalah isi di dalam kotaknya).</code></pre>
                 </div>
             </div>
 
@@ -115,8 +62,10 @@
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">pesan = "Halo, nama saya Budi!" <span class="code-comment">(Ini adalah String)</span>
-angka = "12345" <span class="code-comment">(Ini juga String, karena diapit tanda kutip. Komputer menganggapnya teks biasa, bukan angka untuk dihitung).</span></div>
+                    <pre><code class="language-python">pesan = "Halo, nama saya Budi!" 
+# Ini adalah String
+angka = "12345" 
+# (Ini juga String, karena diapit tanda kutip. Komputer menganggapnya teks biasa, bukan angka untuk dihitung).</code></pre>
                 </div>
             </div>
 
@@ -137,8 +86,10 @@ angka = "12345" <span class="code-comment">(Ini juga String, karena diapit tanda
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">umur = 25 <span class="code-comment">(Ini adalah Integer, angka murni yang bisa dihitung/ditambah)</span>
-umur = "25" <span class="code-comment">(Ini BUKAN Integer, ini String teks biasa karena ada tanda kutip)</span></div>
+                    <pre><code class="language-python">umur = 25 
+# Ini adalah Integer, angka murni yang bisa dihitung/ditambah
+umur = "25" 
+# Ini BUKAN Integer, ini String teks biasa karena ada tanda kutip</code></pre>
                 </div>
             </div>
 
@@ -159,8 +110,10 @@ umur = "25" <span class="code-comment">(Ini BUKAN Integer, ini String teks biasa
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">berat_badan = 65.5 <span class="code-comment">(Ini adalah Float yang benar)</span>
-berat_badan = 65,5 <span class="code-comment">(Ini ERROR atau hasilnya jadi salah, karena dilarang memakai koma)</span></div>
+                    <pre><code class="language-python">berat_badan = 65.5 
+# Ini adalah Float yang benar
+berat_badan = 65,5 
+# Ini ERROR atau hasilnya jadi salah, karena dilarang memakai koma</code></pre>
                 </div>
             </div>
 
@@ -181,10 +134,14 @@ berat_badan = 65,5 <span class="code-comment">(Ini ERROR atau hasilnya jadi sala
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">sudah_lulus = True <span class="code-comment">(Artinya: Benar, dia sudah lulus)</span>
-sudah_bayar = False <span class="code-comment">(Artinya: Salah, dia belum bayar)</span>
-sudah_lulus = true <span class="code-comment">(Ini ERROR karena huruf 't' nya kecil)</span>
-sudah_lulus = "True" <span class="code-comment">(Ini SALAH, karena pakai tanda kutip, komputer akan menganggapnya teks biasa/String, bukan Boolean kepastian).</span></div>
+                    <pre><code class="language-python">sudah_lulus = True 
+# Artinya: Benar, dia sudah lulus
+sudah_bayar = False 
+# Artinya: Salah, dia belum bayar
+sudah_lulus = true 
+# Ini ERROR karena huruf 't' nya kecil
+sudah_lulus = "True" 
+# (Ini SALAH, karena pakai tanda kutip, komputer akan menganggapnya teks biasa/String, bukan Boolean kepastian).</code></pre>
                 </div>
             </div>
 
@@ -205,8 +162,9 @@ sudah_lulus = "True" <span class="code-comment">(Ini SALAH, karena pakai tanda k
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">keranjang_buah = ["Apel", "Jeruk", "Mangga"]
-<span class="code-comment">(Ini adalah satu List yang berisi tiga buah String)</span></div>
+                    <pre><code class="language-python">keranjang_buah = ["Apel", "Jeruk", "Mangga"]
+
+# Ini adalah satu List yang berisi tiga buah String</code></pre>
                 </div>
             </div>
 
@@ -231,8 +189,9 @@ sudah_lulus = "True" <span class="code-comment">(Ini SALAH, karena pakai tanda k
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">kontak_hp = {"Budi": "0812345", "Andi": "0899999"}
-<span class="code-comment">(Tanda koma di tengah itu berfungsi murni sebagai pemisah agar data si Budi dan data si Andi tidak saling bertabrakan).</span></div>
+                    <pre><code class="language-python">kontak_hp = {"Budi": "0812345", "Andi": "0899999"}
+
+# (Tanda koma di tengah itu berfungsi murni sebagai pemisah agar data si Budi dan data si Andi tidak saling bertabrakan).</code></pre>
                 </div>
             </div>
 
@@ -253,8 +212,9 @@ sudah_lulus = "True" <span class="code-comment">(Ini SALAH, karena pakai tanda k
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">koordinat_bumi = (90.0, 180.0)
-<span class="code-comment">(Karena ini memakai Tuple/kurung biasa, kalau nanti di tengah jalan Anda menyuruh komputer mengubah angkanya, komputer akan Error dan menolak keras).</span></div>
+                    <pre><code class="language-python">koordinat_bumi = (90.0, 180.0)
+
+# (Karena ini memakai Tuple/kurung biasa, kalau nanti di tengah jalan Anda menyuruh komputer mengubah angkanya, komputer akan Error dan menolak keras).</code></pre>
                 </div>
             </div>
 
@@ -275,11 +235,12 @@ sudah_lulus = "True" <span class="code-comment">(Ini SALAH, karena pakai tanda k
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">keranjang = ["Apel", "Jeruk", "Mangga"]
-<span class="code-comment">Keterangan:
-Apel ada di Index 0
-Jeruk ada di Index 1
-Mangga ada di Index 2</span></div>
+                    <pre><code class="language-python">keranjang = ["Apel", "Jeruk", "Mangga"]
+
+# Keterangan:
+# Apel ada di Index 0
+# Jeruk ada di Index 1
+# Mangga ada di Index 2</code></pre>
                 </div>
             </div>
 
@@ -300,9 +261,10 @@ Mangga ada di Index 2</span></div>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box"># Ini adalah kode untuk menyimpan umur peserta
+                    <pre><code class="language-python"># Ini adalah kode untuk menyimpan umur peserta
 umur = 25
-<span class="code-comment">(Kalimat yang diawali tanda # tidak akan membuat program error, karena komputer pura-pura tidak melihatnya).</span></div>
+
+# (Kalimat yang diawali tanda # tidak akan membuat program error, karena komputer pura-pura tidak melihatnya).</code></pre>
                 </div>
             </div>
 
@@ -323,8 +285,9 @@ umur = 25
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">nama = "Budi
-<span class="code-comment">(Ini akan langsung ERROR! Karena kurang satu tanda kutip penutup di belakang huruf "i". Kekurangan tanda baca sekecil inilah yang disebut pelanggaran Syntax).</span></div>
+                    <pre><code class="language-python">nama = "Budi
+
+# (Ini akan langsung ERROR! Karena kurang satu tanda kutip penutup di belakang huruf "i". Kekurangan tanda baca sekecil inilah yang disebut pelanggaran Syntax).</code></pre>
                 </div>
             </div>
 
@@ -349,12 +312,22 @@ umur = 25
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <div class="code-box">saldo_budi = None
-<span class="code-comment">(Artinya Budi belum punya rekening sama sekali. Beda dengan saldo_budi = 0 yang artinya Budi punya rekening tapi sedang bokek).</span></div>
+                    <pre><code class="language-python">saldo_budi = None
+
+# (Artinya Budi belum punya rekening sama sekali. Beda dengan saldo_budi = 0 yang artinya Budi punya rekening tapi sedang bokek).</code></pre>
                 </div>
             </div>
 
+        
+        <div class="embed-container">
+            <iframe src="https://trinket.io/embed/python3?toggleCode=true&runOption=run" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="chapter-navigation">
+            <a href="bab-2.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
+        </div>
         </div> <!-- content-body -->
     </div> <!-- container -->
 </body>
 </html>
+
