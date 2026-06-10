@@ -3,82 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentasi Python - Panduan Lengkap</title>
-    <meta name="description" content="Dokumentasi lengkap Python meliputi Kamus Python, Glosarium, dan Panduan Error untuk membantu Anda belajar pemrograman Python.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gerbang Akses - Kamus Python</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+        .login-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            padding: 3rem 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.05);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .login-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.6), inset 0 0 0 1px rgba(56,189,248,0.2);
+        }
+        .login-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        .login-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+        .login-subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+        .access-input {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(0,0,0,0.3);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 1.1rem;
+            text-align: center;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .access-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(56,189,248,0.3);
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 0.75rem;
+            background: var(--accent);
+            color: #0f172a;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .submit-btn:hover {
+            background: var(--accent-hover);
+            transform: scale(1.02);
+        }
+        .error-msg {
+            color: #ef4444;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            height: 20px;
+        }
+        .error-msg.visible {
+            opacity: 1;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        .shake {
+            animation: shake 0.5s ease;
+        }
+    </style>
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Eksplorasi Dunia <span>Python</span></h1>
-            <p>Panduan terstruktur, glosarium lengkap, dan solusi error dalam satu tempat. Mulai perjalanan coding Anda sekarang.</p>
-            
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Cari materi, bab, atau error..." autocomplete="off">
-                <div id="searchResults" class="search-results"></div>
-            </div>
+
+    <div class="login-card" id="loginCard">
+        <div class="login-icon">🔒</div>
+        <h1 class="login-title">Akses Eksklusif</h1>
+        <p class="login-subtitle">Masukkan kode akses untuk membuka Kamus Python.</p>
+        
+        <div class="input-group">
+            <input type="text" id="accessCode" class="access-input" placeholder="KODE AKSES" autocomplete="off" spellcheck="false">
         </div>
-    </header>
-
-    <main class="container">
-
-        <div class="cards-grid">
-            <!-- Card 1: Kamus Python -->
-            <a href="kamus-python/index.html" class="card">
-                <div class="card-icon">📚</div>
-                <h2>Kamus Python</h2>
-                <p>Panduan belajar Python dari dasar hingga mahir yang terbagi dalam beberapa bab terstruktur.</p>
-                <ul class="card-links">
-                    <li>Bab 1: Pengenalan</li>
-                    <li>Bab 2: Tipe Data</li>
-                    <li>Bab 3: Control Flow</li>
-                    <li>Bab 4: Fungsi</li>
-                </ul>
-            </a>
-
-            <!-- Card 2: Glosarium -->
-            <a href="glosarium/index.html" class="card">
-                <div class="card-icon">📖</div>
-                <h2>Glosarium</h2>
-                <p>Daftar lengkap istilah-istilah umum dalam pemrograman Python beserta penjelasannya.</p>
-                <span class="btn-text">Lihat Istilah &rarr;</span>
-            </a>
-
-            <!-- Card 3: Peringatan Error -->
-            <a href="peringatan-error/index.html" class="card">
-                <div class="card-icon">⚠️</div>
-                <h2>Peringatan Error</h2>
-                <p>Kumpulan error yang sering dijumpai saat coding Python dan cara jitu mengatasinya.</p>
-                <span class="btn-text">Solusi Error &rarr;</span>
-            </a>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Dokumentasi Python. Dibuat untuk komunitas.</p>
-    </footer>
-    <script src="search-data.js"></script>
-    <script src="search.js"></script>
-    <!-- SCROLL TO TOP BUTTON -->
-    <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
-    </button>
+        
+        <button id="submitBtn" class="submit-btn">BUKA KUNCI</button>
+        <div id="errorMsg" class="error-msg">Kode akses tidak valid.</div>
+    </div>
 
     <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                scrollTopBtn.classList.add("show");
+        // Check if already logged in
+        if (localStorage.getItem('access_granted') === 'true') {
+            window.location.href = 'home.html';
+        }
+
+        const submitBtn = document.getElementById('submitBtn');
+        const accessCode = document.getElementById('accessCode');
+        const errorMsg = document.getElementById('errorMsg');
+        const loginCard = document.getElementById('loginCard');
+
+        const validCode = "RW2026";
+
+        function attemptLogin() {
+            const inputVal = accessCode.value.trim().toUpperCase();
+            
+            if (inputVal === validCode) {
+                // Success
+                localStorage.setItem('access_granted', 'true');
+                
+                // Add success visual
+                submitBtn.style.background = "#22c55e";
+                submitBtn.textContent = "MEMBUKA...";
+                
+                setTimeout(() => {
+                    window.location.href = 'home.html';
+                }, 800);
             } else {
-                scrollTopBtn.classList.remove("show");
+                // Fail
+                errorMsg.classList.add('visible');
+                loginCard.classList.remove('shake');
+                void loginCard.offsetWidth; // trigger reflow
+                loginCard.classList.add('shake');
+                accessCode.value = "";
+                accessCode.focus();
             }
-        });
-        scrollTopBtn.addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        submitBtn.addEventListener('click', attemptLogin);
+        accessCode.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                attemptLogin();
+            }
         });
     </script>
 </body>
