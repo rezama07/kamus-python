@@ -737,12 +737,12 @@
     </div> <!-- container -->
 
     <!-- SCROLL TO TOP BUTTON -->
-    <button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
 
     <script>
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-        
-        // Tampilkan tombol saat pengguna scroll ke bawah
         window.addEventListener("scroll", function() {
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 scrollTopBtn.classList.add("show");
@@ -750,13 +750,8 @@
                 scrollTopBtn.classList.remove("show");
             }
         });
-
-        // Kembali ke atas dengan animasi mulus saat ditekan
         scrollTopBtn.addEventListener("click", function() {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
 </body>
