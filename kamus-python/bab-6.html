@@ -156,11 +156,29 @@ pip list
                 </div>
             </div>
 
+            <!-- Bonus -->
+            <div class="word-card" id="bonus-modul">
+                <h3 class="word-title" style="color: var(--accent);">🎁 BONUS: Membuat Modul Sendiri</h3>
+                <div class="word-section">
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Selain meminjam dari Python, Anda bisa membuat alat buatan Anda sendiri! Caranya sangat mudah:</p>
+                    <ul style="color: var(--text-secondary); line-height: 1.8; margin-left: 2rem; margin-bottom: 1rem;">
+                        <li>1. Buat file baru bernama <strong>matematikaku.py</strong> di dalam folder yang sama.</li>
+                        <li>2. Di dalam file itu, tulis resep/fungsi Anda. Misalnya:<br><pre><code class="language-python">def tambah_super(a, b):
+    return a + b + 100</code></pre></li>
+                        <li>3. Sekarang, buka file utama Anda (misalnya <strong>main.py</strong>), dan panggil alat buatan Anda:<br><pre><code class="language-python">import matematikaku
+
+hasil = matematikaku.tambah_super(5, 5)
+print(hasil) # Akan mencetak: 110</code></pre></li>
+                    </ul>
+                    <p style="color: var(--text-secondary); line-height: 1.8;">Selamat! Anda baru saja memisahkan kodingan panjang Anda menjadi beberapa file terpisah agar lebih rapi.</p>
+                </div>
+            </div>
+
             <div class="embed-container" id="trinket-container">
                 <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
                     <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
                     <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
-                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=import%20random%0Aangka%20%3D%20random.randint(1%2C%20100)%0Aprint(%22Angka%20acak%3A%22%2C%20angka)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
                 </div>
             </div>
 

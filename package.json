@@ -1,0 +1,24 @@
+{
+  "name": "kamus-python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "applyAuth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rezama07/kamus-python.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rezama07/kamus-python/issues"
+  },
+  "homepage": "https://github.com/rezama07/kamus-python#readme",
+  "dependencies": {
+    "node-html-parser": "^7.1.0"
+  }
+}

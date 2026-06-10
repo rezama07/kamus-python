@@ -139,11 +139,39 @@ pesan_kopi("Latte", "Less Sugar") # Hasil: Kopi Latte - Gula: Less Sugar</code><
                 </div>
             </div>
 
+            <!-- Kata 42b -->
+            <div class="word-card" id="kata-42b">
+                <h3 class="word-title">📖 KATA 42b: scope <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: skop / artinya: Cakupan Variabel)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Aturan yang menentukan siapa yang boleh melihat dan memakai suatu Variabel (kotak data). Variabel yang dibuat di dalam fungsi (Lokal) hanya bisa dipakai di dalam fungsi itu saja.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Barang yang ada di ruang tamu (Global) bisa dilihat dan dipakai oleh semua anggota keluarga. Tapi barang yang disembunyikan di dalam kamar tidur yang terkunci (Lokal) hanya bisa dipakai oleh orang yang berada di dalam kamar itu. Jika Anda mencoba mengambil barang dari kamar orang lain dari ruang tamu, Anda tidak akan menemukannya.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Jika Anda membuat variabel di dalam <code>def</code>, jangan mencoba mem-<code>print</code> atau memanggil variabel tersebut di bagian paling bawah (di luar margin tab). Python akan menganggap variabel itu tidak pernah ada (mendapat pesan Error).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">uang_tamu = 1000 # Variabel Global (Bisa dipakai siapa saja)
+
+def rumah_budi():
+    uang_kamar = 500 # Variabel Lokal (Hanya hidup di dalam fungsi ini)
+    print(uang_tamu) # Boleh! Mengakses uang global dari dalam kamar
+    print(uang_kamar) # Boleh! Memakai uang dari dalam kamar sendiri
+
+print(uang_kamar) # ERROR! Mencoba mencuri uang dari kamar Budi padahal kita di luar</code></pre>
+                </div>
+            </div>
+
             <div class="embed-container" id="trinket-container">
                 <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
                     <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
                     <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
-                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=def%20sapa(nama%3D%22Tamu%22)%3A%0A%20%20%20%20print(f%22Halo%20%7Bnama%7D!%22)%0A%0Asapa(%22Andi%22)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
                 </div>
             </div>
 

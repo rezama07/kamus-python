@@ -4,427 +4,441 @@ const searchData = [
         "preview": "Tempat (kotak) untuk menyimpan data agar bisa dipanggil lagi nanti.",
         "url": "kamus-python/bab-1.html#kata-1",
         "category": "Kamus Python - Bab 1",
-        "keywords": "variable kata 1"
+        "keywords": "📖 kata 1: variable"
     },
     {
         "title": "📖 KATA 2: String",
         "preview": "Teks biasa. Apapun yang berupa teks, huruf, kata, atau kalimat di dalam Python disebut String.",
         "url": "kamus-python/bab-1.html#kata-2",
         "category": "Kamus Python - Bab 1",
-        "keywords": "string kata 2"
+        "keywords": "📖 kata 2: string"
     },
     {
         "title": "📖 KATA 3: Integer",
         "preview": "Angka bulat utuh. Tidak ada koma atau desimal.",
         "url": "kamus-python/bab-1.html#kata-3",
         "category": "Kamus Python - Bab 1",
-        "keywords": "integer kata 3"
+        "keywords": "📖 kata 3: integer"
     },
     {
         "title": "📖 KATA 4: Float",
         "preview": "Angka desimal atau angka yang memiliki koma pecahan.",
         "url": "kamus-python/bab-1.html#kata-4",
         "category": "Kamus Python - Bab 1",
-        "keywords": "float kata 4"
+        "keywords": "📖 kata 4: float"
     },
     {
         "title": "📖 KATA 5: Boolean",
         "preview": "Data kepastian. Isinya BENAR-BENAR HANYA ADA DUA kemungkinan di dunia Python: Benar (True) atau Salah (False). Tidak ada...",
         "url": "kamus-python/bab-1.html#kata-5",
         "category": "Kamus Python - Bab 1",
-        "keywords": "boolean kata 5"
+        "keywords": "📖 kata 5: boolean"
     },
     {
         "title": "📖 KATA 6: List",
         "preview": "Kumpulan banyak data yang disimpan berurutan di dalam satu tempat.",
         "url": "kamus-python/bab-1.html#kata-6",
         "category": "Kamus Python - Bab 1",
-        "keywords": "list kata 6"
+        "keywords": "📖 kata 6: list"
     },
     {
         "title": "📖 KATA 7: Dictionary",
         "preview": "Kumpulan data yang berpasangan. Ada \"Kata Kunci\" (Key) dan ada \"Isinya\" (Value).",
         "url": "kamus-python/bab-1.html#kata-7",
         "category": "Kamus Python - Bab 1",
-        "keywords": "dictionary kata 7"
+        "keywords": "📖 kata 7: dictionary"
     },
     {
         "title": "📖 KATA 8: Tuple",
         "preview": "Kumpulan data berurutan (mirip sebuah daftar), TAPI isinya dikunci mati oleh Python. Isinya sama sekali tidak bisa ditam...",
         "url": "kamus-python/bab-1.html#kata-8",
         "category": "Kamus Python - Bab 1",
-        "keywords": "tuple kata 8"
+        "keywords": "📖 kata 8: tuple"
     },
     {
         "title": "📖 KATA 9: Index",
         "preview": "Nomor urut antrean dari sebuah data di dalam sebuah kelompok.",
         "url": "kamus-python/bab-1.html#kata-9",
         "category": "Kamus Python - Bab 1",
-        "keywords": "index kata 9"
+        "keywords": "📖 kata 9: index"
     },
     {
         "title": "📖 KATA 10: Comment",
         "preview": "Teks atau catatan yang sengaja ditulis oleh programmer di dalam kodingan hanya untuk dibaca oleh sesama manusia. Kompute...",
         "url": "kamus-python/bab-1.html#kata-10",
         "category": "Kamus Python - Bab 1",
-        "keywords": "comment kata 10"
+        "keywords": "📖 kata 10: comment"
     },
     {
         "title": "📖 KATA 11: Syntax",
         "preview": "Aturan mutlak soal tanda baca dan tata cara pengejaan saat kita mengetik kode.",
         "url": "kamus-python/bab-1.html#kata-11",
         "category": "Kamus Python - Bab 1",
-        "keywords": "syntax kata 11"
+        "keywords": "📖 kata 11: syntax"
     },
     {
         "title": "📖 KATA 12: None",
         "preview": "Hampa. Tidak ada data sama sekali. Bukan nol (0), bukan teks kosong, tapi murni tidak ada isinya.",
         "url": "kamus-python/bab-1.html#kata-12",
         "category": "Kamus Python - Bab 1",
-        "keywords": "none kata 12"
+        "keywords": "📖 kata 12: none"
     },
     {
         "title": "📖 KATA 13: print",
         "preview": "Menampilkan sesuatu ke layar. Tanpa perintah ini, komputer sebenarnya berhitung di dalam otaknya, tapi kita sebagai manu...",
         "url": "kamus-python/bab-2.html#kata-13",
         "category": "Kamus Python - Bab 2",
-        "keywords": "print kata 13"
+        "keywords": "📖 kata 13: print"
     },
     {
         "title": "📖 KATA 14: input",
         "preview": "Meminta pengguna (user) mengetikkan sesuatu di keyboard, lalu komputer akan menangkap tulisan itu untuk diproses.",
         "url": "kamus-python/bab-2.html#kata-14",
         "category": "Kamus Python - Bab 2",
-        "keywords": "input kata 14"
+        "keywords": "📖 kata 14: input"
     },
     {
         "title": "📖 KATA 15: Function",
         "preview": "Kumpulan langkah atau perintah kerja yang dibungkus menjadi satu nama, supaya tidak perlu diketik ulang capek-capek dari...",
         "url": "kamus-python/bab-2.html#kata-15",
         "category": "Kamus Python - Bab 2",
-        "keywords": "function kata 15"
+        "keywords": "📖 kata 15: function"
     },
     {
         "title": "📖 KATA 16: Parameter",
         "preview": "Request khusus atau bahan tambahan yang Anda lempar ke dalam sebuah Function (Fungsi) agar hasilnya bisa disesuaikan.",
         "url": "kamus-python/bab-2.html#kata-16",
         "category": "Kamus Python - Bab 2",
-        "keywords": "parameter kata 16"
+        "keywords": "📖 kata 16: parameter"
     },
     {
         "title": "📖 KATA 17: Return",
         "preview": "Menyerahkan hasil akhir dari dalam Function (Fungsi) kembali ke tangan si peminta.",
         "url": "kamus-python/bab-2.html#kata-17",
         "category": "Kamus Python - Bab 2",
-        "keywords": "return kata 17"
+        "keywords": "📖 kata 17: return"
     },
     {
         "title": "📖 KATA 18: len",
         "preview": "Menghitung jumlah isi data.",
         "url": "kamus-python/bab-2.html#kata-18",
         "category": "Kamus Python - Bab 2",
-        "keywords": "len kata 18"
+        "keywords": "📖 kata 18: len"
     },
     {
         "title": "📖 KATA 19: append",
         "preview": "Menambahkan satu data baru ke dalam sebuah List (daftar). Data baru ini otomatis ditaruh di urutan paling belakang.",
         "url": "kamus-python/bab-2.html#kata-19",
         "category": "Kamus Python - Bab 2",
-        "keywords": "append kata 19"
+        "keywords": "📖 kata 19: append"
     },
     {
         "title": "📖 KATA 20: type",
         "preview": "Alat detektor untuk mengecek jenis data (apakah ini String, Integer, Float, atau List?).",
         "url": "kamus-python/bab-2.html#kata-20",
         "category": "Kamus Python - Bab 2",
-        "keywords": "type kata 20"
+        "keywords": "📖 kata 20: type"
     },
     {
         "title": "📖 KATA 21: import",
         "preview": "Meminjam alat tambahan dari luar yang tidak disediakan Python secara bawaan.",
         "url": "kamus-python/bab-2.html#kata-21",
         "category": "Kamus Python - Bab 2",
-        "keywords": "import kata 21"
+        "keywords": "📖 kata 21: import"
     },
     {
         "title": "📖 KATA 22: Operator Matematika",
         "preview": "Simbol kalkulator dasar untuk menyuruh komputer berhitung.",
         "url": "kamus-python/bab-2.html#kata-22",
         "category": "Kamus Python - Bab 2",
-        "keywords": "operator matematika kata 22"
+        "keywords": "📖 kata 22: operator matematika"
     },
     {
         "title": "📖 KATA 23: upper dan lower",
         "preview": "Alat untuk mengubah teks menjadi huruf KAPITAL SEMUA (upper) atau huruf kecil semua (lower).",
         "url": "kamus-python/bab-2.html#kata-23",
         "category": "Kamus Python - Bab 2",
-        "keywords": "upper dan lower kata 23"
+        "keywords": "📖 kata 23: upper dan lower"
     },
     {
         "title": "📖 KATA 24: f-string",
         "preview": "Cara paling instan dan anti-ribet untuk menggabungkan kata-kata biasa dengan data dari dalam kotak (Variabel).",
         "url": "kamus-python/bab-2.html#kata-24",
         "category": "Kamus Python - Bab 2",
-        "keywords": "f-string kata 24"
+        "keywords": "📖 kata 24: f-string"
     },
     {
         "title": "📖 KATA 25: int() dan str()",
         "preview": "Alat sulap untuk memaksa data berubah wujud. int() mengubah Teks menjadi Angka Bulat. Sedangkan str() mengubah Angka men...",
         "url": "kamus-python/bab-2.html#kata-25",
         "category": "Kamus Python - Bab 2",
-        "keywords": "int() dan str() kata 25"
+        "keywords": "📖 kata 25: int() dan str()"
     },
     {
         "title": "📖 KATA 26: if",
         "preview": "Perintah untuk menyuruh komputer mengecek sebuah syarat. JIKA syaratnya terpenuhi (Benar/True), maka lakukan pekerjaan i...",
         "url": "kamus-python/bab-3.html#kata-26",
         "category": "Kamus Python - Bab 3",
-        "keywords": "if kata 26"
+        "keywords": "📖 kata 26: if"
     },
     {
         "title": "📖 KATA 27: else",
         "preview": "Ini adalah \"Rencana B\" atau jalan buntu. Perintah ini dipanggil ketika syarat dari if di atasnya ternyata GAGAL terpenuh...",
         "url": "kamus-python/bab-3.html#kata-27",
         "category": "Kamus Python - Bab 3",
-        "keywords": "else kata 27"
+        "keywords": "📖 kata 27: else"
     },
     {
         "title": "📖 KATA 28: elif",
         "preview": "Ini adalah \"Rencana Cadangan\" atau pilihan kedua, ketiga, keempat, dan seterusnya sebelum akhirnya menyerah ke else (jal...",
         "url": "kamus-python/bab-3.html#kata-28",
         "category": "Kamus Python - Bab 3",
-        "keywords": "elif kata 28"
+        "keywords": "📖 kata 28: elif"
     },
     {
         "title": "📖 KATA 29: Operator Pembanding",
         "preview": "Alat ukur untuk mengecek apakah sebuah data lebih besar, lebih kecil, atau tidak sama dengan data lainnya.",
         "url": "kamus-python/bab-3.html#kata-29",
         "category": "Kamus Python - Bab 3",
-        "keywords": "operator pembanding kata 29"
+        "keywords": "📖 kata 29: operator pembanding"
     },
     {
         "title": "📖 KATA 30: and",
         "preview": "Syarat ketat. Mengharuskan SEMUA syarat harus Benar (True) agar bisa lolos. Jika ada satu saja yang salah, maka dianggap...",
         "url": "kamus-python/bab-3.html#kata-30",
         "category": "Kamus Python - Bab 3",
-        "keywords": "and kata 30"
+        "keywords": "📖 kata 30: and"
     },
     {
         "title": "📖 KATA 31: or",
         "preview": "Syarat santai. Asalkan SALAH SATU syaratnya Benar (True), maka sudah dianggap Lolos.",
         "url": "kamus-python/bab-3.html#kata-31",
         "category": "Kamus Python - Bab 3",
-        "keywords": "or kata 31"
+        "keywords": "📖 kata 31: or"
     },
     {
         "title": "📖 KATA 32: not",
         "preview": "Pembalik fakta. Jika sebuah syarat aslinya Benar (True), diberi kata not akan berubah menjadi Salah (False), begitu pula...",
         "url": "kamus-python/bab-3.html#kata-32",
         "category": "Kamus Python - Bab 3",
-        "keywords": "not kata 32"
+        "keywords": "📖 kata 32: not"
     },
     {
         "title": "📖 KATA 33: in",
         "preview": "Mesin pencari kilat. Menggantikan tugas kita untuk mengecek satu per satu apakah sebuah data/barang ada di dalam sebuah ...",
         "url": "kamus-python/bab-3.html#kata-33",
         "category": "Kamus Python - Bab 3",
-        "keywords": "in kata 33"
+        "keywords": "📖 kata 33: in"
     },
     {
         "title": "📖 KATA 34: for",
         "preview": "Lakukan pekerjaan ini berulang-ulang sampai barangnya habis. Ini dipakai kalau kita sudah tahu pasti berapa banyak jumla...",
         "url": "kamus-python/bab-4.html#kata-34",
         "category": "Kamus Python - Bab 4",
-        "keywords": "for kata 34"
+        "keywords": "📖 kata 34: for"
     },
     {
         "title": "📖 KATA 35: while",
         "preview": "Lakukan pekerjaan ini berulang-ulang terus-menerus tanpa henti, SELAMA syaratnya masih Benar (True). Ini dipakai kalau k...",
         "url": "kamus-python/bab-4.html#kata-35",
         "category": "Kamus Python - Bab 4",
-        "keywords": "while kata 35"
+        "keywords": "📖 kata 35: while"
     },
     {
         "title": "📖 KATA 36: range",
         "preview": "Mesin pencetak daftar angka urut secara instan. Sangat sering dikawinkan dengan kata for untuk menentukan berapa kali ki...",
         "url": "kamus-python/bab-4.html#kata-36",
         "category": "Kamus Python - Bab 4",
-        "keywords": "range kata 36"
+        "keywords": "📖 kata 36: range"
     },
     {
         "title": "📖 KATA 37: break",
         "preview": "Tombol darurat. Perintah untuk menghentikan putaran secara paksa dan langsung keluar, meskipun tugasnya aslinya belum se...",
         "url": "kamus-python/bab-4.html#kata-37",
         "category": "Kamus Python - Bab 4",
-        "keywords": "break kata 37"
+        "keywords": "📖 kata 37: break"
     },
     {
         "title": "📖 KATA 38: continue",
         "preview": "Tombol lompat (skip). Perintah untuk melewati/mengabaikan putaran yang sedang berjalan saat ini, dan langsung melompat k...",
         "url": "kamus-python/bab-4.html#kata-38",
         "category": "Kamus Python - Bab 4",
-        "keywords": "continue kata 38"
+        "keywords": "📖 kata 38: continue"
     },
     {
         "title": "📖 KATA 39: def",
         "preview": "\"Komputer, tolong catat dan ingat resep baru ini ya. Jangan langsung dimasak sekarang, ingat-ingat saja dulu sampai nant...",
         "url": "kamus-python/bab-5.html#kata-39",
         "category": "Kamus Python - Bab 5",
-        "keywords": "def kata 39"
+        "keywords": "📖 kata 39: def"
     },
     {
         "title": "📖 KATA 40: return",
         "preview": "Instruksi kepada komputer untuk memberikan hasil akhir dari resep yang sudah dia kerjakan, agar hasil itu bisa kita simp...",
         "url": "kamus-python/bab-5.html#kata-40",
         "category": "Kamus Python - Bab 5",
-        "keywords": "return kata 40"
+        "keywords": "📖 kata 40: return"
     },
     {
         "title": "📖 KATA 41: parameter & argument",
         "preview": "Parameter: \"Lubang\" kosong di dalam kurung resep (def) yang sengaja dibiarkan kosong, menunggu diisi bahan nanti saat re...",
         "url": "kamus-python/bab-5.html#kata-41",
         "category": "Kamus Python - Bab 5",
-        "keywords": "parameter & argument kata 41"
+        "keywords": "📖 kata 41: parameter & argument"
     },
     {
         "title": "📖 KATA 42: default parameter",
         "preview": "Bahan cadangan yang akan otomatis dipakai oleh komputer JIKA Anda (sebagai user) lupa/malas memasukkan bahan saat memang...",
         "url": "kamus-python/bab-5.html#kata-42",
         "category": "Kamus Python - Bab 5",
-        "keywords": "default parameter kata 42"
+        "keywords": "📖 kata 42: default parameter"
+    },
+    {
+        "title": "📖 KATA 42b: scope",
+        "preview": "Aturan yang menentukan siapa yang boleh melihat dan memakai suatu Variabel (kotak data). Variabel yang dibuat di dalam f...",
+        "url": "kamus-python/bab-5.html#kata-42b",
+        "category": "Kamus Python - Bab 5",
+        "keywords": "📖 kata 42b: scope"
     },
     {
         "title": "📖 KATA 43: import",
         "preview": "\"Komputer, tolong pergi ke gudang dan ambilkan sekotak alat bernama X bawa ke ruang kerjaku sekarang.\"",
         "url": "kamus-python/bab-6.html#kata-43",
         "category": "Kamus Python - Bab 6",
-        "keywords": "import kata 43"
+        "keywords": "📖 kata 43: import"
     },
     {
         "title": "📖 KATA 44: from ... import",
         "preview": "\"Komputer, dari gudang X, aku tidak butuh satu kotak penuh. Tolong ambilkan alat spesifik bernama Y saja.\"",
         "url": "kamus-python/bab-6.html#kata-44",
         "category": "Kamus Python - Bab 6",
-        "keywords": "from ... import kata 44"
+        "keywords": "📖 kata 44: from ... import"
     },
     {
         "title": "📖 KATA 45: as",
         "preview": "Mengganti nama alat yang kita pinjam dengan julukan (alias) yang lebih pendek atau lebih gampang diingat.",
         "url": "kamus-python/bab-6.html#kata-45",
         "category": "Kamus Python - Bab 6",
-        "keywords": "as kata 45"
+        "keywords": "📖 kata 45: as"
     },
     {
         "title": "📖 KATA 46: pip install",
         "preview": "\"Tolong pergi ke toko alat sedunia di internet, cari alat bernama X, lalu beli dan bawa pulang ke laptopku.\"",
         "url": "kamus-python/bab-6.html#kata-46",
         "category": "Kamus Python - Bab 6",
-        "keywords": "pip install kata 46"
+        "keywords": "📖 kata 46: pip install"
     },
     {
         "title": "📖 KATA 47: pip list",
         "preview": "\"Tolong catat dan sebutkan semua alat tambahan yang sudah pernah aku beli dan simpan di laptop ini.\"",
         "url": "kamus-python/bab-6.html#kata-47",
         "category": "Kamus Python - Bab 6",
-        "keywords": "pip list kata 47"
+        "keywords": "📖 kata 47: pip list"
+    },
+    {
+        "title": "🎁 BONUS: Membuat Modul Sendiri",
+        "preview": "",
+        "url": "kamus-python/bab-6.html#bonus-modul",
+        "category": "Kamus Python - Bab 6",
+        "keywords": "🎁 bonus: membuat modul sendiri"
     },
     {
         "title": "📖 KATA 48: try",
         "preview": "\"Komputer, aku tahu instruksi ini agak berisiko dan mungkin bisa gagal. Jadi, coba saja dulu secara perlahan. Kalau gaga...",
         "url": "kamus-python/bab-7.html#kata-48",
         "category": "Kamus Python - Bab 7",
-        "keywords": "try kata 48"
+        "keywords": "📖 kata 48: try"
     },
     {
         "title": "📖 KATA 49: except",
         "preview": "Rencana B (Rencana Cadangan). \"Kalau instruksi di dalam kotak try tadi benar-benar gagal/error, segera tangkap error-nya...",
         "url": "kamus-python/bab-7.html#kata-49",
         "category": "Kamus Python - Bab 7",
-        "keywords": "except kata 49"
+        "keywords": "📖 kata 49: except"
     },
     {
         "title": "📖 KATA 50: finally",
         "preview": "Instruksi mutlak sang \"tukang bersih-bersih\". \"Komputer, tidak peduli apakah proses tadi berhasil dengan mulus atau beru...",
         "url": "kamus-python/bab-7.html#kata-50",
         "category": "Kamus Python - Bab 7",
-        "keywords": "finally kata 50"
+        "keywords": "📖 kata 50: finally"
     },
     {
         "title": "📖 KATA 51: else",
         "preview": "\"Komputer, ini hadiah atau langkah ekstra yang HANYA boleh kamu lakukan JIKA instruksi di dalam try tadi sukses 100% tan...",
         "url": "kamus-python/bab-7.html#kata-51",
         "category": "Kamus Python - Bab 7",
-        "keywords": "else kata 51"
+        "keywords": "📖 kata 51: else"
     },
     {
         "title": "📖 KATA 52: except Exception as e",
         "preview": "\"Komputer, kalau ada error, tolong jangan cuma bilang 'Gagal!', tapi tangkap pesan asli dari error tersebut, masukkan ke...",
         "url": "kamus-python/bab-7.html#kata-52",
         "category": "Kamus Python - Bab 7",
-        "keywords": "except exception as e kata 52"
+        "keywords": "📖 kata 52: except exception as e"
     },
     {
         "title": "📖 KATA 53: raise",
         "preview": "\"Komputer, aku tahu secara sistem ini bukan error, tapi menurut aturan bisnisku ini sangat fatal! Tolong bunyikan alarm ...",
         "url": "kamus-python/bab-7.html#kata-53",
         "category": "Kamus Python - Bab 7",
-        "keywords": "raise kata 53"
+        "keywords": "📖 kata 53: raise"
     },
     {
         "title": "📖 KATA 54: class",
         "preview": "\"Komputer, aku tidak mau bikin barang satu per satu lagi. Tolong buatkan aku satu cetakan raksasa. Semua barang yang kel...",
         "url": "kamus-python/bab-8.html#kata-54",
         "category": "Kamus Python - Bab 8",
-        "keywords": "class kata 54"
+        "keywords": "📖 kata 54: class"
     },
     {
         "title": "📖 KATA 55: object / instance",
         "preview": "Hasil jadi yang keluar dari cetakan class dan sudah berbentuk nyata, bisa dipegang, dan bisa dimodifikasi.",
         "url": "kamus-python/bab-8.html#kata-55",
         "category": "Kamus Python - Bab 8",
-        "keywords": "object / instance kata 55"
+        "keywords": "📖 kata 55: object / instance"
     },
     {
         "title": "📖 KATA 56: __init__",
         "preview": "\"Komputer, setiap kali ada barang baru yang selesai dicetak dari pabrik ini, tolong langsung otomatis jalankan instruksi...",
         "url": "kamus-python/bab-8.html#kata-56",
         "category": "Kamus Python - Bab 8",
-        "keywords": "__init__ kata 56"
+        "keywords": "📖 kata 56: __init__"
     },
     {
         "title": "📖 KATA 57: self",
         "preview": "Kata ganti penunjuk \"aku\" atau \"milikku\". Digunakan agar cetakan tidak bingung sedang berurusan dengan barang (object) y...",
         "url": "kamus-python/bab-8.html#kata-57",
         "category": "Kamus Python - Bab 8",
-        "keywords": "self kata 57"
+        "keywords": "📖 kata 57: self"
     },
     {
         "title": "📖 KATA 58: Attribute / Property",
         "preview": "Data, informasi, atau ciri-ciri fisik yang menempel permanen pada sebuah barang (object) yang sudah dicetak.",
         "url": "kamus-python/bab-8.html#kata-58",
         "category": "Kamus Python - Bab 8",
-        "keywords": "attribute / property kata 58"
+        "keywords": "📖 kata 58: attribute / property"
     },
     {
         "title": "📖 KATA 59: Method",
         "preview": "Fungsi (def) yang hidup dan hanya bisa digunakan di dalam sebuah cetakan (class). Ini adalah daftar aksi yang \"bisa dila...",
         "url": "kamus-python/bab-8.html#kata-59",
         "category": "Kamus Python - Bab 8",
-        "keywords": "method kata 59"
+        "keywords": "📖 kata 59: method"
     },
     {
         "title": "📖 KATA 60: Inheritance",
         "preview": "\"Komputer, aku mau bikin cetakan baru, tapi aku malas bikin dari nol. Tolong jiplak 100% cetakan yang lama, lalu aku aka...",
         "url": "kamus-python/bab-8.html#kata-60",
         "category": "Kamus Python - Bab 8",
-        "keywords": "inheritance kata 60"
+        "keywords": "📖 kata 60: inheritance"
     },
     {
         "title": "📖 KATA 61: super()",
         "preview": "Perintah khusus yang diteriakkan oleh cetakan \"Anak\" untuk meminta bantuan kepada cetakan \"Induk\"-nya saat sedang mengat...",
         "url": "kamus-python/bab-8.html#kata-61",
         "category": "Kamus Python - Bab 8",
-        "keywords": "super() kata 61"
+        "keywords": "📖 kata 61: super()"
     },
     {
         "title": "📘 Istilah: Artificial Intelligence (AI)",
@@ -1638,31 +1652,38 @@ const searchData = [
         "keywords": "monolith"
     },
     {
-        "title": "🔴 Error: SyntaxError",
+        "title": "🔴 Error: 🔴 1. SyntaxError",
         "preview": "\"Bos, ejaannya salah nih! Coba cek lagi, ada tanda baca yang kurang gak?\"",
         "url": "peringatan-error/index.html#error-1",
         "category": "Peringatan Error",
-        "keywords": "syntaxerror"
+        "keywords": "🔴 1. syntaxerror"
     },
     {
-        "title": "🔴 Error: NameError",
+        "title": "🔴 Error: 🔴 2. NameError",
         "preview": "\"Bos, Anda nyuruh saya nyari data bernama 'Budi', tapi saya cari-cari di sistem gak ada yang namanya 'Budi'!\"",
         "url": "peringatan-error/index.html#error-2",
         "category": "Peringatan Error",
-        "keywords": "nameerror"
+        "keywords": "🔴 2. nameerror"
     },
     {
-        "title": "🔴 Error: TypeError",
+        "title": "🔴 Error: 🔴 3. TypeError",
         "preview": "\"Bos, Anda nyuruh saya mencampur Air dengan Minyak! Ya gak bisa bersatu dong!\"",
         "url": "peringatan-error/index.html#error-3",
         "category": "Peringatan Error",
-        "keywords": "typeerror"
+        "keywords": "🔴 3. typeerror"
     },
     {
-        "title": "🔴 Error: IndentationError",
+        "title": "🔴 Error: 🔴 4. IndentationError",
         "preview": "\"Bos, Python itu penderita OCD (Obsessive Compulsive Disorder). Kalau spasinya gak rata, saya gak mau kerja!\"",
         "url": "peringatan-error/index.html#error-4",
         "category": "Peringatan Error",
-        "keywords": "indentationerror"
+        "keywords": "🔴 4. indentationerror"
+    },
+    {
+        "title": "🎁 BONUS: Membuat Modul Sendiri",
+        "preview": "Selain meminjam dari Python, Anda bisa membuat alat buatan Anda sendiri! Caranya sangat mudah dengan membuat file .py terpisah.",
+        "url": "kamus-python/bab-6.html#bonus-modul",
+        "category": "Kamus Python - Bab 6",
+        "keywords": "bonus modul import file"
     }
 ];
