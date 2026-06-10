@@ -735,6 +735,30 @@
 
         </div> <!-- glossary-grid -->
     </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">↑</button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        
+        // Tampilkan tombol saat pengguna scroll ke bawah
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+
+        // Kembali ke atas dengan animasi mulus saat ditekan
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 </body>
 </html>
 
