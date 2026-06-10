@@ -366,3 +366,17 @@ code[class*="language-"] {
     background: var(--accent-hover);
     transform: translateY(-3px) scale(1.05);
 }
+
+/* --- DEEP LINK HIGHLIGHT --- */
+.word-card, .term-card, .error-card {
+    scroll-margin-top: 3rem;
+}
+.word-card:target, .term-card:target, .error-card:target {
+    animation: highlightCard 2.5s ease-out;
+}
+
+@keyframes highlightCard {
+    0% { box-shadow: 0 0 0 4px var(--accent), 0 0 30px rgba(56, 189, 248, 0.4); transform: scale(1.02); }
+    10% { box-shadow: 0 0 0 4px var(--accent), 0 0 30px rgba(56, 189, 248, 0.6); transform: scale(1.02); }
+    100% { box-shadow: 0 0 0 0px transparent, 0 0 0px transparent; transform: scale(1); }
+}
