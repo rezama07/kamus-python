@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 9: Berkomunikasi dengan Koki Robot - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 9 dari 17 &mdash; Berkomunikasi dengan Koki Robot (Dasar LLM & API)</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 9: BERKOMUNIKASI DENGAN KOKI ROBOT</h1>
+            <p style="color: var(--text-secondary);">Bab 9 / Kamus Python (Dasar LLM & API)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Selamat! Anda sudah menguasai cara menggunakan alat masak (Python). Tapi, untuk membuat restoran skala besar, Anda tidak perlu memasak semuanya sendiri. Anda bisa "menyewa" Koki Robot super pintar. Bab ini berisi kosa kata untuk berkomunikasi dan mempekerjakan robot tersebut.</p>
+            </div>
+
+            <!-- Kata 63 -->
+            <div class="word-card" id="kata-63">
+                <h3 class="word-title">📖 KATA 63: LLM (Large Language Model) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: el-el-em / artinya: Model Bahasa Raksasa)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Otak utama dari kecerdasan buatan (AI) yang sudah dilatih dengan cara disuruh membaca hampir seluruh tulisan di internet, sehingga ia bisa merespons obrolan, menulis kode, atau meringkas teks layaknya manusia pintar.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan seorang Koki Robot Jenius yang sudah membaca jutaan buku resep dari seluruh dunia. Dia tahu segalanya tentang makanan. Anda tinggal sebutkan bahan yang Anda punya, dan dia bisa langsung menciptakan resep baru. (Contoh LLM di dunia nyata: ChatGPT dari OpenAI, Gemini dari Google).</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>LLM sangat pintar bicara, tapi dia tidak punya "mata" ke dunia nyata. Jika Anda tidak memberinya konteks yang jelas, dia bisa Halusinasi (mengarang jawaban dengan sangat meyakinkan).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH PEMAKAIAN:</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Di Python, kita tidak membuat LLM dari nol karena butuh triliunan rupiah. Kita memanggilnya:</p>
+                    <pre><code class="language-python"># Komputer, tolong sambungkan aku ke LLM milik Google (Gemini) sekarang!
+from google import genai
+
+client = genai.Client()
+response = client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents="Tuliskan resep Nasi Goreng Spesial dalam 3 langkah singkat.",
+)
+print(response.text)</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 64 -->
+            <div class="word-card" id="kata-64">
+                <h3 class="word-title">📖 KATA 64: Prompt <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: promp / artinya: Perintah / Instruksi)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Teks pesanan atau instruksi yang kita ketikkan untuk menyuruh si AI (LLM) bekerja.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Kertas pesanan yang diberikan pelayan kepada Koki. Kalau di kertas itu cuma tertulis "Bikin Nasi", si Koki bisa saja membuat nasi goreng, nasi uduk, atau nasi putih biasa (hasilnya acak). Tapi kalau prompt-nya jelas: "Bikin nasi goreng spesial, tidak pedas, pakai telur mata sapi setengah matang", Koki akan memberikan hasil yang sempurna.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Berlaku hukum GIGO (Garbage In, Garbage Out). Jika instruksi (prompt) Anda jelek dan tidak jelas, maka jawaban AI pasti akan jelek dan melenceng.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># Menyiapkan pesanan (Prompt) yang sangat spesifik
+pesanan_saya = "Tolong ringkas artikel ini menjadi 3 poin saja, gunakan bahasa gaul anak Jaksel."
+
+# Mengirim pesanan ke Koki Robot
+jawaban = model_ai.generate_content(pesanan_saya)</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 65 -->
+            <div class="word-card" id="kata-65">
+                <h3 class="word-title">📖 KATA 65: Token <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: to-ken / artinya: Potongan Kata / Koin Biaya)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Cara komputer (AI) memotong-motong kata untuk dibaca. Sekaligus menjadi "mata uang" untuk menghitung berapa biaya tagihan yang harus Anda bayar ke penyedia AI.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti bermain mesin capit (Arcade) di mal. Setiap kali mesin capit itu bergerak, Anda harus memasukkan "Koin Token". Di dunia AI, 1 Token kira-kira sama dengan 3/4 kata. Jika Anda menyuruh AI membaca buku setebal 1000 halaman, AI tersebut akan "memakan" ratusan ribu token Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Seorang AI Engineer wajib pelit token! Jangan mengirim teks yang tidak perlu ke dalam AI, karena token yang membengkak akan membuat aplikasi Anda lambat dan tagihan bulanan perusahaan jebol.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH PEMAKAIAN:</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Kata "Kucing" mungkin dihitung 1 token. Tapi kata "Menyembunyikan" bisa dipotong AI menjadi 3 token: "Meny" - "embunyi" - "kan".</p>
+                </div>
+            </div>
+
+            <!-- Kata 66 -->
+            <div class="word-card" id="kata-66">
+                <h3 class="word-title">📖 KATA 66: API Key <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ei-pi-ai ki / artinya: Kunci Akses Layanan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Kata sandi (password) super rahasia yang unik milik Anda, yang digunakan agar kode Python Anda diizinkan masuk dan meminjam AI dari perusahaan besar (seperti Google atau OpenAI).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Koki Robot Jenius (Gemini) itu disimpan di dalam gedung Google yang dijaga ketat. Untuk memanggilnya keluar agar mau memasak untuk aplikasi Anda, Anda harus menggesekkan Kartu ID Khusus (API Key). Tanpa kartu ini, satpam Google akan menolak Anda masuk.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (JEBAKAN MAUT):</h4>
+                    <p>API Key ibarat kartu kredit Anda! JANGAN PERNAH mengetikkan API Key langsung ke dalam kodingan dan membagikannya ke internet/GitHub. Jika dicuri peretas, mereka bisa memakai AI atas nama Anda, dan Anda yang akan ditagih biayanya!</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># CARA SALAH DAN BERBAHAYA:
+# kunci_saya = "AIzaSyB123rahasiaJANGANdicuri"
+
+# CARA AI ENGINEER PROFESIONAL (Mengambil kunci dari brankas tersembunyi):
+import os
+kunci_saya = os.getenv("RAHASIA_API_KEY")</code></pre>
+                </div>
+            </div>
+
+            <div class="embed-container" id="trinket-container">
+                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=import%20os%0Akunci%20%3D%20os.getenv(%22RAHASIA_API_KEY%22)%0Aprint(%22API%20Key%20siap%20digunakan!%22)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="bab-8.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+                <a href="bab-10.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
+            </div>
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>

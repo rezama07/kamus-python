@@ -6,7 +6,8 @@ const baseDir = __dirname;
 let searchData = [];
 
 // 1. Kamus Python
-for (let i = 1; i <= 8; i++) {
+const chapterList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17];
+for (let i of chapterList) {
     const filePath = path.join(baseDir, 'kamus-python', `bab-${i}.html`);
     if (!fs.existsSync(filePath)) continue;
     

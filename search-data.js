@@ -441,6 +441,216 @@ const searchData = [
         "keywords": "📖 kata 61: super()"
     },
     {
+        "title": "📖 KATA 63: LLM (Large Language Model)",
+        "preview": "Otak utama dari kecerdasan buatan (AI) yang sudah dilatih dengan cara disuruh membaca hampir seluruh tulisan di internet...",
+        "url": "kamus-python/bab-9.html#kata-63",
+        "category": "Kamus Python - Bab 9",
+        "keywords": "📖 kata 63: llm (large language model)"
+    },
+    {
+        "title": "📖 KATA 64: Prompt",
+        "preview": "Teks pesanan atau instruksi yang kita ketikkan untuk menyuruh si AI (LLM) bekerja.",
+        "url": "kamus-python/bab-9.html#kata-64",
+        "category": "Kamus Python - Bab 9",
+        "keywords": "📖 kata 64: prompt"
+    },
+    {
+        "title": "📖 KATA 65: Token",
+        "preview": "Cara komputer (AI) memotong-motong kata untuk dibaca. Sekaligus menjadi \"mata uang\" untuk menghitung berapa biaya tagiha...",
+        "url": "kamus-python/bab-9.html#kata-65",
+        "category": "Kamus Python - Bab 9",
+        "keywords": "📖 kata 65: token"
+    },
+    {
+        "title": "📖 KATA 66: API Key",
+        "preview": "Kata sandi (password) super rahasia yang unik milik Anda, yang digunakan agar kode Python Anda diizinkan masuk dan memin...",
+        "url": "kamus-python/bab-9.html#kata-66",
+        "category": "Kamus Python - Bab 9",
+        "keywords": "📖 kata 66: api key"
+    },
+    {
+        "title": "📖 KATA 67: RAG (Retrieval-Augmented Generation)",
+        "preview": "Sebuah teknik pintar di mana kita memaksa AI untuk mencari (Retrieve) jawaban dari dokumen rahasia milik kita terlebih d...",
+        "url": "kamus-python/bab-10.html#kata-67",
+        "category": "Kamus Python - Bab 10",
+        "keywords": "📖 kata 67: rag (retrieval-augmented generation)"
+    },
+    {
+        "title": "📖 KATA 68: Chunking",
+        "preview": "Proses menggunting-gunting dokumen panjang (misal: PDF 1000 halaman) menjadi paragraf-paragraf kecil agar otak AI tidak ...",
+        "url": "kamus-python/bab-10.html#kata-68",
+        "category": "Kamus Python - Bab 10",
+        "keywords": "📖 kata 68: chunking"
+    },
+    {
+        "title": "📖 KATA 69: Embeddings",
+        "preview": "Proses ajaib mengubah teks (kata/kalimat manusia) menjadi deretan angka matematika (vektor), sehingga komputer bisa mema...",
+        "url": "kamus-python/bab-10.html#kata-69",
+        "category": "Kamus Python - Bab 10",
+        "keywords": "📖 kata 69: embeddings"
+    },
+    {
+        "title": "📖 KATA 70: Vector Database",
+        "preview": "Gudang khusus (seperti Pinecone, Milvus, atau Chroma) yang dibangun semata-mata untuk menyimpan angka-angka koordinat (E...",
+        "url": "kamus-python/bab-10.html#kata-70",
+        "category": "Kamus Python - Bab 10",
+        "keywords": "📖 kata 70: vector database"
+    },
+    {
+        "title": "📖 KATA 71: Agent",
+        "preview": "Sebuah sistem di mana otak AI (LLM) tidak lagi sekadar menjawab pertanyaan, tetapi diberikan kebebasan untuk berpikir, m...",
+        "url": "kamus-python/bab-11.html#kata-71",
+        "category": "Kamus Python - Bab 11",
+        "keywords": "📖 kata 71: agent"
+    },
+    {
+        "title": "📖 KATA 72: Tools / Function Calling",
+        "preview": "Senjata, alat, atau aplikasi luar (seperti Kalkulator, Browser Internet, atau Google Calendar) yang kita pasangkan ke ta...",
+        "url": "kamus-python/bab-11.html#kata-72",
+        "category": "Kamus Python - Bab 11",
+        "keywords": "📖 kata 72: tools / function calling"
+    },
+    {
+        "title": "📖 KATA 73: LangChain / LangGraph",
+        "preview": "Kerangka kerja (framework) andalan para AI Engineer di Python yang digunakan untuk merakit otak AI (LLM), ingatan AI (RA...",
+        "url": "kamus-python/bab-11.html#kata-73",
+        "category": "Kamus Python - Bab 11",
+        "keywords": "📖 kata 73: langchain / langgraph"
+    },
+    {
+        "title": "📖 KATA 74: NumPy",
+        "preview": "Sebuah Library (alat pinjaman) ajaib di Python yang diciptakan khusus untuk menghitung jutaan angka dalam sekejap mata.",
+        "url": "kamus-python/bab-12.html#kata-74",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 74: numpy"
+    },
+    {
+        "title": "📖 KATA 75: Array",
+        "preview": "Tempat penyimpanan khusus buatan NumPy. Bentuknya seperti rak bersusun yang sangat sangat rapi, khusus untuk menyimpan a...",
+        "url": "kamus-python/bab-12.html#kata-75",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 75: array"
+    },
+    {
+        "title": "📖 KATA 76: Pandas",
+        "preview": "Library (alat pinjaman) paling terkenal di dunia Python untuk membuka, membaca, dan mengacak-acak data berbentuk tabel. ...",
+        "url": "kamus-python/bab-12.html#kata-76",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 76: pandas"
+    },
+    {
+        "title": "📖 KATA 77: DataFrame",
+        "preview": "Sebutan resmi di dunia Python untuk sebuah \"Tabel\" yang dihasilkan oleh Pandas. Ia memiliki baris ke bawah dan kolom ke ...",
+        "url": "kamus-python/bab-12.html#kata-77",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 77: dataframe"
+    },
+    {
+        "title": "📖 KATA 78: Data Cleaning",
+        "preview": "Pekerjaan kuli (namun sangat penting) untuk membuang, menambal, atau merapikan data-data yang rusak, kosong, atau salah ...",
+        "url": "kamus-python/bab-12.html#kata-78",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 78: data cleaning"
+    },
+    {
+        "title": "📖 KATA 79: Data Pipeline",
+        "preview": "Rangkaian skrip kodingan yang dirakit secara otomatis untuk menyedot data kotor dari satu tempat, mencucinya di tengah j...",
+        "url": "kamus-python/bab-12.html#kata-79",
+        "category": "Kamus Python - Bab 12",
+        "keywords": "📖 kata 79: data pipeline"
+    },
+    {
+        "title": "📖 KATA 93: LangSmith",
+        "preview": "Sebuah platform dashboard visual (masih satu perusahaan dengan LangChain) yang memungkinkan Anda melihat \"isi kepala\" at...",
+        "url": "kamus-python/bab-15.html#kata-93",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 93: langsmith"
+    },
+    {
+        "title": "📖 KATA 94: Logging",
+        "preview": "Proses menyuruh komputer untuk secara otomatis mencatat setiap kejadian penting (sukses atau gagal) ke dalam sebuah file...",
+        "url": "kamus-python/bab-15.html#kata-94",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 94: logging"
+    },
+    {
+        "title": "📖 KATA 95: Too Many Requests (Error 429)",
+        "preview": "Pesan error (penolakan) dari penyedia AI (seperti Google / OpenAI) karena aplikasi kita mengirimkan terlalu banyak perta...",
+        "url": "kamus-python/bab-15.html#kata-95",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 95: too many requests (error 429)"
+    },
+    {
+        "title": "📖 KATA 96: Latency",
+        "preview": "Total waktu yang dibutuhkan sistem mulai dari pelanggan menekan tombol \"Kirim\" hingga jawaban pertama dari AI muncul di ...",
+        "url": "kamus-python/bab-15.html#kata-96",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 96: latency"
+    },
+    {
+        "title": "📖 KATA 97: Throughput",
+        "preview": "Jumlah maksimal pesanan/tugas yang bisa diselesaikan oleh sistem AI Anda dalam kurun waktu tertentu (biasanya dihitung p...",
+        "url": "kamus-python/bab-15.html#kata-97",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 97: throughput"
+    },
+    {
+        "title": "📖 KATA 98: Timeout",
+        "preview": "Keputusan tegas dari sistem untuk memutus koneksi secara paksa karena Koki AI terlalu lama berpikir dan tidak kunjung me...",
+        "url": "kamus-python/bab-15.html#kata-98",
+        "category": "Kamus Python - Bab 15",
+        "keywords": "📖 kata 98: timeout"
+    },
+    {
+        "title": "📖 KATA 99: Agentic IDE",
+        "preview": "Aplikasi tempat menulis kode (seperti VS Code) yang sudah \"kerasukan\" kecerdasan buatan. Aplikasi ini bisa membaca selur...",
+        "url": "kamus-python/bab-16.html#kata-99",
+        "category": "Kamus Python - Bab 16",
+        "keywords": "📖 kata 99: agentic ide"
+    },
+    {
+        "title": "📖 KATA 100: Claude 3.5 Sonnet / Frontend AI",
+        "preview": "Model AI spesifik (buatan perusahaan Anthropic) yang saat ini diakui oleh para Engineer seluruh dunia sebagai model pali...",
+        "url": "kamus-python/bab-16.html#kata-100",
+        "category": "Kamus Python - Bab 16",
+        "keywords": "📖 kata 100: claude 3.5 sonnet / frontend ai"
+    },
+    {
+        "title": "📖 KATA 101: Reasoning Models",
+        "preview": "Model AI generasi terbaru yang dirancang untuk \"berpikir pelan dan panjang\" sebelum memberikan jawaban. Model ini sangat...",
+        "url": "kamus-python/bab-16.html#kata-101",
+        "category": "Kamus Python - Bab 16",
+        "keywords": "📖 kata 101: reasoning models"
+    },
+    {
+        "title": "📖 KATA 102: Pair Programming",
+        "preview": "Budaya kerja Engineer modern di mana Anda (Manusia) dan AI bekerja berdua di satu layar yang sama secara bergantian sepe...",
+        "url": "kamus-python/bab-16.html#kata-102",
+        "category": "Kamus Python - Bab 16",
+        "keywords": "📖 kata 102: pair programming"
+    },
+    {
+        "title": "📖 KATA 103: Git & GitHub",
+        "preview": "Git: Mesin waktu yang dipasang di dalam laptop Anda untuk merekam setiap perubahan kode yang Anda ketik (detik demi deti...",
+        "url": "kamus-python/bab-17.html#kata-103",
+        "category": "Kamus Python - Bab 17",
+        "keywords": "📖 kata 103: git & github"
+    },
+    {
+        "title": "📖 KATA 104: Pull Request (PR)",
+        "preview": "Proses mengajukan izin secara resmi kepada \"Ketua Koki\" (Lead Engineer) agar kode baru yang baru saja Anda ketik boleh d...",
+        "url": "kamus-python/bab-17.html#kata-104",
+        "category": "Kamus Python - Bab 17",
+        "keywords": "📖 kata 104: pull request (pr)"
+    },
+    {
+        "title": "📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment)",
+        "preview": "Robot pabrik (seperti GitHub Actions) yang akan langsung bekerja secara otomatis setiap kali Anda selesai melakukan Pull...",
+        "url": "kamus-python/bab-17.html#kata-105",
+        "category": "Kamus Python - Bab 17",
+        "keywords": "📖 kata 105: ci/cd (continuous integration / continuous deployment)"
+    },
+    {
         "title": "📘 Istilah: Artificial Intelligence (AI)",
         "preview": "Kecerdasan buatan. Kemampuan komputer untuk meniru cara berpikir, belajar, dan mengambil keputusan layaknya manusia.",
         "url": "glosarium/index.html#term-1",

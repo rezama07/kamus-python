@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 10: Memberi Ingatan Khusus - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 10 dari 17 &mdash; Memberi Ingatan Khusus (Dasar RAG & Vector Data)</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 10: MEMBERI INGATAN KHUSUS</h1>
+            <p style="color: var(--text-secondary);">Bab 10 / Kamus Python (Dasar RAG & Vector Data)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Sebuah AI (Koki Robot) yang baru Anda panggil dari Google atau OpenAI itu pintar secara umum, tapi dia tidak tahu apa-apa tentang perusahaan Anda. Jika Anda bertanya jadwal cuti karyawan di perusahaan Anda, dia akan mengarang jawaban (Halusinasi). Bab ini berisi kosa kata tentang bagaimana cara kita "mencekokkan" buku panduan rahasia perusahaan ke otak AI tersebut.</p>
+            </div>
+
+            <!-- Kata 67 -->
+            <div class="word-card" id="kata-67">
+                <h3 class="word-title">📖 KATA 67: RAG (Retrieval-Augmented Generation) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: reg / artinya: Menjawab Sambil Buka Buku)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Sebuah teknik pintar di mana kita memaksa AI untuk mencari (Retrieve) jawaban dari dokumen rahasia milik kita terlebih dahulu, dan melarangnya menjawab menggunakan hafalannya sendiri.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan Koki Robot sedang ikut ujian resep rahasia restoran Anda. Kalau dibiarkan menjawab dari otaknya sendiri (Generative AI biasa), dia akan menjawab pakai resep umum dari internet. Dengan teknik RAG, ujian tersebut diubah menjadi Open Book Exam (Ujian Buka Buku). Koki Robot diwajibkan membaca buku resep rahasia Anda dulu sebelum meracik jawaban.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Sistem RAG yang baik akan menjawab "Saya tidak tahu" jika jawabannya memang tidak ada di dalam dokumen Anda. Ini sangat penting agar perusahaan tidak dituntut karena AI menyebarkan informasi palsu.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
+                    <pre><code class="language-python"># 1. AI Biasa (Tanpa RAG) -> Sering Halusinasi
+ai.tanya("Berapa sisa cutiku?")
+
+# 2. AI dengan RAG -> Menjawab sesuai buku panduan
+ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 68 -->
+            <div class="word-card" id="kata-68">
+                <h3 class="word-title">📖 KATA 68: Chunking <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: cang-king / artinya: Memotong-motong)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Proses menggunting-gunting dokumen panjang (misal: PDF 1000 halaman) menjadi paragraf-paragraf kecil agar otak AI tidak kewalahan saat membacanya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Koki Robot Anda pintar, tapi ukuran mulutnya sangat kecil. Anda tidak bisa menyuapkan 1 kue tart utuh (PDF 1000 halaman) ke dalam mulutnya sekaligus, dia akan tersedak (Error: Token Limit Exceeded). Jadi, Anda harus memotong kue itu menjadi seukuran sendok (Chunking) sebelum menyuapkannya.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Jangan memotong terlalu kecil (hanya 1 kata) karena maknanya akan hilang. Jangan juga memotong terlalu besar (3 halaman) karena memori AI akan kepenuhan. Memilih ukuran potongan yang pas adalah keahlian utama seorang AI Engineer.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
+                    <pre><code class="language-python">from langchain import PemotongTeks
+
+# Kita suruh mesin memotong buku tebal menjadi per 100 huruf
+tukang_potong = PemotongTeks(ukuran_potongan=100)
+hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 69 -->
+            <div class="word-card" id="kata-69">
+                <h3 class="word-title">📖 KATA 69: Embeddings <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Proses ajaib mengubah teks (kata/kalimat manusia) menjadi deretan angka matematika (vektor), sehingga komputer bisa memahami "kedekatan makna" antara dua kalimat, bukan sekadar mencari huruf yang sama.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan sebuah peta raksasa. Mesin Embedding akan membaca kata "Raja" dan meletakkannya di koordinat X. Lalu dia membaca kata "Ratu" dan meletakkannya sangat dekat dengan "Raja" karena maknanya mirip. Ketika dia membaca kata "Batu", dia meletakkannya jauh sekali di ujung peta.<br><br>Dengan Embedding, saat pelanggan mencari kata "Mobil", AI tahu bahwa itu sangat mirip dengan dokumen yang berisi kata "Kendaraan Roda Empat", meskipun hurufnya sama sekali tidak ada yang sama!</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
+                    <pre><code class="language-python"># Mengubah kata manusia menjadi bahasa angka agar AI paham
+angka_vektor = mesin_embedding.ubah_ke_angka("Kucing")
+
+print(angka_vektor)
+# Hasilnya bukan teks, tapi deretan angka: [0.124, -0.543, 0.876, ...]</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 70 -->
+            <div class="word-card" id="kata-70">
+                <h3 class="word-title">📖 KATA 70: Vector Database <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Gudang khusus (seperti Pinecone, Milvus, atau Chroma) yang dibangun semata-mata untuk menyimpan angka-angka koordinat (Embedding) tadi, agar bisa dicari dengan kecepatan kilat.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Database biasa (seperti SQL/Excel) itu ibarat "Rak Alfabet" di perpustakaan. Kalau Anda cari buku "Apel", Anda harus lari ke rak huruf A.<br><br>Vector Database itu ibarat "Rak Konsep". Kalau Anda menaruh buku "Apel", perpustakawan otomatis menaruhnya berdekatan dengan buku "Jeruk" dan "Pisang" di rak buah. Jadi saat seseorang mencari "Saya mau bikin jus manis", perpustakawan bisa langsung mengambil semua buku di rak buah itu dalam satu tarikan napas.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
+                    <pre><code class="language-python">import pinecone # Ini adalah salah satu aplikasi Vector Database
+
+# Menyimpan deretan angka (Embedding) tadi ke dalam gudang Pinecone
+pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)</code></pre>
+                </div>
+            </div>
+
+            <div class="embed-container" id="trinket-container">
+                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=vektor%20%3D%20%5B0.124%2C%20-0.543%2C%200.876%5D%0Aprint(%22Nilai%20Embedding%20Vector%3A%22%2C%20vektor)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="bab-9.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+                <a href="bab-11.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
+            </div>
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>

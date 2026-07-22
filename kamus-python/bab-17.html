@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 17: Jalur Perakitan Otomatis - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 17 dari 17 &mdash; Jalur Perakitan Otomatis (Version Control & CI/CD)</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 17: JALUR PERAKITAN OTOMATIS</h1>
+            <p style="color: var(--text-secondary);">Bab 17 / Kamus Python (Version Control & CI/CD)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Bayangkan dapur restoran Anda sekarang memiliki 5 orang koki yang sedang membuat satu resep rahasia bersama-sama. Bagaimana caranya agar jika satu koki melakukan kesalahan (misalnya menuangkan terlalu banyak garam), resep tersebut tidak rusak selamanya? Bab ini adalah kunci kolaborasi tingkat industri.</p>
+            </div>
+
+            <!-- Kata 103 -->
+            <div class="word-card" id="kata-103">
+                <h3 class="word-title">📖 KATA 103: Git & GitHub <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: git dan git-hab / artinya: Mesin Waktu & Gudang Kode)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p><strong>Git:</strong> Mesin waktu yang dipasang di dalam laptop Anda untuk merekam setiap perubahan kode yang Anda ketik (detik demi detik), sehingga Anda bisa membatalkan kesalahan kapan saja.<br>
+                    <strong>GitHub:</strong> Gudang raksasa di internet tempat Anda dan tim menyimpan "buku resep" (kode) tersebut agar bisa dikerjakan bersama dari berbagai laptop yang berbeda.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Bayangkan Anda sedang menulis buku resep di Microsoft Word. Daripada Anda menyimpan file dengan nama <code>Resep_Final.docx</code>, lalu <code>Resep_Final_Revisi.docx</code>, lalu <code>Resep_Final_Revisi_Banget.docx</code>, Git akan secara otomatis menyimpan seluruh sejarah riwayat tulisan Anda dalam satu file rapi. GitHub adalah Google Drive-nya, tempat file itu ditaruh agar bisa diedit bersama-sama.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Sebelum mengunggah kode rahasia perusahaan ke GitHub, pastikan Anda tidak ikut mengunggah kunci brankas (seperti API Key di Kata 66). Gunakan fitur pelindung yang disebut <code>.gitignore</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Perintah Terminal):</h4>
+                    <pre><code class="language-bash"># Merekam perubahan kode di laptop (Save)
+git commit -m "menambahkan fitur balas chat AI"
+
+# Mengunggah kode ke Gudang Internet (GitHub)
+git push origin main</code></pre>
+                </div>
+            </div>
+
+            <!-- Kata 104 -->
+            <div class="word-card" id="kata-104">
+                <h3 class="word-title">📖 KATA 104: Pull Request (PR) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pul ri-kues / artinya: Minta Izin Penggabungan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Proses mengajukan izin secara resmi kepada "Ketua Koki" (Lead Engineer) agar kode baru yang baru saja Anda ketik boleh digabungkan ke dalam buku resep utama milik perusahaan.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Anda adalah koki magang yang baru saja menciptakan saus sambal baru. Anda tidak boleh langsung mencampurkan saus itu ke dalam panci utama yang akan disajikan ke pelanggan. Anda harus menaruhnya di mangkuk kecil, lalu bilang ke Kepala Koki: "Chef, ini saus buatanku (Pull Request), tolong dicicipi. Kalau enak, baru boleh dicampur ke panci utama ya."</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Di perusahaan teknologi yang bagus, seorang Engineer pemula (Junior) diharamkan menekan tombol "Merge" (Gabung) pada PR-nya sendiri. Harus Engineer lain yang me-review (mencicipi) kodenya.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH PEMAKAIAN:</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Tidak ada kode Python. PR dilakukan dengan cara meng-klik tombol "Create Pull Request" di dalam website GitHub.</p>
+                </div>
+            </div>
+
+            <!-- Kata 105 -->
+            <div class="word-card" id="kata-105">
+                <h3 class="word-title">📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
+                    <p>Robot pabrik (seperti GitHub Actions) yang akan langsung bekerja secara otomatis setiap kali Anda selesai melakukan Pull Request atau mengunggah kode baru. Robot ini akan melakukan testing (menguji apakah kodenya error), membungkusnya ke Docker (Kata 83), dan langsung melemparkannya ke server AWS (Kata 88) tanpa Anda perlu menekan tombol apa-apa lagi.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Begitu Kepala Koki mencicipi dan menyetujui saus buatan Anda (PR disetujui), sebuah mesin ban berjalan (Conveyor Belt) akan otomatis menyala. Mesin itu akan menyedot saus Anda, membotolkannya, menempelkan label, dan langsung mengirimkannya ke ribuan minimarket di seluruh negeri detik itu juga. Anda tinggal duduk santai minum kopi.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Jangan pernah mengaktifkan robot "Deploy Otomatis" (CD) jika Anda belum membuat robot "Testing Otomatis" (CI) yang kuat. Kalau kodenya error dan langsung ter-deploy otomatis, seluruh website perusahaan bisa mati seketika.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Potongan skrip instruksi untuk robot GitHub Actions yang disimpan dalam file berakhiran <code>.yml</code>:</p>
+                    <pre><code class="language-yaml"># Contoh instruksi ke robot
+steps:
+  - name: Tes kodingan AI (Continuous Integration)
+    run: python test_bot.py
+  - name: Lempar ke Server (Continuous Deployment)
+    run: kirim_ke_aws_sekarang()</code></pre>
+                </div>
+            </div>
+
+            <div class="embed-container" id="trinket-container">
+                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
+                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
+                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=print(%22Selamat!%20Anda%20telah%20menyelesaikan%20materi%20Kamus%20Python!%22)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
+                </div>
+            </div>
+
+            <div class="chapter-navigation">
+                <a href="bab-16.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
+                <a href="index.html" class="nav-btn next-btn">Daftar Bab &rarr;</a>
+            </div>
+        </div> <!-- content-body -->
+    </div> <!-- container -->
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scrollTopBtn" title="Kembali ke atas">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.addEventListener("scroll", function() {
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                scrollTopBtn.classList.add("show");
+            } else {
+                scrollTopBtn.classList.remove("show");
+            }
+        });
+        scrollTopBtn.addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
