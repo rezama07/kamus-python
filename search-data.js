@@ -1951,5 +1951,12 @@ const searchData = [
         "url": "kamus-python/bab-6.html#bonus-modul",
         "category": "Kamus Python - Bab 6",
         "keywords": "bonus modul import file"
+    },
+    {
+        "title": "📘 Handbook Complete Edition (Printable & PDF)",
+        "preview": "Seluruh materi bab (Bab 1-17), glosarium, dan error dalam 1 dokumen lengkap siap cetak atau simpan ke PDF.",
+        "url": "handbook.html",
+        "category": "Dokumentasi Utama",
+        "keywords": "handbook pdf print cetak ebook panduan"
     }
 ];

@@ -136,6 +136,15 @@ searchData.push({
     keywords: `bonus modul import file`
 });
 
+// Handbook Complete Edition
+searchData.push({
+    title: `📘 Handbook Complete Edition (Printable & PDF)`,
+    preview: `Seluruh materi bab (Bab 1-17), glosarium, dan error dalam 1 dokumen lengkap siap cetak atau simpan ke PDF.`,
+    url: `handbook.html`,
+    category: `Dokumentasi Utama`,
+    keywords: `handbook pdf print cetak ebook panduan`
+});
+
 // Write search-data.js
 const searchDataContent = `const searchData = ${JSON.stringify(searchData, null, 4)};`;
 fs.writeFileSync(path.join(baseDir, 'search-data.js'), searchDataContent, 'utf-8');
