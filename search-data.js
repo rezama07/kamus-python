@@ -1890,6 +1890,62 @@ const searchData = [
         "keywords": "🔴 4. indentationerror"
     },
     {
+        "title": "🔴 Error: 🔴 5. IndexError",
+        "preview": "\"Bos, Anda nyuruh saya ngambil barang di laci nomor 10, padahal lemarinya cuma punya 3 laci! Mau nyari di mana?\"",
+        "url": "peringatan-error/index.html#error-5",
+        "category": "Peringatan Error",
+        "keywords": "🔴 5. indexerror"
+    },
+    {
+        "title": "🔴 Error: 🔴 6. KeyError",
+        "preview": "\"Bos, Anda nyuruh buka laci pakai kunci berlabel 'Alamat', tapi saya ubek-ubek di sistem cuma ada label 'Nama' dan 'Umur...",
+        "url": "peringatan-error/index.html#error-6",
+        "category": "Peringatan Error",
+        "keywords": "🔴 6. keyerror"
+    },
+    {
+        "title": "🔴 Error: 🔴 7. ValueError",
+        "preview": "\"Bos, Anda nyuruh saya ngubah kotak teks ini jadi angka mutlak. Boleh aja sih, tapi di dalam kotaknya tertulis kata 'Bud...",
+        "url": "peringatan-error/index.html#error-7",
+        "category": "Peringatan Error",
+        "keywords": "🔴 7. valueerror"
+    },
+    {
+        "title": "🔴 Error: 🔴 8. AttributeError",
+        "preview": "\"Bos, Anda nyuruh sepeda motor untuk terbang! Ya gak bisa dong, dia kan diciptakan gak punya sayap!\"",
+        "url": "peringatan-error/index.html#error-8",
+        "category": "Peringatan Error",
+        "keywords": "🔴 8. attributeerror"
+    },
+    {
+        "title": "🔴 Error: 🔴 9. ModuleNotFoundError / ImportError",
+        "preview": "\"Bos, Anda nyuruh Koki memotong daging pakai gergaji mesin (import gergaji), padahal bos belum pernah beli gergajinya ke...",
+        "url": "peringatan-error/index.html#error-9",
+        "category": "Peringatan Error",
+        "keywords": "🔴 9. modulenotfounderror / importerror"
+    },
+    {
+        "title": "🔴 Error: 🔴 10. FileNotFoundError",
+        "preview": "\"Bos, Anda nyuruh saya baca buku panduan perusahaan yang namanya data_karyawan.pdf, tapi saya cari di laci, di meja, di ...",
+        "url": "peringatan-error/index.html#error-10",
+        "category": "Peringatan Error",
+        "keywords": "🔴 10. filenotfounderror"
+    },
+    {
+        "title": "🔴 Error: 🔴 11. TimeoutError",
+        "preview": "\"Bos, saya udah nelepon supplier daging (Server API) buat minta bahan. Tapi udah nungguin 2 menit gak diangkat-angkat. D...",
+        "url": "peringatan-error/index.html#error-11",
+        "category": "Peringatan Error",
+        "keywords": "🔴 11. timeouterror"
+    },
+    {
+        "title": "🔴 Error: 🔴 12. JSONDecodeError",
+        "preview": "\"Bos, saya disuruh nerjemahin paket data dari internet (API) pakai kamus JSON. Tapi pas saya buka, isinya berantakan buk...",
+        "url": "peringatan-error/index.html#error-12",
+        "category": "Peringatan Error",
+        "keywords": "🔴 12. jsondecodeerror"
+    },
+    {
         "title": "🎁 BONUS: Membuat Modul Sendiri",
         "preview": "Selain meminjam dari Python, Anda bisa membuat alat buatan Anda sendiri! Caranya sangat mudah dengan membuat file .py terpisah.",
         "url": "kamus-python/bab-6.html#bonus-modul",

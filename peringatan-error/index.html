@@ -19,7 +19,7 @@
         <div class="intro-box error-intro">
             <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
                 <strong>Jangan panik</strong> kalau layar Anda tiba-tiba penuh teks merah dan komputer berteriak ERROR! Itu bukan berarti laptop Anda rusak. Komputer hanya sedang kebingungan dan minta tolong.<br><br>
-                Berikut adalah 4 "Penyakit" paling sering muncul dan obatnya:
+                Berikut adalah 12 "Penyakit" paling sering muncul dan obatnya:
             </p>
         </div>
         
@@ -70,6 +70,102 @@
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
                     <p>Di Bab 3 dan 4 (if, for, while), kita wajib memajukan teks menjorok ke dalam (di-Tab). Kalau ada satu baris saja yang kurang maju atau kelebihan spasi, Python akan ngambek. Rapikan lagi spasi Anda supaya sejajar!</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-5">
+                <h3 class="error-title">🔴 5. IndexError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Nomor Laci)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh saya ngambil barang di laci nomor 10, padahal lemarinya cuma punya 3 laci! Mau nyari di mana?"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Ini terjadi saat Anda membongkar wadah data (seperti List di Bab 1). Ingat kembali bahwa komputer mulai berhitung dari angka 0. Kalau isi wadah Anda ada 3 barang, maka nomor lacinya hanya 0, 1, dan 2. Jangan pernah mencari laci nomor 3!</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-6">
+                <h3 class="error-title">🔴 6. KeyError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Kunci Brankas Salah)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh buka laci pakai kunci berlabel 'Alamat', tapi saya ubek-ubek di sistem cuma ada label 'Nama' dan 'Umur'!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Sangat sering terjadi saat Anda menarik data AI dari internet (bentuk JSON/Dictionary). Komputer itu kaku; kalau label kuncinya "umur" (huruf kecil), Anda tidak bisa memanggilnya dengan "Umur" (huruf besar). Cek lagi daftar nama kunci yang tersedia di data Anda!</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-7">
+                <h3 class="error-title">🔴 7. ValueError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Isi Tidak Sesuai Kodrat)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh saya ngubah kotak teks ini jadi angka mutlak. Boleh aja sih, tapi di dalam kotaknya tertulis kata 'Budi'! Tolong kasih tahu gimana caranya 'Budi' ditambah lima?!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Berbeda dengan TypeError (salah alat), ValueError terjadi karena alatnya benar tapi isinya tidak masuk akal. Pastikan jika Anda ingin memaksa teks menjadi angka pakai <code>int()</code>, teks tersebut memang benar-benar berisi angka (contoh: "100"), bukan huruf atau abjad.</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-8">
+                <h3 class="error-title">🔴 8. AttributeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Maksa Fitur yang Gak Ada)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh sepeda motor untuk terbang! Ya gak bisa dong, dia kan diciptakan gak punya sayap!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Terjadi saat Anda menyuruh sebuah benda melakukan Aksi (Bab 2) yang tidak dia miliki. Misalnya, Anda mencoba menambahkan daftar nama baru pakai aksi <code>.append()</code>, tapi ternyata benda yang Anda pegang adalah sebuah Teks murni, bukan sebuah List (Daftar). Pastikan Anda tahu benda apa yang sedang Anda pegang!</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-9">
+                <h3 class="error-title">🔴 9. ModuleNotFoundError / ImportError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Alat Belum Dibeli)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh Koki memotong daging pakai gergaji mesin (import gergaji), padahal bos belum pernah beli gergajinya ke toko bangunan!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Anda mencoba meminjam alat (library) orang lain menggunakan import, tapi alat itu belum ada di laptop Anda.<br><br>Luka ini TIDAK BISA diobati pakai Kotak P3K (try-except)! Anda harus mematikan program, buka Terminal, lalu ketik <code>pip install nama_alat_nya</code> untuk mendownloadnya terlebih dahulu.</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-10">
+                <h3 class="error-title">🔴 10. FileNotFoundError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Buku Resepnya Hilang)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, Anda nyuruh saya baca buku panduan perusahaan yang namanya data_karyawan.pdf, tapi saya cari di laci, di meja, di gudang... filenya gak ada tuh!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Ini biasanya karena 2 hal: (1) Anda salah ketik nama filenya (misal: Data_karyawan.pdf pakai huruf kapital), atau (2) File tersebut Anda taruh di folder yang berbeda dengan tempat program Python Anda berjalan. Pastikan letak filenya berdekatan atau tuliskan alamat lengkap foldernya (contoh: C:/Dokumen/data_karyawan.pdf).</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-11">
+                <h3 class="error-title">🔴 11. TimeoutError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Koki Pingsan Nungguin Bahan)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, saya udah nelepon supplier daging (Server API) buat minta bahan. Tapi udah nungguin 2 menit gak diangkat-angkat. Daripada saya diem aja kaya patung, mending saya matikan sistemnya sekarang!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Ini BUKAN salah kode Anda! Ini terjadi karena koneksi internet Anda sedang jelek, atau server penyedia AI (seperti OpenAI/Gemini) sedang down/kepenuhan orang.<br><br>Sangat disarankan membungkus panggilan API Anda dengan P3K (try-except) agar saat internet putus, aplikasi Anda tidak langsung hancur, melainkan memunculkan pesan ramah: "Maaf, server AI sedang sibuk. Silakan coba lagi nanti."</p>
+                </div>
+            </div>
+
+            <div class="error-card" id="error-12">
+                <h3 class="error-title">🔴 12. JSONDecodeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Bahasa Alien)</span></h3>
+                <div class="error-section">
+                    <h4>🤖 Maksud Komputer:</h4>
+                    <p>"Bos, saya disuruh nerjemahin paket data dari internet (API) pakai kamus JSON. Tapi pas saya buka, isinya berantakan bukan bahasa JSON yang saya ngerti!"</p>
+                </div>
+                <div class="error-section">
+                    <h4>💊 Cara Mengobati:</h4>
+                    <p>Saat aplikasi Anda "ngobrol" dengan server luar (seperti ChatGPT), mereka sepakat memakai bahasa rahasia bernama JSON (bentuknya mirip Dictionary di Bab 1). Error ini muncul kalau server membalas dengan teks biasa atau format yang salah. Biasanya ini pertanda bahwa Anda salah memasukkan alamat API, salah password (API Key), atau server tersebut memang sedang rusak. Periksa kembali sambungan API Anda!</p>
                 </div>
             </div>
 
