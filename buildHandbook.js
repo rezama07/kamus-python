@@ -33,7 +33,7 @@ const introSections = mainIndexRoot.querySelector('.intro-sections');
 let halamanNolHTML = '';
 if (introSections) {
     halamanNolHTML = `
-    <section class="handbook-section page-break" id="halaman-nol">
+    <section class="handbook-section page-divider" id="halaman-nol">
         <div class="section-header">
             <h2 class="section-title">🚦 HALAMAN NOL: Rambu Lalu Lintas Python</h2>
             <p class="section-subtitle">Aturan Main & Rambu Dasar Komputer</p>
@@ -58,14 +58,14 @@ chapterFiles.forEach(ch => {
     
     // Remove trinket container and chapter navigation for clean handbook
     if (bodyContent) {
-        bodyContent.querySelectorAll('#trinket-container, .chapter-navigation').forEach(el => el.remove());
+        bodyContent.querySelectorAll('#trinket-container, .chapter-navigation, #scrollTopBtn, script').forEach(el => el.remove());
     }
 
     const secId = `bab-${ch.id}`;
     tocItems.push({ id: secId, title: pageTitle });
 
     chaptersHTML += `
-    <section class="handbook-section page-break" id="${secId}">
+    <section class="handbook-section page-divider" id="${secId}">
         <div class="section-header">
             <h2 class="section-title">${pageTitle}</h2>
             <p class="section-subtitle">${pageSub}</p>
@@ -75,21 +75,22 @@ chapterFiles.forEach(ch => {
     `;
 });
 
-// 3. Process Glosarium
+// 3. Process Glosarium (FULL Extraction)
 const glosariumContent = fs.readFileSync(path.join(baseDir, 'glosarium', 'index.html'), 'utf-8');
 const glosariumRoot = parse(glosariumContent);
-const glosariumBody = glosariumRoot.querySelector('.content-body');
+const glosariumContainer = glosariumRoot.querySelector('.container');
 
 let glosariumHTML = '';
-if (glosariumBody) {
+if (glosariumContainer) {
+    glosariumContainer.querySelectorAll('.back-link, .page-header, script, #scrollTopBtn').forEach(el => el.remove());
     tocItems.push({ id: 'glosarium-section', title: 'Glosarium Istilah Python' });
     glosariumHTML = `
-    <section class="handbook-section page-break" id="glosarium-section">
+    <section class="handbook-section page-divider" id="glosarium-section">
         <div class="section-header">
             <h2 class="section-title">📘 GLOSARIUM ISTILAH PYTHON</h2>
-            <p class="section-subtitle">Kumpulan Istilah & Kosakata Dunia Pemrograman</p>
+            <p class="section-subtitle">Kumpulan Lengkap Istilah & Bahasa Gaul Pemrograman</p>
         </div>
-        ${glosariumBody.innerHTML}
+        ${glosariumContainer.innerHTML}
     </section>
     `;
 }
@@ -106,7 +107,7 @@ let errorHTML = '';
 if (errorBody) {
     tocItems.push({ id: 'error-section', title: 'Peringatan Error & Obatnya' });
     errorHTML = `
-    <section class="handbook-section page-break" id="error-section">
+    <section class="handbook-section page-divider" id="error-section">
         <div class="section-header">
             <h2 class="section-title" style="color: #ef4444;">🔴 PERINGATAN ERROR</h2>
             <p class="section-subtitle">Menerjemahkan Teks Merah Menjadi Bahasa Manusia</p>
@@ -118,7 +119,7 @@ if (errorBody) {
 
 // Build Table of Contents HTML
 let tocHTML = `
-<section class="handbook-section page-break" id="table-of-contents">
+<section class="handbook-section page-divider" id="table-of-contents">
     <div class="section-header">
         <h2 class="section-title">📜 DAFTAR ISI HANDBOOK</h2>
         <p class="section-subtitle">Struktur & Panduan Modul Pembelajaran</p>
@@ -149,7 +150,7 @@ const handbookFullPage = `<!DOCTYPE html>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
     
     <style>
-        /* --- CORE TYPOGRAPHY (STRICT OPEN SANS & FIRA CODE) --- */
+        /* --- CORE TYPOGRAPHY (OPEN SANS & FIRA CODE) --- */
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
@@ -172,8 +173,8 @@ const handbookFullPage = `<!DOCTYPE html>
             font-family: var(--font-main);
             background-color: var(--bg-color);
             color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 15px;
+            line-height: 1.6;
+            font-size: 14.5px;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -184,19 +185,19 @@ const handbookFullPage = `<!DOCTYPE html>
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-main);
             font-weight: 700;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
         }
 
         /* --- LAYOUT CONTAINER --- */
         .handbook-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
 
         /* --- COVER PAGE --- */
         .cover-page {
-            min-height: 90vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -204,86 +205,98 @@ const handbookFullPage = `<!DOCTYPE html>
             text-align: center;
             background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
             border: 1px solid var(--card-border);
-            border-radius: 1.5rem;
-            padding: 4rem 2rem;
-            margin-bottom: 4rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            position: relative;
-            overflow: hidden;
+            border-radius: 1.25rem;
+            padding: 3.5rem 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+            page-break-after: always;
         }
 
         .cover-logo {
-            font-size: 5rem;
-            margin-bottom: 1.5rem;
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
             animation: pulse 3s ease-in-out infinite;
         }
 
         .cover-title {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 800;
             color: var(--text-primary);
             line-height: 1.2;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             background: linear-gradient(135deg, #38bdf8 0%, #a78bfa 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .cover-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
             max-width: 650px;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             font-weight: 400;
         }
 
         .cover-meta {
             margin-top: auto;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             width: 100%;
             display: flex;
             justify-content: space-around;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
-        /* --- SECTIONS & CARDS --- */
+        /* --- SECTIONS & COMPACT CARDS --- */
         .handbook-section {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-divider {
+            page-break-before: always;
         }
 
         .section-header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
             border-bottom: 2px solid var(--card-border);
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
             color: var(--accent);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .section-subtitle {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
+        /* COMPACT CARDS FIT MULTIPLE PER PAGE */
         .card, .word-card, .term-card, .error-card {
             background-color: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, border-color 0.2s ease;
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .word-title, .term-title, .error-title {
-            font-size: 1.35rem;
+            font-size: 1.2rem;
             color: var(--text-primary);
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -291,7 +304,7 @@ const handbookFullPage = `<!DOCTYPE html>
         }
 
         .word-section, .term-section, .error-section {
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.85rem;
         }
 
         .word-section:last-child {
@@ -299,9 +312,9 @@ const handbookFullPage = `<!DOCTYPE html>
         }
 
         .word-section h4, .error-section h4 {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--accent);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.35rem;
             font-weight: 600;
         }
 
@@ -310,26 +323,27 @@ const handbookFullPage = `<!DOCTYPE html>
             list-style: none;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .toc-list li a {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            padding: 1rem 1.25rem;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 0.75rem;
+            border-radius: 0.5rem;
             color: var(--text-primary);
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.95rem;
             transition: all 0.2s ease;
         }
 
         .toc-list li a:hover {
             border-color: var(--accent);
-            transform: translateX(5px);
+            transform: translateX(4px);
             background: rgba(56, 189, 248, 0.05);
         }
 
@@ -339,19 +353,24 @@ const handbookFullPage = `<!DOCTYPE html>
             font-weight: 700;
         }
 
-        /* --- CODE BLOCKS & PRISM --- */
+        /* --- FIX HORIZONTAL SCROLL / NO NOISY SCROLLBAR IN CODE BLOCKS --- */
         pre {
-            border-radius: 0.75rem !important;
-            margin: 1rem 0 !important;
-            padding: 1.25rem !important;
-            background: #090d16 !important;
-            border: 1px solid #1e293b !important;
-            overflow-x: auto;
+            border-radius: 0.6rem !important;
+            margin: 0.75rem 0 !important;
+            padding: 1rem 1.25rem !important;
+            background: #0d1117 !important; /* DARK CODE BACKGROUND FOR SYNTAX COLORS */
+            border: 1px solid #30363d !important;
+            white-space: pre-wrap !important; /* NO HORIZONTAL SCROLLBAR - WRAP CODE & COMMENTS CLEANLY */
+            word-break: break-word !important;
+            overflow-x: hidden !important;
         }
 
         code {
-            font-size: 0.92rem !important;
-            line-height: 1.6 !important;
+            font-size: 0.9rem !important;
+            line-height: 1.55 !important;
+            white-space: pre-wrap !important;
+            word-break: break-word !important;
+            color: #e6edf3 !important;
         }
 
         /* --- TOP NAV BAR --- */
@@ -362,7 +381,7 @@ const handbookFullPage = `<!DOCTYPE html>
             background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--card-border);
-            padding: 1rem 1.5rem;
+            padding: 0.85rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -386,7 +405,7 @@ const handbookFullPage = `<!DOCTYPE html>
             background: var(--accent);
             color: #0f172a;
             border: none;
-            padding: 0.6rem 1.25rem;
+            padding: 0.5rem 1.1rem;
             border-radius: 0.5rem;
             font-weight: 700;
             font-family: var(--font-main);
@@ -395,7 +414,7 @@ const handbookFullPage = `<!DOCTYPE html>
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.2s ease;
         }
 
@@ -413,7 +432,7 @@ const handbookFullPage = `<!DOCTYPE html>
             background: rgba(255, 255, 255, 0.2);
         }
 
-        /* --- PRINT STYLES FOR PDF / PRINTING --- */
+        /* --- PRINT / PDF OPTIMIZATION (HIGH-CONTRAST DARK CODE & COMPACT FLOW) --- */
         @media print {
             .handbook-nav, #scrollTopBtn {
                 display: none !important;
@@ -422,7 +441,7 @@ const handbookFullPage = `<!DOCTYPE html>
             body {
                 background: #ffffff !important;
                 color: #0f172a !important;
-                font-size: 12pt;
+                font-size: 10.5pt;
             }
 
             .handbook-container {
@@ -432,7 +451,7 @@ const handbookFullPage = `<!DOCTYPE html>
             }
 
             .cover-page {
-                min-height: 98vh !important;
+                min-height: 95vh !important;
                 border: none !important;
                 box-shadow: none !important;
                 background: #ffffff !important;
@@ -449,7 +468,7 @@ const handbookFullPage = `<!DOCTYPE html>
                 color: #475569 !important;
             }
 
-            .page-break {
+            .page-divider {
                 page-break-before: always;
             }
 
@@ -457,8 +476,10 @@ const handbookFullPage = `<!DOCTYPE html>
                 background: #f8fafc !important;
                 border: 1px solid #cbd5e1 !important;
                 box-shadow: none !important;
-                break-inside: avoid;
-                page-break-inside: avoid;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+                margin-bottom: 1rem !important;
+                padding: 1rem 1.25rem !important;
                 color: #0f172a !important;
             }
 
@@ -470,15 +491,32 @@ const handbookFullPage = `<!DOCTYPE html>
                 color: #0f172a !important;
             }
 
+            /* DARK BACKGROUND FOR CODE IN PRINT FOR VIBRANT SYNTAX HIGHLIGHTING */
             pre {
-                background: #f1f5f9 !important;
-                border: 1px solid #cbd5e1 !important;
-                break-inside: avoid;
+                background: #0d1117 !important;
+                border: 1px solid #30363d !important;
+                color: #e6edf3 !important;
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
+                overflow-x: hidden !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
             }
 
-            pre code {
-                color: #0f172a !important;
+            code {
+                color: #e6edf3 !important;
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
             }
+
+            /* SYNTAX HIGHLIGHT TOKEN PRESERVATION IN PRINT */
+            .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8b949e !important; }
+            .token.punctuation { color: #c9d1d9 !important; }
+            .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol { color: #79c0ff !important; }
+            .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin { color: #a5d6ff !important; }
+            .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string { color: #d2a8ff !important; }
+            .token.atrule, .token.attr-value, .token.keyword { color: #ff7b72 !important; }
+            .token.function, .token.class-name { color: #d2a8ff !important; }
 
             .toc-list li a {
                 background: #ffffff !important;
@@ -538,8 +576,8 @@ const handbookFullPage = `<!DOCTYPE html>
     </div>
 
     <!-- SCROLL TO TOP BUTTON -->
-    <button id="scrollTopBtn" title="Kembali ke atas" style="position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; border-radius: 50%; background: var(--accent); color: #0f172a; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 900;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    <button id="scrollTopBtn" title="Kembali ke atas" style="position: fixed; bottom: 2rem; right: 2rem; width: 45px; height: 45px; border-radius: 50%; background: var(--accent); color: #0f172a; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.4); z-index: 900;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
     <script>
@@ -559,4 +597,4 @@ const handbookFullPage = `<!DOCTYPE html>
 </html>`;
 
 fs.writeFileSync(path.join(baseDir, 'handbook.html'), handbookFullPage, 'utf-8');
-console.log('Successfully generated handbook.html!');
+console.log('Successfully generated updated handbook.html with fixes!');

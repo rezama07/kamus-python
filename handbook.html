@@ -16,7 +16,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.min.js"></script>
     
     <style>
-        /* --- CORE TYPOGRAPHY (STRICT OPEN SANS & FIRA CODE) --- */
+        /* --- CORE TYPOGRAPHY (OPEN SANS & FIRA CODE) --- */
         :root {
             --bg-color: #0f172a;
             --card-bg: #1e293b;
@@ -39,8 +39,8 @@
             font-family: var(--font-main);
             background-color: var(--bg-color);
             color: var(--text-primary);
-            line-height: 1.7;
-            font-size: 15px;
+            line-height: 1.6;
+            font-size: 14.5px;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -51,19 +51,19 @@
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-main);
             font-weight: 700;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
         }
 
         /* --- LAYOUT CONTAINER --- */
         .handbook-container {
-            max-width: 900px;
+            max-width: 920px;
             margin: 0 auto;
             padding: 2rem 1.5rem;
         }
 
         /* --- COVER PAGE --- */
         .cover-page {
-            min-height: 90vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -71,86 +71,98 @@
             text-align: center;
             background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
             border: 1px solid var(--card-border);
-            border-radius: 1.5rem;
-            padding: 4rem 2rem;
-            margin-bottom: 4rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-            position: relative;
-            overflow: hidden;
+            border-radius: 1.25rem;
+            padding: 3.5rem 2rem;
+            margin-bottom: 3rem;
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+            page-break-after: always;
         }
 
         .cover-logo {
-            font-size: 5rem;
-            margin-bottom: 1.5rem;
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
             animation: pulse 3s ease-in-out infinite;
         }
 
         .cover-title {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 800;
             color: var(--text-primary);
             line-height: 1.2;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
             background: linear-gradient(135deg, #38bdf8 0%, #a78bfa 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .cover-subtitle {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--text-secondary);
             max-width: 650px;
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
             font-weight: 400;
         }
 
         .cover-meta {
             margin-top: auto;
-            padding-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             width: 100%;
             display: flex;
             justify-content: space-around;
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
 
-        /* --- SECTIONS & CARDS --- */
+        /* --- SECTIONS & COMPACT CARDS --- */
         .handbook-section {
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .page-divider {
+            page-break-before: always;
         }
 
         .section-header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
             border-bottom: 2px solid var(--card-border);
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 1.75rem;
             color: var(--accent);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
         }
 
         .section-subtitle {
             color: var(--text-secondary);
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
+        /* COMPACT CARDS FIT MULTIPLE PER PAGE */
         .card, .word-card, .term-card, .error-card {
             background-color: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 1rem;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, border-color 0.2s ease;
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        .glossary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .word-title, .term-title, .error-title {
-            font-size: 1.35rem;
+            font-size: 1.2rem;
             color: var(--text-primary);
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -158,7 +170,7 @@
         }
 
         .word-section, .term-section, .error-section {
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.85rem;
         }
 
         .word-section:last-child {
@@ -166,9 +178,9 @@
         }
 
         .word-section h4, .error-section h4 {
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--accent);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.35rem;
             font-weight: 600;
         }
 
@@ -177,26 +189,27 @@
             list-style: none;
             display: grid;
             grid-template-columns: 1fr;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .toc-list li a {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            padding: 1rem 1.25rem;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 0.75rem;
+            border-radius: 0.5rem;
             color: var(--text-primary);
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.95rem;
             transition: all 0.2s ease;
         }
 
         .toc-list li a:hover {
             border-color: var(--accent);
-            transform: translateX(5px);
+            transform: translateX(4px);
             background: rgba(56, 189, 248, 0.05);
         }
 
@@ -206,19 +219,24 @@
             font-weight: 700;
         }
 
-        /* --- CODE BLOCKS & PRISM --- */
+        /* --- FIX HORIZONTAL SCROLL / NO NOISY SCROLLBAR IN CODE BLOCKS --- */
         pre {
-            border-radius: 0.75rem !important;
-            margin: 1rem 0 !important;
-            padding: 1.25rem !important;
-            background: #090d16 !important;
-            border: 1px solid #1e293b !important;
-            overflow-x: auto;
+            border-radius: 0.6rem !important;
+            margin: 0.75rem 0 !important;
+            padding: 1rem 1.25rem !important;
+            background: #0d1117 !important; /* DARK CODE BACKGROUND FOR SYNTAX COLORS */
+            border: 1px solid #30363d !important;
+            white-space: pre-wrap !important; /* NO HORIZONTAL SCROLLBAR - WRAP CODE & COMMENTS CLEANLY */
+            word-break: break-word !important;
+            overflow-x: hidden !important;
         }
 
         code {
-            font-size: 0.92rem !important;
-            line-height: 1.6 !important;
+            font-size: 0.9rem !important;
+            line-height: 1.55 !important;
+            white-space: pre-wrap !important;
+            word-break: break-word !important;
+            color: #e6edf3 !important;
         }
 
         /* --- TOP NAV BAR --- */
@@ -229,7 +247,7 @@
             background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--card-border);
-            padding: 1rem 1.5rem;
+            padding: 0.85rem 1.5rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -253,7 +271,7 @@
             background: var(--accent);
             color: #0f172a;
             border: none;
-            padding: 0.6rem 1.25rem;
+            padding: 0.5rem 1.1rem;
             border-radius: 0.5rem;
             font-weight: 700;
             font-family: var(--font-main);
@@ -262,7 +280,7 @@
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             transition: all 0.2s ease;
         }
 
@@ -280,7 +298,7 @@
             background: rgba(255, 255, 255, 0.2);
         }
 
-        /* --- PRINT STYLES FOR PDF / PRINTING --- */
+        /* --- PRINT / PDF OPTIMIZATION (HIGH-CONTRAST DARK CODE & COMPACT FLOW) --- */
         @media print {
             .handbook-nav, #scrollTopBtn {
                 display: none !important;
@@ -289,7 +307,7 @@
             body {
                 background: #ffffff !important;
                 color: #0f172a !important;
-                font-size: 12pt;
+                font-size: 10.5pt;
             }
 
             .handbook-container {
@@ -299,7 +317,7 @@
             }
 
             .cover-page {
-                min-height: 98vh !important;
+                min-height: 95vh !important;
                 border: none !important;
                 box-shadow: none !important;
                 background: #ffffff !important;
@@ -316,7 +334,7 @@
                 color: #475569 !important;
             }
 
-            .page-break {
+            .page-divider {
                 page-break-before: always;
             }
 
@@ -324,8 +342,10 @@
                 background: #f8fafc !important;
                 border: 1px solid #cbd5e1 !important;
                 box-shadow: none !important;
-                break-inside: avoid;
-                page-break-inside: avoid;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
+                margin-bottom: 1rem !important;
+                padding: 1rem 1.25rem !important;
                 color: #0f172a !important;
             }
 
@@ -337,15 +357,32 @@
                 color: #0f172a !important;
             }
 
+            /* DARK BACKGROUND FOR CODE IN PRINT FOR VIBRANT SYNTAX HIGHLIGHTING */
             pre {
-                background: #f1f5f9 !important;
-                border: 1px solid #cbd5e1 !important;
-                break-inside: avoid;
+                background: #0d1117 !important;
+                border: 1px solid #30363d !important;
+                color: #e6edf3 !important;
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
+                overflow-x: hidden !important;
+                break-inside: avoid !important;
+                page-break-inside: avoid !important;
             }
 
-            pre code {
-                color: #0f172a !important;
+            code {
+                color: #e6edf3 !important;
+                white-space: pre-wrap !important;
+                word-break: break-word !important;
             }
+
+            /* SYNTAX HIGHLIGHT TOKEN PRESERVATION IN PRINT */
+            .token.comment, .token.prolog, .token.doctype, .token.cdata { color: #8b949e !important; }
+            .token.punctuation { color: #c9d1d9 !important; }
+            .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol { color: #79c0ff !important; }
+            .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin { color: #a5d6ff !important; }
+            .token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string { color: #d2a8ff !important; }
+            .token.atrule, .token.attr-value, .token.keyword { color: #ff7b72 !important; }
+            .token.function, .token.class-name { color: #d2a8ff !important; }
 
             .toc-list li a {
                 background: #ffffff !important;
@@ -389,17 +426,17 @@
 
         <!-- TABLE OF CONTENTS -->
         
-<section class="handbook-section page-break" id="table-of-contents">
+<section class="handbook-section page-divider" id="table-of-contents">
     <div class="section-header">
         <h2 class="section-title">📜 DAFTAR ISI HANDBOOK</h2>
         <p class="section-subtitle">Struktur & Panduan Modul Pembelajaran</p>
     </div>
     <ul class="toc-list">
-<li><a href="#halaman-nol"><span class="toc-num">1.</span> <span class="toc-text">Halaman Nol: Rambu Lalu Lintas Python</span></a></li><li><a href="#bab-1"><span class="toc-num">2.</span> <span class="toc-text">BAB 1: BAHAN BAKU & WADAH</span></a></li><li><a href="#bab-2"><span class="toc-num">3.</span> <span class="toc-text">BAB 2: KOMPOR & PISAU</span></a></li><li><a href="#bab-3"><span class="toc-num">4.</span> <span class="toc-text">BAB 3: ATURAN RESEP</span></a></li><li><a href="#bab-4"><span class="toc-num">5.</span> <span class="toc-text">BAB 4: PENGULANGAN PEKERJAAN</span></a></li><li><a href="#bab-5"><span class="toc-num">6.</span> <span class="toc-text">BAB 5: MEMBUAT BUKU RESEP SENDIRI</span></a></li><li><a href="#bab-6"><span class="toc-num">7.</span> <span class="toc-text">BAB 6: MEMINJAM ALAT TETANGGA</span></a></li><li><a href="#bab-7"><span class="toc-num">8.</span> <span class="toc-text">BAB 7: KOTAK P3K DAPUR</span></a></li><li><a href="#bab-8"><span class="toc-num">9.</span> <span class="toc-text">BAB 8 (OPSIONAL): MEMBANGUN PABRIK CETAKAN</span></a></li><li><a href="#bab-9"><span class="toc-num">10.</span> <span class="toc-text">BAB 9: BERKOMUNIKASI DENGAN KOKI ROBOT</span></a></li><li><a href="#bab-10"><span class="toc-num">11.</span> <span class="toc-text">BAB 10: MEMBERI INGATAN KHUSUS</span></a></li><li><a href="#bab-11"><span class="toc-num">12.</span> <span class="toc-text">BAB 11: MEMBERIKAN TANGAN & KAKI</span></a></li><li><a href="#bab-12"><span class="toc-num">13.</span> <span class="toc-text">BAB 12: MENGOLAH BAHAN BAKU MENTAH</span></a></li><li><a href="#bab-15"><span class="toc-num">14.</span> <span class="toc-text">BAB 15: KAMERA CCTV & MANDOR DAPUR</span></a></li><li><a href="#bab-16"><span class="toc-num">15.</span> <span class="toc-text">BAB 16: ROBOT ASISTEN SANG MANDOR</span></a></li><li><a href="#bab-17"><span class="toc-num">16.</span> <span class="toc-text">BAB 17: JALUR PERAKITAN OTOMATIS</span></a></li><li><a href="#error-section"><span class="toc-num">17.</span> <span class="toc-text">Peringatan Error & Obatnya</span></a></li></ul></section>
+<li><a href="#halaman-nol"><span class="toc-num">1.</span> <span class="toc-text">Halaman Nol: Rambu Lalu Lintas Python</span></a></li><li><a href="#bab-1"><span class="toc-num">2.</span> <span class="toc-text">BAB 1: BAHAN BAKU & WADAH</span></a></li><li><a href="#bab-2"><span class="toc-num">3.</span> <span class="toc-text">BAB 2: KOMPOR & PISAU</span></a></li><li><a href="#bab-3"><span class="toc-num">4.</span> <span class="toc-text">BAB 3: ATURAN RESEP</span></a></li><li><a href="#bab-4"><span class="toc-num">5.</span> <span class="toc-text">BAB 4: PENGULANGAN PEKERJAAN</span></a></li><li><a href="#bab-5"><span class="toc-num">6.</span> <span class="toc-text">BAB 5: MEMBUAT BUKU RESEP SENDIRI</span></a></li><li><a href="#bab-6"><span class="toc-num">7.</span> <span class="toc-text">BAB 6: MEMINJAM ALAT TETANGGA</span></a></li><li><a href="#bab-7"><span class="toc-num">8.</span> <span class="toc-text">BAB 7: KOTAK P3K DAPUR</span></a></li><li><a href="#bab-8"><span class="toc-num">9.</span> <span class="toc-text">BAB 8 (OPSIONAL): MEMBANGUN PABRIK CETAKAN</span></a></li><li><a href="#bab-9"><span class="toc-num">10.</span> <span class="toc-text">BAB 9: BERKOMUNIKASI DENGAN KOKI ROBOT</span></a></li><li><a href="#bab-10"><span class="toc-num">11.</span> <span class="toc-text">BAB 10: MEMBERI INGATAN KHUSUS</span></a></li><li><a href="#bab-11"><span class="toc-num">12.</span> <span class="toc-text">BAB 11: MEMBERIKAN TANGAN & KAKI</span></a></li><li><a href="#bab-12"><span class="toc-num">13.</span> <span class="toc-text">BAB 12: MENGOLAH BAHAN BAKU MENTAH</span></a></li><li><a href="#bab-15"><span class="toc-num">14.</span> <span class="toc-text">BAB 15: KAMERA CCTV & MANDOR DAPUR</span></a></li><li><a href="#bab-16"><span class="toc-num">15.</span> <span class="toc-text">BAB 16: ROBOT ASISTEN SANG MANDOR</span></a></li><li><a href="#bab-17"><span class="toc-num">16.</span> <span class="toc-text">BAB 17: JALUR PERAKITAN OTOMATIS</span></a></li><li><a href="#glosarium-section"><span class="toc-num">17.</span> <span class="toc-text">Glosarium Istilah Python</span></a></li><li><a href="#error-section"><span class="toc-num">18.</span> <span class="toc-text">Peringatan Error & Obatnya</span></a></li></ul></section>
 
         <!-- HALAMAN NOL -->
         
-    <section class="handbook-section page-break" id="halaman-nol">
+    <section class="handbook-section page-divider" id="halaman-nol">
         <div class="section-header">
             <h2 class="section-title">🚦 HALAMAN NOL: Rambu Lalu Lintas Python</h2>
             <p class="section-subtitle">Aturan Main & Rambu Dasar Komputer</p>
@@ -465,7 +502,7 @@
 
         <!-- CHAPTERS 1 - 17 -->
         
-    <section class="handbook-section page-break" id="bab-1">
+    <section class="handbook-section page-divider" id="bab-1">
         <div class="section-header">
             <h2 class="section-title">BAB 1: BAHAN BAKU & WADAH</h2>
             <p class="section-subtitle">Bab 1 / Kamus Python (Data & Variabel)</p>
@@ -775,7 +812,7 @@ umur = 25
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-2">
+    <section class="handbook-section page-divider" id="bab-2">
         <div class="section-header">
             <h2 class="section-title">BAB 2: KOMPOR & PISAU</h2>
             <p class="section-subtitle">Bab 2 / Kamus Python (Aksi & Output)</p>
@@ -1129,7 +1166,7 @@ print(umur_angka + 5)
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-3">
+    <section class="handbook-section page-divider" id="bab-3">
         <div class="section-header">
             <h2 class="section-title">BAB 3: ATURAN RESEP</h2>
             <p class="section-subtitle">Bab 3 / Kamus Python (Logika Keputusan JIKA-MAKA)</p>
@@ -1371,7 +1408,7 @@ if "Apel" in keranjang:
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-4">
+    <section class="handbook-section page-divider" id="bab-4">
         <div class="section-header">
             <h2 class="section-title">BAB 4: PENGULANGAN PEKERJAAN</h2>
             <p class="section-subtitle">Bab 4 / Kamus Python (Loops)</p>
@@ -1515,7 +1552,7 @@ while bensin > 0:
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-5">
+    <section class="handbook-section page-divider" id="bab-5">
         <div class="section-header">
             <h2 class="section-title">BAB 5: MEMBUAT BUKU RESEP SENDIRI</h2>
             <p class="section-subtitle">Bab 5 / Kamus Python (Functions)</p>
@@ -1667,7 +1704,7 @@ print(uang_kamar) # ERROR! Mencoba mencuri uang dari kamar Budi padahal kita di 
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-6">
+    <section class="handbook-section page-divider" id="bab-6">
         <div class="section-header">
             <h2 class="section-title">BAB 6: MEMINJAM ALAT TETANGGA</h2>
             <p class="section-subtitle">Bab 6 / Kamus Python (Modul & Imports)</p>
@@ -1826,7 +1863,7 @@ print(hasil) # Akan mencetak: 110</code></pre></li>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-7">
+    <section class="handbook-section page-divider" id="bab-7">
         <div class="section-header">
             <h2 class="section-title">BAB 7: KOTAK P3K DAPUR</h2>
             <p class="section-subtitle">Bab 7 / Kamus Python (Penanganan Error / Exception Handling)</p>
@@ -2000,7 +2037,7 @@ buat_kopi(15) # Program akan langsung mati dan menampilkan pesan error merah: "G
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-8">
+    <section class="handbook-section page-divider" id="bab-8">
         <div class="section-header">
             <h2 class="section-title">BAB 8 (OPSIONAL): MEMBANGUN PABRIK CETAKAN</h2>
             <p class="section-subtitle">Bab 8 / Kamus Python (Pengenalan OOP / Class)</p>
@@ -2232,7 +2269,7 @@ r2d2.sapa()</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-9">
+    <section class="handbook-section page-divider" id="bab-9">
         <div class="section-header">
             <h2 class="section-title">BAB 9: BERKOMUNIKASI DENGAN KOKI ROBOT</h2>
             <p class="section-subtitle">Bab 9 / Kamus Python (Dasar LLM & API)</p>
@@ -2351,7 +2388,7 @@ kunci_saya = os.getenv("RAHASIA_API_KEY")</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-10">
+    <section class="handbook-section page-divider" id="bab-10">
         <div class="section-header">
             <h2 class="section-title">BAB 10: MEMBERI INGATAN KHUSUS</h2>
             <p class="section-subtitle">Bab 10 / Kamus Python (Dasar RAG & Vector Data)</p>
@@ -2459,7 +2496,7 @@ pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)</code></pre
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-11">
+    <section class="handbook-section page-divider" id="bab-11">
         <div class="section-header">
             <h2 class="section-title">BAB 11: MEMBERIKAN TANGAN & KAKI</h2>
             <p class="section-subtitle">Bab 11 / Kamus Python (Dasar Agentic AI)</p>
@@ -2546,7 +2583,7 @@ rantai_kerja.jalankan()</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-12">
+    <section class="handbook-section page-divider" id="bab-12">
         <div class="section-header">
             <h2 class="section-title">BAB 12: MENGOLAH BAHAN BAKU MENTAH</h2>
             <p class="section-subtitle">Bab 12 / Kamus Python (Data Processing)</p>
@@ -2715,7 +2752,7 @@ kirim_ke_database_ai(data_bersih)</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-15">
+    <section class="handbook-section page-divider" id="bab-15">
         <div class="section-header">
             <h2 class="section-title">BAB 15: KAMERA CCTV & MANDOR DAPUR</h2>
             <p class="section-subtitle">Bab 15 / Kamus Python (LLMOps & Monitoring)</p>
@@ -2865,7 +2902,7 @@ respon = requests.get("https://alamat-api-ai.com", timeout=15)</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-16">
+    <section class="handbook-section page-divider" id="bab-16">
         <div class="section-header">
             <h2 class="section-title">BAB 16: ROBOT ASISTEN SANG MANDOR</h2>
             <p class="section-subtitle">Bab 16 / Kamus Python (AI-Accelerated Development)</p>
@@ -2970,7 +3007,7 @@ respon = requests.get("https://alamat-api-ai.com", timeout=15)</code></pre>
         
     </section>
     
-    <section class="handbook-section page-break" id="bab-17">
+    <section class="handbook-section page-divider" id="bab-17">
         <div class="section-header">
             <h2 class="section-title">BAB 17: JALUR PERAKITAN OTOMATIS</h2>
             <p class="section-subtitle">Bab 17 / Kamus Python (Version Control & CI/CD)</p>
@@ -3064,10 +3101,740 @@ steps:
 
         <!-- GLOSARIUM SECTION -->
         
+    <section class="handbook-section page-divider" id="glosarium-section">
+        <div class="section-header">
+            <h2 class="section-title">📘 GLOSARIUM ISTILAH PYTHON</h2>
+            <p class="section-subtitle">Kumpulan Lengkap Istilah & Bahasa Gaul Pemrograman</p>
+        </div>
+        
+        
+        
+
+        <div class="intro-box">
+            <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                Pemula sering bingung bukan karena kodenya, tapi karena istilah gaul/slang yang diucapkan oleh para senior atau mentor di kelas. Bagian ini khusus dibuat untuk menerjemahkan bahasa gaul tersebut. Saat Anda masuk ke komunitas coding, Anda pasti akan sering mendengar kata-kata ini:
+            </p>
+        </div>
+        
+                <h2 class="category-title" style="margin-top: 3rem; margin-bottom: 0.5rem; color: var(--accent);">📊 KATEGORI 1: DATA & MACHINE LEARNING DASAR</h2>
+        <p class="category-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">(Kategori ini berkaitan dengan pengolahan data mentah dan fondasi model AI)</p>
+        <div class="glossary-grid">
+            <div class="term-card" id="term-1">
+                <div class="term-title">Artificial Intelligence <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(AI)</span></div>
+                <p class="term-desc">Kecerdasan buatan. Kemampuan komputer untuk meniru cara berpikir, belajar, dan mengambil keputusan layaknya manusia.</p>
+            </div>
+            <div class="term-card" id="term-2">
+                <div class="term-title">Machine Learning <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(ML)</span></div>
+                <p class="term-desc">Cabang AI di mana mesin belajar sendiri dari data tanpa perlu diprogram aturan pastinya satu per satu oleh manusia.</p>
+            </div>
+            <div class="term-card" id="term-3">
+                <div class="term-title">Deep Learning <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(DL)</span></div>
+                <p class="term-desc">Cabang ML yang lebih canggih, menggunakan jaringan saraf tiruan berlapis-lapis untuk memproses data rumit seperti gambar, suara, atau teks panjang.</p>
+            </div>
+            <div class="term-card" id="term-4">
+                <div class="term-title">Supervised Learning</div>
+                <p class="term-desc">Mesin belajar dari sekumpulan data yang sudah diberi "kunci jawaban" (label) oleh manusia.</p>
+            </div>
+            <div class="term-card" id="term-5">
+                <div class="term-title">Unsupervised Learning</div>
+                <p class="term-desc">Mesin dibiarkan mencari sendiri pola tersembunyi dari sekumpulan data mentah yang tidak memiliki kunci jawaban.</p>
+            </div>
+            <div class="term-card" id="term-6">
+                <div class="term-title">Reinforcement Learning</div>
+                <p class="term-desc">Mesin belajar melalui sistem "coba-coba" dengan diberi hadiah (reward) jika benar dan hukuman (penalty) jika salah.</p>
+            </div>
+            <div class="term-card" id="term-7">
+                <div class="term-title">Neural Network</div>
+                <p class="term-desc">Jaringan saraf tiruan. Algoritma komputer yang terinspirasi dari cara kerja sel otak manusia yang saling terhubung.</p>
+            </div>
+            <div class="term-card" id="term-8">
+                <div class="term-title">Training</div>
+                <p class="term-desc">Proses "sekolah". Masa di mana model AI diberi makan banyak data agar ia belajar dan menjadi pintar.</p>
+            </div>
+            <div class="term-card" id="term-9">
+                <div class="term-title">Inference</div>
+                <p class="term-desc">Proses "ujian". Momen di mana model AI yang sudah pintar disuruh memprediksi data baru yang belum pernah ia lihat sebelumnya.</p>
+            </div>
+            <div class="term-card" id="term-10">
+                <div class="term-title">Overfitting</div>
+                <p class="term-desc">Kondisi saat AI terlalu "menghafal" data latihan sehingga ia mendapat nilai sempurna di kelas, tapi gagal total saat diuji di dunia nyata.</p>
+            </div>
+            <div class="term-card" id="term-11">
+                <div class="term-title">Underfitting</div>
+                <p class="term-desc">Kondisi saat AI terlalu bodoh (kurang belajar), sehingga tidak bisa memahami pola data sama sekali.</p>
+            </div>
+            <div class="term-card" id="term-12">
+                <div class="term-title">Feature</div>
+                <p class="term-desc">Atribut atau petunjuk dari sebuah data. (Contoh: Untuk menebak harga rumah, feature-nya adalah luas tanah dan jumlah kamar).</p>
+            </div>
+            <div class="term-card" id="term-13">
+                <div class="term-title">Label / Target</div>
+                <p class="term-desc">Jawaban akhir yang ingin ditebak oleh AI. (Contoh: Harga rumah itu sendiri).</p>
+            </div>
+            <div class="term-card" id="term-14">
+                <div class="term-title">Epoch <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: e-pok)</span></div>
+                <p class="term-desc">Satu putaran penuh di mana AI selesai membaca seluruh data latihan dari awal sampai akhir.</p>
+            </div>
+            <div class="term-card" id="term-15">
+                <div class="term-title">Batch Size</div>
+                <p class="term-desc">Jumlah baris data yang dibaca AI sekaligus dalam satu waktu sebelum ia memperbarui ingatannya.</p>
+            </div>
+            <div class="term-card" id="term-16">
+                <div class="term-title">Accuracy <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Akurasi)</span></div>
+                <p class="term-desc">Persentase seberapa sering tebakan AI itu benar secara keseluruhan.</p>
+            </div>
+            <div class="term-card" id="term-17">
+                <div class="term-title">Precision</div>
+                <p class="term-desc">Seberapa akurat AI saat ia menebak "Iya/Positif". (Metrik untuk menghindari salah tuduh).</p>
+            </div>
+            <div class="term-card" id="term-18">
+                <div class="term-title">Recall</div>
+                <p class="term-desc">Seberapa jago AI menemukan semua kasus positif yang tersembunyi. (Metrik untuk menghindari ada data yang terlewat).</p>
+            </div>
+            <div class="term-card" id="term-19">
+                <div class="term-title">F1-Score</div>
+                <p class="term-desc">Nilai keseimbangan atau nilai tengah antara Precision dan Recall.</p>
+            </div>
+            <div class="term-card" id="term-20">
+                <div class="term-title">Loss Function</div>
+                <p class="term-desc">Alat ukur untuk menghitung "seberapa melenceng" tebakan AI dari jawaban aslinya. Semakin kecil angkanya, semakin bagus.</p>
+            </div>
+            <div class="term-card" id="term-21">
+                <div class="term-title">Gradient Descent</div>
+                <p class="term-desc">Cara AI memperbaiki dirinya sendiri dengan melangkah turun mencari titik kesalahan (Loss) paling rendah.</p>
+            </div>
+            <div class="term-card" id="term-22">
+                <div class="term-title">Hyperparameter</div>
+                <p class="term-desc">Pengaturan manual (seperti memutar tombol radio) yang harus diatur oleh Engineer sebelum AI mulai belajar</p>
+            </div>
+            <div class="term-card" id="term-23">
+                <div class="term-title">Fine-Tuning</div>
+                <p class="term-desc">Memoles model AI raksasa yang sudah pintar dengan sedikit data khusus agar ia menjadi ahli di satu bidang spesifik (misal: AI ahli hukum).</p>
+            </div>
+            <div class="term-card" id="term-24">
+                <div class="term-title">Model <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Model AI)</span></div>
+                <p class="term-desc">"Otak" digital dari sebuah AI yang sudah selesai diajari untuk melakukan tugas tertentu (seperti menjawab pertanyaan, menerjemahkan bahasa, atau mengenali gambar).</p>
+            </div>
+            <div class="term-card" id="term-25">
+                <div class="term-title">Dataset</div>
+                <p class="term-desc">Kumpulan data mentah (bisa berupa jutaan teks, tabel, atau dokumen) yang digunakan sebagai "buku pelajaran" untuk memberi makan dan melatih AI.</p>
+            </div>
+            <div class="term-card" id="term-26">
+                <div class="term-title">Algoritma <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Algorithm)</span></div>
+                <p class="term-desc">Urutan langkah-langkah logis untuk menyelesaikan suatu masalah. Ibarat resep masakan dari tahap persiapan hingga makanan siap dihidangkan.</p>
+            </div>
+            <div class="term-card" id="term-27">
+                <div class="term-title">Data Pipeline</div>
+                <p class="term-desc">Jalur pipa digital otomatis tempat data mengalir, disaring, dan dirapikan dari sumber mentah hingga siap disuapkan ke AI</p>
+            </div>
+            <div class="term-card" id="term-28">
+                <div class="term-title">Structured Data</div>
+                <p class="term-desc">Data yang sangat rapi dan punya kolom/baris yang jelas (seperti file Excel atau tabel database)</p>
+            </div>
+            <div class="term-card" id="term-29">
+                <div class="term-title">Unstructured Data</div>
+                <p class="term-desc">Data yang berantakan, bebas, dan tidak punya format baku (seperti isi email, artikel PDF, gambar, atau video).</p>
+            </div>
+        </div> 
+
+        <h2 class="category-title" style="margin-top: 3rem; margin-bottom: 0.5rem; color: var(--accent);">🧠 KATEGORI 2: GENERATIVE AI, LLM & PROMPTING</h2>
+        <p class="category-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">(Kategori ini mencakup teknik-teknik lanjutan dalam membangun dan mengoptimalkan sistem AI generatif seperti RAG)</p>
+        <div class="glossary-grid">
+            <div class="term-card" id="term-30">
+                <div class="term-title">Generative AI <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(GenAI)</span></div>
+                <p class="term-desc">Jenis AI yang bukan cuma bisa menganalisis data, tapi bisa "menciptakan" hal baru dari nol (teks, gambar, suara, kode).</p>
+            </div>
+            <div class="term-card" id="term-31">
+                <div class="term-title">Natural Language Processing <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(NLP)</span></div>
+                <p class="term-desc">Cabang AI yang mengajari komputer untuk bisa membaca, memahami, dan membalas bahasa manusia, bukan sekadar bahasa pemrograman.</p>
+            </div>
+            <div class="term-card" id="term-32">
+                <div class="term-title">Foundation Model</div>
+                <p class="term-desc">Model raksasa serbaguna yang sudah dilatih dengan porsi besar data dari seluruh internet. Ibarat orang pintar yang tahu banyak hal umum, tapi belum dilatih untuk satu spesialisasi.</p>
+            </div>
+            <div class="term-card" id="term-33">
+                <div class="term-title">Parameters</div>
+                <p class="term-desc">"Jutaan tombol sakelar" di dalam otak model AI. Semakin banyak jumlah parameternya (seperti 7B atau 70B), biasanya modelnya semakin pintar dan kompleks, tapi butuh komputer yang lebih besar.</p>
+            </div>
+            <div class="term-card" id="term-34">
+                <div class="term-title">Weights <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Bobot)</span></div>
+                <p class="term-desc">Nilai kekuatan dari hubungan antar neuron di otak AI. Bobot inilah yang berubah-ubah saat AI sedang belajar.</p>
+            </div>
+            <div class="term-card" id="term-35">
+                <div class="term-title">Prompt Engineering</div>
+                <p class="term-desc">Seni menyusun kalimat perintah (prompt) yang detail dan spesifik, agar AI memberikan jawaban yang tepat tanpa halusinasi.</p>
+            </div>
+            <div class="term-card" id="term-36">
+                <div class="term-title">System Prompt</div>
+                <p class="term-desc">Perintah rahasia di belakang layar yang mengatur kepribadian atau batasan AI sebelum ia mengobrol dengan user. (Misal: "Kamu adalah agen layanan pelanggan yang ramah. Jangan pernah bahas politik").</p>
+            </div>
+            <div class="term-card" id="term-37">
+                <div class="term-title">User Prompt</div>
+                <p class="term-desc">Pertanyaan atau instruksi mentah yang diketik langsung oleh pengguna aplikasi.</p>
+            </div>
+            <div class="term-card" id="term-38">
+                <div class="term-title">Zero-Shot Prompting</div>
+                <p class="term-desc">Meminta AI mengerjakan tugas baru tanpa memberinya contoh sama sekali.</p>
+            </div>
+            <div class="term-card" id="term-39">
+                <div class="term-title">Few-Shot Prompting</div>
+                <p class="term-desc">Memberikan satu atau beberapa contoh (tanya-jawab) terlebih dahulu di dalam prompt, agar AI paham format yang kita inginkan sebelum dia menjawab soal yang sebenarnya.</p>
+            </div>
+            <div class="term-card" id="term-40">
+                <div class="term-title">Chain of Thought <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(CoT)</span></div>
+                <p class="term-desc">Teknik prompting yang memaksa AI untuk "berpikir langkah demi langkah" (menjabarkan proses berpikirnya) sebelum memberikan jawaban akhir. Sangat ampuh untuk tugas logika dan matematik</p>
+            </div>
+            <div class="term-card" id="term-41">
+                <div class="term-title">Hallucination <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Halusinasi)</span></div>
+                <p class="term-desc">Momen ketika AI dengan sangat percaya diri memberikan jawaban yang salah, ngarang, atau tidak masuk akal.</p>
+            </div>
+            <div class="term-card" id="term-42">
+                <div class="term-title">Context Window</div>
+                <p class="term-desc">Batas maksimal ingatan jangka pendek AI dalam satu percakapan. (Misal: Batas 8000 token berarti AI akan "lupa" dengan obrolan di awal jika percakapannya sudah melebihi batas tersebut).</p>
+            </div>
+            <div class="term-card" id="term-43">
+                <div class="term-title">Temperature</div>
+                <p class="term-desc">Pengatur tingkat kreativitas AI. Angka mendekati 0 membuat AI menjawab kaku dan kaku (pasti). Angka mendekati 1 membuat AI sangat kreatif (kadang ngelantur)</p>
+            </div>
+            <div class="term-card" id="term-44">
+                <div class="term-title">Top-K / Top-P</div>
+                <p class="term-desc">Pengaturan lanjutan bersama Temperature untuk membatasi opsi kata-kata aneh yang boleh dipilih AI saat menyusun kalimat.</p>
+            </div>
+            <div class="term-card" id="term-45">
+                <div class="term-title">Embedding</div>
+                <p class="term-desc">Proses mengubah teks (kata/kalimat) menjadi deretan angka (vektor koordinat). Tujuannya agar mesin bisa menghitung seberapa mirip makna antara dua kalimat.</p>
+            </div>
+            <div class="term-card" id="term-46">
+                <div class="term-title">Vector Database</div>
+                <p class="term-desc">Gudang khusus (seperti Pinecone atau FAISS) untuk menyimpan angka-angka Embedding. Beda dengan database biasa yang mencari kecocokan huruf, Vector DB mencari "kecocokan makna".</p>
+            </div>
+            <div class="term-card" id="term-47">
+                <div class="term-title">Chunking</div>
+                <p class="term-desc">Proses memotong-motong dokumen panjang (seperti buku PDF) menjadi paragraf-paragraf kecil agar muat dimasukkan ke dalam ingatan AI (Context Window).</p>
+            </div>
+            <div class="term-card" id="term-48">
+                <div class="term-title">Cosine Similarity</div>
+                <p class="term-desc">Rumus matematika yang dipakai Vector Database untuk mengukur seberapa mirip dua potong teks berdasarkan arah koordinat angkanya.</p>
+            </div>
+            <div class="term-card" id="term-49">
+                <div class="term-title">Agent <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Agen Otonom)</span></div>
+                <p class="term-desc">Sistem AI yang tidak hanya menunggu pertanyaan, tapi bisa merencanakan langkah, memilih alat bantu (tools), dan mengambil keputusan sendiri untuk mencapai tujuan.</p>
+            </div>
+            <div class="term-card" id="term-50">
+                <div class="term-title">Tool Calling / Function Calling</div>
+                <p class="term-desc">Kemampuan LLM untuk menekan tombol "eksekusi alat luar" (seperti mencari di Google atau menarik data Excel) jika dia merasa butuh info tambahan.</p>
+            </div>
+            <div class="term-card" id="term-51">
+                <div class="term-title">LangChain</div>
+                <p class="term-desc">Pustaka (Library) paling populer untuk merangkai LLM, Vector DB, dan Prompt menjadi satu aplikasi utuh (rantai logika).</p>
+            </div>
+            <div class="term-card" id="term-52">
+                <div class="term-title">LangGraph</div>
+                <p class="term-desc">Kerangka kerja khusus (dari pembuat LangChain) untuk merancang alur kerja agen otonom yang bisa berpikir berulang-ulang tanpa batas (siklik/looping).</p>
+            </div>
+            <div class="term-card" id="term-53">
+                <div class="term-title">OpenAI API</div>
+                <p class="term-desc">Layanan berbayar untuk meminjam otak AI canggih milik OpenAI (seperti GPT-4) ke dalam kodingan kita.</p>
+            </div>
+            <div class="term-card" id="term-54">
+                <div class="term-title">Hugging Face</div>
+                <p class="term-desc">"GitHub-nya dunia AI". Website tempat orang-orang dari seluruh dunia menyimpan, berbagi, dan mengunduh ribuan model AI secara gratis.</p>
+            </div>
+            <div class="term-card" id="term-55">
+                <div class="term-title">Token</div>
+                <p class="term-desc">Hitungan "potongan kata" yang dibaca oleh AI. Semakin panjang Anda mengobrol dengan AI, semakin banyak token yang dikuras.</p>
+            </div>
+            <div class="term-card" id="term-56">
+                <div class="term-title">LLM <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Large Language Model)</span></div>
+                <p class="term-desc">Jenis Model AI raksasa yang dikhususkan hanya untuk memahami dan memproduksi teks bahasa manusia (contohnya ChatGPT, Gemini, atau Claude).</p>
+            </div>
+            <div class="term-card" id="term-57">
+                <div class="term-title">RAG <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Retrieval-Augmented Generation)</span></div>
+                <p class="term-desc">Teknik memberi "buku contekan" kepada AI. Daripada AI menjawab dari hafalannya sendiri (yang sering halusinasi/ngarang), RAG memaksa AI membaca dokumen rahasia kita dulu sebelum menjawab.</p>
+            </div>
+            <div class="term-card" id="term-58">
+                <div class="term-title">Hybrid Search</div>
+                <p class="term-desc">Teknik pencarian tingkat tinggi di RAG yang menggabungkan kecocokan kata persis (berdasarkan huruf) dan kecocokan makna (berdasarkan vektor).</p>
+            </div>
+            <div class="term-card" id="term-59">
+                <div class="term-title">Re-ranking / Cross Encoder</div>
+                <p class="term-desc">Tahap "menyortir ulang". Setelah sistem RAG menemukan 10 dokumen, AI khusus akan mengurutkan ulang mana dokumen yang paling relevan untuk ditaruh di urutan nomor 1</p>
+            </div>
+            <div class="term-card" id="term-60">
+                <div class="term-title">Semantic Cache</div>
+                <p class="term-desc">"Ingatan pintar". Sistem yang menyimpan jawaban AI agar jika ada pengguna lain menanyakan hal yang maknanya sama, sistem tidak perlu membayar API lagi untuk berpikir ulang.</p>
+            </div>
+            <div class="term-card" id="term-61">
+                <div class="term-title">Quantization <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Kuantisasi)</span></div>
+                <p class="term-desc">Teknik "mengompres" ukuran model AI raksasa agar muat dijalankan di laptop atau server biasa tanpa terlalu mengorbankan kepintarannya.</p>
+            </div>
+            <div class="term-card" id="term-62">
+                <div class="term-title">PEFT <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Parameter-Efficient Fine-Tuning)</span></div>
+                <p class="term-desc">Melatih ulang model AI raksasa dengan cara hemat, yaitu hanya mengutak-atik sebagian kecil sel otaknya saja.</p>
+            </div>
+            <div class="term-card" id="term-63">
+                <div class="term-title">LoRA <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Low-Rank Adaptation)</span></div>
+                <p class="term-desc">Salah satu teknik PEFT paling populer untuk membuat AI menjadi "spesialis" di bidang tertentu hanya dengan modal komputasi (GPU) yang kecil.</p>
+            </div>
+            <div class="term-card" id="term-64">
+                <div class="term-title">Streaming <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(LLM Streaming)</span></div>
+                <p class="term-desc">Efek mesin ketik. Menampilkan jawaban AI kata-demi-kata secara real-time di layar pengguna tanpa harus menunggu AI selesai memikirkan seluruh paragraf.</p>
+            </div>
+            <div class="term-card" id="term-65">
+                <div class="term-title">Agent Memory</div>
+                <p class="term-desc">Kemampuan sebuah sistem AI otonom untuk merekam dan mengingat riwayat percakapan dengan Anda dari minggu-minggu sebelumnya.</p>
+            </div>
+            <div class="term-card" id="term-66">
+                <div class="term-title">TTS <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Text-to-Speech) & STT (Speech-to-Text)</span></div>
+                <p class="term-desc">Teknologi yang mengubah teks menjadi suara (TTS) atau suara menjadi teks (STT), memungkinkan AI untuk berbicara dan mendengar.</p>
+            </div>
+            <div class="term-card" id="term-67">
+                <div class="term-title">OCR <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Optical Character Recognition)</span></div>
+                <p class="term-desc">Teknologi "mata pembaca" untuk mengekstrak tulisan yang terkunci di dalam format gambar atau hasil scan PDF.</p>
+            </div>
+            <div class="term-card" id="term-68">
+                <div class="term-title">Open-Weights</div>
+                <p class="term-desc">Model AI yang "otaknya" bisa diunduh gratis, tapi kode resep pelatihannya tidak dibongkar ke publik.</p>
+            </div>
+            <div class="term-card" id="term-69">
+                <div class="term-title">Proprietary Model <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Closed Source)</span></div>
+                <p class="term-desc">Model AI tertutup, rahasia, dan berbayar yang tidak bisa kita unduh ke laptop (hanya bisa diakses lewat API), seperti ChatGPT atau Gemini Advanced.</p>
+            </div>
+            <div class="term-card" id="term-70">
+                <div class="term-title">Guardrails</div>
+                <p class="term-desc">Pagar pengaman otomatis. Sistem pelindung untuk mencegat pengguna yang iseng bertanya hal aneh, atau mencegat AI yang ingin merespons dengan kata-kata tidak pantas.</p>
+            </div>
+            <div class="term-card" id="term-71">
+                <div class="term-title">Prompt Injection</div>
+                <p class="term-desc">Serangan hacker gaya baru, di mana pengguna menyelundupkan teks jahat ke dalam prompt agar AI melanggar aturan awal pembuatnya.</p>
+            </div>
+            <div class="term-card" id="term-72">
+                <div class="term-title">Jailbreaking</div>
+                <p class="term-desc">Usaha menjebol "otak" AI agar ia mau menjawab hal-hal ilegal yang seharusnya dilarang.</p>
+            </div>
+        </div> 
+
+        <h2 class="category-title" style="margin-top: 3rem; margin-bottom: 0.5rem; color: var(--accent);">☁️ KATEGORI 3: INFRASTRUKTUR, CLOUD, & DEPLOYMENT</h2>
+        <p class="category-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">(Kategori ini fokus pada server, hardware, arsitektur backend, dan manajemen API)</p>
+        <div class="glossary-grid">
+            <div class="term-card" id="term-73">
+                <div class="term-title">Deployment</div>
+                <p class="term-desc">Proses memindahkan kode aplikasi dari komputer pribadi (lokal) ke server di internet agar bisa diakses oleh orang lain secara global.</p>
+            </div>
+            <div class="term-card" id="term-74">
+                <div class="term-title">Local</div>
+                <p class="term-desc">Lokal berarti program Anda baru bisa berjalan dengan aman di laptop Anda sendiri.</p>
+            </div>
+            <div class="term-card" id="term-75">
+                <div class="term-title">Production <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Prod)</span></div>
+                <p class="term-desc">Lingkungan "medan tempur" asli. Aplikasi Anda sudah rilis dan sedang digunakan oleh pengguna sungguhan, bukan lagi untuk uji coba.</p>
+            </div>
+            <div class="term-card" id="term-76">
+                <div class="term-title">Staging / Development</div>
+                <p class="term-desc">Lingkungan "latihan". Tempat di mana kode diuji coba untuk mencari bug sebelum dirilis ke lingkungan Production.</p>
+            </div>
+            <div class="term-card" id="term-77">
+                <div class="term-title">Container <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Docker)</span></div>
+                <p class="term-desc">Kotak kedap udara berisi aplikasi Anda beserta semua alat pendukungnya. Tujuannya agar aplikasi jalan lancar di komputer manapun, tanpa takut "beda settingan".</p>
+            </div>
+            <div class="term-card" id="term-78">
+                <div class="term-title">Image <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Docker Image)</span></div>
+                <p class="term-desc">"Cetak biru" atau blueprint dari Container. Sebelum Container dijalankan, ia harus dibuat dari sebuah Image.</p>
+            </div>
+            <div class="term-card" id="term-79">
+                <div class="term-title">Container Registry</div>
+                <p class="term-desc">Gudang penyimpanan khusus untuk menyimpan berbagai Image Docker (seperti Docker Hub atau Google Artifact Registry).</p>
+            </div>
+            <div class="term-card" id="term-80">
+                <div class="term-title">API <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Application Programming Interface)</span></div>
+                <p class="term-desc">Jembatan komunikasi atau "Pelayan Pembawa Pesan". Misalnya, kode di laptop Anda menyuruh API pergi ke server Google untuk meminta jawaban AI, lalu API membawa jawaban itu kembali ke layar Anda.</p>
+            </div>
+            <div class="term-card" id="term-81">
+                <div class="term-title">API Gateway</div>
+                <p class="term-desc">"Gerbang masuk" utama untuk semua permintaan dari pengguna sebelum diteruskan ke backend AI Anda. Berfungsi mengatur lalu lintas dan keamanan.</p>
+            </div>
+            <div class="term-card" id="term-82">
+                <div class="term-title">REST API</div>
+                <p class="term-desc">Standar aturan (tata krama) paling umum di dunia web yang dipakai agar dua aplikasi berbeda bisa saling bertukar pesan di internet.</p>
+            </div>
+            <div class="term-card" id="term-83">
+                <div class="term-title">Load Balancer</div>
+                <p class="term-desc">Pengatur lalu lintas otomatis. Jika ada ribuan orang mengakses AI Anda sekaligus, alat ini membagi beban kerja ke beberapa server agar sistem tidak crash.</p>
+            </div>
+            <div class="term-card" id="term-84">
+                <div class="term-title">Latency <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Latensi)</span></div>
+                <p class="term-desc">Jeda waktu tunggu. Waktu yang dibutuhkan AI untuk memproses pertanyaan hingga mengirimkan jawaban. (Semakin kecil nilainya, semakin terasa instan).</p>
+            </div>
+            <div class="term-card" id="term-85">
+                <div class="term-title">Throughput</div>
+                <p class="term-desc">Kapasitas maksimal. Seberapa banyak permintaan atau percakapan yang bisa ditangani oleh sistem Anda dalam satu detik.</p>
+            </div>
+            <div class="term-card" id="term-86">
+                <div class="term-title">Scaling</div>
+                <p class="term-desc">Proses menambah kekuatan sistem. Horizontal scaling (tambah server) atau Vertical scaling (tambah spek server).</p>
+            </div>
+            <div class="term-card" id="term-87">
+                <div class="term-title">Managed Service</div>
+                <p class="term-desc">Layanan di cloud di mana Anda cukup menyewa/memakai layanannya saja, tanpa perlu pusing mengurus infrastruktur fisiknya (seperti Cloud Run atau AWS Lambda).</p>
+            </div>
+            <div class="term-card" id="term-88">
+                <div class="term-title">Serverless</div>
+                <p class="term-desc">Paradigma di mana Anda tidak perlu memikirkan server. Kode Anda hanya aktif (dan membayar) saat ada permintaan masuk.</p>
+            </div>
+            <div class="term-card" id="term-89">
+                <div class="term-title">CI/CD <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Continuous Integration/Continuous Deployment)</span></div>
+                <p class="term-desc">Jalur otomatis untuk mengetes dan mengirim kode baru ke Production tanpa campur tangan manusia manual.</p>
+            </div>
+            <div class="term-card" id="term-90">
+                <div class="term-title">Endpoint</div>
+                <p class="term-desc">URL atau alamat tujuan spesifik di internet tempat API Anda "menunggu" permintaan datang.</p>
+            </div>
+            <div class="term-card" id="term-91">
+                <div class="term-title">Environment Variables <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(.env)</span></div>
+                <p class="term-desc">Tempat menyimpan data rahasia (seperti API Key atau password database) agar tidak pernah tertulis langsung di dalam kode utama.</p>
+            </div>
+            <div class="term-card" id="term-92">
+                <div class="term-title">Logs</div>
+                <p class="term-desc">Catatan aktivitas sistem yang dicatat setiap detik. Jika ada error, log adalah "kotak hitam" pesawat yang memberi tahu apa yang terjadi sesaat sebelum sistem mati.</p>
+            </div>
+            <div class="term-card" id="term-93">
+                <div class="term-title">Monitoring</div>
+                <p class="term-desc">Memantau kesehatan sistem secara real-time (seperti detak jantung) untuk mendeteksi tanda-tanda sistem akan down.</p>
+            </div>
+            <div class="term-card" id="term-94">
+                <div class="term-title">Infrastructure as Code <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(IaC)</span></div>
+                <p class="term-desc">Menulis kode untuk membangun infrastruktur server/cloud. Jadi, membangun server cukup pakai script, bukan klik-klik manual di dashboard.</p>
+            </div>
+            <div class="term-card" id="term-95">
+                <div class="term-title">SSH <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Secure Shell)</span></div>
+                <p class="term-desc">Cara aman untuk meremote atau mengendalikan komputer server dari jarak jauh hanya dengan teks perintah.</p>
+            </div>
+            <div class="term-card" id="term-96">
+                <div class="term-title">SSL/TLS</div>
+                <p class="term-desc">Lapisan keamanan yang membuat koneksi antara user dan server Anda terenkripsi (logo gembok di browser).</p>
+            </div>
+            <div class="term-card" id="term-97">
+                <div class="term-title">Server</div>
+                <p class="term-desc">Komputer super yang menyala 24 jam tanpa henti untuk menaruh aplikasi kita agar selalu bisa diakses orang lain lewat internet.</p>
+            </div>
+            <div class="term-card" id="term-98">
+                <div class="term-title">Database <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(DB)</span></div>
+                <p class="term-desc">Gudang digital raksasa tempat menyimpan semua data (seperti nama user, riwayat chat, atau dokumen) secara permanen.</p>
+            </div>
+            <div class="term-card" id="term-99">
+                <div class="term-title">Cloud <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Komputasi Awan)</span></div>
+                <p class="term-desc">Menyewa komputer super canggih milik perusahaan besar (seperti Google, Amazon, atau Microsoft) lewat internet, sehingga kita tidak perlu membeli komputer/server fisik yang mahal.</p>
+            </div>
+            <div class="term-card" id="term-100">
+                <div class="term-title">GPU <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Graphics Processing Unit)</span></div>
+                <p class="term-desc">Mesin pemroses grafis yang menjadi "mesin turbo" wajib untuk bisa menjalankan dan melatih model AI dengan cepat.</p>
+            </div>
+            <div class="term-card" id="term-101">
+                <div class="term-title">VRAM <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Video RAM)</span></div>
+                <p class="term-desc">Kapasitas memori khusus di dalam GPU. Semakin besar angka VRAM-nya, semakin besar ukuran model AI yang bisa ditampung.</p>
+            </div>
+            <div class="term-card" id="term-102">
+                <div class="term-title">Webhook</div>
+                <p class="term-desc">"Kurir instan". Sistem yang otomatis mengetuk pintu aplikasi Anda dan mengirimkan data begitu ada sebuah kejadian selesai diproses di server lain.</p>
+            </div>
+            <div class="term-card" id="term-103">
+                <div class="term-title">Rate Limit <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Error 429)</span></div>
+                <p class="term-desc">"Tilang" dari penyedia API karena aplikasi Anda mengirim terlalu banyak permintaan obrolan dalam hitungan detik/menit.</p>
+            </div>
+        </div> 
+
+        <h2 class="category-title" style="margin-top: 3rem; margin-bottom: 0.5rem; color: var(--accent);">⚙️ KATEGORI 4: WORKFLOW, SOFTSKILL, & LAINNYA</h2>
+        <p class="category-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">(Kategori ini mencakup metodologi pengembangan software secara umum)</p>
+        <div class="glossary-grid">
+            <div class="term-card" id="term-104">
+                <div class="term-title">Agile</div>
+                <p class="term-desc">Metode kerja cepat yang membagi proyek besar menjadi bagian-bagian kecil (sprint) agar bisa selesai dengan cepat dan mudah diubah.</p>
+            </div>
+            <div class="term-card" id="term-105">
+                <div class="term-title">Sprint</div>
+                <p class="term-desc">Periode waktu singkat (biasanya 1-2 minggu) untuk menyelesaikan tugas-tugas spesifik dalam proyek.</p>
+            </div>
+            <div class="term-card" id="term-106">
+                <div class="term-title">Scrum</div>
+                <p class="term-desc">Kerangka kerja Agile yang memiliki rutinitas harian (Daily Standup) untuk memastikan tim tetap sinkron.</p>
+            </div>
+            <div class="term-card" id="term-107">
+                <div class="term-title">Kanban</div>
+                <p class="term-desc">Sistem manajemen tugas menggunakan papan visual (seperti Trello/Jira) untuk melihat status tugas (To Do, In Progress, Done).</p>
+            </div>
+            <div class="term-card" id="term-108">
+                <div class="term-title">Code Review</div>
+                <p class="term-desc">Proses di mana sesama anggota tim saling memeriksa kode satu sama lain sebelum digabungkan ke proyek utama.</p>
+            </div>
+            <div class="term-card" id="term-109">
+                <div class="term-title">Pull Request <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(PR)</span></div>
+                <p class="term-desc">Cara mengajukan perubahan kode agar diperiksa oleh anggota tim lain sebelum disetujui.</p>
+            </div>
+            <div class="term-card" id="term-110">
+                <div class="term-title">Merge</div>
+                <p class="term-desc">Menggabungkan kode yang sudah diperiksa ke dalam proyek utama.</p>
+            </div>
+            <div class="term-card" id="term-111">
+                <div class="term-title">Branch</div>
+                <p class="term-desc">"Cabang" kode. Tempat kita bereksperimen mengubah fitur tanpa merusak kode utama yang sedang berjalan.</p>
+            </div>
+            <div class="term-card" id="term-112">
+                <div class="term-title">Conflict</div>
+                <p class="term-desc">Momen saat dua orang mengubah baris kode yang sama di waktu bersamaan, sehingga komputer bingung mana yang harus dipakai.</p>
+            </div>
+            <div class="term-card" id="term-113">
+                <div class="term-title">Documentation</div>
+                <p class="term-desc">Catatan manual (dalam bentuk teks atau README) yang menjelaskan cara kerja sistem agar orang lain bisa menggunakannya.</p>
+            </div>
+            <div class="term-card" id="term-114">
+                <div class="term-title">Technical Debt</div>
+                <p class="term-desc">"Utang teknis". Kode yang dibuat asal-asalan demi cepat selesai, namun nantinya harus diperbaiki agar tidak menjadi masalah besar.</p>
+            </div>
+            <div class="term-card" id="term-115">
+                <div class="term-title">MVP <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Minimum Viable Product)</span></div>
+                <p class="term-desc">Versi paling sederhana dari sebuah aplikasi yang sudah bisa berfungsi dan layak diberikan ke klien.</p>
+            </div>
+            <div class="term-card" id="term-116">
+                <div class="term-title">Prototype</div>
+                <p class="term-desc">Model awal yang dibuat kasar untuk menguji apakah ide tersebut bisa berjalan atau tidak.</p>
+            </div>
+            <div class="term-card" id="term-117">
+                <div class="term-title">Stakeholder</div>
+                <p class="term-desc">Pihak yang berkepentingan dalam proyek (bisa klien, bos, atau pengguna akhir).</p>
+            </div>
+            <div class="term-card" id="term-118">
+                <div class="term-title">Requirement</div>
+                <p class="term-desc">Kebutuhan fitur yang harus ada di dalam aplikasi berdasarkan permintaan klien.</p>
+            </div>
+            <div class="term-card" id="term-119">
+                <div class="term-title">Bug Bounty</div>
+                <p class="term-desc">Program di mana perusahaan memberi hadiah uang kepada siapapun yang menemukan celah keamanan di sistem mereka.</p>
+            </div>
+            <div class="term-card" id="term-120">
+                <div class="term-title">Compliance</div>
+                <p class="term-desc">Kepatuhan terhadap aturan hukum atau standar privasi data (misalnya GDPR atau aturan perlindungan data lokal).</p>
+            </div>
+            <div class="term-card" id="term-121">
+                <div class="term-title">Scalability</div>
+                <p class="term-desc">Kemampuan sistem untuk tetap stabil saat jumlah pengguna melonjak drastis.</p>
+            </div>
+            <div class="term-card" id="term-122">
+                <div class="term-title">Maintenance</div>
+                <p class="term-desc">Pekerjaan rutin untuk menjaga sistem tetap nyala, memperbaiki error baru, atau memperbarui fitur.</p>
+            </div>
+            <div class="term-card" id="term-123">
+                <div class="term-title">Unit Test</div>
+                <p class="term-desc">Kodingan khusus yang tugasnya mengetes bagian terkecil dari aplikasi Anda secara otomatis.</p>
+            </div>
+            <div class="term-card" id="term-124">
+                <div class="term-title">Production-Ready</div>
+                <p class="term-desc">Status kode yang dianggap sudah cukup aman, stabil, dan teruji untuk dijalankan di dunia nyata.</p>
+            </div>
+            <div class="term-card" id="term-125">
+                <div class="term-title">Documentation-First</div>
+                <p class="term-desc">Pendekatan di mana Anda menulis dokumentasi sebelum menulis kode.</p>
+            </div>
+            <div class="term-card" id="term-126">
+                <div class="term-title">Open-Source License</div>
+                <p class="term-desc">Aturan hukum yang membolehkan atau melarang orang lain untuk menggunakan kode Anda (seperti MIT, Apache 2.0).</p>
+            </div>
+            <div class="term-card" id="term-127">
+                <div class="term-title">Soft Skill</div>
+                <p class="term-desc">Kemampuan non-teknis, seperti komunikasi, manajemen waktu, dan empati saat menghadapi konflik tim.</p>
+            </div>
+            <div class="term-card" id="term-128">
+                <div class="term-title">Pair Programming</div>
+                <p class="term-desc">Dua orang bekerja di depan satu komputer: satu menulis kode, satu lagi mengawasi dan memberikan ide.</p>
+            </div>
+            <div class="term-card" id="term-129">
+                <div class="term-title">Refactoring</div>
+                <p class="term-desc">Merapikan kode tanpa mengubah hasilnya.</p>
+            </div>
+            <div class="term-card" id="term-130">
+                <div class="term-title">Backlog</div>
+                <p class="term-desc">Daftar panjang semua fitur yang ingin dibuat, tapi belum dikerjakan saat ini.</p>
+            </div>
+            <div class="term-card" id="term-131">
+                <div class="term-title">Issue Tracking</div>
+                <p class="term-desc">Sistem untuk mencatat setiap bug atau fitur baru agar tidak terlupa (di GitHub disebut Issues).</p>
+            </div>
+            <div class="term-card" id="term-132">
+                <div class="term-title">Release Cycle</div>
+                <p class="term-desc">Jadwal rutin kapan aplikasi akan diperbarui (misal: dirilis versi baru setiap bulan).</p>
+            </div>
+            <div class="term-card" id="term-133">
+                <div class="term-title">Versioning</div>
+                <p class="term-desc">Cara menandai versi aplikasi (misal: v1.0.0, v1.0.1) agar pengguna tahu apakah aplikasi tersebut baru atau sudah lama.</p>
+            </div>
+            <div class="term-card" id="term-134">
+                <div class="term-title">Alpha/Beta Testing</div>
+                <p class="term-desc">Tahap uji coba aplikasi: Alpha (internal), Beta (ke beberapa pengguna terpilih).</p>
+            </div>
+            <div class="term-card" id="term-135">
+                <div class="term-title">Documentation <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Docstring)</span></div>
+                <p class="term-desc">Komentar singkat di dalam kode yang menjelaskan apa fungsi dari sebuah blok kode.</p>
+            </div>
+            <div class="term-card" id="term-136">
+                <div class="term-title">ReadMe</div>
+                <p class="term-desc">File teks paling penting di sebuah folder proyek yang menjelaskan tentang apa proyek itu dan bagaimana cara pakainya.</p>
+            </div>
+            <div class="term-card" id="term-137">
+                <div class="term-title">Dependencies</div>
+                <p class="term-desc">Daftar Library lain yang harus terinstal agar kode Anda bisa berjalan.</p>
+            </div>
+            <div class="term-card" id="term-138">
+                <div class="term-title">Environment <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Env)</span></div>
+                <p class="term-desc">Ruangan kerja terisolasi di dalam laptop. Tujuannya agar alat-alat masak (Library) untuk Proyek A tidak tercampur dan merusak alat-alat di Proyek B. (Catatan: merevisi istilah Env sebelumnya agar lebih general).</p>
+            </div>
+            <div class="term-card" id="term-139">
+                <div class="term-title">Virtual Environment <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(venv / conda)</span></div>
+                <p class="term-desc">Ruangan kerja terisolasi di dalam laptop. Tujuannya agar alat-alat masak (Library) untuk Proyek A tidak tercampur dan merusak alat-alat di Proyek B. (Catatan: merevisi istilah Env sebelumnya agar lebih general).</p>
+            </div>
+            <div class="term-card" id="term-140">
+                <div class="term-title">Debugging Tools</div>
+                <p class="term-desc">Alat bantu untuk melacak bug (misal: debugger di VS Code).</p>
+            </div>
+            <div class="term-card" id="term-141">
+                <div class="term-title">Architecture Pattern</div>
+                <p class="term-desc">Pola baku dalam merancang sistem (misal: Model-View-Controller).</p>
+            </div>
+            <div class="term-card" id="term-142">
+                <div class="term-title">Cross-Platform</div>
+                <p class="term-desc">Aplikasi yang bisa jalan di Windows, Mac, maupun Linux tanpa perlu diubah kodenya.</p>
+            </div>
+            <div class="term-card" id="term-143">
+                <div class="term-title">User Experience <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(UX)</span></div>
+                <p class="term-desc">Seberapa nyaman dan gampang orang menggunakan sistem Anda.</p>
+            </div>
+            <div class="term-card" id="term-144">
+                <div class="term-title">User Interface <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(UI)</span></div>
+                <p class="term-desc">Tampilan visual aplikasi Anda.</p>
+            </div>
+            <div class="term-card" id="term-145">
+                <div class="term-title">Ngoding / Coding</div>
+                <p class="term-desc">Kegiatan mengetik instruksi (resep) untuk komputer.</p>
+            </div>
+            <div class="term-card" id="term-146">
+                <div class="term-title">Run / Execute</div>
+                <p class="term-desc">Tombol sakelar untuk menyuruh komputer "Ayo jalan! Kerjakan tugas yang baru saja saya ketik!".</p>
+            </div>
+            <div class="term-card" id="term-147">
+                <div class="term-title">Bug <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: Bag)</span></div>
+                <p class="term-desc">Harafiahnya berarti Serangga/Kutu. Di dunia IT, ini artinya ada "kecacatan" atau kesalahan logika di dalam kode Anda yang membuat program berjalan tidak semestinya.</p>
+            </div>
+            <div class="term-card" id="term-148">
+                <div class="term-title">Debugging <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: Di-ba-ging)</span></div>
+                <p class="term-desc">Kegiatan mencari dan membasmi si "Kutu" (Bug) tadi sampai programnya lancar kembali. Kegiatan ini memakan 80% waktu seorang programmer.</p>
+            </div>
+            <div class="term-card" id="term-149">
+                <div class="term-title">Library / Package</div>
+                <p class="term-desc">"Kotak peralatan ekstra" buatan orang lain yang bisa Anda pinjam ke dalam kode Anda (lewat perintah import), agar Anda tidak perlu membuat semuanya dari nol.</p>
+            </div>
+            <div class="term-card" id="term-150">
+                <div class="term-title">Terminal / CLI / Command Prompt</div>
+                <p class="term-desc">Layar hitam berisi teks putih tempat Anda mengetikkan perintah langsung ke "jantung" sistem komputer.</p>
+            </div>
+            <div class="term-card" id="term-151">
+                <div class="term-title">Repo / Repository</div>
+                <p class="term-desc">Gudang penyimpanan digital (biasanya menggunakan website GitHub) untuk menyimpan seluruh file kodingan Anda agar aman dan bisa dikerjakan bersama tim.</p>
+            </div>
+            <div class="term-card" id="term-152">
+                <div class="term-title">Frontend <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Front-end)</span></div>
+                <p class="term-desc">Bagian "Etalase". Semua tampilan seperti tombol, warna, dan teks di aplikasi yang bisa dilihat langsung oleh pengguna.</p>
+            </div>
+            <div class="term-card" id="term-153">
+                <div class="term-title">Backend <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Back-end)</span></div>
+                <p class="term-desc">Bagian "Dapur". Mesin tak terlihat di belakang layar yang sibuk menghitung data dan berpikir.</p>
+            </div>
+            <div class="term-card" id="term-154">
+                <div class="term-title">Open Source</div>
+                <p class="term-desc">Program gratisan yang "resep" kodingannya dibuka untuk umum. Siapa saja boleh melihat, mencontek, atau memodifikasinya tanpa perlu membayar lisensi.</p>
+            </div>
+            <div class="term-card" id="term-155">
+                <div class="term-title">Framework</div>
+                <p class="term-desc">Kerangka kerja setengah jadi. Ibarat membangun rumah, pondasi dan tiangnya sudah dibikinkan oleh orang lain, Anda tinggal mengisi temboknya saja agar lebih cepat selesai.</p>
+            </div>
+            <div class="term-card" id="term-156">
+                <div class="term-title">Git & GitHub</div>
+                <p class="term-desc">Git adalah alat "mesin waktu" untuk merekam setiap perubahan pada kodingan Anda agar bisa dikembalikan jika rusak. Sedangkan GitHub adalah semacam Google Drive khusus programmer untuk menyimpan dan memamerkan kode tersebut ke internet.</p>
+            </div>
+            <div class="term-card" id="term-157">
+                <div class="term-title">IDE / Code Editor</div>
+                <p class="term-desc">Perangkat lunak atau aplikasi tempat Anda mengetik, mengedit, dan menjalankan kode (contoh: Visual Studio Code, PyCharm).</p>
+            </div>
+            <div class="term-card" id="term-158">
+                <div class="term-title">PIP <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Python Package Installer)</span></div>
+                <p class="term-desc">"Toko aplikasi" bawaan Python. Alat ini bertugas untuk mengunduh dan memasang Library tambahan dari internet ke dalam laptop Anda.</p>
+            </div>
+            <div class="term-card" id="term-159">
+                <div class="term-title">Hardcode <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Hard-coding)</span></div>
+                <p class="term-desc">Praktik menuliskan data secara permanen langsung ke dalam kode. (Contoh: Menulis nama "Budi" di dalam kode, ketimbang menyuruh komputer menanyakannya lewat input()).</p>
+            </div>
+            <div class="term-card" id="term-160">
+                <div class="term-title">Clean Code</div>
+                <p class="term-desc">Praktik menulis kodingan yang rapi, terstruktur, dan mudah dipahami oleh manusia (programmer lain), bukan hanya sekadar bisa dibaca oleh komputer.</p>
+            </div>
+            <div class="term-card" id="term-161">
+                <div class="term-title">Script / Scripting</div>
+                <p class="term-desc">Sebuah file tunggal (biasanya berakhiran .py) yang berisi rentetan perintah kode Python untuk melakukan satu tugas otomatis.</p>
+            </div>
+            <div class="term-card" id="term-162">
+                <div class="term-title">Web Scraping</div>
+                <p class="term-desc">Teknik membuat program Python yang bisa menyedot, menyalin, dan mengumpulkan data dari suatu halaman website secara otomatis.</p>
+            </div>
+            <div class="term-card" id="term-163">
+                <div class="term-title">OOP <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Object-Oriented Programming)</span></div>
+                <p class="term-desc">Gaya penulisan kode tingkat lanjut yang menganggap komponen di dalam program sebagai "Benda/Objek" dunia nyata (misal: objek "Mobil" punya warna dan punya mesin).</p>
+            </div>
+            <div class="term-card" id="term-164">
+                <div class="term-title">Path / Directory</div>
+                <p class="term-desc">Alamat pasti lokasi sebuah file atau folder di dalam sistem komputer Anda (contoh: C:/Dokumen/proyek_python/).</p>
+            </div>
+            <div class="term-card" id="term-165">
+                <div class="term-title">Syntax Sugar</div>
+                <p class="term-desc">Cara penulisan kode di Python yang dirancang sangat singkat dan manis (mudah dibaca), untuk menggantikan cara penulisan lama yang panjang dan rumit.</p>
+            </div>
+            <div class="term-card" id="term-166">
+                <div class="term-title">PEP 8 <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(dibaca: pep-eight)</span></div>
+                <p class="term-desc">Buku pedoman resmi tata krama penulisan Python sedunia. Kalau ada yang bilang "Kodinganmu gak PEP 8 nih", artinya kodingan Anda berantakan dan tidak mengikuti standar kerapian internasional.</p>
+            </div>
+            <div class="term-card" id="term-167">
+                <div class="term-title">JSON <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(JavaScript Object Notation)</span></div>
+                <p class="term-desc">Format teks universal untuk tukar-menukar data di internet. Bentuknya 99% mirip dengan Dictionary di Python (memakai kurung kurawal { }). Anda pasti akan bertemu ini saat meminjam data dari API.</p>
+            </div>
+            <div class="term-card" id="term-168">
+                <div class="term-title">Refactoring <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Refaktor)</span></div>
+                <p class="term-desc">Kegiatan "bersih-bersih bengkel". Merapikan dan menyederhanakan kode yang sudah jalan agar lebih cepat dan enak dibaca, tanpa mengubah fungsi atau hasil akhirnya.</p>
+            </div>
+            <div class="term-card" id="term-169">
+                <div class="term-title">Try-Except <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Error Handling)</span></div>
+                <p class="term-desc">Sabuk pengaman dalam coding. Daripada program tiba-tiba mati total ( crash ) saat kena error, kita menyuruh komputer: "Coba (Try) jalankan ini, kalau gagal/error, Tangkap (Except) dan jalankan rencana cadangan".</p>
+            </div>
+            <div class="term-card" id="term-170">
+                <div class="term-title">Boilerplate</div>
+                <p class="term-desc">Teks "Kop Surat" atau template kode standar yang panjang dan terpaksa harus diketik berulang-ulang setiap kali membuat proyek baru, sebelum kita benar-benar menulis kode inti kita.</p>
+            </div>
+            <div class="term-card" id="term-171">
+                <div class="term-title">PoC <span style="font-size:0.8rem; font-weight:normal; color:#94a3b8;">(Proof of Concept)</span></div>
+                <p class="term-desc">Aplikasi contoh atau model uji coba berskala kecil yang dibuat dengan cepat untuk membuktikan apakah suatu ide atau konsep teknologi benar-benar bisa diwujudkan sebelum proyek besar dimulai.</p>
+            </div>
+            <div class="term-card" id="term-172">
+                <div class="term-title">Microservices</div>
+                <p class="term-desc">Arsitektur memecah satu aplikasi raksasa menjadi puluhan aplikasi kecil yang hidup mandiri (misal: bagian khusus chat terpisah dari bagian database).</p>
+            </div>
+            <div class="term-card" id="term-173">
+                <div class="term-title">Monolith</div>
+                <p class="term-desc">Arsitektur jadul di mana seluruh fungsi aplikasi (layar, logika, dan database) ditumpuk ke dalam satu program raksasa.</p>
+            </div>
+
+        </div> 
+    
+    </section>
+    
 
         <!-- ERROR WARNINGS SECTION -->
         
-    <section class="handbook-section page-break" id="error-section">
+    <section class="handbook-section page-divider" id="error-section">
         <div class="section-header">
             <h2 class="section-title" style="color: #ef4444;">🔴 PERINGATAN ERROR</h2>
             <p class="section-subtitle">Menerjemahkan Teks Merah Menjadi Bahasa Manusia</p>
@@ -3232,8 +3999,8 @@ steps:
     </div>
 
     <!-- SCROLL TO TOP BUTTON -->
-    <button id="scrollTopBtn" title="Kembali ke atas" style="position: fixed; bottom: 2rem; right: 2rem; width: 50px; height: 50px; border-radius: 50%; background: var(--accent); color: #0f172a; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.5); z-index: 900;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    <button id="scrollTopBtn" title="Kembali ke atas" style="position: fixed; bottom: 2rem; right: 2rem; width: 45px; height: 45px; border-radius: 50%; background: var(--accent); color: #0f172a; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(0,0,0,0.4); z-index: 900;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 22px; height: 22px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
     </button>
 
     <script>
