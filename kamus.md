@@ -21,7 +21,7 @@ Tempat penyimpanan data agar nilainya dapat diakses dan digunakan kembali di bag
 Bayangkan sebuah kotak berlabel. Label di luar kotak adalah nama Variable, sementara isi di dalam kotak adalah datanya. Data dapat diakses kapan saja hanya dengan menyebut nama labelnya.
 
 **⚠️ ATURAN WAJIB:**
-Tidak perlu menuliskan kata "Variable" di dalam kode. Cukup langsung tuliskan namanya. Nama Variable tidak boleh mengandung spasi — gunakan garis bawah (_) sebagai pengganti spasi.
+Tidak perlu menuliskan kata "Variable" di dalam kode. Cukup langsung tuliskan namanya. Nama Variable tidak boleh mengandung spasi, gunakan garis bawah (_) sebagai pengganti spasi.
 
 **💻 CONTOH KODE:**
 ```python
@@ -36,7 +36,7 @@ nama_peserta = "Budi"
 Data berupa teks. Semua data yang berbentuk huruf, kata, atau kalimat dalam Python disebut String.
 
 **💡 ANALOGI DUNIA NYATA:**
-String ibarat tulisan di atas selembar kertas. Komputer tidak akan mengolah tulisan tersebut secara matematis — ia hanya membacanya apa adanya, persis seperti yang tertulis.
+String ibarat tulisan di atas selembar kertas. Komputer tidak akan mengolah tulisan tersebut secara matematis, melainkan hanya membacanya apa adanya, persis seperti yang tertulis.
 
 **⚠️ ATURAN WAJIB:**
 Untuk mendefinisikan sebuah String, teks harus diapit dengan tanda kutip dua (" ") atau tanda kutip satu (' '). Tanpa tanda kutip, Python akan mengira teks tersebut adalah sebuah perintah dan akan menghasilkan error.
@@ -55,7 +55,7 @@ angka = "12345"
 Angka bulat utuh. Tidak ada koma atau desimal.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti menghitung benda yang tidak bisa dibelah — misalnya jumlah orang atau jumlah kendaraan. Nilai seperti 2,5 orang tidak memiliki makna nyata, sehingga angka bulat yang digunakan.
+Seperti menghitung benda yang tidak bisa dibelah, misalnya jumlah orang atau jumlah kendaraan. Nilai seperti 2,5 orang tidak memiliki makna nyata, sehingga angka bulat yang digunakan.
 
 **⚠️ ATURAN WAJIB:**
 Ketik angka secara langsung tanpa tanda kutip. Jika diapit tanda kutip, Python akan memperlakukannya sebagai teks (String), bukan angka yang dapat dihitung secara matematis.
@@ -74,7 +74,7 @@ umur = "25"
 Angka desimal atau angka yang memiliki nilai pecahan.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti hasil pengukuran berat badan atau suhu tubuh yang tidak selalu menghasilkan nilai bulat — misalnya 65,5 kg atau 36,7 derajat Celsius.
+Seperti hasil pengukuran berat badan atau suhu tubuh yang tidak selalu menghasilkan nilai bulat, misalnya 65,5 kg atau 36,7 derajat Celsius.
 
 **⚠️ ATURAN WAJIB:**
 Dalam Python, pemisah desimal menggunakan titik ( . ), bukan koma ( , ).
@@ -93,7 +93,7 @@ berat_badan = 65,5
 Tipe data kepastian. Nilainya hanya ada dua kemungkinan: Benar (True) atau Salah (False). Tidak ada nilai ketiga.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti saklar lampu yang hanya memiliki dua posisi: Nyala atau Mati. Boolean umumnya digunakan untuk memeriksa suatu kondisi — misalnya: apakah pengguna sudah melakukan pembayaran? Jawabannya hanya True (sudah) atau False (belum).
+Seperti saklar lampu yang hanya memiliki dua posisi: Nyala atau Mati. Boolean umumnya digunakan untuk memeriksa suatu kondisi, misalnya: apakah pengguna sudah melakukan pembayaran? Jawabannya hanya True (sudah) atau False (belum).
 
 **⚠️ ATURAN WAJIB:**
 Gunakan kata True atau False. Huruf pertamanya wajib kapital dan tidak boleh diapit tanda kutip.
@@ -139,7 +139,7 @@ Seperti buku kontak di ponsel. Nama seseorang berperan sebagai Kunci, sedangkan 
 **⚠️ ATURAN WAJIB (BACA PELAN-PELAN):**
 - 1. Wajib dibungkus dengan kurung kurawal { }.
 - 2. Kunci dan Nilai dipisahkan oleh tanda titik dua ( : ).
-- 3. Jika terdapat lebih dari satu pasang data, gunakan tanda koma ( , ) untuk memisahkan setiap pasangan data. (Kunci dan Nilai bebas bentuknya — bisa berupa teks semua atau angka semua).
+- 3. Jika terdapat lebih dari satu pasang data, gunakan tanda koma ( , ) untuk memisahkan setiap pasangan data. (Kunci dan Nilai bebas bentuknya, bisa berupa teks semua atau angka semua).
 
 **💻 CONTOH KODE:**
 ```python
@@ -227,7 +227,7 @@ nama = "Budi
 ### 📖 KATA 12: None (dibaca: nan)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong — None benar-benar berarti tidak ada nilai.
+Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong, None benar-benar berarti tidak ada nilai.
 
 **💡 ANALOGI DUNIA NYATA:**
 - Angka 0 ibarat dompet yang berisi uang senilai nol. Ada wadahnya (dompet).
@@ -276,7 +276,7 @@ Meminta pengguna mengetikkan sesuatu melalui keyboard, kemudian menyimpan teks t
 Seperti formulir isian yang meminta pengguna mengisi data tertentu sebelum melanjutkan ke langkah berikutnya.
 
 **⚠️ ATURAN WAJIB:**
-Di dalam kurung ( ), dapat diisi teks pertanyaan (String) sebagai panduan bagi pengguna. Perlu diperhatikan: apapun yang diketik pengguna — termasuk angka — akan selalu diterima Python sebagai teks (String).
+Di dalam kurung ( ), dapat diisi teks pertanyaan (String) sebagai panduan bagi pengguna. Perlu diperhatikan: apapun yang diketik pengguna, termasuk angka, akan selalu diterima Python sebagai teks (String).
 
 **💻 CONTOH KODE:**
 ```python
@@ -352,7 +352,7 @@ def tambah_angka():
 Menghitung jumlah elemen atau karakter dalam suatu data.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti alat penghitung yang tidak peduli pada isi — ia hanya menghitung jumlahnya.
+Seperti alat penghitung yang tidak peduli pada isi, ia hanya menghitung jumlahnya.
 
 **⚠️ ATURAN WAJIB (BACA PELAN-PELAN):**
 Tulis len lalu ikuti dengan kurung biasa ( ). Cara penghitungannya menyesuaikan jenis data yang dimasukkan:
@@ -373,7 +373,7 @@ len(["Apel", "Jeruk", "Mangga"])
 Menambahkan satu elemen baru ke dalam sebuah List. Elemen baru selalu ditempatkan di posisi paling akhir.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti sistem antrean — orang yang baru datang diarahkan ke posisi paling belakang. append adalah perintah untuk mendaftarkan elemen baru ke posisi akhir daftar.
+Seperti sistem antrean, orang yang baru datang diarahkan ke posisi paling belakang. append adalah perintah untuk mendaftarkan elemen baru ke posisi akhir daftar.
 
 **⚠️ ATURAN WAJIB (RUMUS PENULISAN):**
 Perintah append tidak dapat berdiri sendiri. Harus didahului nama List yang ingin ditambahkan elemennya.
@@ -415,7 +415,7 @@ Memuat modul atau library tambahan yang tidak tersedia secara bawaan di Python.
 Seperti meminjam peralatan khusus dari gudang untuk keperluan tertentu. Setelah peralatan tersebut tersedia, barulah pekerjaan yang membutuhkan alat itu dapat dilakukan.
 
 **⚠️ ATURAN WAJIB:**
-Tulis kata import (huruf kecil semua), beri satu spasi, lalu ketik nama modulnya. Tidak perlu menuliskan URL atau lokasi file — Python sudah mengetahui tempat penyimpanan modulnya. Penempatan import sebaiknya di baris paling atas kode.
+Tulis kata import (huruf kecil semua), beri satu spasi, lalu ketik nama modulnya. Tidak perlu menuliskan URL atau lokasi file karena Python sudah mengetahui tempat penyimpanan modulnya. Penempatan import sebaiknya di baris paling atas kode.
 
 **💻 CONTOH KODE:**
 ```python
@@ -545,7 +545,7 @@ Blok alternatif yang dijalankan ketika kondisi if di atasnya tidak terpenuhi (be
 Melanjutkan aturan sebelumnya: "Jika pengguna memiliki tiket, izinkan masuk. Jika tidak memiliki tiket, tampilkan pesan penolakan."
 
 **⚠️ ATURAN WAJIB:**
-Kata else tidak membutuhkan kondisi tambahan — ia otomatis menangani semua kasus yang tidak lolos dari if. Tulis else, langsung tambahkan titik dua ( : ). Baris kode di bawahnya juga wajib menjorok ke dalam.
+Kata else tidak membutuhkan kondisi tambahan karena ia otomatis menangani semua kasus yang tidak lolos dari if. Tulis else, langsung tambahkan titik dua ( : ). Baris kode di bawahnya juga wajib menjorok ke dalam.
 
 **💻 CONTOH KODE:**
 ```python
@@ -586,10 +586,10 @@ elif tiket == "Reguler":
 ### 📖 KATA 29: Operator Pembanding (>, >=, <, <=, !=)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Simbol untuk membandingkan dua nilai — apakah lebih besar, lebih kecil, atau tidak sama.
+Simbol untuk membandingkan dua nilai (apakah lebih besar, lebih kecil, atau tidak sama).
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti pengukuran terhadap batas tertentu — misalnya memeriksa apakah nilai kecepatan melampaui batas yang ditetapkan.
+Seperti pengukuran terhadap batas tertentu, misalnya memeriksa apakah nilai kecepatan melampaui batas yang ditetapkan.
 
 **⚠️ ATURAN WAJIB (DAFTAR SIMBOL):**
 Digunakan di dalam baris if atau elif.
@@ -741,7 +741,7 @@ Fungsi untuk menghasilkan urutan angka secara otomatis. Sering digunakan bersama
 Seperti mencetak nomor antrean secara otomatis. Daripada menulis nomor satu per satu secara manual, cukup tentukan jumlahnya dan fungsi range akan menghasilkannya.
 
 **⚠️ ATURAN WAJIB:**
-Ingat kembali konsep Index (Kata 9). Python selalu mulai menghitung dari angka NOL. Jadi range(5) akan menghasilkan angka 0, 1, 2, 3, 4 — bukan 1 sampai 5 (tetap totalnya ada 5 buah angka).
+Ingat kembali konsep Index (Kata 9). Python selalu mulai menghitung dari angka NOL. Jadi range(5) akan menghasilkan angka 0, 1, 2, 3, 4 (bukan 1 sampai 5, tetapi totalnya tetap ada 5 buah angka).
 
 **💻 CONTOH KODE:**
 ```python
@@ -800,10 +800,10 @@ for angka in range(5):
 ### 📖 KATA 39: def (dibaca: def / singkatan dari: Define / artinya: Menetapkan)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya — belum menjalankannya. Fungsi baru akan dijalankan ketika namanya dipanggil di bagian lain kode.
+Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya dan belum menjalankannya. Fungsi baru akan dijalankan ketika namanya dipanggil di bagian lain kode.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti menulis prosedur kerja dan menyimpannya. Prosedur tersebut belum dijalankan saat ditulis — ia baru akan dijalankan ketika seseorang memanggilnya.
+Seperti menulis prosedur kerja dan menyimpannya. Prosedur tersebut belum dijalankan saat ditulis, melainkan baru akan dijalankan ketika seseorang memanggilnya.
 
 **⚠️ ATURAN WAJIB:**
 Harus diikuti dengan nama fungsi, tanda kurung (), dan tanda titik dua :. Seluruh isi fungsi di baris bawahnya wajib menjorok ke dalam (Tab).
@@ -1038,7 +1038,7 @@ def tambah_super(a, b):
 Memberi tahu Python bahwa blok kode berikut ini berpotensi menghasilkan error. Python diminta untuk mencoba menjalankannya, dan jika gagal, tidak langsung menghentikan program.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti menjalankan suatu proses yang berpotensi gagal dengan rencana cadangan yang sudah disiapkan — jika proses gagal, program tidak harus berhenti total.
+Seperti menjalankan suatu proses yang berpotensi gagal dengan rencana cadangan yang sudah disiapkan (jika proses gagal, program tidak harus berhenti total).
 
 **⚠️ ATURAN WAJIB:**
 Perintah try tidak dapat berdiri sendiri. Harus selalu dipasangkan dengan perintah except di bawahnya.
@@ -1078,7 +1078,7 @@ except:
 Blok kode yang selalu dijalankan terlepas dari apakah proses try berhasil atau menghasilkan error. Biasanya digunakan untuk operasi pembersihan seperti menutup koneksi atau file.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti prosedur wajib yang harus diselesaikan terlepas dari hasil proses sebelumnya — misalnya menutup koneksi database setelah operasi selesai, baik berhasil maupun tidak.
+Seperti prosedur wajib yang harus diselesaikan terlepas dari hasil proses sebelumnya, misalnya menutup koneksi database setelah operasi selesai, baik berhasil maupun tidak.
 
 Di dunia koding, finally sering dipakai untuk memastikan Python "menutup koneksi database" atau "menutup file" agar memori tidak penuh, terlepas dari apakah program mengalami error atau tidak.
 
@@ -1171,7 +1171,7 @@ buat_kopi(15) # Program akan berhenti dan menampilkan pesan error yang telah dit
 Template atau blueprint untuk membuat banyak objek yang memiliki struktur dan kemampuan yang sama, tanpa harus mendefinisikannya dari awal setiap kali.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti cetakan produksi yang digunakan berulang kali untuk menghasilkan produk dengan bentuk yang seragam. Cetakan itu sendiri bukan produknya — ia adalah pola yang digunakan untuk membuat produk.
+Seperti cetakan produksi yang digunakan berulang kali untuk menghasilkan produk dengan bentuk yang seragam. Cetakan itu sendiri bukan produknya, melainkan pola yang digunakan untuk membuat produk.
 
 **⚠️ ATURAN WAJIB:**
 Berbeda dengan konvensi penamaan lain di Python yang menggunakan huruf kecil, nama sebuah class wajib diawali dengan Huruf Kapital tanpa spasi (dikenal sebagai PascalCase atau CamelCase).
@@ -1231,7 +1231,7 @@ robot_satu = RobotAI("Gemini")
 Referensi ke objek yang sedang aktif saat itu. Digunakan agar fungsi di dalam class tahu objek mana yang sedang dioperasikan.
 
 **💡 ANALOGI DUNIA NYATA:**
-Jika ada banyak objek yang dibuat dari satu class yang sama, self memastikan bahwa setiap operasi hanya diterapkan pada objek yang relevan — bukan pada semua objek sekaligus.
+Jika ada banyak objek yang dibuat dari satu class yang sama, self memastikan bahwa setiap operasi hanya diterapkan pada objek yang relevan (bukan pada semua objek sekaligus).
 
 **⚠️ ATURAN WAJIB:**
 Di dalam sebuah class, kata self wajib menjadi parameter pertama di dalam kurung pada setiap fungsi. Ini adalah aturan yang tidak boleh dilanggar.
@@ -1347,7 +1347,7 @@ class KokiPemula(MasterChef):
 ### 📖 KATA 63: LLM (Large Language Model) (dibaca: el-el-em / artinya: Model Bahasa Raksasa)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Model kecerdasan buatan yang dilatih menggunakan data teks dalam jumlah sangat besar, sehingga mampu memahami dan menghasilkan teks layaknya manusia — termasuk menjawab pertanyaan, menulis kode, atau merangkum dokumen.
+Model kecerdasan buatan yang dilatih menggunakan data teks dalam jumlah sangat besar, sehingga mampu memahami dan menghasilkan teks layaknya manusia, termasuk menjawab pertanyaan, menulis kode, atau merangkum dokumen.
 
 **💡 ANALOGI DUNIA NYATA:**
 Seperti seorang ahli yang telah membaca dan mempelajari jutaan dokumen dari berbagai bidang. Berikan informasi dan instruksi yang relevan, dan ia dapat memberikan respons yang sesuai. Contoh LLM yang umum dikenal: ChatGPT (OpenAI), Gemini (Google).
@@ -1356,7 +1356,7 @@ Seperti seorang ahli yang telah membaca dan mempelajari jutaan dokumen dari berb
 LLM tidak memiliki akses ke informasi terkini atau data eksternal secara langsung. Jika konteks tidak diberikan dengan jelas, model dapat menghasilkan jawaban yang tidak akurat (halusinasi).
 
 **💻 CONTOH PEMAKAIAN:**
-Di Python, LLM tidak dibuat dari nol — melainkan dipanggil melalui API:
+Di Python, LLM tidak dibuat dari nol, melainkan dipanggil melalui API:
 ```python
 # Menghubungkan program ke LLM milik Google (Gemini)
 from google import genai
@@ -1395,7 +1395,7 @@ jawaban = model_ai.generate_content(pesanan_saya)
 Satuan terkecil yang digunakan model AI untuk memproses teks. Sekaligus menjadi satuan penghitungan biaya penggunaan layanan AI.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti satuan konsumsi pada layanan berbayar. Semakin banyak teks yang dikirim dan diterima, semakin banyak token yang digunakan — dan semakin besar biaya yang ditagihkan.
+Seperti satuan konsumsi pada layanan berbayar. Semakin banyak teks yang dikirim dan diterima, semakin banyak token yang digunakan, sehingga semakin besar biaya yang ditagihkan.
 
 **⚠️ ATURAN WAJIB:**
 Efisiensi penggunaan token adalah hal penting dalam pengembangan sistem AI. Hindari mengirim teks yang tidak relevan ke dalam model, karena konsumsi token yang berlebihan akan memperlambat respons dan meningkatkan biaya operasional.
@@ -1434,7 +1434,7 @@ kunci_saya = os.getenv("RAHASIA_API_KEY")
 Teknik yang memaksa model AI untuk mencari (Retrieve) jawaban dari dokumen yang disediakan terlebih dahulu, sebelum menghasilkan respons. Pendekatan ini mencegah AI menjawab berdasarkan asumsi atau hafalannya sendiri.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti ujian berbasis dokumen (open book exam) — peserta diwajibkan membaca materi yang disediakan sebelum menjawab, sehingga jawaban bersumber dari data yang valid.
+Seperti ujian berbasis dokumen (open book exam), di mana peserta diwajibkan membaca materi yang disediakan sebelum menjawab, sehingga jawaban bersumber dari data yang valid.
 
 **⚠️ ATURAN WAJIB:**
 Sistem RAG yang baik harus dapat menjawab "Informasi tidak tersedia" jika jawaban memang tidak ditemukan dalam dokumen yang diberikan. Ini penting untuk menjaga akurasi dan mencegah penyebaran informasi yang tidak valid.
@@ -1493,7 +1493,7 @@ print(angka_vektor)
 Database khusus yang dirancang untuk menyimpan dan mencari data dalam format vektor (Embedding) secara efisien.
 
 **💡 ANALOGI DUNIA NYATA:**
-Database konvensional mencari berdasarkan kecocokan karakter (seperti mencari di indeks alfabet). Vector Database mencari berdasarkan kecocokan makna — data yang maknanya mirip disimpan berdekatan, sehingga pencarian berdasarkan konteks menjadi jauh lebih akurat.
+Database konvensional mencari berdasarkan kecocokan karakter (seperti mencari di indeks alfabet). Vector Database mencari berdasarkan kecocokan makna (data yang maknanya mirip disimpan berdekatan, sehingga pencarian berdasarkan konteks menjadi jauh lebih akurat).
 
 **💻 CONTOH KODE (Ilustrasi Sederhana):**
 ```python
@@ -1515,7 +1515,7 @@ Sistem AI yang tidak hanya menghasilkan teks sebagai respons, tetapi diberikan k
 **💡 ANALOGI DUNIA NYATA:**
 Perbedaan antara AI biasa dan Agent:
 - AI biasa: Menerima instruksi dan menghasilkan teks respons.
-- Agent: Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, dan menyesuaikan rencana berdasarkan hasil yang diperoleh — semuanya secara mandiri.
+- Agent: Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, dan menyesuaikan rencana berdasarkan hasil yang diperoleh secara mandiri.
 
 **⚠️ ATURAN WAJIB:**
 Agent berpotensi terjebak dalam perulangan tanpa akhir (Infinite Loop) jika tidak diberikan kondisi berhenti yang jelas.
@@ -1556,7 +1556,7 @@ Framework Python yang digunakan untuk mengintegrasikan model LLM, sistem RAG, da
 **💡 ANALOGI DUNIA NYATA:**
 Seperti infrastruktur yang menghubungkan berbagai komponen agar dapat bekerja secara terkoordinasi. Tanpa infrastruktur ini, setiap komponen akan berjalan secara terpisah tanpa alur yang jelas.
 
-(Catatan: LangGraph adalah versi lanjutan yang mendukung alur kerja agen yang bersifat siklik — memungkinkan agent untuk mengulang atau merevisi langkahnya jika diperlukan.)
+(Catatan: LangGraph adalah versi lanjutan yang mendukung alur kerja agen yang bersifat siklik, memungkinkan agent untuk mengulang atau merevisi langkahnya jika diperlukan.)
 
 **💻 CONTOH KODE (Ilustrasi Sederhana):**
 ```python
@@ -1578,7 +1578,7 @@ rantai_kerja.jalankan()
 Library Python yang dioptimalkan untuk melakukan operasi matematis pada data numerik dalam jumlah besar secara efisien.
 
 **💡 ANALOGI DUNIA NYATA:**
-Jika Python standar memproses angka satu per satu, NumPy dapat memproses jutaan angka sekaligus dalam satu operasi — jauh lebih cepat dan efisien untuk keperluan komputasi ilmiah dan pengembangan AI.
+Jika Python standar memproses angka satu per satu, NumPy dapat memproses jutaan angka sekaligus dalam satu operasi, sehingga jauh lebih cepat dan efisien untuk keperluan komputasi ilmiah dan pengembangan AI.
 
 **⚠️ ATURAN WAJIB:**
 Harus diimpor dengan alias standar yang digunakan secara universal: import numpy as np.
@@ -1623,7 +1623,7 @@ print(rak_angka[0]) # Akan mencetak: 10
 Library Python paling populer untuk membaca, mengolah, dan memanipulasi data berbentuk tabel. Catatan: nama ini tidak berkaitan dengan hewan Panda 🐼.
 
 **💡 ANALOGI DUNIA NYATA:**
-Pandas adalah padanan Microsoft Excel dalam dunia pemrograman. Semua operasi yang biasa dilakukan di Excel — membuka file CSV, memfilter kolom, menghapus baris, menggabungkan tabel — dapat dilakukan Pandas dengan perintah teks, jauh lebih cepat, dan tanpa perlu interaksi mouse sama sekali.
+Pandas adalah padanan Microsoft Excel dalam dunia pemrograman. Semua operasi yang biasa dilakukan di Excel (seperti membuka file CSV, memfilter kolom, menghapus baris, menggabungkan tabel) dapat dilakukan Pandas dengan perintah teks, jauh lebih cepat, dan tanpa perlu interaksi mouse sama sekali.
 
 **⚠️ ATURAN WAJIB:**
 Sama seperti NumPy, Pandas memiliki alias standar yang digunakan secara universal. Wajib menggunakan: import pandas as pd.
@@ -1639,10 +1639,10 @@ tabel_karyawan = pd.read_csv("data_gaji.csv")
 ### 📖 KATA 77: DataFrame (dibaca: de-ta-freim / artinya: Bingkai Data / Tabel)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Struktur data dua dimensi dalam Pandas yang menyerupai tabel — memiliki baris dan kolom dengan nama yang dapat diidentifikasi.
+Struktur data dua dimensi dalam Pandas yang menyerupai tabel, memiliki baris dan kolom dengan nama yang dapat diidentifikasi.
 
 **💡 ANALOGI DUNIA NYATA:**
-Setara dengan selembar worksheet di Microsoft Excel. Jika Pandas adalah aplikasinya, maka DataFrame adalah tabelnya — dengan nama kolom seperti "Nama", "Umur", dan "Gaji" yang terstruktur rapi.
+Setara dengan selembar worksheet di Microsoft Excel. Jika Pandas adalah aplikasinya, maka DataFrame adalah tabelnya, dengan nama kolom seperti "Nama", "Umur", dan "Gaji" yang terstruktur rapi.
 
 **⚠️ ATURAN WAJIB:**
 Setiap DataFrame memiliki Index (nomor urut baris di sisi paling kiri) dan Columns (nama kolom di bagian atas).
@@ -1664,7 +1664,7 @@ print(tabel_kita) # Akan tercetak rapi berbentuk baris dan kolom di layar
 Proses mengidentifikasi dan memperbaiki data yang tidak lengkap, tidak konsisten, atau tidak valid sebelum data tersebut digunakan untuk melatih atau menjalankan model AI.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti proses sortasi bahan baku sebelum produksi — memisahkan bahan yang layak dari yang tidak layak. Bahan yang tidak diproses dengan benar akan menghasilkan produk yang cacat.
+Seperti proses sortasi bahan baku sebelum produksi, yaitu memisahkan bahan yang layak dari yang tidak layak. Bahan yang tidak diproses dengan benar akan menghasilkan produk yang cacat.
 
 **⚠️ ATURAN WAJIB (Prinsip Dasar AI):**
 Garbage In, Garbage Out (GIGO). Kualitas output model AI sangat bergantung pada kualitas data yang digunakan. Data yang buruk akan menghasilkan prediksi yang tidak akurat.
@@ -1678,10 +1678,10 @@ tabel_bersih = tabel_karyawan.dropna()
 ### 📖 KATA 79: Data Pipeline (dibaca: de-ta paip-lain / artinya: Pipa Saluran Data)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Rangkaian proses otomatis yang mengalirkan data dari sumber, melalui tahap pembersihan dan transformasi, hingga ke tujuan akhir (misalnya database atau model AI) — tanpa intervensi manual.
+Rangkaian proses otomatis yang mengalirkan data dari sumber, melalui tahap pembersihan dan transformasi, hingga ke tujuan akhir (misalnya database atau model AI) tanpa intervensi manual.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti jalur produksi otomatis di pabrik. Setiap tahap dijalankan secara berurutan dan otomatis — dari bahan mentah hingga produk jadi — tanpa perlu penanganan manual di setiap langkahnya.
+Seperti jalur produksi otomatis di pabrik. Setiap tahap dijalankan secara berurutan dan otomatis (dari bahan mentah hingga produk jadi) tanpa perlu penanganan manual di setiap langkahnya.
 
 **⚠️ ATURAN WAJIB:**
 Pipeline harus dilengkapi dengan mekanisme penanganan error yang kuat (try-except). Jika satu data bermasalah menyebabkan pipeline berhenti total, seluruh proses otomasi menjadi tidak berguna.
@@ -1701,7 +1701,7 @@ kirim_ke_database_ai(data_bersih)
 ### 📖 KATA 93: LangSmith (dibaca: leng-smit / artinya: Kamera Pengawas AI)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Platform pemantauan dari tim LangChain yang memungkinkan developer menelusuri dan menganalisis setiap langkah pemrosesan yang dilakukan oleh sistem AI — termasuk alur berpikir, penggunaan token, dan waktu respons.
+Platform pemantauan dari tim LangChain yang memungkinkan developer menelusuri dan menganalisis setiap langkah pemrosesan yang dilakukan oleh sistem AI, termasuk alur berpikir, penggunaan token, dan waktu respons.
 
 **💡 ANALOGI DUNIA NYATA:**
 Seperti sistem pencatatan log yang merekam setiap detail aktivitas sistem. Jika terjadi masalah, rekaman tersebut dapat ditelusuri untuk mengidentifikasi di mana dan mengapa kegagalan terjadi.
@@ -1775,7 +1775,7 @@ Penggunaan teknik RAG yang memproses dokumen berukuran besar dapat meningkatkan 
 Jumlah permintaan atau tugas yang dapat diproses oleh sistem dalam satuan waktu tertentu (biasanya per detik atau per menit).
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti kapasitas layanan suatu sistem — berapa banyak pengguna atau permintaan yang dapat dilayani secara bersamaan tanpa penurunan performa.
+Seperti kapasitas layanan suatu sistem, yaitu berapa banyak pengguna atau permintaan yang dapat dilayani secara bersamaan tanpa penurunan performa.
 
 **⚠️ ATURAN WAJIB:**
 Untuk meningkatkan throughput, perlu dilakukan optimasi pada infrastruktur (menyesuaikan kapasitas server) atau pada kode program agar pemrosesan lebih efisien.
@@ -1855,7 +1855,7 @@ Model ini tidak direkomendasikan untuk tugas-tugas sederhana karena proses berpi
 ### 📖 KATA 102: Pair Programming (dibaca: peir pro-gre-ming / artinya: Koding Berpasangan)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian — programmer menentukan arah dan tujuan, sementara AI membantu mengeksekusi tugas-tugas teknis.
+Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian (programmer menentukan arah dan tujuan, sementara AI membantu mengeksekusi tugas-tugas teknis).
 
 **💡 ANALOGI DUNIA NYATA:**
 Seperti kolaborasi antara pengambil keputusan dan pelaksana teknis. Pengambil keputusan menentukan apa yang harus dikerjakan dan ke arah mana, sementara pelaksana teknis mengerjakan detail implementasinya.
@@ -1883,7 +1883,7 @@ Git: Sistem pencatatan versi kode yang terpasang di komputer lokal. Git merekam 
                     GitHub: Platform penyimpanan kode berbasis cloud tempat tim developer menyimpan dan berkolaborasi pada kode dari berbagai perangkat yang berbeda.
 
 **💡 ANALOGI DUNIA NYATA:**
-Git berfungsi seperti sistem kontrol versi dokumen yang secara otomatis menyimpan riwayat setiap perubahan — tanpa perlu membuat file duplikat dengan nama berbeda. GitHub adalah layanan penyimpanan cloud untuk repositori tersebut, sekaligus memungkinkan kolaborasi tim secara bersamaan.
+Git berfungsi seperti sistem kontrol versi dokumen yang secara otomatis menyimpan riwayat setiap perubahan tanpa perlu membuat file duplikat dengan nama berbeda. GitHub adalah layanan penyimpanan cloud untuk repositori tersebut, sekaligus memungkinkan kolaborasi tim secara bersamaan.
 
 **⚠️ ATURAN WAJIB:**
 Sebelum mengunggah kode ke GitHub, pastikan file yang mengandung data rahasia (seperti API Key di Kata 66) tidak ikut terunggah. Gunakan file .gitignore untuk mengecualikan file-file sensitif tersebut.
@@ -1903,7 +1903,7 @@ git push origin main
 Proses pengajuan formal untuk menggabungkan kode baru ke dalam basis kode utama tim, setelah melalui proses tinjauan oleh anggota tim lainnya.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti proses persetujuan sebelum suatu perubahan diterapkan secara resmi. Perubahan tidak langsung diterapkan — melainkan harus ditinjau dan disetujui terlebih dahulu oleh pihak yang berwenang.
+Seperti proses persetujuan sebelum suatu perubahan diterapkan secara resmi. Perubahan tidak langsung diterapkan, melainkan harus ditinjau dan disetujui terlebih dahulu oleh pihak yang berwenang.
 
 **⚠️ ATURAN WAJIB:**
 Di lingkungan tim profesional, seorang developer tidak boleh menyetujui Pull Request miliknya sendiri. Kode harus ditinjau oleh developer lain sebelum dapat digabungkan ke basis kode utama.
@@ -1914,10 +1914,10 @@ Tidak ada kode Python. PR dilakukan dengan cara mengklik tombol "Create Pull Req
 ### 📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment) (dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)
 
 **🗣️ ARTINYA DALAM BAHASA MANUSIA:**
-Sistem otomasi (seperti GitHub Actions) yang secara otomatis menjalankan serangkaian proses setiap kali kode baru diunggah: mulai dari pengujian otomatis, pemaketan ke Docker (Kata 83), hingga penerapan ke server (Kata 88) — tanpa campur tangan manual.
+Sistem otomasi (seperti GitHub Actions) yang secara otomatis menjalankan serangkaian proses setiap kali kode baru diunggah: mulai dari pengujian otomatis, pemaketan ke Docker (Kata 83), hingga penerapan ke server (Kata 88), tanpa campur tangan manual.
 
 **💡 ANALOGI DUNIA NYATA:**
-Seperti jalur produksi otomatis di fasilitas manufaktur. Setelah suatu item melewati tahap pemeriksaan kualitas, jalur produksi otomatis mengambil alih: mengemas, melabeli, dan mendistribusikannya — tanpa perlu penanganan manual di setiap tahap.
+Seperti jalur produksi otomatis di fasilitas manufaktur. Setelah suatu item melewati tahap pemeriksaan kualitas, jalur produksi otomatis mengambil alih: mengemas, melabeli, dan mendistribusikannya tanpa perlu penanganan manual di setiap tahap.
 
 **⚠️ ATURAN WAJIB:**
 Jangan mengaktifkan proses deployment otomatis (CD) jika pengujian otomatis (CI) belum disiapkan dengan baik. Jika kode yang bermasalah ter-deploy secara otomatis ke lingkungan produksi, hal ini dapat menyebabkan sistem tidak berfungsi bagi seluruh pengguna.
@@ -2128,7 +2128,7 @@ Sistem penyimpanan sementara yang menyimpan respons AI berdasarkan makna pertany
 Teknik kompresi model AI berukuran besar agar dapat dijalankan pada perangkat dengan kapasitas komputasi terbatas, dengan dampak minimal terhadap kualitas output.
 
 ### 📘 PEFT (Parameter-Efficient Fine-Tuning)
-Teknik pelatihan ulang yang efisien — hanya sebagian kecil parameter model yang disesuaikan, sehingga tidak memerlukan komputasi penuh dari awal.
+Teknik pelatihan ulang yang efisien, di mana hanya sebagian kecil parameter model yang disesuaikan sehingga tidak memerlukan komputasi penuh dari awal.
 
 ### 📘 LoRA (Low-Rank Adaptation)
 Salah satu metode PEFT yang paling populer, memungkinkan spesialisasi model AI pada bidang tertentu dengan kebutuhan sumber daya komputasi yang jauh lebih kecil.
@@ -2140,7 +2140,7 @@ Teknik menampilkan output AI secara bertahap (kata demi kata) secara real-time, 
 Kemampuan sistem AI otonom untuk menyimpan dan mengingat riwayat interaksi dari sesi-sesi sebelumnya.
 
 ### 📘 TTS (Text-to-Speech) & STT (Speech-to-Text)
-Teknologi konversi antara teks dan suara — TTS mengubah teks menjadi suara, STT mengubah suara menjadi teks.
+Teknologi konversi antara teks dan suara, di mana TTS mengubah teks menjadi suara dan STT mengubah suara menjadi teks.
 
 ### 📘 OCR (Optical Character Recognition)
 Teknologi untuk mengekstrak teks dari format gambar atau dokumen scan yang tidak dapat langsung dibaca secara digital.
@@ -2152,7 +2152,7 @@ Model AI yang parameternya (bobot) dapat diunduh dan digunakan secara bebas, mes
 Model AI yang bersifat tertutup dan hanya dapat diakses melalui API berbayar, tanpa opsi untuk mengunduh atau menjalankannya secara lokal.
 
 ### 📘 Guardrails
-Mekanisme keamanan yang berfungsi mencegat dan menolak input atau output yang tidak sesuai dengan kebijakan yang telah ditetapkan — baik dari sisi pengguna maupun dari sisi respons AI.
+Mekanisme keamanan yang berfungsi mencegat dan menolak input atau output yang tidak sesuai dengan kebijakan yang telah ditetapkan, baik dari sisi pengguna maupun dari sisi respons AI.
 
 ### 📘 Prompt Injection
 Serangan keamanan di mana pengguna menyelipkan instruksi tersembunyi dalam input untuk memanipulasi perilaku model AI agar melanggar batasan yang ditetapkan.
@@ -2246,7 +2246,7 @@ Sistem penyimpanan terstruktur untuk menyimpan data secara persisten dan memungk
 Model penyewaan sumber daya komputasi (server, penyimpanan, jaringan) dari penyedia layanan besar melalui internet, tanpa perlu memiliki infrastruktur fisik sendiri.
 
 ### 📘 GPU (Graphics Processing Unit)
-Unit pemrosesan grafis yang juga berfungsi sebagai akselerator komputasi paralel — sangat dibutuhkan untuk pelatihan dan inferensi model AI secara efisien.
+Unit pemrosesan grafis yang juga berfungsi sebagai akselerator komputasi paralel, sangat dibutuhkan untuk pelatihan dan inferensi model AI secara efisien.
 
 ### 📘 VRAM (Video RAM)
 Memori internal yang terdapat pada GPU. Kapasitas VRAM menentukan ukuran maksimum model AI yang dapat dimuat dan diproses.
@@ -2352,7 +2352,7 @@ Jadwal terencana untuk merilis versi baru dari suatu produk atau layanan.
 Sistem penomoran yang digunakan untuk membedakan antar versi produk atau library (misalnya v1.0.0, v1.1.0).
 
 ### 📘 Alpha/Beta Testing
-Fase pengujian produk sebelum rilis resmi — Alpha dilakukan secara internal, Beta melibatkan sekelompok pengguna terpilih dari luar tim.
+Fase pengujian produk sebelum rilis resmi (Alpha dilakukan secara internal, sedangkan Beta melibatkan sekelompok pengguna terpilih dari luar tim).
 
 ### 📘 Documentation (Docstring)
 Komentar terstruktur yang ditulis langsung di dalam kode untuk menjelaskan fungsi, parameter, dan nilai kembalian dari suatu blok kode.
@@ -2406,10 +2406,10 @@ Antarmuka berbasis teks yang memungkinkan pengguna memberikan perintah langsung 
 Penyimpanan digital (biasanya di GitHub) yang berisi seluruh file dan riwayat perubahan kode suatu proyek.
 
 ### 📘 Frontend (Front-end)
-Bagian dari aplikasi yang berinteraksi langsung dengan pengguna — mencakup tampilan visual seperti tombol, formulir, dan teks yang terlihat di layar.
+Bagian dari aplikasi yang berinteraksi langsung dengan pengguna, mencakup tampilan visual seperti tombol, formulir, dan teks yang terlihat di layar.
 
 ### 📘 Backend (Back-end)
-Bagian dari aplikasi yang berjalan di sisi server — menangani logika bisnis, pemrosesan data, dan komunikasi dengan database, tanpa terlihat langsung oleh pengguna.
+Bagian dari aplikasi yang berjalan di sisi server, menangani logika bisnis, pemrosesan data, dan komunikasi dengan database, tanpa terlihat langsung oleh pengguna.
 
 ### 📘 Open Source
 Perangkat lunak yang kode sumbernya tersedia secara publik dan dapat digunakan, dimodifikasi, serta didistribusikan oleh siapapun.
@@ -2430,7 +2430,7 @@ Alat bawaan Python untuk mengunduh dan menginstal library tambahan dari reposito
 Praktik menuliskan nilai secara langsung dan tetap di dalam kode, alih-alih menggunakan variabel atau konfigurasi yang dapat diubah.
 
 ### 📘 Clean Code
-Praktik menulis kode yang terstruktur, mudah dibaca, dan mudah dipahami oleh developer lain — bukan hanya sekadar dapat dieksekusi oleh komputer.
+Praktik menulis kode yang terstruktur, mudah dibaca, dan mudah dipahami oleh developer lain, bukan hanya sekadar dapat dieksekusi oleh komputer.
 
 ### 📘 Script / Scripting
 File program tunggal (biasanya berakhiran .py) yang berisi serangkaian perintah untuk menjalankan satu tugas otomatis tertentu.
@@ -2439,7 +2439,7 @@ File program tunggal (biasanya berakhiran .py) yang berisi serangkaian perintah 
 Teknik menggunakan program untuk mengumpulkan data dari halaman web secara otomatis.
 
 ### 📘 OOP (Object-Oriented Programming)
-Paradigma pemrograman yang mengorganisir kode di sekitar konsep "objek" — entitas yang memiliki data (atribut) dan perilaku (method).
+Paradigma pemrograman yang mengorganisir kode di sekitar konsep "objek", yaitu entitas yang memiliki data (atribut) dan perilaku (method).
 
 ### 📘 Path / Directory
 Alamat lokasi file atau folder dalam sistem file komputer (contoh: C:/Dokumen/proyek_python/).
@@ -2490,7 +2490,7 @@ Periksa baris kode yang ditunjukkan oleh Python. Umumnya disebabkan oleh tanda k
 "Python tidak dapat menemukan variabel atau fungsi dengan nama yang disebutkan. Nama tersebut belum pernah didefinisikan sebelumnya."
 
 **💊 Cara Mengobati:**
-Umumnya disebabkan oleh kesalahan pengetikan (typo). Periksa kembali ejaan nama variabel yang digunakan — pastikan konsisten dengan nama yang didefinisikan sebelumnya.
+Umumnya disebabkan oleh kesalahan pengetikan (typo). Periksa kembali ejaan nama variabel yang digunakan, serta pastikan konsisten dengan nama yang didefinisikan sebelumnya.
 
 ### 🔴 3. TypeError (Salah Wujud Data)
 
@@ -2498,7 +2498,7 @@ Umumnya disebabkan oleh kesalahan pengetikan (typo). Periksa kembali ejaan nama 
 "Python tidak dapat melakukan operasi yang diminta karena tipe data yang terlibat tidak kompatibel satu sama lain."
 
 **💊 Cara Mengobati:**
-Error ini terjadi ketika dua tipe data yang tidak dapat digabungkan dipaksakan untuk beroperasi bersama — misalnya, mencoba menjumlahkan teks dengan angka (contoh: "Budi" + 10). Gunakan fungsi konversi int() atau str() (Bab 2) untuk menyamakan tipe data terlebih dahulu.
+Error ini terjadi ketika dua tipe data yang tidak dapat digabungkan dipaksakan untuk beroperasi bersama, misalnya mencoba menjumlahkan teks dengan angka (contoh: "Budi" + 10). Gunakan fungsi konversi int() atau str() (Bab 2) untuk menyamakan tipe data terlebih dahulu.
 
 ### 🔴 4. IndentationError (Spasi Berantakan)
 
@@ -2514,7 +2514,7 @@ Pada Bab 3 dan 4, seluruh kode yang berada di dalam blok if, for, atau while waj
 "Python mencoba mengakses elemen pada posisi yang tidak ada dalam struktur data tersebut."
 
 **💊 Cara Mengobati:**
-Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi jumlah elemen yang tersedia. Ingat bahwa index dimulai dari 0. Jika List berisi 3 elemen, index yang valid adalah 0, 1, dan 2 — bukan 3.
+Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi jumlah elemen yang tersedia. Ingat bahwa index dimulai dari 0. Jika List berisi 3 elemen, index yang valid adalah 0, 1, dan 2, bukan 3.
 
 ### 🔴 6. KeyError (Kunci Brankas Salah)
 
@@ -2522,7 +2522,7 @@ Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi
 "Python tidak dapat menemukan Key yang diminta di dalam Dictionary karena Key tersebut tidak ada."
 
 **💊 Cara Mengobati:**
-Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Python bersifat case-sensitive — Key "umur" dan Key "Umur" dianggap berbeda. Pastikan nama Key yang digunakan sesuai persis dengan yang ada dalam data.
+Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Python bersifat case-sensitive, sehingga Key "umur" dan Key "Umur" dianggap berbeda. Pastikan nama Key yang digunakan sesuai persis dengan yang ada dalam data.
 
 ### 🔴 7. ValueError (Isi Tidak Sesuai Kodrat)
 
@@ -2530,7 +2530,7 @@ Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Pytho
 "Tipe data sudah benar, tetapi nilai yang diberikan tidak valid atau tidak dapat diproses untuk operasi yang diminta."
 
 **💊 Cara Mengobati:**
-Berbeda dengan TypeError (tipe data salah), ValueError terjadi ketika tipe data sudah sesuai namun nilainya tidak dapat diproses. Contoh: mencoba mengonversi teks "Budi" menjadi angka menggunakan int() — teks tersebut tidak merepresentasikan angka yang valid. Pastikan data yang akan dikonversi memang berisi nilai numerik.
+Berbeda dengan TypeError (tipe data salah), ValueError terjadi ketika tipe data sudah sesuai namun nilainya tidak dapat diproses. Contoh: mencoba mengonversi teks "Budi" menjadi angka menggunakan int(), karena teks tersebut tidak merepresentasikan angka yang valid. Pastikan data yang akan dikonversi memang berisi nilai numerik.
 
 ### 🔴 8. AttributeError (Maksa Fitur yang Gak Ada)
 
@@ -2538,7 +2538,7 @@ Berbeda dengan TypeError (tipe data salah), ValueError terjadi ketika tipe data 
 "Objek yang dimaksud tidak memiliki atribut atau method yang dipanggil."
 
 **💊 Cara Mengobati:**
-Terjadi ketika mencoba menggunakan method yang tidak dimiliki oleh tipe data tersebut — misalnya, mencoba memanggil .append() pada variabel yang bertipe String. String tidak memiliki method append() yang hanya dimiliki oleh List. Pastikan tipe data objek yang sedang digunakan sesuai dengan method yang dipanggil.
+Terjadi ketika mencoba menggunakan method yang tidak dimiliki oleh tipe data tersebut, misalnya mencoba memanggil .append() pada variabel yang bertipe String. String tidak memiliki method append() yang hanya dimiliki oleh List. Pastikan tipe data objek yang sedang digunakan sesuai dengan method yang dipanggil.
 
 ### 🔴 9. ModuleNotFoundError / ImportError (Alat Belum Dibeli)
 

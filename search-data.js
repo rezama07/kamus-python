@@ -78,7 +78,7 @@ const searchData = [
     },
     {
         "title": "📖 KATA 12: None",
-        "preview": "Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong — None benar-benar berarti tidak ada nil...",
+        "preview": "Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong, None benar-benar berarti tidak ada nila...",
         "url": "kamus-python/bab-1.html#kata-12",
         "category": "Kamus Python - Bab 1",
         "keywords": "📖 kata 12: none"
@@ -197,7 +197,7 @@ const searchData = [
     },
     {
         "title": "📖 KATA 29: Operator Pembanding",
-        "preview": "Simbol untuk membandingkan dua nilai — apakah lebih besar, lebih kecil, atau tidak sama.",
+        "preview": "Simbol untuk membandingkan dua nilai (apakah lebih besar, lebih kecil, atau tidak sama).",
         "url": "kamus-python/bab-3.html#kata-29",
         "category": "Kamus Python - Bab 3",
         "keywords": "📖 kata 29: operator pembanding"
@@ -267,7 +267,7 @@ const searchData = [
     },
     {
         "title": "📖 KATA 39: def",
-        "preview": "Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya — belum menjalankannya. Fung...",
+        "preview": "Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya dan belum menjalankannya. Fu...",
         "url": "kamus-python/bab-5.html#kata-39",
         "category": "Kamus Python - Bab 5",
         "keywords": "📖 kata 39: def"
@@ -540,7 +540,7 @@ const searchData = [
     },
     {
         "title": "📖 KATA 77: DataFrame",
-        "preview": "Struktur data dua dimensi dalam Pandas yang menyerupai tabel — memiliki baris dan kolom dengan nama yang dapat diidentif...",
+        "preview": "Struktur data dua dimensi dalam Pandas yang menyerupai tabel, memiliki baris dan kolom dengan nama yang dapat diidentifi...",
         "url": "kamus-python/bab-12.html#kata-77",
         "category": "Kamus Python - Bab 12",
         "keywords": "📖 kata 77: dataframe"
@@ -624,7 +624,7 @@ const searchData = [
     },
     {
         "title": "📖 KATA 102: Pair Programming",
-        "preview": "Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian — programmer menentukan arah ...",
+        "preview": "Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian (programmer menentukan arah d...",
         "url": "kamus-python/bab-16.html#kata-102",
         "category": "Kamus Python - Bab 16",
         "keywords": "📖 kata 102: pair programming"
@@ -1079,7 +1079,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: PEFT (Parameter-Efficient Fine-Tuning)",
-        "preview": "Teknik pelatihan ulang yang efisien — hanya sebagian kecil parameter model yang disesuaikan, sehingga tidak memerlukan k...",
+        "preview": "Teknik pelatihan ulang yang efisien, di mana hanya sebagian kecil parameter model yang disesuaikan sehingga tidak memerl...",
         "url": "glosarium/index.html#term-62",
         "category": "Glosarium Python",
         "keywords": "peft (parameter-efficient fine-tuning)"
@@ -1107,7 +1107,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: TTS (Text-to-Speech) & STT (Speech-to-Text)",
-        "preview": "Teknologi konversi antara teks dan suara — TTS mengubah teks menjadi suara, STT mengubah suara menjadi teks.",
+        "preview": "Teknologi konversi antara teks dan suara, di mana TTS mengubah teks menjadi suara dan STT mengubah suara menjadi teks.",
         "url": "glosarium/index.html#term-66",
         "category": "Glosarium Python",
         "keywords": "tts (text-to-speech) & stt (speech-to-text)"
@@ -1345,7 +1345,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: GPU (Graphics Processing Unit)",
-        "preview": "Unit pemrosesan grafis yang juga berfungsi sebagai akselerator komputasi paralel — sangat dibutuhkan untuk pelatihan dan...",
+        "preview": "Unit pemrosesan grafis yang juga berfungsi sebagai akselerator komputasi paralel, sangat dibutuhkan untuk pelatihan dan ...",
         "url": "glosarium/index.html#term-100",
         "category": "Glosarium Python",
         "keywords": "gpu (graphics processing unit)"
@@ -1583,7 +1583,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: Alpha/Beta Testing",
-        "preview": "Fase pengujian produk sebelum rilis resmi — Alpha dilakukan secara internal, Beta melibatkan sekelompok pengguna terpili...",
+        "preview": "Fase pengujian produk sebelum rilis resmi (Alpha dilakukan secara internal, sedangkan Beta melibatkan sekelompok penggun...",
         "url": "glosarium/index.html#term-134",
         "category": "Glosarium Python",
         "keywords": "alpha/beta testing"
@@ -1709,14 +1709,14 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: Frontend (Front-end)",
-        "preview": "Bagian dari aplikasi yang berinteraksi langsung dengan pengguna — mencakup tampilan visual seperti tombol, formulir, dan...",
+        "preview": "Bagian dari aplikasi yang berinteraksi langsung dengan pengguna, mencakup tampilan visual seperti tombol, formulir, dan ...",
         "url": "glosarium/index.html#term-152",
         "category": "Glosarium Python",
         "keywords": "frontend (front-end)"
     },
     {
         "title": "📘 Istilah: Backend (Back-end)",
-        "preview": "Bagian dari aplikasi yang berjalan di sisi server — menangani logika bisnis, pemrosesan data, dan komunikasi dengan data...",
+        "preview": "Bagian dari aplikasi yang berjalan di sisi server, menangani logika bisnis, pemrosesan data, dan komunikasi dengan datab...",
         "url": "glosarium/index.html#term-153",
         "category": "Glosarium Python",
         "keywords": "backend (back-end)"
@@ -1765,7 +1765,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: Clean Code",
-        "preview": "Praktik menulis kode yang terstruktur, mudah dibaca, dan mudah dipahami oleh developer lain — bukan hanya sekadar dapat ...",
+        "preview": "Praktik menulis kode yang terstruktur, mudah dibaca, dan mudah dipahami oleh developer lain, bukan hanya sekadar dapat d...",
         "url": "glosarium/index.html#term-160",
         "category": "Glosarium Python",
         "keywords": "clean code"
@@ -1786,7 +1786,7 @@ const searchData = [
     },
     {
         "title": "📘 Istilah: OOP (Object-Oriented Programming)",
-        "preview": "Paradigma pemrograman yang mengorganisir kode di sekitar konsep \"objek\" — entitas yang memiliki data (atribut) dan peril...",
+        "preview": "Paradigma pemrograman yang mengorganisir kode di sekitar konsep \"objek\", yaitu entitas yang memiliki data (atribut) dan ...",
         "url": "glosarium/index.html#term-163",
         "category": "Glosarium Python",
         "keywords": "oop (object-oriented programming)"
