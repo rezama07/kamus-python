@@ -2,8 +2,22 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("searchInput");
     const searchResults = document.getElementById("searchResults");
 
-    // searchData berasal dari file search-data.js yang diload sebelumnya
     if (!searchInput || !searchResults || typeof searchData === 'undefined') return;
+
+    // Helper function to convert standard HTML page links to SPA hash format
+    function convertUrlToHash(url) {
+        if (url.startsWith('kamus-python/bab-')) {
+            // e.g. kamus-python/bab-1.html#kata-1 -> #/bab-1#kata-1
+            return '#' + url.replace('kamus-python/bab-', '/bab-').replace('.html', '');
+        } else if (url.startsWith('glosarium/index.html')) {
+            // e.g. glosarium/index.html#term-x -> #/glosarium#term-x
+            return '#' + url.replace('glosarium/index.html', '/glosarium');
+        } else if (url.startsWith('peringatan-error/index.html')) {
+            // e.g. peringatan-error/index.html#error-y -> #/peringatan-error#error-y
+            return '#' + url.replace('peringatan-error/index.html', '/peringatan-error');
+        }
+        return '#' + url;
+    }
 
     searchInput.addEventListener("input", (e) => {
         const query = e.target.value.toLowerCase().trim();
@@ -23,26 +37,23 @@ document.addEventListener("DOMContentLoaded", () => {
         if (filtered.length > 0) {
             filtered.forEach(item => {
                 const a = document.createElement("a");
-                a.href = item.url;
+                a.href = convertUrlToHash(item.url);
                 a.className = "search-result-item";
                 
                 const title = document.createElement("div");
                 title.className = "search-title";
                 title.innerHTML = item.title;
                 
-                // Location badge
-                const cat = document.createElement("div");
-                cat.style.fontSize = "0.75rem";
-                cat.style.color = "var(--accent)";
-                cat.style.marginBottom = "0.25rem";
-                cat.style.fontWeight = "600";
-                cat.textContent = item.category.toUpperCase();
-
                 const preview = document.createElement("div");
                 preview.className = "search-desc";
                 preview.innerHTML = `<em>"${item.preview}"</em>`;
 
-                a.appendChild(cat);
+                // Intercept click to perform smooth hash transition and close dropdown
+                a.addEventListener("click", () => {
+                    searchResults.style.display = "none";
+                    searchInput.value = "";
+                });
+
                 a.appendChild(title);
                 a.appendChild(preview);
                 searchResults.appendChild(a);
@@ -57,14 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
         searchResults.style.display = "block";
     });
 
-    // Sembunyikan hasil kalau klik di luar
+    // Hide search results if clicked outside
     document.addEventListener("click", (e) => {
         if (!searchInput.contains(e.target) && !searchResults.contains(e.target)) {
             searchResults.style.display = "none";
         }
     });
 
-    // Tampilkan lagi kalau diklik
+    // Show again on focus if input has value
     searchInput.addEventListener("focus", () => {
         if (searchInput.value.trim().length > 0) {
             searchResults.style.display = "block";

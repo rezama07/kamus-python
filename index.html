@@ -4,71 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamus Python & AI-Engineering </title>
-    <meta name="description"
-        content="Dokumentasi lengkap Python meliputi Kamus Python, Glosarium, dan Panduan Error untuk membantu Anda belajar pemrograman Python.">
+    <title>Kamus Python & AI-Engineering</title>
+    <meta name="description" content="Dokumentasi lengkap Python meliputi Kamus Python, Glosarium, dan Panduan Error dalam format GitBook interaktif.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <!-- Prism.js for syntax highlighting inside dynamically loaded content -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
 
 <body>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Kamus <span> Python & AI-Engineering </span></h1>
-            <p>Panduan terstruktur, glosarium lengkap, dan solusi error dalam satu tempat. Mulai perjalanan coding Anda
-                sekarang.</p>
-
-            <div class="search-container">
-                <input type="text" id="searchInput" placeholder="Cari materi, bab, atau error..." autocomplete="off">
-                <div id="searchResults" class="search-results"></div>
+    <div class="app-layout">
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="#/home" class="sidebar-brand">
+                    <span>🐍</span> Kamus Python
+                </a>
             </div>
+
+            <!-- SEARCH BAR -->
+            <div class="sidebar-search">
+                <input type="text" id="searchInput" placeholder="Cari materi, bab, atau error..." autocomplete="off">
+                <div id="searchResults" class="sidebar-search-results"></div>
+            </div>
+
+            <!-- NAVIGATION TREE -->
+            <nav class="sidebar-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#/home" class="nav-link">🏠 Beranda</a>
+                    </li>
+                </ul>
+
+                <div class="nav-group-title">Konsep Dasar Python</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#/bab-1" class="nav-link">Bab 1: Konsep Variabel & Data</a></li>
+                    <li class="nav-item"><a href="#/bab-2" class="nav-link">Bab 2: Operasi Dasar & Output</a></li>
+                    <li class="nav-item"><a href="#/bab-3" class="nav-link">Bab 3: Struktur Kontrol Keputusan</a></li>
+                    <li class="nav-item"><a href="#/bab-4" class="nav-link">Bab 4: Struktur Perulangan</a></li>
+                    <li class="nav-item"><a href="#/bab-5" class="nav-link">Bab 5: Pembuatan & Penggunaan Fungsi</a></li>
+                    <li class="nav-item"><a href="#/bab-6" class="nav-link">Bab 6: Modul & Library Eksternal</a></li>
+                    <li class="nav-item"><a href="#/bab-7" class="nav-link">Bab 7: Penanganan Error & Pengecualian</a></li>
+                    <li class="nav-item"><a href="#/bab-8" class="nav-link">Bab 8: Pemrograman Berorientasi Objek</a></li>
+                    <li class="nav-item"><a href="#/bab-9" class="nav-link">Bab 9: Integrasi LLM</a></li>
+                    <li class="nav-item"><a href="#/bab-10" class="nav-link">Bab 10: Integrasi Vector DB & RAG</a></li>
+                    <li class="nav-item"><a href="#/bab-11" class="nav-link">Bab 11: Dasar Agentic AI & Tool Calling</a></li>
+                    <li class="nav-item"><a href="#/bab-12" class="nav-link">Bab 12: Pengolahan Data NumPy/Pandas</a></li>
+                </ul>
+
+                <div class="nav-group-title">AI Engineering</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#/bab-15" class="nav-link">Bab 15: Pemantauan & Evaluasi LLM</a></li>
+                    <li class="nav-item"><a href="#/bab-16" class="nav-link">Bab 16: Pengembangan Berbantuan AI</a></li>
+                    <li class="nav-item"><a href="#/bab-17" class="nav-link">Bab 17: Version Control & CI/CD</a></li>
+                </ul>
+
+                <div class="nav-group-title">Materi Penunjang</div>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#/glosarium" class="nav-link">📖 Glosarium Istilah</a></li>
+                    <li class="nav-item"><a href="#/peringatan-error" class="nav-link">⚠️ Peringatan Error & Solusi</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="content-wrapper">
+            <div class="content-container" id="mainContent">
+                <!-- CONTENT INJECTED BY ROUTER -->
+            </div>
+        </main>
+    </div>
+
+    <!-- COLLAPSIBLE LIVE PYTHON EDITOR DRAWER -->
+    <div class="trinket-tab" id="trinketTab">🐍 Live Editor</div>
+    <div class="trinket-drawer" id="trinketDrawer">
+        <div class="trinket-header">
+            <div class="trinket-title">Live Python Editor</div>
+            <button class="close-drawer-btn" id="closeDrawerBtn">&times;</button>
         </div>
-    </header>
-
-    <main class="container">
-
-        <div class="home-cards-grid">
-            <!-- Card 1: Kamus Python -->
-            <a href="kamus-python/index.html" class="home-card">
-                <div class="home-card-icon">📚</div>
-                <div class="home-card-divider"></div>
-                <div class="home-card-content">
-                    <h2>Kamus Python</h2>
-                    <p>Panduan belajar Python dari dasar hingga mahir yang terbagi dalam beberapa bab terstruktur.</p>
-                </div>
-            </a>
-
-            <!-- Card 2: Glosarium -->
-            <a href="glosarium/index.html" class="home-card">
-                <div class="home-card-icon">📖</div>
-                <div class="home-card-divider"></div>
-                <div class="home-card-content">
-                    <h2>Glosarium</h2>
-                    <p>Daftar lengkap istilah-istilah umum dalam pemrograman Python beserta penjelasannya.</p>
-                </div>
-            </a>
-
-            <!-- Card 3: Peringatan Error -->
-            <a href="peringatan-error/index.html" class="home-card">
-                <div class="home-card-icon">⚠️</div>
-                <div class="home-card-divider"></div>
-                <div class="home-card-content">
-                    <h2>Peringatan Error</h2>
-                    <p>Kumpulan error yang sering dijumpai saat coding Python dan cara jitu mengatasinya.</p>
-                </div>
-            </a>
+        <div class="trinket-body">
+            <iframe id="trinketFrame" src="https://trinket.io/embed/python3?toggleCode=true&runOption=run" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
-    </main>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Dokumentasi Python. Dibuat untuk komunitas.</p>
-    </footer>
-    <script src="search-data.js"></script>
-    <script src="search.js"></script>
     <!-- SCROLL TO TOP BUTTON -->
     <button id="scrollTopBtn" title="Kembali ke atas">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
@@ -77,7 +99,166 @@
         </svg>
     </button>
 
+    <!-- SEARCH & ROUTER SCRIPTS -->
+    <script src="search-data.js"></script>
+    <script src="search.js"></script>
+
     <script>
+        // --- 1. COLLAPSIBLE DRAWER LOGIC ---
+        const trinketTab = document.getElementById("trinketTab");
+        const trinketDrawer = document.getElementById("trinketDrawer");
+        const closeDrawerBtn = document.getElementById("closeDrawerBtn");
+
+        trinketTab.addEventListener("click", () => {
+            trinketDrawer.classList.toggle("open");
+            if (trinketDrawer.classList.contains("open")) {
+                loadTrinketForCurrentPage();
+            }
+        });
+
+        closeDrawerBtn.addEventListener("click", () => {
+            trinketDrawer.classList.remove("open");
+        });
+
+        // Close drawer if user clicks outside of it
+        document.addEventListener("click", (e) => {
+            if (!trinketDrawer.contains(e.target) && !trinketTab.contains(e.target) && trinketDrawer.classList.contains("open")) {
+                trinketDrawer.classList.remove("open");
+            }
+        });
+
+        // --- 2. DYNAMIC TRINKET CODE LOADING ---
+        function loadTrinketForCurrentPage() {
+            const mainContent = document.getElementById('mainContent');
+            const codeEl = mainContent.querySelector('code.language-python');
+            let codeStr = 'print("Halo Dunia!")';
+            if (codeEl) {
+                codeStr = codeEl.textContent.trim();
+            }
+            const encoded = encodeURIComponent(codeStr);
+            const iframeUrl = `https://trinket.io/embed/python3?toggleCode=true&runOption=run&code=${encoded}`;
+            document.getElementById('trinketFrame').src = iframeUrl;
+        }
+
+        // --- 3. HOME VIEW HTML ---
+        function getHomeHTML() {
+            return `
+                <div class="home-hero">
+                    <h1>Kamus <span>Python & AI-Engineering</span></h1>
+                    <p>Selamat datang di dokumentasi interaktif Kamus Python. Gunakan navigasi sidebar di sebelah kiri untuk mempelajari konsep bahasa pemrograman Python, istilah Glosarium, dan petunjuk penanganan Error secara ringkas dan semi-formal.</p>
+                </div>
+                <div class="intro-sections">
+                    <div class="card">
+                        <h3>📚 Kamus Python</h3>
+                        <p>Pembelajaran terbagi dalam 15 bab terstruktur dari dasar tipe data hingga otomatisasi deployment.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📖 Glosarium</h3>
+                        <p>Definisi singkat dan jargon penting yang sering digunakan oleh para senior programmer di industri.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚠️ Peringatan Error</h3>
+                        <p>Terjemahan pesan kesalahan merah terminal Anda ke dalam penjelasan bahasa yang mudah dipahami.</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // --- 4. VANILLA JS SPA ROUTER ---
+        async function loadRoute() {
+            const hash = window.location.hash || '#/home';
+            const mainContent = document.getElementById('mainContent');
+            
+            // Extract route and optional sub-anchor (e.g. #/bab-1#kata-1)
+            const hashClean = hash.substring(1); // remove first '#'
+            const hashParts = hashClean.split('#');
+            const route = hashParts[0] || '/home';
+            const anchor = hashParts[1] || '';
+
+            // Highlight active link in sidebar
+            document.querySelectorAll('.sidebar-nav a').forEach(a => {
+                const href = a.getAttribute('href');
+                if (href === '#' + route) {
+                    a.classList.add('active');
+                } else {
+                    a.classList.remove('active');
+                }
+            });
+
+            if (route === '/home' || route === '') {
+                mainContent.innerHTML = getHomeHTML();
+                window.scrollTo(0, 0);
+                return;
+            }
+
+            let fetchUrl = '';
+            if (route.startsWith('/bab-')) {
+                const babNum = route.replace('/bab-', '');
+                fetchUrl = `kamus-python/bab-${babNum}.html`;
+            } else if (route === '/glosarium') {
+                fetchUrl = 'glosarium/index.html';
+            } else if (route === '/peringatan-error') {
+                fetchUrl = 'peringatan-error/index.html';
+            }
+
+            if (fetchUrl) {
+                try {
+                    mainContent.innerHTML = '<div class="loading">Memuat konten...</div>';
+                    const res = await fetch(fetchUrl);
+                    if (!res.ok) throw new Error('Gagal memuat berkas konten.');
+                    const htmlText = await res.text();
+                    
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(htmlText, 'text/html');
+                    
+                    // Extract the core layout from the fetched file
+                    const container = doc.querySelector('.container');
+                    if (container) {
+                        // Strip out unnecessary nav buttons and header elements
+                        const backLink = container.querySelector('.back-link');
+                        if (backLink) backLink.remove();
+                        const footer = container.querySelector('footer');
+                        if (footer) footer.remove();
+
+                        // Keep the inner contents
+                        mainContent.innerHTML = container.innerHTML;
+                    } else {
+                        mainContent.innerHTML = doc.body.innerHTML;
+                    }
+
+                    // Re-apply code highlighting
+                    if (typeof Prism !== 'undefined') {
+                        Prism.highlightAllUnder(mainContent);
+                    }
+
+                    // Reload Trinket if the drawer is open
+                    if (trinketDrawer.classList.contains("open")) {
+                        loadTrinketForCurrentPage();
+                    }
+
+                    // If an anchor was targeted (like a word target), scroll to it
+                    if (anchor) {
+                        setTimeout(() => {
+                            const el = document.getElementById(anchor);
+                            if (el) {
+                                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                el.classList.add('highlight-target');
+                                setTimeout(() => el.classList.remove('highlight-target'), 2500);
+                            }
+                        }, 200);
+                    } else {
+                        window.scrollTo(0, 0);
+                    }
+                } catch (err) {
+                    mainContent.innerHTML = `<div class="error-load">Gagal memuat halaman: ${err.message}</div>`;
+                }
+            }
+        }
+
+        window.addEventListener('hashchange', loadRoute);
+        window.addEventListener('load', loadRoute);
+
+        // --- 5. SCROLL TO TOP BUTTON ---
         const scrollTopBtn = document.getElementById("scrollTopBtn");
         window.addEventListener("scroll", function () {
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
