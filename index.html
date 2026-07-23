@@ -38,29 +38,31 @@
                     <li class="nav-item">
                         <a href="#/home" class="nav-link">🏠 Beranda</a>
                     </li>
-                </ul>
-
-                <div class="nav-group-title">Konsep Dasar Python</div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#/bab-1" class="nav-link">Bab 1: Konsep Variabel & Data</a></li>
-                    <li class="nav-item"><a href="#/bab-2" class="nav-link">Bab 2: Operasi Dasar & Output</a></li>
-                    <li class="nav-item"><a href="#/bab-3" class="nav-link">Bab 3: Struktur Kontrol Keputusan</a></li>
-                    <li class="nav-item"><a href="#/bab-4" class="nav-link">Bab 4: Struktur Perulangan</a></li>
-                    <li class="nav-item"><a href="#/bab-5" class="nav-link">Bab 5: Pembuatan & Penggunaan Fungsi</a></li>
-                    <li class="nav-item"><a href="#/bab-6" class="nav-link">Bab 6: Modul & Library Eksternal</a></li>
-                    <li class="nav-item"><a href="#/bab-7" class="nav-link">Bab 7: Penanganan Error & Pengecualian</a></li>
-                    <li class="nav-item"><a href="#/bab-8" class="nav-link">Bab 8: Pemrograman Berorientasi Objek</a></li>
-                    <li class="nav-item"><a href="#/bab-9" class="nav-link">Bab 9: Integrasi LLM</a></li>
-                    <li class="nav-item"><a href="#/bab-10" class="nav-link">Bab 10: Integrasi Vector DB & RAG</a></li>
-                    <li class="nav-item"><a href="#/bab-11" class="nav-link">Bab 11: Dasar Agentic AI & Tool Calling</a></li>
-                    <li class="nav-item"><a href="#/bab-12" class="nav-link">Bab 12: Pengolahan Data NumPy/Pandas</a></li>
-                </ul>
-
-                <div class="nav-group-title">AI Engineering</div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#/bab-15" class="nav-link">Bab 15: Pemantauan & Evaluasi LLM</a></li>
-                    <li class="nav-item"><a href="#/bab-16" class="nav-link">Bab 16: Pengembangan Berbantuan AI</a></li>
-                    <li class="nav-item"><a href="#/bab-17" class="nav-link">Bab 17: Version Control & CI/CD</a></li>
+                    <li class="nav-item">
+                        <div class="nav-item-container">
+                            <a href="#/kamus" class="nav-link">📚 Kamus</a>
+                            <button class="submenu-toggle-btn" id="submenuToggleBtn" title="Buka/Tutup Daftar Bab">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><path d="M6 9l6 6 6-6"/></svg>
+                            </button>
+                        </div>
+                        <ul class="nav-submenu-list" id="navSubmenuList">
+                            <li class="nav-item"><a href="#/bab-1" class="nav-link">Bab 1: Konsep Variabel & Data</a></li>
+                            <li class="nav-item"><a href="#/bab-2" class="nav-link">Bab 2: Operasi Dasar & Output</a></li>
+                            <li class="nav-item"><a href="#/bab-3" class="nav-link">Bab 3: Struktur Kontrol Keputusan</a></li>
+                            <li class="nav-item"><a href="#/bab-4" class="nav-link">Bab 4: Struktur Perulangan</a></li>
+                            <li class="nav-item"><a href="#/bab-5" class="nav-link">Bab 5: Pembuatan & Penggunaan Fungsi</a></li>
+                            <li class="nav-item"><a href="#/bab-6" class="nav-link">Bab 6: Modul & Library Eksternal</a></li>
+                            <li class="nav-item"><a href="#/bab-7" class="nav-link">Bab 7: Penanganan Error & Pengecualian</a></li>
+                            <li class="nav-item"><a href="#/bab-8" class="nav-link">Bab 8: Pemrograman Berorientasi Objek</a></li>
+                            <li class="nav-item"><a href="#/bab-9" class="nav-link">Bab 9: Integrasi LLM</a></li>
+                            <li class="nav-item"><a href="#/bab-10" class="nav-link">Bab 10: Integrasi Vector DB & RAG</a></li>
+                            <li class="nav-item"><a href="#/bab-11" class="nav-link">Bab 11: Dasar Agentic AI & Tool Calling</a></li>
+                            <li class="nav-item"><a href="#/bab-12" class="nav-link">Bab 12: Pengolahan Data NumPy/Pandas</a></li>
+                            <li class="nav-item"><a href="#/bab-15" class="nav-link">Bab 15: Pemantauan & Evaluasi LLM</a></li>
+                            <li class="nav-item"><a href="#/bab-16" class="nav-link">Bab 16: Pengembangan Berbantuan AI</a></li>
+                            <li class="nav-item"><a href="#/bab-17" class="nav-link">Bab 17: Version Control & CI/CD</a></li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <div class="nav-group-title">Materi Penunjang</div>
@@ -185,6 +187,17 @@
                 }
             });
 
+            // Handle submenu expansion automatically based on route
+            const submenuToggleBtn = document.getElementById("submenuToggleBtn");
+            const navSubmenuList = document.getElementById("navSubmenuList");
+            if (route.startsWith('/bab-') || route === '/kamus') {
+                navSubmenuList.classList.remove("collapsed");
+                submenuToggleBtn.classList.remove("collapsed");
+            } else {
+                navSubmenuList.classList.add("collapsed");
+                submenuToggleBtn.classList.add("collapsed");
+            }
+
             if (route === '/home' || route === '') {
                 mainContent.innerHTML = getHomeHTML();
                 window.scrollTo(0, 0);
@@ -199,6 +212,8 @@
                 fetchUrl = 'glosarium/index.html';
             } else if (route === '/peringatan-error') {
                 fetchUrl = 'peringatan-error/index.html';
+            } else if (route === '/kamus') {
+                fetchUrl = 'kamus-python/index.html';
             }
 
             if (fetchUrl) {
@@ -219,6 +234,18 @@
                         if (backLink) backLink.remove();
                         const footer = container.querySelector('footer');
                         if (footer) footer.remove();
+
+                        // If route is /kamus, remove the cards-grid and its heading to only show rules & Halaman Nol
+                        if (route === '/kamus') {
+                            const cardsGrid = container.querySelector('.cards-grid');
+                            if (cardsGrid) cardsGrid.remove();
+                            const headings = container.querySelectorAll('h2');
+                            headings.forEach(h2 => {
+                                if (h2.textContent.includes('Daftar Bab Kamus')) {
+                                    h2.remove();
+                                }
+                            });
+                        }
 
                         // Keep the inner contents
                         mainContent.innerHTML = container.innerHTML;
@@ -254,6 +281,15 @@
                 }
             }
         }
+
+        // Submenu manually toggleable logic
+        document.getElementById("submenuToggleBtn").addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent loading the parent #/kamus link
+            const toggleBtn = document.getElementById("submenuToggleBtn");
+            const submenuList = document.getElementById("navSubmenuList");
+            submenuList.classList.toggle("collapsed");
+            toggleBtn.classList.toggle("collapsed");
+        });
 
         window.addEventListener('hashchange', loadRoute);
         window.addEventListener('load', loadRoute);

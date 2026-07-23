@@ -143,6 +143,59 @@ body {
     font-weight: 600;
 }
 
+/* Collapsible Submenu Styles */
+.nav-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav-item-container .nav-link {
+    flex-grow: 1;
+}
+
+.submenu-toggle-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.55rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, transform 0.2s;
+    border-radius: 0.35rem;
+}
+
+.submenu-toggle-btn:hover {
+    color: var(--primary);
+    background: rgba(158, 243, 185, 0.05);
+}
+
+.arrow-icon {
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease;
+}
+
+.submenu-toggle-btn.collapsed .arrow-icon {
+    transform: rotate(-90deg);
+}
+
+.nav-submenu-list {
+    list-style: none;
+    padding-left: 1rem;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-submenu-list.collapsed {
+    max-height: 0;
+}
+
+
 /* Content Area */
 .content-wrapper {
     margin-left: 320px;
