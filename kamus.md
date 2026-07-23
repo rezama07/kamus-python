@@ -4,7 +4,7 @@
 ---
 
 
-# 📋 HALAMAN NOL: Konsep Dasar Python
+# 📋 Konsep Dasar Python
 *Aturan Umum & Fondasi Pemrograman*
 
 
