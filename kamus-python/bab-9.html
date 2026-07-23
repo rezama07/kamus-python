@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,25 +26,25 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Selamat! Anda sudah menguasai cara menggunakan alat masak (Python). Tapi, untuk membuat restoran skala besar, Anda tidak perlu memasak semuanya sendiri. Anda bisa "menyewa" Koki Robot super pintar. Bab ini berisi kosa kata untuk berkomunikasi dan mempekerjakan robot tersebut.</p>
             </div>
 
-            <!-- Kata 63 -->
+            
             <div class="word-card" id="kata-63">
-                <h3 class="word-title">📖 KATA 63: LLM (Large Language Model) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: el-el-em / artinya: Model Bahasa Raksasa)</span></h3>
+                <h3 class="word-title">📖 KATA 63: LLM</h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Otak utama dari kecerdasan buatan (AI) yang sudah dilatih dengan cara disuruh membaca hampir seluruh tulisan di internet, sehingga ia bisa merespons obrolan, menulis kode, atau meringkas teks layaknya manusia pintar.</p>
+                    <p>Model kecerdasan buatan yang dilatih menggunakan data teks dalam jumlah sangat besar, sehingga mampu memahami dan menghasilkan teks layaknya manusia — termasuk menjawab pertanyaan, menulis kode, atau merangkum dokumen.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan seorang Koki Robot Jenius yang sudah membaca jutaan buku resep dari seluruh dunia. Dia tahu segalanya tentang makanan. Anda tinggal sebutkan bahan yang Anda punya, dan dia bisa langsung menciptakan resep baru. (Contoh LLM di dunia nyata: ChatGPT dari OpenAI, Gemini dari Google).</p>
+                    <p>Seperti seorang ahli yang telah membaca dan mempelajari jutaan dokumen dari berbagai bidang. Berikan informasi dan instruksi yang relevan, dan ia dapat memberikan respons yang sesuai. Contoh LLM yang umum dikenal: ChatGPT (OpenAI), Gemini (Google).</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>LLM sangat pintar bicara, tapi dia tidak punya "mata" ke dunia nyata. Jika Anda tidak memberinya konteks yang jelas, dia bisa Halusinasi (mengarang jawaban dengan sangat meyakinkan).</p>
+                    <p>LLM tidak memiliki akses ke informasi terkini atau data eksternal secara langsung. Jika konteks tidak diberikan dengan jelas, model dapat menghasilkan jawaban yang tidak akurat (halusinasi).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH PEMAKAIAN:</h4>
                     <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Di Python, kita tidak membuat LLM dari nol karena butuh triliunan rupiah. Kita memanggilnya:</p>
-                    <pre><code class="language-python"># Komputer, tolong sambungkan aku ke LLM milik Google (Gemini) sekarang!
+                    <pre><code class="language-python"># Menghubungkan program ke LLM milik Google (Gemini)
 from google import genai
 
 client = genai.Client()
@@ -56,45 +56,45 @@ print(response.text)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 64 -->
+            
             <div class="word-card" id="kata-64">
                 <h3 class="word-title">📖 KATA 64: Prompt <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: promp / artinya: Perintah / Instruksi)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Teks pesanan atau instruksi yang kita ketikkan untuk menyuruh si AI (LLM) bekerja.</p>
+                    <p>Teks instruksi atau pertanyaan yang diberikan kepada model AI untuk memandu respons yang dihasilkan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Kertas pesanan yang diberikan pelayan kepada Koki. Kalau di kertas itu cuma tertulis "Bikin Nasi", si Koki bisa saja membuat nasi goreng, nasi uduk, atau nasi putih biasa (hasilnya acak). Tapi kalau prompt-nya jelas: "Bikin nasi goreng spesial, tidak pedas, pakai telur mata sapi setengah matang", Koki akan memberikan hasil yang sempurna.</p>
+                    <p>Seperti instruksi kerja yang diberikan kepada seseorang. Instruksi yang spesifik dan jelas akan menghasilkan output yang sesuai harapan. Instruksi yang tidak jelas akan menghasilkan output yang tidak terarah.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Berlaku hukum GIGO (Garbage In, Garbage Out). Jika instruksi (prompt) Anda jelek dan tidak jelas, maka jawaban AI pasti akan jelek dan melenceng.</p>
+                    <p>Berlaku prinsip GIGO (Garbage In, Garbage Out). Kualitas output AI sangat bergantung pada kualitas instruksi yang diberikan. Prompt yang tidak jelas akan menghasilkan jawaban yang tidak relevan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python"># Menyiapkan pesanan (Prompt) yang sangat spesifik
+                    <pre><code class="language-python"># Menyiapkan instruksi (Prompt) yang spesifik
 pesanan_saya = "Tolong ringkas artikel ini menjadi 3 poin saja, gunakan bahasa gaul anak Jaksel."
 
-# Mengirim pesanan ke Koki Robot
+# Mengirim instruksi ke Koki Robot
 jawaban = model_ai.generate_content(pesanan_saya)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 65 -->
+            
             <div class="word-card" id="kata-65">
                 <h3 class="word-title">📖 KATA 65: Token <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: to-ken / artinya: Potongan Kata / Koin Biaya)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Cara komputer (AI) memotong-motong kata untuk dibaca. Sekaligus menjadi "mata uang" untuk menghitung berapa biaya tagihan yang harus Anda bayar ke penyedia AI.</p>
+                    <p>Satuan terkecil yang digunakan model AI untuk memproses teks. Sekaligus menjadi satuan penghitungan biaya penggunaan layanan AI.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti bermain mesin capit (Arcade) di mal. Setiap kali mesin capit itu bergerak, Anda harus memasukkan "Koin Token". Di dunia AI, 1 Token kira-kira sama dengan 3/4 kata. Jika Anda menyuruh AI membaca buku setebal 1000 halaman, AI tersebut akan "memakan" ratusan ribu token Anda.</p>
+                    <p>Seperti satuan konsumsi pada layanan berbayar. Semakin banyak teks yang dikirim dan diterima, semakin banyak token yang digunakan — dan semakin besar biaya yang ditagihkan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Seorang AI Engineer wajib pelit token! Jangan mengirim teks yang tidak perlu ke dalam AI, karena token yang membengkak akan membuat aplikasi Anda lambat dan tagihan bulanan perusahaan jebol.</p>
+                    <p>Efisiensi penggunaan token adalah hal penting dalam pengembangan sistem AI. Hindari mengirim teks yang tidak relevan ke dalam model, karena konsumsi token yang berlebihan akan memperlambat respons dan meningkatkan biaya operasional.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH PEMAKAIAN:</h4>
@@ -102,16 +102,19 @@ jawaban = model_ai.generate_content(pesanan_saya)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 66 -->
+            
             <div class="word-card" id="kata-66">
                 <h3 class="word-title">📖 KATA 66: API Key <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ei-pi-ai ki / artinya: Kunci Akses Layanan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Kata sandi (password) super rahasia yang unik milik Anda, yang digunakan agar kode Python Anda diizinkan masuk dan meminjam AI dari perusahaan besar (seperti Google atau OpenAI).</p>
+                    <p>Kode autentikasi unik yang diberikan oleh penyedia layanan AI kepada penggunanya. Kode ini diperlukan agar program Python diizinkan mengakses model AI melalui internet.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Koki Robot Jenius (Gemini) itu disimpan di dalam gedung Google yang dijaga ketat. Untuk memanggilnya keluar agar mau memasak untuk aplikasi Anda, Anda harus menggesekkan Kartu ID Khusus (API Key). Tanpa kartu ini, satpam Google akan menolak Anda masuk.</p>
+                    <p>Seperti kartu identitas atau token akses yang harus ditunjukkan untuk mendapatkan izin masuk ke suatu layanan. Tanpa kartu ini, akses akan ditolak.
+
+**⚠️ ATURAN WAJIB (PERHATIAN KEAMANAN):**
+API Key bersifat rahasia dan setara dengan kredensial login. JANGAN PERNAH menuliskan API Key secara langsung di dalam kode yang akan dibagikan atau diunggah ke repositori publik (seperti GitHub). Jika dicuri, pihak lain dapat menggunakan layanan atas nama Anda dan Anda yang akan dikenakan biaya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (JEBAKAN MAUT):</h4>
@@ -122,7 +125,7 @@ jawaban = model_ai.generate_content(pesanan_saya)</code></pre>
                     <pre><code class="language-python"># CARA SALAH DAN BERBAHAYA:
 # kunci_saya = "AIzaSyB123rahasiaJANGANdicuri"
 
-# CARA AI ENGINEER PROFESIONAL (Mengambil kunci dari brankas tersembunyi):
+# CARA YANG BENAR (Mengambil kunci dari variabel lingkungan sistem):
 import os
 kunci_saya = os.getenv("RAHASIA_API_KEY")</code></pre>
                 </div>
@@ -140,12 +143,12 @@ kunci_saya = os.getenv("RAHASIA_API_KEY")</code></pre>
                 <a href="bab-8.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-10.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,20 +26,20 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Sebelum masakan disajikan atau diolah oleh AI, bahan-bahan mentah (Data) harus dibersihkan, diurutkan, dan disiapkan terlebih dahulu. Bab ini berisi kosa kata kunci untuk mengolah data dalam jumlah besar di Python.</p>
             </div>
 
-            <!-- Kata 74 -->
+            
             <div class="word-card" id="kata-74">
                 <h3 class="word-title">📖 KATA 74: NumPy <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: nam-pai / singkatan dari: Numerical Python)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Sebuah Library (alat pinjaman) ajaib di Python yang diciptakan khusus untuk menghitung jutaan angka dalam sekejap mata.</p>
+                    <p>Library Python yang dioptimalkan untuk melakukan operasi matematis pada data numerik dalam jumlah besar secara efisien.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Jika kodingan Python biasa adalah "Kalkulator Warung" yang menghitung angka satu per satu, maka NumPy adalah "Kalkulator Super Komputer". Ia bisa menjumlahkan, mengalikan, atau membagi jutaan angka secara bersamaan tanpa membuat laptop Anda nge-lag.</p>
+                    <p>Jika Python standar memproses angka satu per satu, NumPy dapat memproses jutaan angka sekaligus dalam satu operasi — jauh lebih cepat dan efisien untuk keperluan komputasi ilmiah dan pengembangan AI.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Harus selalu "dipinjam" di baris paling atas kodingan Anda dengan julukan standar seluruh dunia: <code>import numpy as np</code>.</p>
+                    <p>Harus diimpor dengan alias standar yang digunakan secara universal: import numpy as np.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -54,20 +54,20 @@ print(harga_diskon)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 75 -->
+            
             <div class="word-card" id="kata-75">
                 <h3 class="word-title">📖 KATA 75: Array <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: a-rei / artinya: Susunan / Laci Angka)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Tempat penyimpanan khusus buatan NumPy. Bentuknya seperti rak bersusun yang sangat sangat rapi, khusus untuk menyimpan angka agar gampang dihitung oleh AI.</p>
+                    <p>Struktur data khusus buatan NumPy yang dirancang untuk menyimpan kumpulan angka secara terstruktur dan efisien, mendukung berbagai dimensi (1D, 2D, 3D).</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Rak Telur. Setiap lekukan di rak telur punya posisi yang presisi. Anda bisa punya rak telur 1 dimensi (sebaris), 2 dimensi (berbaris dan berkolom seperti papan catur), hingga 3 dimensi (seperti Rubik). Di dalam kotak-kotak inilah AI menyimpan piksel gambar atau koordinat teks.</p>
+                    <p>Seperti rak berlaci yang setiap lacinya memiliki posisi yang teratur dan presisi. Array 1 dimensi seperti satu baris laci, Array 2 dimensi seperti grid laci (baris dan kolom), dan seterusnya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Berbeda dengan wadah List (Kata 10) yang bisa dicampur isi teks dan angka, sebuah Array wajib berisi tipe data yang sama persis (misal: angka semua). Kalau dicampur, NumPy akan kebingungan menghitungnya.</p>
+                    <p>Berbeda dengan List Python yang dapat menampung tipe data campuran, sebuah Array NumPy harus berisi tipe data yang seragam (semua angka, atau semua teks). Data yang tidak seragam akan menyebabkan NumPy tidak dapat melakukan operasi matematis dengan benar.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -81,20 +81,20 @@ print(rak_angka[0]) # Akan mencetak: 10</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 76 -->
+            
             <div class="word-card" id="kata-76">
                 <h3 class="word-title">📖 KATA 76: Pandas <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pan-das / singkatan dari: Python Data Analysis)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Library (alat pinjaman) paling terkenal di dunia Python untuk membuka, membaca, dan mengacak-acak data berbentuk tabel. Catatan: Ini sama sekali tidak ada hubungannya dengan hewan Panda 🐼.</p>
+                    <p>Library Python paling populer untuk membaca, mengolah, dan memanipulasi data berbentuk tabel. Catatan: nama ini tidak berkaitan dengan hewan Panda 🐼.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Pandas adalah Microsoft Excel versi Koding. Apapun yang biasa Anda lakukan di Excel (buka file CSV, filter kolom, hapus baris, menggabungkan tabel), Pandas bisa melakukannya ribuan kali lebih cepat hanya dengan mengetik perintah teks, tanpa perlu nge-klik mouse sama sekali.</p>
+                    <p>Pandas adalah padanan Microsoft Excel dalam dunia pemrograman. Semua operasi yang biasa dilakukan di Excel — membuka file CSV, memfilter kolom, menghapus baris, menggabungkan tabel — dapat dilakukan Pandas dengan perintah teks, jauh lebih cepat, dan tanpa perlu interaksi mouse sama sekali.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Sama seperti NumPy, alat ini punya julukan standar internasional yang pantang dilanggar. Anda wajib mengetik: <code>import pandas as pd</code>.</p>
+                    <p>Sama seperti NumPy, Pandas memiliki alias standar yang digunakan secara universal. Wajib menggunakan: import pandas as pd.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -105,20 +105,20 @@ tabel_karyawan = pd.read_csv("data_gaji.csv")</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 77 -->
+            
             <div class="word-card" id="kata-77">
                 <h3 class="word-title">📖 KATA 77: DataFrame <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: de-ta-freim / artinya: Bingkai Data / Tabel)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Sebutan resmi di dunia Python untuk sebuah "Tabel" yang dihasilkan oleh Pandas. Ia memiliki baris ke bawah dan kolom ke samping.</p>
+                    <p>Struktur data dua dimensi dalam Pandas yang menyerupai tabel — memiliki baris dan kolom dengan nama yang dapat diidentifikasi.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Sama persis seperti Selembar Kertas Kerja (Worksheet) di Microsoft Excel. Jika Pandas adalah aplikasi Excel-nya, maka DataFrame adalah tabel tempat Anda melihat nama-nama kolom seperti "Nama", "Umur", dan "Gaji".</p>
+                    <p>Setara dengan selembar worksheet di Microsoft Excel. Jika Pandas adalah aplikasinya, maka DataFrame adalah tabelnya — dengan nama kolom seperti "Nama", "Umur", dan "Gaji" yang terstruktur rapi.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Setiap DataFrame pasti punya Index (nomor urut baris di sisi paling kiri) dan Columns (nama judul di bagian paling atas).</p>
+                    <p>Setiap DataFrame memiliki Index (nomor urut baris di sisi paling kiri) dan Columns (nama kolom di bagian atas).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -132,16 +132,19 @@ print(tabel_kita) # Akan tercetak rapi berbentuk baris dan kolom di layar</code>
                 </div>
             </div>
 
-            <!-- Kata 78 -->
+            
             <div class="word-card" id="kata-78">
                 <h3 class="word-title">📖 KATA 78: Data Cleaning <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: de-ta kli-ning / artinya: Cuci Data)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Pekerjaan kuli (namun sangat penting) untuk membuang, menambal, atau merapikan data-data yang rusak, kosong, atau salah ketik sebelum data tersebut diberikan ke AI.</p>
+                    <p>Proses mengidentifikasi dan memperbaiki data yang tidak lengkap, tidak konsisten, atau tidak valid sebelum data tersebut digunakan untuk melatih atau menjalankan model AI.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti Menyortir Beras. Sebelum beras dimasak di rice cooker, Anda harus membuang gabah hitam, kerikil kecil, atau kutu beras. Kalau tidak dicuci (cleaning), nasinya akan tidak enak dan bisa membuat gigi patah. Di AI, data yang tidak dicuci akan membuat model AI bertingkah bodoh.</p>
+                    <p>Seperti proses sortasi bahan baku sebelum produksi — memisahkan bahan yang layak dari yang tidak layak. Bahan yang tidak diproses dengan benar akan menghasilkan produk yang cacat.
+
+**⚠️ ATURAN WAJIB (Prinsip Dasar AI):**
+Garbage In, Garbage Out (GIGO). Kualitas output model AI sangat bergantung pada kualitas data yang digunakan. Data yang buruk akan menghasilkan prediksi yang tidak akurat.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (Hukum Besi AI):</h4>
@@ -154,20 +157,28 @@ tabel_bersih = tabel_karyawan.dropna()</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 79 -->
+            
             <div class="word-card" id="kata-79">
                 <h3 class="word-title">📖 KATA 79: Data Pipeline <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: de-ta paip-lain / artinya: Pipa Saluran Data)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Rangkaian skrip kodingan yang dirakit secara otomatis untuk menyedot data kotor dari satu tempat, mencucinya di tengah jalan, lalu memuntahkan data bersihnya langsung ke dalam otak AI.</p>
+                    <p>Rangkaian proses otomatis yang mengalirkan data dari sumber, melalui tahap pembersihan dan transformasi, hingga ke tujuan akhir (misalnya database atau model AI) — tanpa intervensi manual.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Mesin Ban Berjalan (Conveyor Belt) di pabrik roti modern. Tepung dimasukkan di ujung kiri, mesin otomatis menguleninya, mengisinya dengan cokelat, memanggangnya, dan di ujung kanan sudah keluar roti dalam kemasan plastik. Koki (Engineer) tidak perlu lagi repot-repot mengangkat baskom secara manual setiap hari.</p>
+                    <p>Seperti jalur produksi otomatis di pabrik. Setiap tahap dijalankan secara berurutan dan otomatis — dari bahan mentah hingga produk jadi — tanpa perlu penanganan manual di setiap langkahnya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Saluran pipa ini harus dirakit dengan sistem penanganan error (Kotak P3K / try-except) yang sangat kuat. Kalau ada satu data aneh yang menyumbat pipa, sistem tidak boleh mati total.</p>
+                    <p>Pipeline harus dilengkapi dengan mekanisme penanganan error yang kuat (try-except). Jika satu data bermasalah menyebabkan pipeline berhenti total, seluruh proses otomasi menjadi tidak berguna.
+
+**💻 CONTOH KODE (Ilustrasi Sederhana):**
+```python
+# Pipa otomatis yang berjalan berurutan
+data_mentah = sedot_data_dari_internet()
+data_bersih = cuci_data(data_mentah)
+kirim_ke_database_ai(data_bersih)
+```</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -190,12 +201,12 @@ kirim_ke_database_ai(data_bersih)</code></pre>
                 <a href="bab-11.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-15.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

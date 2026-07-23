@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -22,20 +22,20 @@
         
         <div class="content-body">
             
-            <!-- Kata 1 -->
+            
             <div class="word-card" id="kata-1">
                 <h3 class="word-title">📖 KATA 1: Variable <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Variabel)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Tempat (kotak) untuk menyimpan data agar bisa dipanggil lagi nanti.</p>
+                    <p>Tempat penyimpanan data agar nilainya dapat diakses dan digunakan kembali di bagian lain program.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan sebuah kotak kardus kosong. Anda memasukkan sepasang sepatu ke dalamnya, lalu di luar kotaknya Anda tempelkan stiker nama bertuliskan "Sepatu_Olahraga". Stiker nama itu adalah Variable, dan sepatu di dalamnya adalah datanya.</p>
+                    <p>Bayangkan sebuah kotak berlabel. Label di luar kotak adalah nama Variable, sementara isi di dalam kotak adalah datanya. Data dapat diakses kapan saja hanya dengan menyebut nama labelnya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Di dalam kodingan, Anda TIDAK PERLU menulis kata "Variable". Anda cukup langsung membuat nama stikernya (nama kotaknya). Nama tidak boleh memakai spasi (gunakan garis bawah <code>_</code>).</p>
+                    <p>Tidak perlu menuliskan kata "Variable" di dalam kode. Cukup langsung tuliskan namanya. Nama Variable tidak boleh mengandung spasi — gunakan garis bawah (_) sebagai pengganti spasi.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -45,20 +45,20 @@
                 </div>
             </div>
 
-            <!-- Kata 2 -->
+            
             <div class="word-card" id="kata-2">
                 <h3 class="word-title">📖 KATA 2: String <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: string)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Teks biasa. Apapun yang berupa teks, huruf, kata, atau kalimat di dalam Python disebut String.</p>
+                    <p>Data berupa teks. Semua data yang berbentuk huruf, kata, atau kalimat dalam Python disebut String.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan String itu seperti tulisan di atas secarik kertas label. Komputer tidak akan menghitung tulisan itu secara matematika, komputer hanya membacanya persis seperti apa yang tertulis.</p>
+                    <p>String ibarat tulisan di atas selembar kertas. Komputer tidak akan mengolah tulisan tersebut secara matematis — ia hanya membacanya apa adanya, persis seperti yang tertulis.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Untuk memberi tahu Python bahwa sesuatu itu adalah String (teks), Anda wajib mengapit teks tersebut dengan tanda kutip dua (<code>" "</code>) atau tanda kutip satu (<code>' '</code>). Jika tidak, Python akan mengira itu perintah rahasia dan akhirnya error.</p>
+                    <p>Untuk mendefinisikan sebuah String, teks harus diapit dengan tanda kutip dua (" ") atau tanda kutip satu (' '). Tanpa tanda kutip, Python akan mengira teks tersebut adalah sebuah perintah dan akan menghasilkan error.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -69,20 +69,20 @@ angka = "12345"
                 </div>
             </div>
 
-            <!-- Kata 3 -->
+            
             <div class="word-card" id="kata-3">
-                <h3 class="word-title">📖 KATA 3: Integer <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(sering disingkat: int)</span></h3>
+                <h3 class="word-title">📖 KATA 3: Integer</h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
                     <p>Angka bulat utuh. Tidak ada koma atau desimal.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti menghitung barang yang tidak bisa dibelah. Misalnya jumlah manusia (1, 2, 3 orang), jumlah mobil, atau sisa nyawa di dalam game. Anda tidak mungkin bilang "jumlah manusia ada 2,5", bukan?</p>
+                    <p>Seperti menghitung benda yang tidak bisa dibelah — misalnya jumlah orang atau jumlah kendaraan. Nilai seperti 2,5 orang tidak memiliki makna nyata, sehingga angka bulat yang digunakan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Langsung ketik angkanya, jangan diapit tanda kutip. Jika diapit tanda kutip, komputer akan menganggapnya teks biasa (String), bukan angka matematika yang bisa dihitung.</p>
+                    <p>Ketik angka secara langsung tanpa tanda kutip. Jika diapit tanda kutip, Python akan memperlakukannya sebagai teks (String), bukan angka yang dapat dihitung secara matematis.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -93,20 +93,20 @@ umur = "25"
                 </div>
             </div>
 
-            <!-- Kata 4 -->
+            
             <div class="word-card" id="kata-4">
                 <h3 class="word-title">📖 KATA 4: Float <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: flot)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Angka desimal atau angka yang memiliki koma pecahan.</p>
+                    <p>Angka desimal atau angka yang memiliki nilai pecahan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti ukuran saat Anda menimbang berat badan, mengukur suhu tubuh, atau menghitung uang receh. Hasilnya tidak selalu bulat, bisa jadi 65,5 kg atau 36,7 derajat Celsius.</p>
+                    <p>Seperti hasil pengukuran berat badan atau suhu tubuh yang tidak selalu menghasilkan nilai bulat — misalnya 65,5 kg atau 36,7 derajat Celsius.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Dalam Python, Anda wajib menggunakan titik ( <code>.</code> ), bukan koma ( <code>,</code> ) untuk menulis angka desimal.</p>
+                    <p>Dalam Python, pemisah desimal menggunakan titik ( . ), bukan koma ( , ).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -117,20 +117,20 @@ berat_badan = 65,5
                 </div>
             </div>
 
-            <!-- Kata 5 -->
+            
             <div class="word-card" id="kata-5">
                 <h3 class="word-title">📖 KATA 5: Boolean <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: bu-li-an / sering disingkat: bool)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Data kepastian. Isinya BENAR-BENAR HANYA ADA DUA kemungkinan di dunia Python: Benar (<code>True</code>) atau Salah (<code>False</code>). Tidak ada kata ketiga, tidak ada kata "mungkin", "bisa jadi", atau "enggak tahu".</p>
+                    <p>Tipe data kepastian. Nilainya hanya ada dua kemungkinan: Benar (True) atau Salah (False). Tidak ada nilai ketiga.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Persis seperti saklar lampu. Hanya ada dua pilihan absolut: Nyala atau Mati. Biasanya digunakan komputer untuk mengecek syarat, misalnya: Apakah user sudah bayar? Jawabannya cuma True (sudah) atau False (belum).</p>
+                    <p>Seperti saklar lampu yang hanya memiliki dua posisi: Nyala atau Mati. Boolean umumnya digunakan untuk memeriksa suatu kondisi — misalnya: apakah pengguna sudah melakukan pembayaran? Jawabannya hanya True (sudah) atau False (belum).</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Anda HANYA boleh mengetik kata <code>True</code> atau <code>False</code>. Huruf pertamanya wajib kapital dan tidak boleh memakai tanda kutip.</p>
+                    <p>Gunakan kata True atau False. Huruf pertamanya wajib kapital dan tidak boleh diapit tanda kutip.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -145,20 +145,20 @@ sudah_lulus = "True"
                 </div>
             </div>
 
-            <!-- Kata 6 -->
+            
             <div class="word-card" id="kata-6">
                 <h3 class="word-title">📖 KATA 6: List <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: list)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Kumpulan banyak data yang disimpan berurutan di dalam satu tempat.</p>
+                    <p>Kumpulan banyak data yang disimpan secara berurutan dalam satu wadah.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan sebuah daftar belanjaan di selembar kertas. Di kertas itu tertulis berurutan: 1. Apel, 2. Jeruk, 3. Mangga. Ketimbang membuat banyak kotak (Variable) terpisah untuk masing-masing buah, lebih baik simpan semua sekaligus di satu daftar panjang.</p>
+                    <p>Seperti daftar belanjaan yang memuat beberapa item secara berurutan. Daripada membuat Variable terpisah untuk setiap item, semua data cukup disimpan dalam satu daftar.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Seluruh isi daftar wajib diapit dengan kurung siku <code>[ ]</code> dan setiap isinya dipisahkan dengan tanda koma ( <code>,</code> ).</p>
+                    <p>Seluruh isi List diapit dengan kurung siku [ ] dan setiap elemennya dipisahkan dengan tanda koma ( , ).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -168,16 +168,21 @@ sudah_lulus = "True"
                 </div>
             </div>
 
-            <!-- Kata 7 -->
+            
             <div class="word-card" id="kata-7">
                 <h3 class="word-title">📖 KATA 7: Dictionary <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: dik-sio-ne-ri)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Kumpulan data yang berpasangan. Ada "Kata Kunci" (Key) dan ada "Isinya" (Value).</p>
+                    <p>Kumpulan data berpasangan yang terdiri dari "Kata Kunci" (Key) dan "Nilainya" (Value).</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Persis seperti buku kontak di HP Anda. Anda menyimpan nama (sebagai Kunci), dan menyimpan nomor telepon (sebagai Isinya). Saat butuh nomor Budi, Anda cukup mencari nama Budi.</p>
+                    <p>Seperti buku kontak di ponsel. Nama seseorang berperan sebagai Kunci, sedangkan nomor teleponnya adalah Nilainya. Untuk mencari nomor Budi, cukup cari namanya sebagai kunci.
+
+**⚠️ ATURAN WAJIB (BACA PELAN-PELAN):**
+- 1. Wajib dibungkus dengan kurung kurawal { }.
+- 2. Kunci dan Nilai dipisahkan oleh tanda titik dua ( : ).
+- 3. Jika terdapat lebih dari satu pasang data, gunakan tanda koma ( , ) untuk memisahkan setiap pasangan data. (Kunci dan Nilai bebas bentuknya — bisa berupa teks semua atau angka semua).</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
@@ -191,47 +196,47 @@ sudah_lulus = "True"
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">kontak_hp = {"Budi": "0812345", "Andi": "0899999"}
 
-# (Tanda koma di tengah itu berfungsi murni sebagai pemisah agar data si Budi dan data si Andi tidak saling bertabrakan).</code></pre>
+# (Tanda koma di tengah berfungsi sebagai pemisah antar pasangan data).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 8 -->
+            
             <div class="word-card" id="kata-8">
                 <h3 class="word-title">📖 KATA 8: Tuple <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ta-pel)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Kumpulan data berurutan (mirip sebuah daftar), TAPI isinya dikunci mati oleh Python. Isinya sama sekali tidak bisa ditambah, dikurangi, atau diubah lagi oleh program.</p>
+                    <p>Kumpulan data berurutan (mirip List), namun isinya bersifat tetap (immutable). Isinya tidak dapat ditambah, dikurangi, atau diubah setelah dibuat.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan menu makanan yang sudah dicetak permanen di buku menu restoran berbahan plastik tebal. Pelanggan dilarang keras mencoret, menghapus, atau mengubah daftar menu di buku tersebut.</p>
+                    <p>Seperti daftar menu yang sudah dicetak secara permanen. Tidak ada yang dapat mengubah isinya setelah dicetak.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Wajib diapit dengan kurung biasa <code>( )</code>.</p>
+                    <p>Wajib diapit dengan kurung biasa ( ).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">koordinat_bumi = (90.0, 180.0)
 
-# (Karena ini memakai Tuple/kurung biasa, kalau nanti di tengah jalan Anda menyuruh komputer mengubah angkanya, komputer akan Error dan menolak keras).</code></pre>
+# (Karena ini memakai Tuple/kurung biasa, jika program mencoba mengubah nilainya, Python akan menampilkan Error dan menolak perubahan tersebut).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 9 -->
+            
             <div class="word-card" id="kata-9">
                 <h3 class="word-title">📖 KATA 9: Index <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: in-deks)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Nomor urut antrean dari sebuah data di dalam sebuah kelompok.</p>
+                    <p>Nomor urut posisi sebuah elemen di dalam suatu kelompok data.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti nomor kursi penonton di bioskop. TAPI HATI-HATI, komputer memiliki kebiasaan unik: komputer selalu mulai berhitung dari angka NOL (0), bukan angka 1. Jadi, barang yang posisinya paling depan, nomor Index-nya adalah 0.</p>
+                    <p>Seperti nomor kursi di gedung bioskop. Perlu diperhatikan bahwa komputer selalu memulai penghitungan dari angka NOL (0), bukan angka 1. Jadi, elemen yang berada di posisi paling depan memiliki Index 0.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Untuk memanggil nomor urut, tulis nama wadahnya dan tempelkan kurung siku <code>[ ]</code> yang berisi angka urutannya.</p>
+                    <p>Untuk mengakses elemen berdasarkan urutannya, tulis nama wadahnya diikuti kurung siku [ ] yang berisi nomor Index-nya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -244,59 +249,59 @@ sudah_lulus = "True"
                 </div>
             </div>
 
-            <!-- Kata 10 -->
+            
             <div class="word-card" id="kata-10">
                 <h3 class="word-title">📖 KATA 10: Comment <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: komen / komentar)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Teks atau catatan yang sengaja ditulis oleh programmer di dalam kodingan hanya untuk dibaca oleh sesama manusia. Komputer akan tutup mata dan mengabaikan tulisan ini sepenuhnya.</p>
+                    <p>Teks catatan yang ditulis oleh programmer di dalam kode, khusus untuk dibaca oleh manusia. Komputer akan mengabaikan baris ini sepenuhnya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti sticky note (kertas tempel kecil) yang Anda tempelkan di pinggir dokumen resmi perusahaan untuk memberi pesan ke teman kerja ("Tolong bagian ini jangan dihapus ya!"). Kertas tempel itu bukan bagian dari isi dokumen resminya.</p>
+                    <p>Seperti catatan tempel yang ditempelkan di pinggir dokumen sebagai pengingat atau keterangan tambahan. Catatan tersebut bukan bagian dari isi dokumen resmi.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Wajib diawali dengan tanda pagar ( <code>#</code> ). Apapun yang ditulis setelah tanda pagar pada baris tersebut tidak akan dianggap sebagai baris koding.</p>
+                    <p>Wajib diawali dengan tanda pagar ( # ). Semua teks setelah tanda pagar pada baris tersebut tidak akan dianggap sebagai kode oleh Python.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python"># Ini adalah kode untuk menyimpan umur peserta
 umur = 25
 
-# (Kalimat yang diawali tanda # tidak akan membuat program error, karena komputer pura-pura tidak melihatnya).</code></pre>
+# (Kalimat yang diawali tanda # tidak akan membuat program error, karena Python mengabaikannya sepenuhnya).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 11 -->
+            
             <div class="word-card" id="kata-11">
                 <h3 class="word-title">📖 KATA 11: Syntax <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: sin-taks)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Aturan mutlak soal tanda baca dan tata cara pengejaan saat kita mengetik kode.</p>
+                    <p>Aturan mutlak mengenai tanda baca dan tata cara penulisan kode.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Anda sedang menulis alamat email. Anda wajib memakai tanda keong (@). Kalau Anda menulis email tanpa tanda @, pasti emailnya gagal terkirim karena dianggap "tidak sah". Atau, saat Anda mengetik password, besar-kecil huruf sangat berpengaruh.</p>
+                    <p>Seperti format penulisan alamat email yang mengharuskan adanya tanda (@). Tanpa tanda tersebut, email tidak dapat dikirim karena formatnya dianggap tidak valid.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Di dunia Python, jika Python meminta tanda kutip tapi Anda lupa menaruhnya, atau Python minta tanda titik dua ( <code>:</code> ) tapi Anda malah menaruh titik koma ( <code>;</code> ), komputer akan langsung mogok kerja dan memunculkan peringatan Syntax Error (Salah Tanda Baca/Salah Ejaan).</p>
+                    <p>Jika Python membutuhkan tanda kutip namun tidak ditemukan, atau membutuhkan titik dua ( : ) namun malah ada titik koma ( ; ), Python akan berhenti bekerja dan menampilkan peringatan Syntax Error (Kesalahan Tanda Baca/Ejaan).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">nama = "Budi
 
-# (Ini akan langsung ERROR! Karena kurang satu tanda kutip penutup di belakang huruf "i". Kekurangan tanda baca sekecil inilah yang disebut pelanggaran Syntax).</code></pre>
+# (Ini akan langsung ERROR! Karena kurang satu tanda kutip penutup di belakang huruf "i". Kekurangan tanda baca seperti ini disebut pelanggaran Syntax).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 12 -->
+            
             <div class="word-card" id="kata-12">
                 <h3 class="word-title">📖 KATA 12: None <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: nan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Hampa. Tidak ada data sama sekali. Bukan nol (0), bukan teks kosong, tapi murni tidak ada isinya.</p>
+                    <p>Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong — None benar-benar berarti tidak ada nilai.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
@@ -308,13 +313,13 @@ umur = 25
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Huruf pertamanya wajib kapital (<code>None</code>), tidak boleh diberi tanda kutip, dan tidak bisa dihitung/ditambah dengan angka karena dia bukan angka.</p>
+                    <p>Huruf pertamanya wajib kapital (None), tidak boleh diapit tanda kutip, dan tidak dapat dioperasikan secara matematis.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">saldo_budi = None
 
-# (Artinya Budi belum punya rekening sama sekali. Beda dengan saldo_budi = 0 yang artinya Budi punya rekening tapi sedang bokek).</code></pre>
+# (Artinya Budi belum memiliki rekening sama sekali. Berbeda dengan saldo_budi = 0 yang artinya rekening ada tetapi saldonya kosong).</code></pre>
                 </div>
             </div>
 
@@ -330,11 +335,11 @@ umur = 25
         <div class="chapter-navigation">
             <a href="bab-2.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
         </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
-    <!-- SCROLL TO TOP BUTTON -->
+        </div> 
+    </div> 
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

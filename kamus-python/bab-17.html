@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
@@ -28,21 +28,31 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Bayangkan dapur restoran Anda sekarang memiliki 5 orang koki yang sedang membuat satu resep rahasia bersama-sama. Bagaimana caranya agar jika satu koki melakukan kesalahan (misalnya menuangkan terlalu banyak garam), resep tersebut tidak rusak selamanya? Bab ini adalah kunci kolaborasi tingkat industri.</p>
             </div>
 
-            <!-- Kata 103 -->
+            
             <div class="word-card" id="kata-103">
                 <h3 class="word-title">📖 KATA 103: Git & GitHub <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: git dan git-hab / artinya: Mesin Waktu & Gudang Kode)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p><strong>Git:</strong> Mesin waktu yang dipasang di dalam laptop Anda untuk merekam setiap perubahan kode yang Anda ketik (detik demi detik), sehingga Anda bisa membatalkan kesalahan kapan saja.<br>
-                    <strong>GitHub:</strong> Gudang raksasa di internet tempat Anda dan tim menyimpan "buku resep" (kode) tersebut agar bisa dikerjakan bersama dari berbagai laptop yang berbeda.</p>
+                    <p>Git: Sistem pencatatan versi kode yang terpasang di komputer lokal. Git merekam setiap perubahan yang dilakukan pada kode, sehingga memungkinkan developer untuk kembali ke versi sebelumnya kapan saja.
+
+                    GitHub: Platform penyimpanan kode berbasis cloud tempat tim developer menyimpan dan berkolaborasi pada kode dari berbagai perangkat yang berbeda.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Anda sedang menulis buku resep di Microsoft Word. Daripada Anda menyimpan file dengan nama <code>Resep_Final.docx</code>, lalu <code>Resep_Final_Revisi.docx</code>, lalu <code>Resep_Final_Revisi_Banget.docx</code>, Git akan secara otomatis menyimpan seluruh sejarah riwayat tulisan Anda dalam satu file rapi. GitHub adalah Google Drive-nya, tempat file itu ditaruh agar bisa diedit bersama-sama.</p>
+                    <p>Git berfungsi seperti sistem kontrol versi dokumen yang secara otomatis menyimpan riwayat setiap perubahan — tanpa perlu membuat file duplikat dengan nama berbeda. GitHub adalah layanan penyimpanan cloud untuk repositori tersebut, sekaligus memungkinkan kolaborasi tim secara bersamaan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Sebelum mengunggah kode rahasia perusahaan ke GitHub, pastikan Anda tidak ikut mengunggah kunci brankas (seperti API Key di Kata 66). Gunakan fitur pelindung yang disebut <code>.gitignore</code>.</p>
+                    <p>Sebelum mengunggah kode ke GitHub, pastikan file yang mengandung data rahasia (seperti API Key di Kata 66) tidak ikut terunggah. Gunakan file .gitignore untuk mengecualikan file-file sensitif tersebut.
+
+**💻 CONTOH KODE (Perintah Terminal):**
+```python
+# Menyimpan perubahan kode ke riwayat Git
+git commit -m "menambahkan fitur balas chat AI"
+
+# Mengunggah kode ke repositori GitHub
+git push origin main
+```</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Perintah Terminal):</h4>
@@ -54,20 +64,20 @@ git push origin main</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 104 -->
+            
             <div class="word-card" id="kata-104">
-                <h3 class="word-title">📖 KATA 104: Pull Request (PR) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pul ri-kues / artinya: Minta Izin Penggabungan)</span></h3>
+                <h3 class="word-title">📖 KATA 104: Pull Request</h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Proses mengajukan izin secara resmi kepada "Ketua Koki" (Lead Engineer) agar kode baru yang baru saja Anda ketik boleh digabungkan ke dalam buku resep utama milik perusahaan.</p>
+                    <p>Proses pengajuan formal untuk menggabungkan kode baru ke dalam basis kode utama tim, setelah melalui proses tinjauan oleh anggota tim lainnya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda adalah koki magang yang baru saja menciptakan saus sambal baru. Anda tidak boleh langsung mencampurkan saus itu ke dalam panci utama yang akan disajikan ke pelanggan. Anda harus menaruhnya di mangkuk kecil, lalu bilang ke Kepala Koki: "Chef, ini saus buatanku (Pull Request), tolong dicicipi. Kalau enak, baru boleh dicampur ke panci utama ya."</p>
+                    <p>Seperti proses persetujuan sebelum suatu perubahan diterapkan secara resmi. Perubahan tidak langsung diterapkan — melainkan harus ditinjau dan disetujui terlebih dahulu oleh pihak yang berwenang.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Di perusahaan teknologi yang bagus, seorang Engineer pemula (Junior) diharamkan menekan tombol "Merge" (Gabung) pada PR-nya sendiri. Harus Engineer lain yang me-review (mencicipi) kodenya.</p>
+                    <p>Di lingkungan tim profesional, seorang developer tidak boleh menyetujui Pull Request miliknya sendiri. Kode harus ditinjau oleh developer lain sebelum dapat digabungkan ke basis kode utama.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH PEMAKAIAN:</h4>
@@ -75,25 +85,25 @@ git push origin main</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 105 -->
+            
             <div class="word-card" id="kata-105">
-                <h3 class="word-title">📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)</span></h3>
+                <h3 class="word-title">📖 KATA 105: CI/CD</h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Robot pabrik (seperti GitHub Actions) yang akan langsung bekerja secara otomatis setiap kali Anda selesai melakukan Pull Request atau mengunggah kode baru. Robot ini akan melakukan testing (menguji apakah kodenya error), membungkusnya ke Docker (Kata 83), dan langsung melemparkannya ke server AWS (Kata 88) tanpa Anda perlu menekan tombol apa-apa lagi.</p>
+                    <p>Sistem otomasi (seperti GitHub Actions) yang secara otomatis menjalankan serangkaian proses setiap kali kode baru diunggah: mulai dari pengujian otomatis, pemaketan ke Docker (Kata 83), hingga penerapan ke server (Kata 88) — tanpa campur tangan manual.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Begitu Kepala Koki mencicipi dan menyetujui saus buatan Anda (PR disetujui), sebuah mesin ban berjalan (Conveyor Belt) akan otomatis menyala. Mesin itu akan menyedot saus Anda, membotolkannya, menempelkan label, dan langsung mengirimkannya ke ribuan minimarket di seluruh negeri detik itu juga. Anda tinggal duduk santai minum kopi.</p>
+                    <p>Seperti jalur produksi otomatis di fasilitas manufaktur. Setelah suatu item melewati tahap pemeriksaan kualitas, jalur produksi otomatis mengambil alih: mengemas, melabeli, dan mendistribusikannya — tanpa perlu penanganan manual di setiap tahap.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Jangan pernah mengaktifkan robot "Deploy Otomatis" (CD) jika Anda belum membuat robot "Testing Otomatis" (CI) yang kuat. Kalau kodenya error dan langsung ter-deploy otomatis, seluruh website perusahaan bisa mati seketika.</p>
+                    <p>Jangan mengaktifkan proses deployment otomatis (CD) jika pengujian otomatis (CI) belum disiapkan dengan baik. Jika kode yang bermasalah ter-deploy secara otomatis ke lingkungan produksi, hal ini dapat menyebabkan sistem tidak berfungsi bagi seluruh pengguna.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Potongan skrip instruksi untuk robot GitHub Actions yang disimpan dalam file berakhiran <code>.yml</code>:</p>
-                    <pre><code class="language-yaml"># Contoh instruksi ke robot
+                    <pre><code class="language-python"># Contoh instruksi ke robot
 steps:
   - name: Tes kodingan AI (Continuous Integration)
     run: python test_bot.py
@@ -114,12 +124,12 @@ steps:
                 <a href="bab-16.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="index.html" class="nav-btn next-btn">Daftar Bab &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

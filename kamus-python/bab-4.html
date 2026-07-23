@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,20 +26,20 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di dunia nyata, manusia paling benci pekerjaan yang diulang-ulang karena bikin capek. Di dunia komputer, komputer justru paling suka pekerjaan yang diulang-ulang. Di bab ini, kita akan belajar cara menyuruh komputer melakukan hal yang sama ribuan kali hanya dengan beberapa baris kata.</p>
             </div>
 
-            <!-- Kata 34 -->
+            
             <div class="word-card" id="kata-34">
                 <h3 class="word-title">📖 KATA 34: for <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: for / artinya: Untuk setiap)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Lakukan pekerjaan ini berulang-ulang sampai barangnya habis. Ini dipakai kalau kita sudah tahu pasti berapa banyak jumlah perulangannya.</p>
+                    <p>Menjalankan suatu blok kode secara berulang untuk setiap elemen dalam suatu kumpulan data. Digunakan ketika jumlah pengulangan sudah diketahui sejak awal.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti panitia yang membagikan goodie bag. Aturannya: "UNTUK SETIAP (<code>for</code>) tamu yang ada di dalam ruangan ini, berikan satu goodie bag". Panitia akan mengulang memberikan tas sampai tamu terakhir. Setelah semua tamu dapat, panitia otomatis berhenti.</p>
+                    <p>Seperti proses distribusi kepada seluruh peserta. Untuk setiap peserta dalam daftar, proses yang sama diulang hingga semua mendapatkannya, kemudian berhenti secara otomatis.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Harus digabungkan dengan kata <code>in</code> (di dalam). Lalu, baris di bawahnya WAJIB menjorok ke dalam (sama seperti aturan <code>if</code>).</p>
+                    <p>Harus dikombinasikan dengan kata in. Baris kode di bawahnya WAJIB menjorok ke dalam (menggunakan Tab), sama seperti aturan if.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -47,20 +47,23 @@
 for orang in tamu:
     print("Halo", orang)
 
-# (Komputer akan mencetak kata Halo sebanyak 3 kali berurutan: Halo Budi, Halo Andi, Halo Siti. Lalu otomatis berhenti).</code></pre>
+# (Python akan mencetak kata Halo sebanyak 3 kali berurutan: Halo Budi, Halo Andi, Halo Siti. Kemudian berhenti secara otomatis).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 35 -->
+            
             <div class="word-card" id="kata-35">
                 <h3 class="word-title">📖 KATA 35: while <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: wail / artinya: Selama)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Lakukan pekerjaan ini berulang-ulang terus-menerus tanpa henti, SELAMA syaratnya masih Benar (<code>True</code>). Ini dipakai kalau kita belum tahu pasti kapan harus berhenti.</p>
+                    <p>Menjalankan suatu blok kode secara terus-menerus selama kondisi yang ditentukan masih bernilai True. Digunakan ketika jumlah pengulangan tidak diketahui sejak awal.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti pelatih bola yang menghukum pemainnya: "SELAMA (<code>while</code>) matahari belum terbenam, teruslah lari keliling lapangan!". Pemain itu akan terus lari, lari, dan lari tanpa tahu itu putaran ke berapa, sampai akhirnya matahari terbenam.</p>
+                    <p>Seperti instruksi "teruslah berjalan selama lampu hijau menyala." Proses berlanjut tanpa tahu berapa langkah yang akan ditempuh, sampai kondisi berhenti terpenuhi.
+
+**⚠️ ATURAN WAJIB (PERHATIAN PENTING):**
+Pastikan kondisinya dapat berubah menjadi False pada suatu titik. Jika kondisi selalu True, program akan terjebak dalam perulangan tanpa akhir (Infinite Loop) dan dapat menyebabkan sistem tidak responsif.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (AWAS JEBAKAN):</h4>
@@ -69,76 +72,76 @@ for orang in tamu:
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">bensin = 5
-while bensin > 0:
+while bensin &gt; 0:
     print("Mobil jalan...")
     bensin = bensin - 1 
-# (Baris ini sangat penting agar bensinnya berkurang terus sampai habis. Kalau tidak ada baris ini, mobil jalan selamanya).</code></pre>
+# (Baris ini sangat penting agar nilai bensin berkurang setiap iterasi hingga mencapai nol. Tanpa baris ini, perulangan tidak akan pernah berhenti).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 36 -->
+            
             <div class="word-card" id="kata-36">
                 <h3 class="word-title">📖 KATA 36: range <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: reinj / artinya: Jangkauan angka)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Mesin pencetak daftar angka urut secara instan. Sangat sering dikawinkan dengan kata <code>for</code> untuk menentukan berapa kali kita mau mengulang pekerjaan.</p>
+                    <p>Fungsi untuk menghasilkan urutan angka secara otomatis. Sering digunakan bersama for untuk menentukan berapa kali suatu proses diulang.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti menekan tombol mesin tiket antrean di bank. Daripada Anda menulis nomor 1, 2, 3, 4, 5 secara manual, Anda tinggal suruh mesin <code>range</code>: "Tolong cetak 5 tiket!"</p>
+                    <p>Seperti mencetak nomor antrean secara otomatis. Daripada menulis nomor satu per satu secara manual, cukup tentukan jumlahnya dan fungsi range akan menghasilkannya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Ingat kembali Kata 9 (Index) di Bab 1! Komputer selalu mulai berhitung dari angka NOL. Jadi kalau Anda mengetik <code>range(5)</code>, angka yang dicetak bukan 1 sampai 5, melainkan 0, 1, 2, 3, 4 (tetap totalnya ada 5 buah angka).</p>
+                    <p>Ingat kembali konsep Index (Kata 9). Python selalu mulai menghitung dari angka NOL. Jadi range(5) akan menghasilkan angka 0, 1, 2, 3, 4 — bukan 1 sampai 5 (tetap totalnya ada 5 buah angka).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">for angka in range(5):
     print("Saya janji tidak nakal lagi")
 
-# (Komputer akan mencetak kalimat tersebut persis sebanyak 5 kali).</code></pre>
+# (Python akan mencetak kalimat tersebut sebanyak 5 kali).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 37 -->
+            
             <div class="word-card" id="kata-37">
                 <h3 class="word-title">📖 KATA 37: break <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: breik / artinya: Hancurkan/Hentikan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Tombol darurat. Perintah untuk menghentikan putaran secara paksa dan langsung keluar, meskipun tugasnya aslinya belum selesai.</p>
+                    <p>Perintah untuk menghentikan perulangan secara paksa dan langsung keluar, meskipun perulangan belum mencapai batas akhirnya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda sedang dihukum lari keliling lapangan 10 kali. Tapi baru di putaran ke-3, tiba-tiba ada gempa bumi. Anda langsung menekan tombol darurat (<code>break</code>), berhenti lari, dan kabur keluar lapangan tanpa mempedulikan sisa putarannya.</p>
+                    <p>Seperti tombol darurat yang dapat ditekan kapan saja untuk menghentikan proses, terlepas dari tahap yang sedang berjalan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Hanya boleh diketik di dalam blok yang sedang berulang (<code>for</code> atau <code>while</code>). Biasanya disembunyikan di dalam syarat <code>if</code>.</p>
+                    <p>Hanya dapat digunakan di dalam blok perulangan (for atau while). Biasanya dikombinasikan dengan kondisi if.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">for angka in range(10):
     if angka == 3:
         break 
-# Saat angka menyentuh 3, putaran langsung dihancurkan
+# Saat angka menyentuh 3, perulangan langsung dihentikan
     print("Lari putaran ke", angka)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 38 -->
+            
             <div class="word-card" id="kata-38">
                 <h3 class="word-title">📖 KATA 38: continue <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: kon-tin-yu / artinya: Lanjutkan/Lewati)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Tombol lompat (skip). Perintah untuk melewati/mengabaikan putaran yang sedang berjalan saat ini, dan langsung melompat ke putaran berikutnya. (Beda dengan <code>break</code> yang menghentikan total, <code>continue</code> hanya bolos satu kali).</p>
+                    <p>Perintah untuk melewati iterasi saat ini dan langsung melanjutkan ke iterasi berikutnya. Berbeda dengan break yang menghentikan seluruh perulangan, continue hanya melewati satu iterasi.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda sedang membagikan permen ke anak-anak yang antre. Giliran anak ke-4, Anda sadar anak itu sudah dapat permen duluan. Anda melewati anak tersebut (<code>continue</code>), tidak memberinya permen lagi, tapi Anda langsung lanjut memberikan permen ke anak ke-5 dan seterusnya.</p>
+                    <p>Seperti proses distribusi yang melewati satu penerima karena sudah menerima sebelumnya, lalu langsung melanjutkan ke penerima berikutnya tanpa menghentikan seluruh proses.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Sama seperti <code>break</code>, hanya bisa dipakai di dalam arena perulangan (<code>for</code> atau <code>while</code>). Apapun kode di bawah kata <code>continue</code> tidak akan dibaca untuk putaran itu saja.</p>
+                    <p>Sama seperti break, hanya dapat digunakan di dalam blok perulangan (for atau while). Semua kode yang ada di bawah kata continue dalam iterasi yang sama tidak akan dijalankan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -148,7 +151,7 @@ while bensin > 0:
 # Melewati angka 2
     print(angka)
 
-# (Hasil di layar: 0, 1, 3, 4. Angka 2 hilang karena di-skip).</code></pre>
+# (Hasil di layar: 0, 1, 3, 4. Angka 2 tidak muncul karena dilewati).</code></pre>
                 </div>
             </div>
 
@@ -165,11 +168,11 @@ while bensin > 0:
             <a href="bab-3.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
             <a href="bab-5.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
         </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
-    <!-- SCROLL TO TOP BUTTON -->
+        </div> 
+    </div> 
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

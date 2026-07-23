@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,41 +26,44 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di dunia nyata, menyalakan AI dan membiarkannya berjalan sendiri tanpa pengawasan adalah sebuah bencana (bisa merugikan perusahaan miliaran rupiah). Bab ini berisi kosa kata tentang alat-alat untuk memantau performa, kesehatan, dan biaya AI Anda dari jarak jauh.</p>
             </div>
 
-            <!-- Kata 93 -->
+            
             <div class="word-card" id="kata-93">
                 <h3 class="word-title">📖 KATA 93: LangSmith <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: leng-smit / artinya: Kamera Pengawas AI)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Sebuah platform dashboard visual (masih satu perusahaan dengan LangChain) yang memungkinkan Anda melihat "isi kepala" atau jalan pikiran si AI saat sedang memproses pertanyaan pelanggan.</p>
+                    <p>Platform pemantauan dari tim LangChain yang memungkinkan developer menelusuri dan menganalisis setiap langkah pemrosesan yang dilakukan oleh sistem AI — termasuk alur berpikir, penggunaan token, dan waktu respons.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Layaknya Kamera CCTV Super Canggih di Dapur. Kalau ada pelanggan komplain rasa supnya keasinan, Anda bisa memutar rekaman LangSmith untuk melihat persis di detik ke berapa sang Koki Robot memasukkan garam, dan berapa banyak garam yang dia tuang. LangSmith sangat penting untuk melacak error dan memantau biaya/token yang dihabiskan koki tiap detiknya.</p>
+                    <p>Seperti sistem pencatatan log yang merekam setiap detail aktivitas sistem. Jika terjadi masalah, rekaman tersebut dapat ditelusuri untuk mengidentifikasi di mana dan mengapa kegagalan terjadi.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Agar CCTV ini merekam, Anda hanya perlu menambahkan 2-3 baris kode "saklar rahasia" (Environment Variables) di file Python Anda.</p>
+                    <p>Untuk mengaktifkan pencatatan LangSmith, cukup tambahkan beberapa baris konfigurasi (Environment Variables) di dalam file Python.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">import os
 
-# Menyalakan saklar CCTV LangSmith
+# Menyalakan pencatatan LangSmith
 os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "kode_rahasia_cctv_anda"</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 94 -->
+            
             <div class="word-card" id="kata-94">
                 <h3 class="word-title">📖 KATA 94: Logging <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: lo-ging / artinya: Pencatatan Jurnal)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Proses menyuruh komputer untuk secara otomatis mencatat setiap kejadian penting (sukses atau gagal) ke dalam sebuah file teks panjang, lengkap dengan informasi tanggal dan jam kejadiannya.</p>
+                    <p>Proses pencatatan otomatis setiap kejadian penting (berhasil atau gagal) yang terjadi selama program berjalan, lengkap dengan informasi waktu kejadiannya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Buku Jurnal Harian Satpam. "Jam 08:00 - Restoran Buka (Aman)", "Jam 10:15 - Kulkas tiba-tiba mati (Bahaya!)". Dengan membaca log ini, Engineer bisa tahu apa saja yang terjadi semalaman saat mereka sedang tidur.</p>
+                    <p>Seperti jurnal aktivitas yang mencatat semua kejadian secara kronologis. Ketika terjadi masalah, catatan ini menjadi referensi utama untuk mengidentifikasi apa yang terjadi dan kapan.
+
+**⚠️ ATURAN WAJIB (Praktik Profesional):**
+Hindari mengandalkan print() untuk keperluan debugging di lingkungan produksi. Di tingkat profesional, gunakan library resmi logging bawaan Python untuk pencatatan yang lebih terstruktur dan dapat dikonfigurasi.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (Level Profesional):</h4>
@@ -76,20 +79,29 @@ logging.error("Gawat! API Key Google kita kadaluarsa!")</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 95 -->
+            
             <div class="word-card" id="kata-95">
-                <h3 class="word-title">📖 KATA 95: Too Many Requests (Error 429) <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: tu me-ni ri-kues / artinya: Tilang Kuota Habis)</span></h3>
+                <h3 class="word-title">📖 KATA 95: Too Many Requests</h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Pesan error (penolakan) dari penyedia AI (seperti Google / OpenAI) karena aplikasi kita mengirimkan terlalu banyak pertanyaan dalam waktu yang sangat singkat, melebihi batas kuota gratis/berbayar yang diizinkan.</p>
+                    <p>Respons error dari penyedia layanan AI yang menunjukkan bahwa program telah mengirimkan terlalu banyak permintaan dalam periode waktu tertentu, melebihi batas kuota yang diizinkan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Loket pendaftaran yang diserbu 1.000 pelanggan dalam 1 detik. Kasir akan panik, menutup jendela loket, dan berteriak: "Woy antri! Satu-satu majunya!" (Inilah Error 429).</p>
+                    <p>Seperti sistem antrean layanan yang membatasi jumlah permintaan agar tidak kelebihan beban. Ketika batas tersebut terlampaui, layanan sementara ditolak hingga kondisi kembali normal.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Mengingat diskusi kita sebelumnya tentang Rate Limit API, Anda wajib menggunakan fitur Retry (mencoba lagi otomatis) atau time.sleep() di kodingan Anda agar bot tidak langsung mati saat terkena tilang ini.</p>
+                    <p>Untuk menangani error ini, gunakan mekanisme retry (percobaan ulang otomatis) atau time.sleep() agar program menunggu sejenak sebelum mencoba kembali, bukan langsung berhenti.
+
+**💻 CONTOH KODE (Ilustrasi Singkat):**
+```python
+import time
+
+# Jika terkena Error 429
+print("Batas kuota tercapai. Menunggu 10 detik sebelum mencoba kembali...")
+time.sleep(10) # Berhenti sejenak, lalu coba kirim lagi
+```</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Singkat):</h4>
@@ -101,60 +113,60 @@ time.sleep(10) # Berhenti sejenak, lalu coba kirim lagi</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 96 -->
+            
             <div class="word-card" id="kata-96">
                 <h3 class="word-title">📖 KATA 96: Latency <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: lei-ten-si / artinya: Waktu Tunggu / Jeda)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Total waktu yang dibutuhkan sistem mulai dari pelanggan menekan tombol "Kirim" hingga jawaban pertama dari AI muncul di layar.</p>
+                    <p>Waktu yang dibutuhkan sistem mulai dari permintaan dikirimkan hingga respons pertama diterima dari AI.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Jeda waktu sejak Anda memberikan kertas pesanan ke pelayan sampai piring makanannya mendarat di meja Anda. Jika latency-nya 1 menit, pelanggan masih senang. Jika latency-nya 1 jam, pelanggan akan marah dan pulang. Di dunia AI, latency yang baik biasanya di bawah 3 detik.</p>
+                    <p>Seperti waktu tunggu antara memesan dan menerima pesanan. Semakin pendek waktu tunggu, semakin baik pengalaman pengguna. Latency yang terlalu tinggi dapat menyebabkan pengguna meninggalkan aplikasi.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Jika aplikasi Anda menggunakan teknik RAG (membaca dokumen PDF tebal), latency pasti akan naik drastis. Tugas Engineer adalah mengakalinya agar tetap terasa cepat.</p>
+                    <p>Penggunaan teknik RAG yang memproses dokumen berukuran besar dapat meningkatkan latency secara signifikan. Salah satu tugas utama AI Engineer adalah mengoptimalkan sistem agar tetap responsif meskipun memproses data yang kompleks.</p>
                 </div>
             </div>
 
-            <!-- Kata 97 -->
+            
             <div class="word-card" id="kata-97">
                 <h3 class="word-title">📖 KATA 97: Throughput <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: tru-put / artinya: Kapasitas Layan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Jumlah maksimal pesanan/tugas yang bisa diselesaikan oleh sistem AI Anda dalam kurun waktu tertentu (biasanya dihitung per detik atau per menit).</p>
+                    <p>Jumlah permintaan atau tugas yang dapat diproses oleh sistem dalam satuan waktu tertentu (biasanya per detik atau per menit).</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Lebar pintu masuk restoran Anda. Jika pintunya sempit (throughput rendah), walau koki di dalam kerjanya cepat, pelanggan tetap harus antri berjam-jam untuk masuk. Jika pintunya lebar (throughput tinggi), 50 orang bisa masuk dan dilayani secara bersamaan.</p>
+                    <p>Seperti kapasitas layanan suatu sistem — berapa banyak pengguna atau permintaan yang dapat dilayani secara bersamaan tanpa penurunan performa.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Untuk menaikkan throughput, Anda harus menyewa mesin Cloud yang lebih besar atau memperbaiki kode Python Anda agar lebih efisien.</p>
+                    <p>Untuk meningkatkan throughput, perlu dilakukan optimasi pada infrastruktur (menyesuaikan kapasitas server) atau pada kode program agar pemrosesan lebih efisien.</p>
                 </div>
             </div>
 
-            <!-- Kata 98 -->
+            
             <div class="word-card" id="kata-98">
                 <h3 class="word-title">📖 KATA 98: Timeout <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: taim-aut / artinya: Waktu Habis / Pingsan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Keputusan tegas dari sistem untuk memutus koneksi secara paksa karena Koki AI terlalu lama berpikir dan tidak kunjung memberikan jawaban.</p>
+                    <p>Batas waktu maksimum yang ditetapkan untuk sebuah proses. Jika proses tidak selesai dalam waktu yang ditentukan, koneksi akan diputus secara otomatis.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda janjian bertemu teman di halte bus. Anda membuat aturan (Timeout): "Aku cuma mau nunggu maksimal 10 menit ya!". Jika lewat 10 menit teman Anda tidak datang, Anda langsung pulang. Ini mencegah Anda menunggu selamanya tanpa kepastian.</p>
+                    <p>Seperti menetapkan batas waktu maksimum dalam menunggu respons. Jika batas tersebut terlampaui, proses dianggap gagal dan tindakan alternatif dijalankan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Saat menghubungkan Python dengan API eksternal, selalu pasang pengaman batas waktu (timeout). Jika tidak, saat server Google sedang down, aplikasi Anda akan "nge-hang" atau diam membeku selamanya menunggu balasan.</p>
+                    <p>Saat menghubungkan program dengan API eksternal, selalu tetapkan batas waktu (timeout). Tanpa pengaturan ini, jika server tidak merespons, program dapat berhenti bekerja tanpa memberikan informasi apapun kepada pengguna.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
                     <pre><code class="language-python">import requests
 
-# Minta data ke server, TAPI nyalakan alarm batas maksimal 15 detik!
+# Minta data ke server, dengan batas maksimal 15 detik
 respon = requests.get("https://alamat-api-ai.com", timeout=15)</code></pre>
                 </div>
             </div>
@@ -171,12 +183,12 @@ respon = requests.get("https://alamat-api-ai.com", timeout=15)</code></pre>
                 <a href="bab-12.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-16.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

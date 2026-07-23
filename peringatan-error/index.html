@@ -29,11 +29,11 @@
                 <h3 class="error-title">🔴 1. SyntaxError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Ejaan/Tanda Baca)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, ejaannya salah nih! Coba cek lagi, ada tanda baca yang kurang gak?"</p>
+                    <p>"Terdapat kesalahan penulisan pada kode. Harap periksa kembali apakah ada tanda baca yang hilang atau tidak sesuai."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Cek baris kode Anda. Biasanya Anda lupa menaruh tanda kutip ("), lupa tutup kurung ), atau lupa tanda titik dua (:).</p>
+                    <p>Periksa baris kode yang ditunjukkan oleh Python. Umumnya disebabkan oleh tanda kutip yang belum ditutup ("), kurung yang tidak lengkap ), atau tanda titik dua yang terlewat (:).</p>
                 </div>
             </div>
 
@@ -41,11 +41,11 @@
                 <h3 class="error-title">🔴 2. NameError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Manggil Nama Ga Dikenal)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh saya nyari data bernama 'Budi', tapi saya cari-cari di sistem gak ada yang namanya 'Budi'!"</p>
+                    <p>"Python tidak dapat menemukan variabel atau fungsi dengan nama yang disebutkan. Nama tersebut belum pernah didefinisikan sebelumnya."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Ini biasanya karena Anda Typo (salah ketik). Kemarin Anda menamai kotaknya <code>nama_tamu</code>, tapi sekarang Anda malah memanggil <code>nama_tammu</code>. Cek lagi ejaan nama variabelnya!</p>
+                    <p>Umumnya disebabkan oleh kesalahan pengetikan (typo). Periksa kembali ejaan nama variabel yang digunakan — pastikan konsisten dengan nama yang didefinisikan sebelumnya.</p>
                 </div>
             </div>
 
@@ -53,11 +53,11 @@
                 <h3 class="error-title">🔴 3. TypeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Wujud Data)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh saya mencampur Air dengan Minyak! Ya gak bisa bersatu dong!"</p>
+                    <p>"Python tidak dapat melakukan operasi yang diminta karena tipe data yang terlibat tidak kompatibel satu sama lain."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Ini terjadi karena Anda mencoba mengawinkan dua jenis data yang menolak digabung. Contoh paling sering: Anda mencoba menjumlahkan Teks dengan Angka (Misal: <code>"Budi" + 10</code>). Gunakan alat sulap <code>int()</code> atau <code>str()</code> di Bab 2 untuk menyamakan wujud mereka dulu.</p>
+                    <p>Error ini terjadi ketika dua tipe data yang tidak dapat digabungkan dipaksakan untuk beroperasi bersama — misalnya, mencoba menjumlahkan teks dengan angka (contoh: "Budi" + 10). Gunakan fungsi konversi int() atau str() (Bab 2) untuk menyamakan tipe data terlebih dahulu.</p>
                 </div>
             </div>
 
@@ -65,11 +65,11 @@
                 <h3 class="error-title">🔴 4. IndentationError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Spasi Berantakan)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Python itu penderita OCD (Obsessive Compulsive Disorder). Kalau spasinya gak rata, saya gak mau kerja!"</p>
+                    <p>"Struktur indentasi (lekukan) dalam kode tidak konsisten atau tidak sesuai dengan aturan Python."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Di Bab 3 dan 4 (if, for, while), kita wajib memajukan teks menjorok ke dalam (di-Tab). Kalau ada satu baris saja yang kurang maju atau kelebihan spasi, Python akan ngambek. Rapikan lagi spasi Anda supaya sejajar!</p>
+                    <p>Pada Bab 3 dan 4, seluruh kode yang berada di dalam blok if, for, atau while wajib menjorok ke dalam secara konsisten. Pastikan tidak ada baris yang kurang atau kelebihan spasi dibandingkan baris lainnya dalam satu blok yang sama.</p>
                 </div>
             </div>
 
@@ -77,11 +77,11 @@
                 <h3 class="error-title">🔴 5. IndexError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Salah Nomor Laci)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh saya ngambil barang di laci nomor 10, padahal lemarinya cuma punya 3 laci! Mau nyari di mana?"</p>
+                    <p>"Python mencoba mengakses elemen pada posisi yang tidak ada dalam struktur data tersebut."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Ini terjadi saat Anda membongkar wadah data (seperti List di Bab 1). Ingat kembali bahwa komputer mulai berhitung dari angka 0. Kalau isi wadah Anda ada 3 barang, maka nomor lacinya hanya 0, 1, dan 2. Jangan pernah mencari laci nomor 3!</p>
+                    <p>Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi jumlah elemen yang tersedia. Ingat bahwa index dimulai dari 0. Jika List berisi 3 elemen, index yang valid adalah 0, 1, dan 2 — bukan 3.</p>
                 </div>
             </div>
 
@@ -89,11 +89,11 @@
                 <h3 class="error-title">🔴 6. KeyError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Kunci Brankas Salah)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh buka laci pakai kunci berlabel 'Alamat', tapi saya ubek-ubek di sistem cuma ada label 'Nama' dan 'Umur'!"</p>
+                    <p>"Python tidak dapat menemukan Key yang diminta di dalam Dictionary karena Key tersebut tidak ada."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Sangat sering terjadi saat Anda menarik data AI dari internet (bentuk JSON/Dictionary). Komputer itu kaku; kalau label kuncinya "umur" (huruf kecil), Anda tidak bisa memanggilnya dengan "Umur" (huruf besar). Cek lagi daftar nama kunci yang tersedia di data Anda!</p>
+                    <p>Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Python bersifat case-sensitive — Key "umur" dan Key "Umur" dianggap berbeda. Pastikan nama Key yang digunakan sesuai persis dengan yang ada dalam data.</p>
                 </div>
             </div>
 
@@ -101,11 +101,11 @@
                 <h3 class="error-title">🔴 7. ValueError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Isi Tidak Sesuai Kodrat)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh saya ngubah kotak teks ini jadi angka mutlak. Boleh aja sih, tapi di dalam kotaknya tertulis kata 'Budi'! Tolong kasih tahu gimana caranya 'Budi' ditambah lima?!"</p>
+                    <p>"Tipe data sudah benar, tetapi nilai yang diberikan tidak valid atau tidak dapat diproses untuk operasi yang diminta."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Berbeda dengan TypeError (salah alat), ValueError terjadi karena alatnya benar tapi isinya tidak masuk akal. Pastikan jika Anda ingin memaksa teks menjadi angka pakai <code>int()</code>, teks tersebut memang benar-benar berisi angka (contoh: "100"), bukan huruf atau abjad.</p>
+                    <p>Berbeda dengan TypeError (tipe data salah), ValueError terjadi ketika tipe data sudah sesuai namun nilainya tidak dapat diproses. Contoh: mencoba mengonversi teks "Budi" menjadi angka menggunakan int() — teks tersebut tidak merepresentasikan angka yang valid. Pastikan data yang akan dikonversi memang berisi nilai numerik.</p>
                 </div>
             </div>
 
@@ -113,11 +113,11 @@
                 <h3 class="error-title">🔴 8. AttributeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Maksa Fitur yang Gak Ada)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh sepeda motor untuk terbang! Ya gak bisa dong, dia kan diciptakan gak punya sayap!"</p>
+                    <p>"Objek yang dimaksud tidak memiliki atribut atau method yang dipanggil."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Terjadi saat Anda menyuruh sebuah benda melakukan Aksi (Bab 2) yang tidak dia miliki. Misalnya, Anda mencoba menambahkan daftar nama baru pakai aksi <code>.append()</code>, tapi ternyata benda yang Anda pegang adalah sebuah Teks murni, bukan sebuah List (Daftar). Pastikan Anda tahu benda apa yang sedang Anda pegang!</p>
+                    <p>Terjadi ketika mencoba menggunakan method yang tidak dimiliki oleh tipe data tersebut — misalnya, mencoba memanggil .append() pada variabel yang bertipe String. String tidak memiliki method append() yang hanya dimiliki oleh List. Pastikan tipe data objek yang sedang digunakan sesuai dengan method yang dipanggil.</p>
                 </div>
             </div>
 
@@ -125,11 +125,11 @@
                 <h3 class="error-title">🔴 9. ModuleNotFoundError / ImportError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Alat Belum Dibeli)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh Koki memotong daging pakai gergaji mesin (import gergaji), padahal bos belum pernah beli gergajinya ke toko bangunan!"</p>
+                    <p>"Python tidak dapat menemukan modul atau library yang diminta karena belum terinstal di lingkungan ini."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Anda mencoba meminjam alat (library) orang lain menggunakan import, tapi alat itu belum ada di laptop Anda.<br><br>Luka ini TIDAK BISA diobati pakai Kotak P3K (try-except)! Anda harus mematikan program, buka Terminal, lalu ketik <code>pip install nama_alat_nya</code> untuk mendownloadnya terlebih dahulu.</p>
+                    <p>Error ini tidak dapat diatasi dengan try-except. Hentikan program, buka Terminal, dan jalankan perintah pip install nama_library untuk menginstal library yang dibutuhkan terlebih dahulu.</p>
                 </div>
             </div>
 
@@ -137,11 +137,11 @@
                 <h3 class="error-title">🔴 10. FileNotFoundError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Buku Resepnya Hilang)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, Anda nyuruh saya baca buku panduan perusahaan yang namanya data_karyawan.pdf, tapi saya cari di laci, di meja, di gudang... filenya gak ada tuh!"</p>
+                    <p>"Python tidak dapat menemukan file yang diminta di lokasi yang disebutkan."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Ini biasanya karena 2 hal: (1) Anda salah ketik nama filenya (misal: Data_karyawan.pdf pakai huruf kapital), atau (2) File tersebut Anda taruh di folder yang berbeda dengan tempat program Python Anda berjalan. Pastikan letak filenya berdekatan atau tuliskan alamat lengkap foldernya (contoh: C:/Dokumen/data_karyawan.pdf).</p>
+                    <p>Umumnya disebabkan oleh dua hal: (1) kesalahan penulisan nama file termasuk sensitivitas huruf besar-kecil (misalnya: "Data_karyawan.pdf" berbeda dengan "data_karyawan.pdf"), atau (2) file berada di direktori yang berbeda dari lokasi program Python berjalan. Periksa nama dan lokasi file, atau sertakan jalur lengkap ke file tersebut (contoh: C:/Dokumen/data_karyawan.pdf).</p>
                 </div>
             </div>
 
@@ -149,11 +149,13 @@
                 <h3 class="error-title">🔴 11. TimeoutError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Koki Pingsan Nungguin Bahan)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, saya udah nelepon supplier daging (Server API) buat minta bahan. Tapi udah nungguin 2 menit gak diangkat-angkat. Daripada saya diem aja kaya patung, mending saya matikan sistemnya sekarang!"</p>
+                    <p>"Permintaan ke server atau layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Ini BUKAN salah kode Anda! Ini terjadi karena koneksi internet Anda sedang jelek, atau server penyedia AI (seperti OpenAI/Gemini) sedang down/kepenuhan orang.<br><br>Sangat disarankan membungkus panggilan API Anda dengan P3K (try-except) agar saat internet putus, aplikasi Anda tidak langsung hancur, melainkan memunculkan pesan ramah: "Maaf, server AI sedang sibuk. Silakan coba lagi nanti."</p>
+                    <p>Error ini bukan disebabkan oleh kode Python, melainkan oleh faktor eksternal seperti koneksi internet yang tidak stabil atau server layanan AI yang sedang tidak merespons.
+
+Sangat disarankan untuk membungkus panggilan API dengan try-except agar program dapat menampilkan pesan yang informatif kepada pengguna ketika terjadi timeout, alih-alih berhenti tanpa penjelasan.</p>
                 </div>
             </div>
 
@@ -161,26 +163,26 @@
                 <h3 class="error-title">🔴 12. JSONDecodeError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Bahasa Alien)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Bos, saya disuruh nerjemahin paket data dari internet (API) pakai kamus JSON. Tapi pas saya buka, isinya berantakan bukan bahasa JSON yang saya ngerti!"</p>
+                    <p>"Python mencoba mengurai (parse) data sebagai format JSON, namun data yang diterima tidak memiliki format JSON yang valid."</p>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengobati:</h4>
-                    <p>Saat aplikasi Anda "ngobrol" dengan server luar (seperti ChatGPT), mereka sepakat memakai bahasa rahasia bernama JSON (bentuknya mirip Dictionary di Bab 1). Error ini muncul kalau server membalas dengan teks biasa atau format yang salah. Biasanya ini pertanda bahwa Anda salah memasukkan alamat API, salah password (API Key), atau server tersebut memang sedang rusak. Periksa kembali sambungan API Anda!</p>
+                    <p>Error ini biasanya terjadi saat program berkomunikasi dengan API eksternal dan menerima respons dalam format yang tidak terduga. Kemungkinan penyebabnya: URL API yang salah, API Key yang tidak valid, atau server yang sedang mengalami gangguan. Periksa kembali konfigurasi koneksi API yang digunakan.</p>
                 </div>
             </div>
 
-            <!-- Banner Bab 7 -->
+            
             <div style="margin-top: 3rem; background: rgba(56, 189, 248, 0.1); border: 1px solid var(--accent); border-radius: 1rem; padding: 2rem; text-align: center;">
                 <h3 style="color: var(--accent); margin-bottom: 1rem; font-size: 1.5rem;">🛡️ Sudah Tahu Jenis-jenis Error?</h3>
                 <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">Jangan biarkan program Anda langsung mati (crash) saat error terjadi. Pelajari cara menjinakkan error secara elegan menggunakan jurus <strong>Try-Except</strong>.</p>
                 <a href="../kamus-python/bab-7.html" class="nav-btn" style="display: inline-block;">Pelajari Try-Except di Bab 7</a>
             </div>
 
-        </div> <!-- content-body -->
-    </div> <!-- container -->
-    <!-- SCROLL TO TOP BUTTON -->
+        </div> 
+    </div> 
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

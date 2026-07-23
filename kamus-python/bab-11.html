@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,20 +26,31 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">AI biasa (seperti ChatGPT) hanya bisa menjawab teks. Jika Anda menyuruhnya "Tolong belikan tiket pesawat", dia hanya akan membalas "Maaf, saya hanya AI berwujud teks." Namun, di bab ini, kita belajar kosa kata untuk menyulap AI dari sekadar "Teman Ngobrol" menjadi "Pekerja Mandiri" yang bisa melakukan tindakan nyata di dunia maya. Inilah yang disebut Agentic AI.</p>
             </div>
 
-            <!-- Kata 71 -->
+            
             <div class="word-card" id="kata-71">
                 <h3 class="word-title">📖 KATA 71: Agent <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: e-jen / artinya: Agen Pekerja Mandiri)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Sebuah sistem di mana otak AI (LLM) tidak lagi sekadar menjawab pertanyaan, tetapi diberikan kebebasan untuk berpikir, merencanakan langkah, dan mengambil tindakan secara mandiri sampai tugasnya selesai.</p>
+                    <p>Sistem AI yang tidak hanya menghasilkan teks sebagai respons, tetapi diberikan kemampuan untuk berpikir, merencanakan langkah, dan mengambil tindakan secara mandiri untuk mencapai suatu tujuan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Koki Robot Anda (LLM) dipromosikan menjadi Manajer Restoran (Agent).<br>Jika Anda menyuruh Koki Robot biasa: "Bikin burger!" (Dia akan membalas resep burger teks).<br>Jika Anda menyuruh Manajer Restoran (Agent): "Bikin burger!" (Dia akan berpikir: 'Hmm, aku butuh daging. Aku akan cek kulkas dulu. Oh, daging habis. Aku akan buka aplikasi belanja, beli daging, lalu menyuruh koki memasaknya.'). Dia melakukan serangkaian tindakan mandiri.</p>
+                    <p>Perbedaan antara AI biasa dan Agent:
+- AI biasa: Menerima instruksi dan menghasilkan teks respons.
+- Agent: Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, dan menyesuaikan rencana berdasarkan hasil yang diperoleh — semuanya secara mandiri.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Agent bisa terjebak dalam "Infinite Loop" (berpikir berputar-putar tanpa henti) jika tidak diberikan aturan berhenti yang jelas.</p>
+                    <p>Agent berpotensi terjebak dalam perulangan tanpa akhir (Infinite Loop) jika tidak diberikan kondisi berhenti yang jelas.
+
+**💻 CONTOH KODE (Ilustrasi Sederhana):**
+```python
+# Kita merakit Agent dengan memberinya Otak (LLM) dan Tangan (Tools)
+asisten_pribadi = Agent(otak=gemini_llm, alat_bantu=[kalkulator, google_search])
+
+# Agent akan berpikir sendiri alat mana yang harus dipakai
+asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total pajaknya!")
+```</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -51,39 +62,51 @@ asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total paja
                 </div>
             </div>
 
-            <!-- Kata 72 -->
+            
             <div class="word-card" id="kata-72">
                 <h3 class="word-title">📖 KATA 72: Tools / Function Calling <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Senjata, alat, atau aplikasi luar (seperti Kalkulator, Browser Internet, atau Google Calendar) yang kita pasangkan ke tangan si Agent agar dia bisa berinteraksi dengan dunia nyata.</p>
+                    <p>Fungsi atau aplikasi eksternal (seperti kalkulator, browser, atau kalender) yang diberikan kepada Agent sehingga ia dapat berinteraksi dengan dunia luar, bukan hanya menghasilkan teks.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Manajer Restoran yang pintar tidak akan bisa menelepon supplier daging jika dia tidak punya telepon. Tools adalah pesawat telepon, kalkulator, dan mesin kasir yang Anda letakkan di meja si Manajer. Saat dia menyadari dia butuh menghitung pajak, dia akan memutuskan untuk memakai tool "Kalkulator".</p>
+                    <p>Secanggih apapun kemampuan berpikir seseorang, ia tetap membutuhkan alat untuk melakukan pekerjaan nyata. Tools adalah "peralatan kerja" yang diberikan kepada Agent agar kemampuan berpikirnya dapat diwujudkan menjadi tindakan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH PEMAKAIAN:</h4>
                     <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Di Python, Anda bisa membuat fungsi cek_cuaca() atau kirim_email(), lalu memberikannya ke AI. AI akan secara otomatis memicu (memanggil) fungsi tersebut saat pelanggan bertanya "Apakah di luar hujan?".</p>
                     <pre><code class="language-python">@tool
 def cek_cuaca(nama_kota):
-    # Kode untuk mengecek cuaca di internet
+    # Kode untuk mengambil data cuaca dari internet
     return "Hujan lebat"
 
-# Kita berikan "tool" cek_cuaca ini ke tangan si Koki Robot (Agent)</code></pre>
+# Kita berikan "tool" cek_cuaca ini ke tangan si Agent</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 73 -->
+            
             <div class="word-card" id="kata-73">
                 <h3 class="word-title">📖 KATA 73: LangChain / LangGraph <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Kerangka kerja (framework) andalan para AI Engineer di Python yang digunakan untuk merakit otak AI (LLM), ingatan AI (RAG), dan tangan AI (Tools) menjadi satu kesatuan mesin yang rapi dan terarah.</p>
+                    <p>Framework Python yang digunakan untuk mengintegrasikan model LLM, sistem RAG, dan Tools menjadi satu aplikasi AI yang terstruktur dan dapat dikonfigurasi.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Pipa dan kabel listrik di restoran Anda. Anda punya Koki (LLM), Gudang Resep (Vector DB), dan Kalkulator (Tools). Tapi tanpa LangChain, semuanya terpisah-pisah. LangChain adalah rel atau rantai komunikasi yang menyambungkan Koki agar bisa berjalan ke Gudang, lalu berjalan mengambil Kalkulator dengan tertib sesuai SOP (Standard Operating Procedure) yang Anda buat.<br><br>(Catatan: LangGraph adalah versi canggihnya, ibarat rel kereta yang bisa berputar balik jika si Koki melakukan kesalahan).</p>
+                    <p>Seperti infrastruktur yang menghubungkan berbagai komponen agar dapat bekerja secara terkoordinasi. Tanpa infrastruktur ini, setiap komponen akan berjalan secara terpisah tanpa alur yang jelas.
+
+(Catatan: LangGraph adalah versi lanjutan yang mendukung alur kerja agen yang bersifat siklik — memungkinkan agent untuk mengulang atau merevisi langkahnya jika diperlukan.)
+
+**💻 CONTOH KODE (Ilustrasi Sederhana):**
+```python
+# LangChain sering menggunakan tanda pipa (|) untuk merantai pekerjaan
+
+# Pekerjaan 1 (Prompt) dirantai ke Pekerjaan 2 (LLM), lalu dirantai ke Pekerjaan 3 (Output)
+rantai_kerja = Pesanan_User | Koki_LLM | Piring_Saji
+
+rantai_kerja.jalankan()
+```</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -108,12 +131,12 @@ rantai_kerja.jalankan()</code></pre>
                 <a href="bab-10.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-12.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

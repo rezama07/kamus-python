@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,20 +26,20 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di Bab 1 sampai 4, kita memasak dengan resep yang diketik satu per satu dari atas ke bawah. Tapi bagaimana kalau kita ingin memasak Nasi Goreng 10 kali di waktu yang berbeda? Daripada mengetik ulang resepnya, lebih baik kita "simpan" resep tersebut agar tinggal dipanggil namanya saja.</p>
             </div>
 
-            <!-- Kata 39 -->
+            
             <div class="word-card" id="kata-39">
                 <h3 class="word-title">📖 KATA 39: def <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: def / singkatan dari: Define / artinya: Menetapkan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>"Komputer, tolong catat dan ingat resep baru ini ya. Jangan langsung dimasak sekarang, ingat-ingat saja dulu sampai nanti aku panggil namanya."</p>
+                    <p>Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya — belum menjalankannya. Fungsi baru akan dijalankan ketika namanya dipanggil di bagian lain kode.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti Anda menulis resep "Cara Membuat Nasi Goreng" di sebuah buku catatan, lalu menempelkannya di kulkas. Anda baru saja mendaftarkan resep itu, bukan memasaknya saat itu juga.</p>
+                    <p>Seperti menulis prosedur kerja dan menyimpannya. Prosedur tersebut belum dijalankan saat ditulis — ia baru akan dijalankan ketika seseorang memanggilnya.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Harus diikuti dengan nama resep buatan Anda sendiri, tanda kurung <code>()</code>, dan titik dua <code>:</code>. Semua langkah masaknya di baris bawah wajib menjorok ke dalam (Tab).</p>
+                    <p>Harus diikuti dengan nama fungsi, tanda kurung (), dan tanda titik dua :. Seluruh isi fungsi di baris bawahnya wajib menjorok ke dalam (Tab).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -48,24 +48,24 @@
     print("2. Masukkan kopi dan gula")
     print("3. Tuang air panas")
 
-# (Ingat: Saat kode ini dijalankan, layar tidak akan memunculkan apa-apa. Komputer hanya mengingatnya secara diam-diam. Untuk menyuruhnya memasak, Anda harus memanggil namanya dengan mengetik: bikin_kopi() di baris paling bawah).</code></pre>
+# (Catatan: Saat kode ini dijalankan, layar tidak menampilkan apapun. Python hanya menyimpan definisi fungsi tersebut secara diam-diam. Untuk menjalankannya, panggil namanya dengan mengetik: bikin_kopi() di baris paling bawah).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 40 -->
+            
             <div class="word-card" id="kata-40">
                 <h3 class="word-title">📖 KATA 40: return <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ri-tern / artinya: Kembalikan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Instruksi kepada komputer untuk memberikan hasil akhir dari resep yang sudah dia kerjakan, agar hasil itu bisa kita simpan ke dalam wadah (Variabel) atau kita olah lagi.</p>
+                    <p>Perintah kepada fungsi untuk mengembalikan nilai hasil kerjanya agar dapat disimpan ke variabel atau diproses lebih lanjut.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Anda menyuruh koki restoran (komputer) membuat kue. Kalau koki hanya menggunakan <code>print</code>, itu ibarat koki memakan kuenya sendiri lalu berteriak dari dapur: "Kuenya enak, Bos!" (Anda cuma bisa dengar, tapi tidak bisa pegang kuenya).<br><br>Tapi kalau koki menggunakan <code>return</code>, koki itu akan membawa kue tersebut keluar dari dapur dan menyerahkannya ke tangan Anda untuk Anda bawa pulang atau Anda jual lagi.</p>
+                    <p>Jika fungsi hanya menggunakan print, hasilnya hanya ditampilkan ke layar dan tidak dapat digunakan oleh bagian lain program. Dengan return, hasil tersebut dikembalikan sebagai nilai yang dapat disimpan dan diproses lebih lanjut.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Hanya boleh diletakkan di dalam blok <code>def</code>. Saat komputer membaca kata <code>return</code>, pekerjaan di dalam resep itu langsung dianggap selesai dan komputer akan keluar dari dapur.</p>
+                    <p>Hanya dapat digunakan di dalam blok def. Ketika Python membaca kata return, eksekusi fungsi langsung dihentikan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
@@ -73,91 +73,92 @@
     hasil = a + b
     return hasil
 
-# Menyimpan hasil masakan (return) ke dalam wadah baru
+# Menyimpan nilai yang dikembalikan (return) ke dalam variabel baru
 tabungan_saya = tambah_angka(10, 5)
 print(tabungan_saya) # Layar akan mencetak: 15</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 41 -->
+            
             <div class="word-card" id="kata-41">
                 <h3 class="word-title">📖 KATA 41: parameter & argument <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: parameter & argumen / artinya: Bahan Masakan Khusus)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p><strong>Parameter:</strong> "Lubang" kosong di dalam kurung resep (def) yang sengaja dibiarkan kosong, menunggu diisi bahan nanti saat resep dipanggil.<br>
-                    <strong>Argument:</strong> "Bahan asli" yang dimasukkan ke dalam lubang tersebut saat Anda benar-benar menyuruh komputer memasak.</p>
+                    <p>Parameter: Variabel kosong yang ditempatkan di dalam kurung fungsi (def), yang menunggu untuk diisi dengan nilai saat fungsi dipanggil.
+
+                    Argument: Nilai nyata yang dimasukkan saat fungsi dipanggil, mengisi posisi parameter yang telah disiapkan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan resep blender jus buah. Blender itu dirancang dengan sebuah Lubang (Parameter) bernama <code>jenis_buah</code>. Blender itu tidak peduli buah apa yang akan dimasukkan, asalkan ada buahnya.<br><br>Lalu Anda datang membawa Apel (Argument) dan memasukkannya ke dalam lubang tadi. Blender pun menyala dan membuatkan Anda jus Apel.</p>
+                    <p>Parameter adalah slot atau ruang kosong yang disiapkan dalam sebuah formulir. Argument adalah data yang diisi ke dalam slot tersebut saat formulir benar-benar digunakan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Jumlah Argument (bahan) yang Anda masukkan harus sama persis dengan jumlah Parameter (lubang) yang diminta oleh resep. Kalau resep minta 2 bahan, Anda tidak boleh cuma kasih 1.</p>
+                    <p>Jumlah Argument yang diberikan harus sama persis dengan jumlah Parameter yang didefinisikan. Jika fungsi membutuhkan 2 parameter, maka 2 argument harus diberikan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python"># 1. Membuat Resep (Menyiapkan 'nama' sebagai Parameter/Lubang)
+                    <pre><code class="language-python"># 1. Mendefinisikan fungsi dengan 'nama' sebagai Parameter/Slot
 def sapa_tamu(nama):
     print("Selamat datang, " + nama + "!")
 
-# 2. Memanggil Resep (Memasukkan "Budi" sebagai Argument/Bahan Asli)
+# 2. Memanggil fungsi dengan "Budi" sebagai Argument/Nilai yang Diisi
 sapa_tamu("Budi") # Layar mencetak: Selamat datang, Budi!
 sapa_tamu("Andi") # Layar mencetak: Selamat datang, Andi!</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 42 -->
+            
             <div class="word-card" id="kata-42">
                 <h3 class="word-title">📖 KATA 42: default parameter <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: difolt parameter / artinya: Bahan Masakan Cadangan)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Bahan cadangan yang akan otomatis dipakai oleh komputer JIKA Anda (sebagai user) lupa/malas memasukkan bahan saat memanggil resep.</p>
+                    <p>Nilai bawaan yang akan digunakan secara otomatis jika pengguna tidak menyediakan argument untuk parameter tersebut saat memanggil fungsi.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti memesan Kopi Susu di warkop. Kalau Anda bilang, "Bang, kopi susu satu!" tanpa menyebutkan tingkat kemanisannya, Si Abang otomatis akan membuatkannya dengan tingkat Manis Normal (Default). Tapi kalau Anda secara spesifik bilang, "Bang, kopi susu satu, Less Sugar ya!", barulah Si Abang tidak memakai resep default-nya.</p>
+                    <p>Seperti pengaturan default pada suatu sistem. Jika pengguna tidak mengubah pengaturan, sistem akan menggunakan nilai bawaan yang telah ditentukan. Namun jika pengguna secara eksplisit menyebutkan nilai yang diinginkan, nilai bawaan tersebut akan diabaikan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Posisi Default Parameter (yang pakai tanda <code>=</code>) selalu harus diletakkan di bagian paling kanan dalam kurung, tidak boleh di kiri/depan parameter biasa.</p>
+                    <p>Parameter dengan nilai default (yang menggunakan tanda =) harus selalu diletakkan di sisi paling kanan dalam kurung, setelah parameter tanpa nilai default.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python"># Menyiapkan 'gula' dengan nilai cadangan "Normal"
+                    <pre><code class="language-python"># Menetapkan 'gula' dengan nilai default "Normal"
 def pesan_kopi(jenis, gula="Normal"):
     print("Kopi", jenis, "- Gula:", gula)
 
-pesan_kopi("Latte") # Kita lupa kasih tahu gulanya. Hasil: Kopi Latte - Gula: Normal
+pesan_kopi("Latte") # Tidak menyertakan nilai gula. Hasil: Kopi Latte - Gula: Normal
 pesan_kopi("Latte", "Less Sugar") # Hasil: Kopi Latte - Gula: Less Sugar</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 42b -->
+            
             <div class="word-card" id="kata-42b">
-                <h3 class="word-title">📖 KATA 42b: scope <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: skop / artinya: Cakupan Variabel)</span></h3>
+                <h3 class="word-title">📖 KATA 42B: scope <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: skop / artinya: Cakupan Variabel)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Aturan yang menentukan siapa yang boleh melihat dan memakai suatu Variabel (kotak data). Variabel yang dibuat di dalam fungsi (Lokal) hanya bisa dipakai di dalam fungsi itu saja.</p>
+                    <p>Aturan yang menentukan di bagian mana suatu variabel dapat diakses dan digunakan. Variabel yang didefinisikan di dalam fungsi (Lokal) hanya dapat digunakan di dalam fungsi tersebut.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Barang yang ada di ruang tamu (Global) bisa dilihat dan dipakai oleh semua anggota keluarga. Tapi barang yang disembunyikan di dalam kamar tidur yang terkunci (Lokal) hanya bisa dipakai oleh orang yang berada di dalam kamar itu. Jika Anda mencoba mengambil barang dari kamar orang lain dari ruang tamu, Anda tidak akan menemukannya.</p>
+                    <p>Variabel di luar fungsi (Global) dapat diakses dari mana saja dalam program. Variabel di dalam fungsi (Lokal) hanya berlaku selama fungsi tersebut dijalankan dan tidak dapat diakses dari luar.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Jika Anda membuat variabel di dalam <code>def</code>, jangan mencoba mem-<code>print</code> atau memanggil variabel tersebut di bagian paling bawah (di luar margin tab). Python akan menganggap variabel itu tidak pernah ada (mendapat pesan Error).</p>
+                    <p>Jika mendefinisikan variabel di dalam def, jangan mencoba menggunakannya di luar fungsi tersebut. Python akan menganggap variabel itu tidak ada dan akan menampilkan Error.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python">uang_tamu = 1000 # Variabel Global (Bisa dipakai siapa saja)
+                    <pre><code class="language-python">uang_tamu = 1000 # Variabel Global (Bisa dipakai dari mana saja)
 
 def rumah_budi():
     uang_kamar = 500 # Variabel Lokal (Hanya hidup di dalam fungsi ini)
-    print(uang_tamu) # Boleh! Mengakses uang global dari dalam kamar
-    print(uang_kamar) # Boleh! Memakai uang dari dalam kamar sendiri
+    print(uang_tamu) # Valid: Mengakses variabel global dari dalam fungsi
+    print(uang_kamar) # Valid: Mengakses variabel lokal dari dalam fungsi
 
-print(uang_kamar) # ERROR! Mencoba mencuri uang dari kamar Budi padahal kita di luar</code></pre>
+print(uang_kamar) # ERROR: Variabel lokal tidak dapat diakses dari luar fungsi</code></pre>
                 </div>
             </div>
 
@@ -173,12 +174,12 @@ print(uang_kamar) # ERROR! Mencoba mencuri uang dari kamar Budi padahal kita di 
                 <a href="bab-4.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-6.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>

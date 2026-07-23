@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
         <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 </head>
@@ -26,92 +26,95 @@
                 <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Di dunia nyata, tidak ada koki yang membuat panci, kompor, atau kulkasnya sendiri dari nol. Mereka membelinya. Di Python, Anda juga bisa "mengambil" alat canggih (Modul/Library) yang sudah dibuat oleh programmer jenius lain agar kodingan Anda cepat selesai.</p>
             </div>
 
-            <!-- Kata 43 -->
+            
             <div class="word-card" id="kata-43">
                 <h3 class="word-title">📖 KATA 43: import <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: im-port / artinya: Masukkan / Impor)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>"Komputer, tolong pergi ke gudang dan ambilkan sekotak alat bernama X bawa ke ruang kerjaku sekarang."</p>
+                    <p>Memuat modul atau library dari luar ke dalam program agar fitur-fiturnya dapat digunakan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Bayangkan Anda sedang memasak dan butuh blender, tapi Anda tidak punya. Anda pergi ke tetangga dan berkata, "Boleh saya import (pinjam) blendernya?" Setelah tetangga memberikannya, barulah Anda bisa memakai blender itu di dapur Anda.</p>
+                    <p>Seperti meminjam peralatan yang tidak tersedia di tempat sendiri. Setelah peralatan tersebut tersedia, barulah pekerjaan yang membutuhkan alat itu dapat dilakukan.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Perintah <code>import</code> selalu diletakkan di baris paling atas dari seluruh kodingan Anda. Ini aturan tata krama (PEP 8) agar komputer menyiapkan semua alatnya sebelum mulai membaca instruksi kerja.</p>
+                    <p>Perintah import sebaiknya selalu diletakkan di baris paling atas kode. Ini adalah konvensi penulisan Python (PEP 8) agar semua dependensi dimuat sebelum kode utama dijalankan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python">import math  # Mengambil sekotak alat matematika dari gudang Python
+                    <pre><code class="language-python">import math  # Mengambil sekotak alat matematika dari library Python
 
-# Sekarang kita bisa pakai alat 'sqrt' (akar kuadrat) dari dalam kotak 'math'
+# Sekarang kita bisa pakai alat 'sqrt' (akar kuadrat) dari dalam modul 'math'
 hasil = math.sqrt(25)
 print(hasil) # Layar mencetak: 5.0</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 44 -->
+            
             <div class="word-card" id="kata-44">
                 <h3 class="word-title">📖 KATA 44: from ... import <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: from ... im-port / artinya: Dari ... Ambil)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>"Komputer, dari gudang X, aku tidak butuh satu kotak penuh. Tolong ambilkan alat spesifik bernama Y saja."</p>
+                    <p>Memuat hanya satu atau beberapa fungsi tertentu dari sebuah modul, tanpa memuat keseluruhan modul tersebut.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Tetangga Anda punya sekotak besar perlengkapan tukang kayu. Anda cuma butuh palu. Daripada Anda menyeret satu kotak besar yang berat itu ke rumah (<code>import tukang_kayu</code>), Anda cukup bilang: "Dari kotak perlengkapanmu, tolong ambilkan palunya saja" (<code>from tukang_kayu import palu</code>). Ini membuat program Anda lebih ringan dan berlari lebih cepat.</p>
+                    <p>Jika sebuah kotak peralatan lengkap hanya dibutuhkan satu alatnya, lebih efisien mengambil hanya alat yang dibutuhkan daripada membawa seluruh kotak. Ini membuat program lebih ringan dan efisien.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Formatnya harus pas: <code>from [Nama_Kotak] import [Nama_Alat_Spesifik]</code>.</p>
+                    <p>Formatnya harus pas: from [Nama_Modul] import [Nama_Fungsi_Spesifik].</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python">from random import randint  # Dari kotak 'random', ambil alat pengacak angka 'randint' saja
+                    <pre><code class="language-python">from random import randint  # Dari modul 'random', hanya ambil fungsi 'randint'
 
-# Kita tidak perlu lagi mengetik kata 'random' di depannya
+# Tidak perlu lagi menuliskan nama modul di depannya
 angka_dadu = randint(1, 6)
 print("Angka dadu yang keluar:", angka_dadu)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 45 -->
+            
             <div class="word-card" id="kata-45">
                 <h3 class="word-title">📖 KATA 45: as <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: es / artinya: Sebagai / Alias)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>Mengganti nama alat yang kita pinjam dengan julukan (alias) yang lebih pendek atau lebih gampang diingat.</p>
+                    <p>Memberikan nama alias (julukan) yang lebih pendek kepada modul yang diimpor, untuk memudahkan penulisan kode.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda meminjam mesin pembuat kopi dari Italia bernama "La Marzocco Linea Micra Espresso Machine". Karena kepanjangan dan lidah Anda keseleo menyebutkannya setiap saat, Anda memberi label julukan di mesin itu: "Mulai sekarang aku panggil kamu KopiMaker saja ya."</p>
+                    <p>Seperti memberi nama panggilan kepada seseorang yang memiliki nama lengkap panjang. Nama panggilan tersebut lebih praktis digunakan sehari-hari.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Selalu diletakkan di akhir baris setelah perintah <code>import</code>.</p>
+                    <p>Selalu ditulis di akhir baris setelah perintah import.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-python"># Kita meminjam library pengolah data bernama pandas, lalu memberinya julukan 'pd'
+                    <pre><code class="language-python"># Memuat library pengolah data 'pandas' dan memberinya alias 'pd'
 import pandas as pd
 
-# Daripada mengetik 'pandas' panjang-panjang, kita cukup memanggil julukannya
+# Cukup menggunakan alias 'pd' daripada mengetik 'pandas' setiap saat
 data = pd.DataFrame({"Nama": ["Budi", "Siti"]})
 print(data)</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 46 -->
+            
             <div class="word-card" id="kata-46">
                 <h3 class="word-title">📖 KATA 46: pip install <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pip instal / artinya: Beli Alat Baru)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>"Tolong pergi ke toko alat sedunia di internet, cari alat bernama X, lalu beli dan bawa pulang ke laptopku."</p>
+                    <p>Perintah untuk mengunduh dan menginstal library Python dari internet ke dalam sistem lokal.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Di Kata 43 (<code>import</code>), Anda meminjam blender dari tetangga. Tapi bagaimana kalau tetangga Anda juga tidak punya blender? Anda harus membelinya dulu dari mal! <code>pip install</code> adalah perintah untuk membeli alat itu dari mal (internet) dan menaruhnya di gudang rumah Anda. Setelah alatnya ada di rumah, barulah Anda bisa melakukan <code>import</code>.</p>
+                    <p>Jika import digunakan untuk memuat library yang sudah ada di sistem, pip install digunakan untuk mendapatkan library yang belum terinstal. Setelah proses instalasi selesai, barulah library tersebut dapat digunakan melalui import.
+
+**⚠️ ATURAN WAJIB (PERHATIAN PENTING):**
+Perintah ini TIDAK BOLEH ditulis di dalam file kode Python (.py). Perintah ini harus dijalankan di Terminal atau Command Prompt.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (JEBAKAN FATAL):</h4>
@@ -119,38 +122,38 @@ print(data)</code></pre>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-bash">(Diketik di dalam Terminal, bukan di file Python)
+                    <pre><code class="language-python">(Diketik di dalam Terminal, bukan di file Python)
 pip install pandas 
 
-# (Komputer akan otomatis mengunduh alat pandas dari internet).</code></pre>
+# (Python akan mengunduh library pandas dari internet secara otomatis).</code></pre>
                 </div>
             </div>
 
-            <!-- Kata 47 -->
+            
             <div class="word-card" id="kata-47">
                 <h3 class="word-title">📖 KATA 47: pip list <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pip list / artinya: Cek Isi Gudang)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ ARTINYA DALAM BAHASA MANUSIA:</h4>
-                    <p>"Tolong catat dan sebutkan semua alat tambahan yang sudah pernah aku beli dan simpan di laptop ini."</p>
+                    <p>Perintah untuk menampilkan daftar semua library yang sudah terinstal di lingkungan Python saat ini.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Anda lupa apakah Anda sudah punya cetakan kue atau belum. Daripada keliling dapur mencari-cari, Anda membuka "Buku Inventaris" yang langsung menampilkan daftar semua barang yang pernah Anda beli.</p>
+                    <p>Seperti membuka daftar inventaris untuk melihat peralatan apa saja yang sudah tersedia, tanpa perlu memeriksa satu per satu secara manual.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Sama seperti di atas, perintah ini hanya bisa digunakan di dalam Terminal/Command Prompt.</p>
+                    <p>Sama seperti pip install, perintah ini hanya dapat digunakan di Terminal atau Command Prompt.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE:</h4>
-                    <pre><code class="language-bash">(Diketik di dalam Terminal)
+                    <pre><code class="language-python">(Diketik di dalam Terminal)
 pip list 
 
-# (Komputer akan menampilkan daftar panjang seperti: numpy, pandas, math, beserta nomor versinya).</code></pre>
+# (Python akan menampilkan daftar library yang terinstal beserta versinya, seperti: numpy, pandas, math, dsb.).</code></pre>
                 </div>
             </div>
 
-            <!-- Bonus -->
+            
             <div class="word-card" id="bonus-modul">
                 <h3 class="word-title" style="color: var(--accent);">🎁 BONUS: Membuat Modul Sendiri</h3>
                 <div class="word-section">
@@ -180,12 +183,12 @@ print(hasil) # Akan mencetak: 110</code></pre></li>
                 <a href="bab-5.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
                 <a href="bab-7.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
             </div>
-        </div> <!-- content-body -->
-    </div> <!-- container -->
+        </div> 
+    </div> 
 
-    <!-- SCROLL TO TOP BUTTON -->
+    
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
     </button>
 
     <script>
