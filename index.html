@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentasi Python - Panduan Lengkap</title>
-    <meta name="description" content="Dokumentasi lengkap Python meliputi Kamus Python, Glosarium, dan Panduan Error untuk membantu Anda belajar pemrograman Python.">
+    <title>Kamus Python & AI-Engineering </title>
+    <meta name="description"
+        content="Dokumentasi lengkap Python meliputi Kamus Python, Glosarium, dan Panduan Error untuk membantu Anda belajar pemrograman Python.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
 </head>
+
 <body>
     <header class="hero">
         <div class="hero-content">
-            <h1>Eksplorasi Dunia <span>Python</span></h1>
-            <p>Panduan terstruktur, glosarium lengkap, dan solusi error dalam satu tempat. Mulai perjalanan coding Anda sekarang.</p>
-            
+            <h1>Kamus <span> Python & AI-Engineering </span></h1>
+            <p>Panduan terstruktur, glosarium lengkap, dan solusi error dalam satu tempat. Mulai perjalanan coding Anda
+                sekarang.</p>
+
             <div class="search-container">
                 <input type="text" id="searchInput" placeholder="Cari materi, bab, atau error..." autocomplete="off">
                 <div id="searchResults" class="search-results"></div>
@@ -66,21 +71,25 @@
     <script src="search.js"></script>
     <!-- SCROLL TO TOP BUTTON -->
     <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;">
+            <path d="M12 19V5M5 12l7-7 7 7" />
+        </svg>
     </button>
 
     <script>
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function() {
+        window.addEventListener("scroll", function () {
             if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
                 scrollTopBtn.classList.add("show");
             } else {
                 scrollTopBtn.classList.remove("show");
             }
         });
-        scrollTopBtn.addEventListener("click", function() {
+        scrollTopBtn.addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
 </body>
+
 </html>
