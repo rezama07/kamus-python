@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 13: Membungkus & Menyajikan Layanan - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 13 dari 17 &mdash; Membungkus & Menyajikan Layanan</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 13: Membungkus & Menyajikan Layanan (Backend & Containerization)</h1>
+            <p style="color: var(--text-secondary);">Bab 13 / Kamus Python (Backend & Containerization)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Setelah sistem AI selesai dirakit, sistem tersebut perlu dibungkus agar dapat diakses oleh sistem lain secara stabil dan cepat. Bab ini membahas pembuatan API menggunakan <code>FastAPI</code> dan pengemasan sistem menggunakan teknologi <code>Docker</code>.</p>
+            </div>
+
+            
+            <div class="word-card" id="kata-81">
+                <h3 class="word-title">📖 KATA 81: FastAPI <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: fes-ei-pi-ai / artinya: Loket Layanan Digital Cepat)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Pustaka (library) Python yang digunakan untuk membuat pintu gerbang elektronik (API) agar aplikasi lain (seperti aplikasi mobile atau website) dapat terhubung dan mengirimkan perintah untuk diproses oleh sistem AI kita.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti loket layanan lantatur (drive-thru) di restoran cepat saji. Pelanggan tidak perlu masuk ke dapur untuk memasak; mereka cukup memberikan pesanan lewat loket, dan loket akan mengembalikan makanan jadi.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Setiap layanan FastAPI wajib memiliki penunjuk alamat akses yang jelas (disebut Route), yang didefinisikan menggunakan dekorator seperti <code>@app.get("/alamat")</code> atau <code>@app.post("/alamat")</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">from fastapi import FastAPI
+app = FastAPI()
+
+# Membuat rute akses bernama '/tanya-ai'
+@app.get("/tanya-ai")
+def ambil_pesanan():
+    return {"response_ai": "Halo! Ini adalah jawaban dari otak AI."}</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-82">
+                <h3 class="word-title">📖 KATA 82: Uvicorn <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: yu-vi-korn / artinya: Penjaga Loket Restoran)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Aplikasi server web ringan yang bertugas untuk menjalankan dan menjaga agar loket FastAPI selalu aktif dan siap menerima permintaan dari luar selama 24 jam nonstop.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti petugas kasir yang berdiri berjaga di depan mesin loket Drive-Thru. Tanpa kasir tersebut, loket akan tutup dan pelanggan tidak bisa memesan, meskipun koki di dapur sudah siap memasak.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Perintah ini dijalankan melalui Terminal/Command Prompt (bukan ditulis di dalam file skrip Python Anda) dengan format panggilan: <code>uvicorn nama_file:nama_app --reload</code>.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Jalankan perintah ini di Terminal, bukan di file Python)
+uvicorn main:app --reload</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-83">
+                <h3 class="word-title">📖 KATA 83: Pydantic <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: pai-den-tik / artinya: Satpam Sortir Bahan Makanan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Pustaka bawaan di dalam FastAPI yang bertugas memvalidasi dan memastikan data kiriman pengguna (Request) memiliki format yang benar dan aman sebelum diolah oleh kode program kita.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti petugas sortir bahan baku di gudang restoran. Jika resep membutuhkan "10 butir telur" (Integer) tetapi pemasok mengirimkan "Sepuluh butir" (String) atau batu bata, petugas sortir Pydantic akan menolaknya demi mencegah kekacauan di dapur.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Definisi skema data wajib mewarisi (inherit) kelas <code>BaseModel</code> dari Pydantic menggunakan konsep Class (Kata 54).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">from pydantic import BaseModel
+
+# Membuat standar format data yang wajib dipatuhi pengguna
+class SyaratDataMasuk(BaseModel):
+    pertanyaan_user: str  # Pengguna wajib mengirimkan teks (String)
+    id_pengguna: int      # Pengguna wajib mengirimkan angka bulat (Integer)</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-84">
+                <h3 class="word-title">📖 KATA 84: Docker <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: do-ker / artinya: Pabrik Kontainer Aplikasi)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Teknologi pengemasan perangkat lunak yang membungkus kode program, versi Python, pustaka (library), dan seluruh konfigurasinya ke dalam satu wadah terisolasi agar dapat dijalankan di komputer mana pun tanpa kendala perbedaan sistem operasi.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti peti kemas (kontainer) standar internasional. Dengan memasukkan barang ke dalam peti kemas, barang tersebut aman dari guncangan luar dan dapat dipindahkan ke kapal, truk, atau kereta tanpa mengubah bentuk wadahnya.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Mesin Docker harus terinstal di komputer lokal maupun server cloud Anda agar kontainer aplikasi dapat dijalankan dengan sukses.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Jalankan perintah ini di Terminal untuk memeriksa kesiapan Docker)
+docker --version</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-85">
+                <h3 class="word-title">📖 KATA 85: Container <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: kon-tei-ner / artinya: Peti Kemas Aplikasi yang Berjalan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Wujud aktif dari aplikasi yang telah dibungkus oleh Docker dan sedang berjalan secara mandiri di dalam memori komputer.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti kotak bekal makanan kedap udara di dalam tas kerja. Kotak tersebut berisi makanan lengkap dengan sendoknya sendiri. Aroma makanan tidak akan bocor ke luar, dan air dari luar tidak akan merusak makanan di dalamnya. Kontainer berjalan secara mandiri tanpa mengganggu aplikasi lain di komputer Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Terapkan prinsip "Satu Kontainer untuk Satu Tugas". Hindari menggabungkan backend FastAPI, database, dan model AI dalam satu kontainer yang sama. Gunakan kontainer terpisah untuk setiap komponen.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Jalankan perintah ini di Terminal untuk menjalankan kontainer di latar belakang)
+docker run -d -p 8000:8000 nama_aplikasi_ai</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-86">
+                <h3 class="word-title">📖 KATA 86: Docker Image <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: do-ker i-meij / artinya: Cetak Biru Kontainer)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Cetak biru (blueprint) atau file beku yang berisi seluruh kode program, sistem operasi mini, dan instruksi lengkap untuk menciptakan kontainer yang aktif.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti adonan kue instan dalam kemasan atau master CD game. Adonan tersebut bersifat pasif dan tidak bisa langsung dimakan, tetapi jika dimasukkan ke dalam oven (dijalankan lewat perintah <code>docker run</code>), adonan tersebut akan mengembang menjadi kontainer yang aktif.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Docker Image bersifat <em>read-only</em> (tidak dapat diubah setelah dibuat). Jika ada perubahan kode program, Anda wajib membuat ulang Docker Image dengan versi terbaru (misalnya versi <code>v1.1</code>).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Jalankan perintah ini di Terminal untuk melihat daftar Docker Image)
+docker images</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-87">
+                <h3 class="word-title">📖 KATA 87: Dockerfile <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: do-ker-fail / artinya: Resep Perakitan Kontainer)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Berkas konfigurasi berbasis teks polos tanpa ekstensi (bernama <code>Dockerfile</code>) yang berisi daftar instruksi berurutan untuk merakit sebuah Docker Image secara otomatis.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti kertas panduan resep masak atau instruksi perakitan mainan LEGO. Kertas tersebut berisi instruksi bertahap seperti: ambil bahan dasar Linux, pasang Python, salin kode program, dan jalankan server.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Nama berkas wajib ditulis tepat <code>Dockerfile</code> dengan huruf 'D' kapital tanpa ekstensi berkas apa pun (seperti <code>.txt</code> atau <code>.py</code>).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Isi tulisan teks di dalam file bernama Dockerfile)
+FROM python:3.10
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]</code></pre>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

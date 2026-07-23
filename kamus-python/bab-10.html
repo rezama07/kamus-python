@@ -27,8 +27,8 @@
             </div>
 
             
-            <div class="word-card" id="kata-67">
-                <h3 class="word-title">📖 KATA 67: RAG</h3>
+            <div class="word-card" id="kata-68">
+                <h3 class="word-title">📖 KATA 68: RAG</h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Teknik yang memaksa model AI untuk mencari (Retrieve) jawaban dari dokumen yang disediakan terlebih dahulu, sebelum menghasilkan respons. Pendekatan ini mencegah AI menjawab berdasarkan asumsi atau hafalannya sendiri.</p>
@@ -39,16 +39,7 @@
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Sistem RAG yang baik harus dapat menjawab "Informasi tidak tersedia" jika jawaban memang tidak ditemukan dalam dokumen yang diberikan. Ini penting untuk menjaga akurasi dan mencegah penyebaran informasi yang tidak valid.
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-# 1. AI tanpa RAG -> Rentan menghasilkan jawaban yang tidak akurat
-ai.tanya("Berapa sisa cutiku?")
-
-# 2. AI dengan RAG -> Menjawab berdasarkan dokumen yang disediakan
-ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")
-```</p>
+                    <p>Sistem RAG yang baik harus dapat menjawab "Informasi tidak tersedia" jika jawaban memang tidak ditemukan dalam dokumen yang diberikan. Ini penting untuk menjaga akurasi dan mencegah penyebaran informasi yang tidak valid.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -61,8 +52,8 @@ ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")</code></pre>
             </div>
 
             
-            <div class="word-card" id="kata-68">
-                <h3 class="word-title">📖 KATA 68: Chunking <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: cang-king / artinya: Memotong-motong)</span></h3>
+            <div class="word-card" id="kata-69">
+                <h3 class="word-title">📖 KATA 69: Chunking <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: cang-king / artinya: Memotong-motong)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Proses memecah dokumen panjang menjadi potongan-potongan teks yang lebih kecil, agar dapat diproses oleh model AI tanpa melebihi batas kapasitas pemrosesannya.</p>
@@ -73,16 +64,7 @@ ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")</code></pre>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Ukuran potongan perlu disesuaikan dengan kebutuhan. Potongan yang terlalu kecil dapat menghilangkan konteks penting, sementara potongan yang terlalu besar dapat melebihi batas pemrosesan model. Menentukan ukuran potongan yang optimal adalah salah satu keahlian utama dalam pengembangan sistem AI.
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-from langchain import PemotongTeks
-
-# Memotong dokumen menjadi segmen-segmen dengan ukuran 100 karakter
-tukang_potong = PemotongTeks(ukuran_potongan=100)
-hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")
-```</p>
+                    <p>Ukuran potongan perlu disesuaikan dengan kebutuhan. Potongan yang terlalu kecil dapat menghilangkan konteks penting, sementara potongan yang terlalu besar dapat melebihi batas pemrosesan model. Menentukan ukuran potongan yang optimal adalah salah satu keahlian utama dalam pengembangan sistem AI.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -95,8 +77,8 @@ hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")</code></pre
             </div>
 
             
-            <div class="word-card" id="kata-69">
-                <h3 class="word-title">📖 KATA 69: Embeddings <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)</span></h3>
+            <div class="word-card" id="kata-70">
+                <h3 class="word-title">📖 KATA 70: Embeddings <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Proses mengubah teks menjadi representasi numerik (vektor) sehingga komputer dapat mengukur kemiripan makna antara dua teks, bukan sekadar kesamaan karakter.</p>
@@ -105,16 +87,7 @@ hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")</code></pre
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
                     <p>Bayangkan sebuah peta konsep di mana setiap kata atau kalimat ditempatkan pada koordinat tertentu berdasarkan maknanya. Kata "Raja" dan "Ratu" akan berdekatan di peta tersebut karena maknanya mirip, sementara kata "Batu" berada jauh karena tidak berkaitan.
 
-Dengan Embedding, pencarian kata "Mobil" dapat menemukan dokumen yang berisi kata "Kendaraan Roda Empat", meskipun tidak ada kesamaan karakter di antara keduanya.
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-# Mengubah teks menjadi representasi numerik agar dapat dibandingkan oleh sistem
-angka_vektor = mesin_embedding.ubah_ke_angka("Kucing")
-
-print(angka_vektor)
-# Hasilnya berupa deretan angka: [0.124, -0.543, 0.876, ...]
-```</p>
+Dengan Embedding, pencarian kata "Mobil" dapat menemukan dokumen yang berisi kata "Kendaraan Roda Empat", meskipun tidak ada kesamaan karakter di antara keduanya.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -127,23 +100,15 @@ print(angka_vektor)
             </div>
 
             
-            <div class="word-card" id="kata-70">
-                <h3 class="word-title">📖 KATA 70: Vector Database <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)</span></h3>
+            <div class="word-card" id="kata-71">
+                <h3 class="word-title">📖 KATA 71: Vector Database <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Database khusus yang dirancang untuk menyimpan dan mencari data dalam format vektor (Embedding) secara efisien.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Database konvensional mencari berdasarkan kecocokan karakter (seperti mencari di indeks alfabet). Vector Database mencari berdasarkan kecocokan makna (data yang maknanya mirip disimpan berdekatan, sehingga pencarian berdasarkan konteks menjadi jauh lebih akurat).
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-import pinecone # Ini adalah salah satu aplikasi Vector Database
-
-# Menyimpan deretan angka (Embedding) tadi ke dalam gudang Pinecone
-pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)
-```</p>
+                    <p>Database konvensional mencari berdasarkan kecocokan karakter (seperti mencari di indeks alfabet). Vector Database mencari berdasarkan kecocokan makna (data yang maknanya mirip disimpan berdekatan, sehingga pencarian berdasarkan konteks menjadi jauh lebih akurat).</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -153,39 +118,7 @@ pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)
 pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)</code></pre>
                 </div>
             </div>
-
-            <div class="embed-container" id="trinket-container">
-                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
-                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
-                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
-                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=vektor%20%3D%20%5B0.124%2C%20-0.543%2C%200.876%5D%0Aprint(%22Nilai%20Embedding%20Vector%3A%22%2C%20vektor)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
-                </div>
-            </div>
-
-            <div class="chapter-navigation">
-                <a href="bab-9.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
-                <a href="bab-11.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
-            </div>
         </div> 
-    </div> 
-
-    
-    <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
-    </button>
-
-    <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                scrollTopBtn.classList.add("show");
-            } else {
-                scrollTopBtn.classList.remove("show");
-            }
-        });
-        scrollTopBtn.addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+    </div>
 </body>
 </html>

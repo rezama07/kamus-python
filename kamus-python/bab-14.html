@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 14: Menyewa Infrastruktur Cloud - Kamus Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐍%3C/text%3E%3C/svg%3E">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+    <div class="container" style="padding-top: 2rem;">
+        <a href="index.html" class="back-link">&larr; Kembali ke Daftar Bab Kamus</a>
+        <div class="breadcrumb">Bab 14 dari 17 &mdash; Menyewa Infrastruktur Cloud</div>
+        <header class="page-header">
+            <h1 class="page-title">BAB 14: Menyewa Infrastruktur Cloud (Cloud & Deployment)</h1>
+            <p style="color: var(--text-secondary);">Bab 14 / Kamus Python (Cloud & Deployment)</p>
+        </header>
+        
+        <div class="content-body">
+            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Agar aplikasi AI Anda dapat diakses dan digunakan oleh pengguna dari seluruh dunia, aplikasi tersebut harus dipindahkan dari komputer lokal ke server internet terpusat yang disebut <code>Cloud</code>.</p>
+            </div>
+
+            
+            <div class="word-card" id="kata-88">
+                <h3 class="word-title">📖 KATA 88: Cloud Computing <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Klaud Kom-pyu-ting / artinya: Komputasi Awan)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Layanan penyewaan sumber daya komputer (server, penyimpanan data, jaringan) milik perusahaan besar yang dapat diakses melalui internet, sehingga kita tidak perlu membeli perangkat keras fisik sendiri.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti menyewa stan atau ruko di pusat perbelanjaan (mal). Anda tidak perlu membangun mal atau instalasi listriknya; cukup membayar sewa bulanan dan Anda bisa langsung mulai berjualan.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Selalu matikan mesin server cloud (terutama versi percobaan/trial) jika sedang tidak digunakan. Biaya sewa cloud dihitung secara real-time (per jam/detik), sehingga membiarkannya menyala terus menerus dapat menyebabkan tagihan membengkak.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python"># (Perintah Terminal untuk menyebarkan aplikasi ke Cloud Google)
+gcloud run deploy nama-aplikasi-ai --source .</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-89">
+                <h3 class="word-title">📖 KATA 89: AWS / GCP <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: ei-dabel-yu-es / ji-si-pi)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Penyedia layanan infrastruktur cloud terbesar di dunia. AWS (<em>Amazon Web Services</em>) dikelola oleh Amazon, sedangkan GCP (<em>Google Cloud Platform</em>) dikelola oleh Google.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti memilih antara menyewa ruko di mall mewah A (AWS) atau mall mewah B (GCP). Keduanya sama-sama menawarkan fasilitas keamanan 24 jam dan jaminan listrik cadangan; pilihan biasanya didasarkan pada kecocokan harga atau promosi sewa.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Untuk mengaktifkan akun cloud developer, Anda wajib menyertakan kartu kredit atau kartu debit internasional sebagai jaminan metode pembayaran.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH ARSITEKTUR KODE:</h4>
+                    <pre><code class="language-python"># Alur Kerja AI Engineer:
+# 1. Menulis Kode (VS Code) -> 2. Mengemas (Docker) -> 3. Menyebarkan ke Server (AWS/GCP)</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-90">
+                <h3 class="word-title">📖 KATA 90: Hugging Face Spaces <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Ha-ging Feis Spei-ses)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Platform hosting berbasis cloud gratisan yang dirancang khusus untuk para pengembang AI untuk membagikan dan memamerkan aplikasi demo AI mereka agar dapat langsung dicoba oleh publik.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti stan bazar gratis yang disediakan di lapangan komunitas. Anda dapat memajang karya Anda secara gratis, namun fasilitas ruang ("meja") yang diberikan sangat terbatas. Jika pengunjung ramai, respons aplikasi Anda akan melambat.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Berkas Python utama yang berfungsi menjalankan antarmuka web wajib diberi nama <code>app.py</code>. Jika tidak, sistem Hugging Face tidak akan mendeteksi file utama yang harus dijalankan.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH PEMAKAIAN:</h4>
+                    <pre><code class="language-python"># (Perintah Terminal untuk mengirim file proyek ke Hugging Face)
+git push huggingface main</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-91">
+                <h3 class="word-title">📖 KATA 91: Streamlit / Gradio <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Strim-lit / Grei-di-o)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Pustaka Python yang digunakan untuk membuat antarmuka web interaktif secara instan dari skrip Python, tanpa memerlukan pemahaman mendalam tentang HTML, CSS, atau JavaScript.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti merakit furnitur instan untuk etalase toko Anda. Alih-alih merancang dan membuat meja kayu sendiri dari nol, Anda menggunakan lemari pajangan siap pakai untuk menyajikan produk menu restoran Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Skrip aplikasi Streamlit/Gradio tidak dapat dijalankan secara langsung lewat tombol "Run" biasa di IDE. Anda harus meluncurkannya menggunakan perintah terminal.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE:</h4>
+                    <pre><code class="language-python">import streamlit as st
+
+# Membuat Judul di Halaman Web
+st.title("🤖 Chatbot AI Restoran")
+
+# Membuat kotak input teks untuk pengguna
+st.chat_input("Ketik pesanan Anda di sini...")</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-92">
+                <h3 class="word-title">📖 KATA 92: Live API <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Laif Ei-Pi-Ai)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Status yang menunjukkan bahwa API/layanan web Anda yang sebelumnya hanya berjalan di komputer lokal (<code>localhost</code>), kini telah aktif di internet dan dapat diakses secara publik.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti menyalakan lampu neon tanda "BUKA" di depan restoran Anda. Siapa pun yang melintas di jalan raya (internet) sekarang dapat melihat dan memesan layanan Anda.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Ketika API Anda sudah berstatus Live, Anda wajib menerapkan protokol keamanan (seperti membatasi akses menggunakan kunci API/API Key) untuk mencegah penyalahgunaan lalu lintas data oleh pihak yang tidak bertanggung jawab.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Perbedaan Alamat):</h4>
+                    <pre><code class="language-python"># 1. Alamat Lokal (Hanya dapat dibuka di komputer Anda sendiri):
+# http://localhost:8000/chat
+
+# 2. Alamat Live API (Dapat diakses oleh siapa pun melalui internet):
+# https://api-chatbot-rework.cloud.com/chat</code></pre>
+                </div>
+            </div>
+
+            
+            <div class="word-card" id="kata-93">
+                <h3 class="word-title">📖 KATA 93: Endpoint <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: End-poin / artinya: Titik Akhir / Loket Spesifik)</span></h3>
+                <div class="word-section">
+                    <h4>🗣️ PENJELASAN SEDERHANA:</h4>
+                    <p>Titik akses berupa URL ujung yang sangat spesifik pada sebuah API yang disediakan untuk menangani satu fungsi atau tugas tertentu.</p>
+                </div>
+                <div class="word-section">
+                    <h4>💡 ANALOGI DUNIA NYATA:</h4>
+                    <p>Seperti nomor loket di bank yang memiliki fungsi spesifik. Loket 1 dikhususkan untuk setoran tunai, sedangkan Loket 2 dikhususkan untuk pembuatan rekening. Keduanya berada di gedung yang sama tetapi melayani kebutuhan yang berbeda.</p>
+                </div>
+                <div class="word-section">
+                    <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
+                    <p>Nama rute Endpoint sebaiknya ditulis menggunakan huruf kecil semua, memiliki makna yang jelas, dan dipisahkan dengan tanda hubung <code>-</code> jika terdiri dari beberapa kata (kebab-case).</p>
+                </div>
+                <div class="word-section">
+                    <h4>💻 CONTOH KODE (Ilustrasi Endpoint):</h4>
+                    <pre><code class="language-python"># Endpoint 1: Khusus untuk merangkum dokumen
+# https://ai-kita.com/api/v1/rangkum-dokumen
+
+# Endpoint 2: Khusus untuk menghasilkan gambar
+# https://ai-kita.com/api/v1/buat-gambar</code></pre>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

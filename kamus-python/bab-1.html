@@ -22,7 +22,9 @@
         
         <div class="content-body">
             
-            
+            <div class="card" style="margin-bottom: 2rem; border-left: 4px solid var(--accent); padding: 2rem;">
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">Program memerlukan wadah untuk menyimpan informasi serta mengenali jenis informasi tersebut. Di Python, wadah ini disebut <code>Variabel</code> dan jenis informasinya disebut <code>Tipe Data</code> (seperti teks, angka, atau nilai benar/salah).</p>
+            </div>
             <div class="word-card" id="kata-1">
                 <h3 class="word-title">📖 KATA 1: Variable <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: Variabel)</span></h3>
                 <div class="word-section">
@@ -177,19 +179,14 @@ sudah_lulus = "True"
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Seperti buku kontak di ponsel. Nama seseorang berperan sebagai Kunci, sedangkan nomor teleponnya adalah Nilainya. Untuk mencari nomor Budi, cukup cari namanya sebagai kunci.
-
-**⚠️ ATURAN WAJIB (BACA PELAN-PELAN):**
-- 1. Wajib dibungkus dengan kurung kurawal { }.
-- 2. Kunci dan Nilai dipisahkan oleh tanda titik dua ( : ).
-- 3. Jika terdapat lebih dari satu pasang data, gunakan tanda koma ( , ) untuk memisahkan setiap pasangan data. (Kunci dan Nilai bebas bentuknya, bisa berupa teks semua atau angka semua).</p>
+                    <p>Seperti buku kontak di ponsel. Nama seseorang berperan sebagai Kunci, sedangkan nomor teleponnya adalah Nilainya. Untuk mencari nomor Budi, cukup cari namanya sebagai kunci.</p>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB (BACA PELAN-PELAN):</h4>
                     <ul style="margin-left: 2.5rem;">
-                        <li>1. Wajib dibungkus dengan kurung kurawal <code>{ }</code>.</li>
-                        <li>2. Kunci dan Isi dipisahkan oleh tanda titik dua ( <code>:</code> ).</li>
-                        <li>3. Jika Anda punya lebih dari satu pasang data, gunakan tanda koma ( <code>,</code> ) di tengah-tengah untuk memisahkan pasangan pertama dan pasangan berikutnya. (Kunci dan Isi bebas, tidak harus huruf dan angka, bisa berupa teks semua atau angka semua).</li>
+                        <li>Wajib dibungkus dengan kurung kurawal <code>{ }</code>.</li>
+                        <li>Kunci dan Isi dipisahkan oleh tanda titik dua ( <code>:</code> ).</li>
+                        <li>Jika Anda punya lebih dari satu pasang data, gunakan tanda koma ( <code>,</code> ) di tengah-tengah untuk memisahkan pasangan pertama dan pasangan berikutnya. (Kunci dan Isi bebas, tidak harus huruf dan angka, bisa berupa teks semua atau angka semua).</li>
                     </ul>
                 </div>
                 <div class="word-section">
@@ -322,39 +319,8 @@ umur = 25
 # (Artinya Budi belum memiliki rekening sama sekali. Berbeda dengan saldo_budi = 0 yang artinya rekening ada tetapi saldonya kosong).</code></pre>
                 </div>
             </div>
-
-        
-                <div class="embed-container" id="trinket-container">
-            <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
-                <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
-                <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
-                <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=print(%22Halo!%20Ini%20contoh%20data%20kita%3A%22)%0Anama%20%3D%20%22Budi%22%0Aumur%20%3D%2025%0Aprint(nama%2C%20umur)\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
-            </div>
-        </div>
-
-        <div class="chapter-navigation">
-            <a href="bab-2.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
-        </div>
         </div> 
-    </div> 
-    
-    <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
-    </button>
-
-    <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                scrollTopBtn.classList.add("show");
-            } else {
-                scrollTopBtn.classList.remove("show");
-            }
-        });
-        scrollTopBtn.addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+    </div>
 </body>
 </html>
 

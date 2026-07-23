@@ -6,7 +6,7 @@ const baseDir = __dirname;
 let searchData = [];
 
 // 1. Kamus Python
-const chapterList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17];
+const chapterList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 for (let i of chapterList) {
     const filePath = path.join(baseDir, 'kamus-python', `bab-${i}.html`);
     if (!fs.existsSync(filePath)) continue;
@@ -30,7 +30,7 @@ for (let i of chapterList) {
         let preview = "";
         const sections = card.querySelectorAll('.word-section');
         for (let sec of sections) {
-            if (sec.text.includes('ARTINYA DALAM BAHASA MANUSIA:')) {
+            if (sec.text.includes('ARTINYA DALAM BAHASA MANUSIA:') || sec.text.includes('PENJELASAN SEDERHANA:')) {
                 const pEl = sec.querySelector('p');
                 if (pEl) {
                     preview = pEl.text.trim();

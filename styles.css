@@ -207,9 +207,10 @@ body {
     background-color: var(--bg-color);
 }
 
-.content-container {
+.content-container, .container {
     max-width: 850px;
     width: 100%;
+    margin: 0 auto;
 }
 
 /* Content styling overrides */
@@ -255,6 +256,10 @@ body {
     padding-bottom: 0.75rem;
 }
 
+.error-title {
+    color: #ef4444 !important;
+}
+
 .word-section, .error-section {
     margin-bottom: 1.5rem;
 }
@@ -267,7 +272,8 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.word-section p, .error-section p {
+.word-section p, .word-section ul, .word-section ol,
+.error-section p, .error-section ul, .error-section ol {
     color: var(--text-secondary);
     line-height: 1.7;
 }
@@ -280,11 +286,15 @@ pre[class*="language-"] {
     font-family: var(--font-mono) !important;
     font-size: 0.9rem !important;
     padding: 1.25rem !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
 }
 
 code[class*="language-"] {
     font-family: var(--font-mono) !important;
     text-shadow: none !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
 }
 
 /* Trinket Drawer Panel */

@@ -27,30 +27,23 @@
             </div>
 
             
-            <div class="word-card" id="kata-71">
-                <h3 class="word-title">📖 KATA 71: Agent <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: e-jen / artinya: Agen Pekerja Mandiri)</span></h3>
+            <div class="word-card" id="kata-72">
+                <h3 class="word-title">📖 KATA 72: Agent <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: e-jen / artinya: Agen Pekerja Mandiri)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Sistem AI yang tidak hanya menghasilkan teks sebagai respons, tetapi diberikan kemampuan untuk berpikir, merencanakan langkah, dan mengambil tindakan secara mandiri untuk mencapai suatu tujuan.</p>
                 </div>
                 <div class="word-section">
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
-                    <p>Perbedaan antara AI biasa dan Agent:
-- AI biasa: Menerima instruksi dan menghasilkan teks respons.
-- Agent: Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, dan menyesuaikan rencana berdasarkan hasil yang diperoleh secara mandiri.</p>
+                    <p>Perbedaan antara AI biasa dan Agent:</p>
+                    <ul style="margin-left: 2.5rem; margin-top: 0.5rem;">
+                        <li><strong>AI Biasa:</strong> Hanya menerima instruksi dan langsung menghasilkan teks respons (pasif).</li>
+                        <li><strong>Agent:</strong> Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, serta mengevaluasi hasilnya untuk menyesuaikan rencana berikutnya secara mandiri (aktif).</li>
+                    </ul>
                 </div>
                 <div class="word-section">
                     <h4 style="color: #fbbf24;">⚠️ ATURAN WAJIB:</h4>
-                    <p>Agent berpotensi terjebak dalam perulangan tanpa akhir (Infinite Loop) jika tidak diberikan kondisi berhenti yang jelas.
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-# Kita merakit Agent dengan memberinya Otak (LLM) dan Tangan (Tools)
-asisten_pribadi = Agent(otak=gemini_llm, alat_bantu=[kalkulator, google_search])
-
-# Agent akan berpikir sendiri alat mana yang harus dipakai
-asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total pajaknya!")
-```</p>
+                    <p>Agent berpotensi terjebak dalam perulangan tanpa akhir (Infinite Loop) jika tidak diberikan kondisi berhenti yang jelas.</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -63,8 +56,8 @@ asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total paja
             </div>
 
             
-            <div class="word-card" id="kata-72">
-                <h3 class="word-title">📖 KATA 72: Tools / Function Calling <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)</span></h3>
+            <div class="word-card" id="kata-73">
+                <h3 class="word-title">📖 KATA 73: Tools / Function Calling <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Fungsi atau aplikasi eksternal (seperti kalkulator, browser, atau kalender) yang diberikan kepada Agent sehingga ia dapat berinteraksi dengan dunia luar, bukan hanya menghasilkan teks.</p>
@@ -86,8 +79,8 @@ def cek_cuaca(nama_kota):
             </div>
 
             
-            <div class="word-card" id="kata-73">
-                <h3 class="word-title">📖 KATA 73: LangChain / LangGraph <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)</span></h3>
+            <div class="word-card" id="kata-74">
+                <h3 class="word-title">📖 KATA 74: LangChain / LangGraph <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)</span></h3>
                 <div class="word-section">
                     <h4>🗣️ PENJELASAN SEDERHANA:</h4>
                     <p>Framework Python yang digunakan untuk mengintegrasikan model LLM, sistem RAG, dan Tools menjadi satu aplikasi AI yang terstruktur dan dapat dikonfigurasi.</p>
@@ -96,17 +89,7 @@ def cek_cuaca(nama_kota):
                     <h4>💡 ANALOGI DUNIA NYATA:</h4>
                     <p>Seperti infrastruktur yang menghubungkan berbagai komponen agar dapat bekerja secara terkoordinasi. Tanpa infrastruktur ini, setiap komponen akan berjalan secara terpisah tanpa alur yang jelas.
 
-(Catatan: LangGraph adalah versi lanjutan yang mendukung alur kerja agen yang bersifat siklik, memungkinkan agent untuk mengulang atau merevisi langkahnya jika diperlukan.)
-
-**💻 CONTOH KODE (Ilustrasi Sederhana):**
-```python
-# LangChain sering menggunakan tanda pipa (|) untuk merantai pekerjaan
-
-# Pekerjaan 1 (Prompt) dirantai ke Pekerjaan 2 (LLM), lalu dirantai ke Pekerjaan 3 (Output)
-rantai_kerja = Pesanan_User | Koki_LLM | Piring_Saji
-
-rantai_kerja.jalankan()
-```</p>
+(Catatan: LangGraph adalah versi lanjutan yang mendukung alur kerja agen yang bersifat siklik, memungkinkan agent untuk mengulang atau merevisi langkahnya jika diperlukan.)</p>
                 </div>
                 <div class="word-section">
                     <h4>💻 CONTOH KODE (Ilustrasi Sederhana):</h4>
@@ -118,39 +101,7 @@ rantai_kerja = Pesanan_User | Koki_LLM | Piring_Saji
 rantai_kerja.jalankan()</code></pre>
                 </div>
             </div>
-
-            <div class="embed-container" id="trinket-container">
-                <div style="padding: 4rem 1rem; text-align: center; background: rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 250px;">
-                    <h3 style="margin-bottom: 1rem; color: var(--accent); font-size: 1.3rem;">💻 Live Python Editor</h3>
-                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Klik tombol di bawah untuk mengaktifkan tempat latihan koding.</p>
-                    <button onclick="this.parentElement.parentElement.innerHTML='<iframe src=\'https://trinket.io/embed/python3?toggleCode=true&amp;runOption=run&amp;code=def%20cek_cuaca(kota)%3A%0A%20%20%20%20return%20f%22Cuaca%20di%20%7Bkota%7D%20Cerah%22%0A%0Aprint(cek_cuaca(%22Jakarta%22))\' width=\'100%\' height=\'400\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' allowfullscreen></iframe>'" class="nav-btn" style="cursor: pointer; border: none; font-size: 1rem;">Aktifkan Editor</button>
-                </div>
-            </div>
-
-            <div class="chapter-navigation">
-                <a href="bab-10.html" class="nav-btn prev-btn">&larr; Bab Sebelumnya</a>
-                <a href="bab-12.html" class="nav-btn next-btn">Bab Berikutnya &rarr;</a>
-            </div>
         </div> 
-    </div> 
-
-    
-    <button id="scrollTopBtn" title="Kembali ke atas">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="width: 24px; height: 24px;"><path d="M12 19V5M5 12l7-7 7 7"></path></svg>
-    </button>
-
-    <script>
-        const scrollTopBtn = document.getElementById("scrollTopBtn");
-        window.addEventListener("scroll", function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                scrollTopBtn.classList.add("show");
-            } else {
-                scrollTopBtn.classList.remove("show");
-            }
-        });
-        scrollTopBtn.addEventListener("click", function() {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-    </script>
+    </div>
 </body>
 </html>

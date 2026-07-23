@@ -328,8 +328,9 @@ def sapa_tamu(nama_tamu):
 Mengembalikan hasil akhir dari sebuah fungsi kepada bagian kode yang memanggil fungsi tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
-- Jika fungsi menggunakan print, hasilnya hanya ditampilkan ke layar dan tidak dapat digunakan kembali oleh bagian lain program.
-- Jika fungsi menggunakan return, hasilnya diserahkan sebagai nilai yang dapat disimpan ke variabel dan digunakan untuk proses selanjutnya.
+Bayangkan Anda sedang menyuruh seorang akuntan untuk menghitung sesuatu:
+- Kalau akuntan itu pakai `print`, dia cuma akan teriak dari dalam kamar: "SEPULUHHH!" (Anda cuma mendengar suaranya, tapi Anda tidak memegang angka itu untuk dihitung lagi).
+- Kalau akuntan itu pakai `return`, dia akan menulis angka 10 di selembar kertas, lalu menyerahkan kertas itu langsung ke tangan Anda. Anda bisa menyimpan kertas itu di saku Anda untuk dipakai jajan nanti.
 
 **⚠️ ATURAN WAJIB (BACA PELAN-PELAN):**
 - 1. Tulis kata return diikuti nilai yang ingin dikembalikan (bisa berupa angka langsung atau nama variabel yang berisi hasilnya).
@@ -885,7 +886,7 @@ pesan_kopi("Latte") # Tidak menyertakan nilai gula. Hasil: Kopi Latte - Gula: No
 pesan_kopi("Latte", "Less Sugar") # Hasil: Kopi Latte - Gula: Less Sugar
 ```
 
-### 📖 KATA 42b: scope (dibaca: skop / artinya: Cakupan Variabel)
+### 📖 KATA 43: scope (dibaca: skop / artinya: Cakupan Variabel)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Aturan yang menentukan di bagian mana suatu variabel dapat diakses dan digunakan. Variabel yang didefinisikan di dalam fungsi (Lokal) hanya dapat digunakan di dalam fungsi tersebut.
@@ -912,7 +913,7 @@ print(uang_kamar) # ERROR: Variabel lokal tidak dapat diakses dari luar fungsi
 *Bab 6 / Kamus Python (Modules & External Libraries)*
 
 
-### 📖 KATA 43: import (dibaca: im-port / artinya: Masukkan / Impor)
+### 📖 KATA 44: import (dibaca: im-port / artinya: Masukkan / Impor)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Memuat modul atau library dari luar ke dalam program agar fitur-fiturnya dapat digunakan.
@@ -932,7 +933,7 @@ hasil = math.sqrt(25)
 print(hasil) # Layar mencetak: 5.0
 ```
 
-### 📖 KATA 44: from ... import (dibaca: from ... im-port / artinya: Dari ... Ambil)
+### 📖 KATA 45: from ... import (dibaca: from ... im-port / artinya: Dari ... Ambil)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Memuat hanya satu atau beberapa fungsi tertentu dari sebuah modul, tanpa memuat keseluruhan modul tersebut.
@@ -952,7 +953,7 @@ angka_dadu = randint(1, 6)
 print("Angka dadu yang keluar:", angka_dadu)
 ```
 
-### 📖 KATA 45: as (dibaca: es / artinya: Sebagai / Alias)
+### 📖 KATA 46: as (dibaca: es / artinya: Sebagai / Alias)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Memberikan nama alias (julukan) yang lebih pendek kepada modul yang diimpor, untuk memudahkan penulisan kode.
@@ -973,7 +974,7 @@ data = pd.DataFrame({"Nama": ["Budi", "Siti"]})
 print(data)
 ```
 
-### 📖 KATA 46: pip install (dibaca: pip instal / artinya: Beli Alat Baru)
+### 📖 KATA 47: pip install (dibaca: pip instal / artinya: Beli Alat Baru)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk mengunduh dan menginstal library Python dari internet ke dalam sistem lokal.
@@ -992,7 +993,7 @@ pip install pandas
 # (Python akan mengunduh library pandas dari internet secara otomatis).
 ```
 
-### 📖 KATA 47: pip list (dibaca: pip list / artinya: Cek Isi Gudang)
+### 📖 KATA 48: pip list (dibaca: pip list / artinya: Cek Isi Gudang)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk menampilkan daftar semua library yang sudah terinstal di lingkungan Python saat ini.
@@ -1032,7 +1033,7 @@ def tambah_super(a, b):
 *Bab 7 / Kamus Python (Exception Handling)*
 
 
-### 📖 KATA 48: try (dibaca: trai / artinya: Coba lakukan)
+### 📖 KATA 49: try (dibaca: trai / artinya: Coba lakukan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Memberi tahu Python bahwa blok kode berikut ini berpotensi menghasilkan error. Python diminta untuk mencoba menjalankannya, dan jika gagal, tidak langsung menghentikan program.
@@ -1051,7 +1052,7 @@ try:
     print(hasil)
 ```
 
-### 📖 KATA 49: except (dibaca: ek-sep / artinya: Kecuali / Tangkap)
+### 📖 KATA 50: except (dibaca: ek-sep / artinya: Kecuali / Tangkap)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Blok kode yang dijalankan ketika instruksi di dalam try menghasilkan error. Ini adalah rencana cadangan agar program tetap dapat berjalan.
@@ -1072,7 +1073,7 @@ except:
     print("Waduh Bos, angka tidak bisa dibagi dengan nol!")
 ```
 
-### 📖 KATA 50: finally (dibaca: fai-ne-li / artinya: Akhirnya / Bagaimanapun juga)
+### 📖 KATA 51: finally (dibaca: fai-ne-li / artinya: Akhirnya / Bagaimanapun juga)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Blok kode yang selalu dijalankan terlepas dari apakah proses try berhasil atau menghasilkan error. Biasanya digunakan untuk operasi pembersihan seperti menutup koneksi atau file.
@@ -1096,10 +1097,10 @@ finally:
     print("Matikan kompor!") # Baris ini AKAN SELALU dicetak, apapun yang terjadi di atas.
 ```
 
-### 📖 KATA 51: else (dalam blok try-except) (dibaca: els / artinya: Jika Tidak Ada Masalah)
+### 📖 KATA 52: else (dalam blok try-except) (dibaca: els / artinya: Jika Tidak Ada Masalah)
 
 **🗣️ PENJELASAN SEDERHANA:**
-Blok kode yang hanya dijalankan jika instruksi di dalam try berhasil tanpa menghasilkan error sama sekali.
+Blok kode yang hanya dijalankan jika instruksi di dalam `try` berhasil tanpa menghasilkan error sama sekali. **Perbedaannya dengan `else` pada logika keputusan (Kata 27):** `else` di Kata 27 bertindak sebagai jalan alternatif jika kondisi `if` salah (`False`), sedangkan `else` di sini bertindak sebagai langkah lanjutan yang hanya berjalan jika proses di dalam `try` sukses berjalan tanpa hambatan (tidak ada error).
 
 **💡 ANALOGI DUNIA NYATA:**
 Blok else adalah langkah lanjutan yang hanya relevan dilakukan jika proses utama berjalan dengan sempurna. Jika proses utama gagal, langkah ini tidak perlu dijalankan.
@@ -1119,7 +1120,7 @@ else:
     print("Perhitungan sukses! Hasilnya adalah:", hasil)
 ```
 
-### 📖 KATA 52: except Exception as e (dibaca: ek-sep ek-sep-syen es i / artinya: Tangkap dan Baca Laporannya)
+### 📖 KATA 53: except Exception as e (dibaca: ek-sep ek-sep-syen es i / artinya: Tangkap dan Baca Laporannya)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Menangkap error dan menyimpan pesan detailnya ke dalam variabel (biasanya bernama e), sehingga informasi tentang penyebab error dapat ditampilkan atau dicatat untuk keperluan debugging.
@@ -1139,7 +1140,7 @@ except Exception as e:
     print("Alasan dari mesin:", e) # Layar mencetak pesan error aslinya: division by zero
 ```
 
-### 📖 KATA 53: raise (dibaca: reis / artinya: Angkat Bendera Merah / Bunyikan Alarm)
+### 📖 KATA 54: raise (dibaca: reis / artinya: Angkat Bendera Merah / Bunyikan Alarm)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Secara sengaja memicu error ketika kondisi tertentu melanggar aturan yang ditetapkan, meskipun secara teknis Python tidak menganggapnya sebagai error sistem.
@@ -1165,7 +1166,7 @@ buat_kopi(15) # Program akan berhenti dan menampilkan pesan error yang telah dit
 *Bab 8 / Kamus Python (Object-Oriented Programming)*
 
 
-### 📖 KATA 54: class (dibaca: klas / artinya: Cetakan / Cetak Biru)
+### 📖 KATA 55: class (dibaca: klas / artinya: Cetakan / Cetak Biru)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Template atau blueprint untuk membuat banyak objek yang memiliki struktur dan kemampuan yang sama, tanpa harus mendefinisikannya dari awal setiap kali.
@@ -1183,7 +1184,7 @@ class KueBintang:
     bentuk = "Bintang"
 ```
 
-### 📖 KATA 55: object / instance (dibaca: objek atau in-stens / artinya: Barang Nyata)
+### 📖 KATA 56: object / instance (dibaca: objek atau in-stens / artinya: Barang Nyata)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Hasil konkret yang dibuat berdasarkan blueprint class. Setiap objek memiliki struktur yang sama dengan class-nya, namun dapat memiliki nilai atribut yang berbeda-beda.
@@ -1203,7 +1204,7 @@ kue_coklat = KueBintang()
 kue_keju = KueBintang()
 ```
 
-### 📖 KATA 56: __init__ (dibaca: dunder in-it / singkatan dari: Initialization / artinya: Pengaturan Awal)
+### 📖 KATA 57: __init__ (dibaca: dunder in-it / singkatan dari: Initialization / artinya: Pengaturan Awal)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Fungsi khusus yang dijalankan secara otomatis setiap kali objek baru dibuat dari sebuah class. Digunakan untuk menetapkan nilai awal pada atribut objek.
@@ -1225,7 +1226,7 @@ class RobotAI:
 robot_satu = RobotAI("Gemini")
 ```
 
-### 📖 KATA 57: self (dibaca: self / artinya: Diriku Sendiri)
+### 📖 KATA 58: self (dibaca: self / artinya: Diriku Sendiri)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Referensi ke objek yang sedang aktif saat itu. Digunakan agar fungsi di dalam class tahu objek mana yang sedang dioperasikan.
@@ -1249,7 +1250,7 @@ peliharaan_baru = Kucing("Oyen")
 peliharaan_baru.mengeong() # Layar mencetak: Oyen berkata: Miaww!
 ```
 
-### 📖 KATA 58: Attribute / Property (dibaca: a-tri-but / artinya: Sifat Bawaan)
+### 📖 KATA 59: Attribute / Property (dibaca: a-tri-but / artinya: Sifat Bawaan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Data atau informasi yang melekat pada suatu objek, mendeskripsikan karakteristik atau keadaan objek tersebut.
@@ -1271,7 +1272,7 @@ print(oven_saya.warna)
 oven_saya.suhu = 180
 ```
 
-### 📖 KATA 59: Method (dibaca: me-tod / artinya: Kemampuan / Aksi)
+### 📖 KATA 60: Method (dibaca: me-tod / artinya: Kemampuan / Aksi)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Fungsi yang didefinisikan di dalam class dan merepresentasikan aksi atau perilaku yang dapat dilakukan oleh objek tersebut.
@@ -1290,7 +1291,7 @@ oven_saya = OvenPintar()
 oven_saya.panaskan_makanan()
 ```
 
-### 📖 KATA 60: Inheritance (dibaca: in-he-ri-tens / artinya: Pewarisan Cetakan)
+### 📖 KATA 61: Inheritance (dibaca: in-he-ri-tens / artinya: Pewarisan Cetakan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Mekanisme di mana sebuah class baru mewarisi semua atribut dan method dari class yang sudah ada, kemudian dapat ditambahkan atau dimodifikasi sesuai kebutuhan tanpa mengubah class aslinya.
@@ -1318,7 +1319,7 @@ r2d2 = RobotKasir()
 r2d2.sapa()
 ```
 
-### 📖 KATA 61: super() (dibaca: su-per / artinya: Panggil Bos Induk)
+### 📖 KATA 62: super() (dibaca: su-per / artinya: Panggil Bos Induk)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk mengakses method atau __init__ dari class induk di dalam class turunan. Berguna agar class turunan tidak perlu mendefinisikan ulang kode yang sudah ada di class induk.
@@ -1344,7 +1345,7 @@ class KokiPemula(MasterChef):
 *Bab 9 / Kamus Python (LLM & API Basics)*
 
 
-### 📖 KATA 63: LLM (Large Language Model) (dibaca: el-el-em / artinya: Model Bahasa Raksasa)
+### 📖 KATA 64: LLM (Large Language Model) (dibaca: el-el-em / artinya: Model Bahasa Raksasa)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Model kecerdasan buatan yang dilatih menggunakan data teks dalam jumlah sangat besar, sehingga mampu memahami dan menghasilkan teks layaknya manusia, termasuk menjawab pertanyaan, menulis kode, atau merangkum dokumen.
@@ -1369,7 +1370,7 @@ response = client.models.generate_content(
 print(response.text)
 ```
 
-### 📖 KATA 64: Prompt (dibaca: promp / artinya: Perintah / Instruksi)
+### 📖 KATA 65: Prompt (dibaca: promp / artinya: Perintah / Instruksi)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Teks instruksi atau pertanyaan yang diberikan kepada model AI untuk memandu respons yang dihasilkan.
@@ -1389,7 +1390,7 @@ pesanan_saya = "Tolong ringkas artikel ini menjadi 3 poin saja, gunakan bahasa g
 jawaban = model_ai.generate_content(pesanan_saya)
 ```
 
-### 📖 KATA 65: Token (dibaca: to-ken / artinya: Potongan Kata / Koin Biaya)
+### 📖 KATA 66: Token (dibaca: to-ken / artinya: Potongan Kata / Koin Biaya)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Satuan terkecil yang digunakan model AI untuk memproses teks. Sekaligus menjadi satuan penghitungan biaya penggunaan layanan AI.
@@ -1403,7 +1404,7 @@ Efisiensi penggunaan token adalah hal penting dalam pengembangan sistem AI. Hind
 **💻 CONTOH PEMAKAIAN:**
 Kata "Kucing" mungkin dihitung sebagai 1 token. Namun kata "Menyembunyikan" dapat dipotong AI menjadi 3 token: "Meny" - "embunyi" - "kan".
 
-### 📖 KATA 66: API Key (dibaca: ei-pi-ai ki / artinya: Kunci Akses Layanan)
+### 📖 KATA 67: API Key (dibaca: ei-pi-ai ki / artinya: Kunci Akses Layanan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Kode autentikasi unik yang diberikan oleh penyedia layanan AI kepada penggunanya. Kode ini diperlukan agar program Python diizinkan mengakses model AI melalui internet.
@@ -1428,7 +1429,7 @@ kunci_saya = os.getenv("RAHASIA_API_KEY")
 *Bab 10 / Kamus Python (Vector Database & RAG)*
 
 
-### 📖 KATA 67: RAG (Retrieval-Augmented Generation) (dibaca: reg / artinya: Menjawab Sambil Buka Buku)
+### 📖 KATA 68: RAG (Retrieval-Augmented Generation) (dibaca: reg / artinya: Menjawab Sambil Buka Buku)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Teknik yang memaksa model AI untuk mencari (Retrieve) jawaban dari dokumen yang disediakan terlebih dahulu, sebelum menghasilkan respons. Pendekatan ini mencegah AI menjawab berdasarkan asumsi atau hafalannya sendiri.
@@ -1448,7 +1449,7 @@ ai.tanya("Berapa sisa cutiku?")
 ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")
 ```
 
-### 📖 KATA 68: Chunking (dibaca: cang-king / artinya: Memotong-motong)
+### 📖 KATA 69: Chunking (dibaca: cang-king / artinya: Memotong-motong)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Proses memecah dokumen panjang menjadi potongan-potongan teks yang lebih kecil, agar dapat diproses oleh model AI tanpa melebihi batas kapasitas pemrosesannya.
@@ -1468,7 +1469,7 @@ tukang_potong = PemotongTeks(ukuran_potongan=100)
 hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")
 ```
 
-### 📖 KATA 69: Embeddings (dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)
+### 📖 KATA 70: Embeddings (dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Proses mengubah teks menjadi representasi numerik (vektor) sehingga komputer dapat mengukur kemiripan makna antara dua teks, bukan sekadar kesamaan karakter.
@@ -1487,7 +1488,7 @@ print(angka_vektor)
 # Hasilnya berupa deretan angka: [0.124, -0.543, 0.876, ...]
 ```
 
-### 📖 KATA 70: Vector Database (dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)
+### 📖 KATA 71: Vector Database (dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Database khusus yang dirancang untuk menyimpan dan mencari data dalam format vektor (Embedding) secara efisien.
@@ -1507,15 +1508,15 @@ pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)
 *Bab 11 / Kamus Python (Agentic AI & Tool Calling)*
 
 
-### 📖 KATA 71: Agent (dibaca: e-jen / artinya: Agen Pekerja Mandiri)
+### 📖 KATA 72: Agent (dibaca: e-jen / artinya: Agen Pekerja Mandiri)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Sistem AI yang tidak hanya menghasilkan teks sebagai respons, tetapi diberikan kemampuan untuk berpikir, merencanakan langkah, dan mengambil tindakan secara mandiri untuk mencapai suatu tujuan.
 
 **💡 ANALOGI DUNIA NYATA:**
 Perbedaan antara AI biasa dan Agent:
-- AI biasa: Menerima instruksi dan menghasilkan teks respons.
-- Agent: Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, dan menyesuaikan rencana berdasarkan hasil yang diperoleh secara mandiri.
+* **AI Biasa:** Hanya menerima instruksi dan langsung menghasilkan teks respons (pasif).
+* **Agent:** Menerima instruksi, menganalisis langkah yang diperlukan, memilih alat yang sesuai, mengeksekusi tindakan, serta mengevaluasi hasilnya untuk menyesuaikan rencana berikutnya secara mandiri (aktif).
 
 **⚠️ ATURAN WAJIB:**
 Agent berpotensi terjebak dalam perulangan tanpa akhir (Infinite Loop) jika tidak diberikan kondisi berhenti yang jelas.
@@ -1529,7 +1530,7 @@ asisten_pribadi = Agent(otak=gemini_llm, alat_bantu=[kalkulator, google_search])
 asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total pajaknya!")
 ```
 
-### 📖 KATA 72: Tools / Function Calling (dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)
+### 📖 KATA 73: Tools / Function Calling (dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Fungsi atau aplikasi eksternal (seperti kalkulator, browser, atau kalender) yang diberikan kepada Agent sehingga ia dapat berinteraksi dengan dunia luar, bukan hanya menghasilkan teks.
@@ -1548,7 +1549,7 @@ def cek_cuaca(nama_kota):
 # Kita berikan "tool" cek_cuaca ini ke tangan si Agent
 ```
 
-### 📖 KATA 73: LangChain / LangGraph (dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)
+### 📖 KATA 74: LangChain / LangGraph (dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Framework Python yang digunakan untuk mengintegrasikan model LLM, sistem RAG, dan Tools menjadi satu aplikasi AI yang terstruktur dan dapat dikonfigurasi.
@@ -1572,7 +1573,7 @@ rantai_kerja.jalankan()
 *Bab 12 / Kamus Python (Data Processing)*
 
 
-### 📖 KATA 74: NumPy (dibaca: nam-pai / singkatan dari: Numerical Python)
+### 📖 KATA 75: NumPy (dibaca: nam-pai / singkatan dari: Numerical Python)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Library Python yang dioptimalkan untuk melakukan operasi matematis pada data numerik dalam jumlah besar secara efisien.
@@ -1595,7 +1596,7 @@ harga_diskon = harga * 2
 print(harga_diskon)
 ```
 
-### 📖 KATA 75: Array (dibaca: a-rei / artinya: Larik / Susunan Terstruktur)
+### 📖 KATA 76: Array (dibaca: a-rei / artinya: Larik / Susunan Terstruktur)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Struktur data khusus buatan NumPy yang dirancang untuk menyimpan kumpulan angka secara terstruktur dan efisien, mendukung berbagai dimensi (1D, 2D, 3D).
@@ -1617,7 +1618,7 @@ rak_angka = np.array([10, 20, 30, 40, 50])
 print(rak_angka[0]) # Akan mencetak: 10
 ```
 
-### 📖 KATA 76: Pandas (dibaca: pan-das / singkatan dari: Python Data Analysis)
+### 📖 KATA 77: Pandas (dibaca: pan-das / singkatan dari: Python Data Analysis)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Library Python paling populer untuk membaca, mengolah, dan memanipulasi data berbentuk tabel. Catatan: nama ini tidak berkaitan dengan hewan Panda 🐼.
@@ -1636,7 +1637,7 @@ import pandas as pd
 tabel_karyawan = pd.read_csv("data_gaji.csv")
 ```
 
-### 📖 KATA 77: DataFrame (dibaca: de-ta-freim / artinya: Bingkai Data / Tabel)
+### 📖 KATA 78: DataFrame (dibaca: de-ta-freim / artinya: Bingkai Data / Tabel)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Struktur data dua dimensi dalam Pandas yang menyerupai tabel, memiliki baris dan kolom dengan nama yang dapat diidentifikasi.
@@ -1658,7 +1659,7 @@ tabel_kita = pd.DataFrame(data)
 print(tabel_kita) # Akan tercetak rapi berbentuk baris dan kolom di layar
 ```
 
-### 📖 KATA 78: Data Cleaning (dibaca: de-ta kli-ning / artinya: Cuci Data)
+### 📖 KATA 79: Data Cleaning (dibaca: de-ta kli-ning / artinya: Cuci Data)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Proses mengidentifikasi dan memperbaiki data yang tidak lengkap, tidak konsisten, atau tidak valid sebelum data tersebut digunakan untuk melatih atau menjalankan model AI.
@@ -1675,7 +1676,7 @@ Garbage In, Garbage Out (GIGO). Kualitas output model AI sangat bergantung pada 
 tabel_bersih = tabel_karyawan.dropna()
 ```
 
-### 📖 KATA 79: Data Pipeline (dibaca: de-ta paip-lain / artinya: Pipa Saluran Data)
+### 📖 KATA 80: Data Pipeline (dibaca: de-ta paip-lain / artinya: Pipa Saluran Data)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Rangkaian proses otomatis yang mengalirkan data dari sumber, melalui tahap pembersihan dan transformasi, hingga ke tujuan akhir (misalnya database atau model AI) tanpa intervensi manual.
@@ -1694,11 +1695,262 @@ data_bersih = cuci_data(data_mentah)
 kirim_ke_database_ai(data_bersih)
 ```
 
+# BAB 13: Membungkus & Menyajikan Layanan (Backend & Containerization)
+*Bab 13 / Kamus Python (Backend & Containerization)*
+
+### 📖 KATA 81: FastAPI (dibaca: fes-ei-pi-ai / artinya: Loket Layanan Digital Cepat)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Pustaka (library) Python yang digunakan untuk membuat pintu gerbang elektronik (API) agar aplikasi lain (seperti aplikasi mobile atau website) dapat terhubung dan mengirimkan perintah untuk diproses oleh sistem AI kita.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti loket layanan lantatur (drive-thru) di restoran cepat saji. Pelanggan tidak perlu masuk ke dapur untuk memasak; mereka cukup memberikan pesanan lewat loket, dan loket akan mengembalikan makanan jadi.
+
+**⚠️ ATURAN WAJIB:**
+Setiap layanan FastAPI wajib memiliki penunjuk alamat akses yang jelas (disebut Route), yang didefinisikan menggunakan dekorator seperti `@app.get("/alamat")` atau `@app.post("/alamat")`.
+
+**💻 CONTOH KODE:**
+```python
+from fastapi import FastAPI
+app = FastAPI()
+
+# Membuat rute akses bernama '/tanya-ai'
+@app.get("/tanya-ai")
+def ambil_pesanan():
+    return {"response_ai": "Halo! Ini adalah jawaban dari otak AI."}
+```
+
+### 📖 KATA 82: Uvicorn (dibaca: yu-vi-korn / artinya: Penjaga Loket Restoran)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Aplikasi server web ringan yang bertugas untuk menjalankan dan menjaga agar loket FastAPI selalu aktif dan siap menerima permintaan dari luar selama 24 jam nonstop.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti petugas kasir yang berdiri berjaga di depan mesin loket Drive-Thru. Tanpa kasir tersebut, loket akan tutup dan pelanggan tidak bisa memesan, meskipun koki di dapur sudah siap memasak.
+
+**⚠️ ATURAN WAJIB:**
+Perintah ini dijalankan melalui Terminal/Command Prompt (bukan ditulis di dalam file skrip Python Anda) dengan format panggilan: `uvicorn nama_file:nama_app --reload`.
+
+**💻 CONTOH KODE:**
+```python
+# (Jalankan perintah ini di Terminal, bukan di file Python)
+uvicorn main:app --reload
+```
+
+### 📖 KATA 83: Pydantic (dibaca: pai-den-tik / artinya: Satpam Sortir Bahan Makanan)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Pustaka bawaan di dalam FastAPI yang bertugas memvalidasi dan memastikan data kiriman pengguna (Request) memiliki format yang benar dan aman sebelum diolah oleh kode program kita.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti petugas sortir bahan baku di gudang restoran. Jika resep membutuhkan "10 butir telur" (Integer) tetapi pemasok mengirimkan "Sepuluh butir" (String) atau batu bata, petugas sortir Pydantic akan menolaknya demi mencegah kekacauan di dapur.
+
+**⚠️ ATURAN WAJIB:**
+Definisi skema data wajib mewarisi (inherit) kelas `BaseModel` dari Pydantic menggunakan konsep Class (Kata 54).
+
+**💻 CONTOH KODE:**
+```python
+from pydantic import BaseModel
+
+# Membuat standar format data yang wajib dipatuhi pengguna
+class SyaratDataMasuk(BaseModel):
+    pertanyaan_user: str  # Pengguna wajib mengirimkan teks (String)
+    id_pengguna: int      # Pengguna wajib mengirimkan angka bulat (Integer)
+```
+
+### 📖 KATA 84: Docker (dibaca: do-ker / artinya: Pabrik Kontainer Aplikasi)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Teknologi pengemasan perangkat lunak yang membungkus kode program, versi Python, pustaka (library), dan seluruh konfigurasinya ke dalam satu wadah terisolasi agar dapat dijalankan di komputer mana pun tanpa kendala perbedaan sistem operasi.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti peti kemas (kontainer) standar internasional. Dengan memasukkan barang ke dalam peti kemas, barang tersebut aman dari guncangan luar dan dapat dipindahkan ke kapal, truk, atau kereta tanpa mengubah bentuk wadahnya.
+
+**⚠️ ATURAN WAJIB:**
+Mesin Docker harus terinstal di komputer lokal maupun server cloud Anda agar kontainer aplikasi dapat dijalankan dengan sukses.
+
+**💻 CONTOH KODE:**
+```python
+# (Jalankan perintah ini di Terminal untuk memeriksa kesiapan Docker)
+docker --version
+```
+
+### 📖 KATA 85: Container (dibaca: kon-tei-ner / artinya: Peti Kemas Aplikasi yang Berjalan)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Wujud aktif dari aplikasi yang telah dibungkus oleh Docker dan sedang berjalan secara mandiri di dalam memori komputer.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti kotak bekal makanan kedap udara di dalam tas kerja. Kotak tersebut berisi makanan lengkap dengan sendoknya sendiri. Aroma makanan tidak akan bocor ke luar, dan air dari luar tidak akan merusak makanan di dalamnya. Kontainer berjalan secara mandiri tanpa mengganggu aplikasi lain di komputer Anda.
+
+**⚠️ ATURAN WAJIB:**
+Terapkan prinsip "Satu Kontainer untuk Satu Tugas". Hindari menggabungkan backend FastAPI, database, dan model AI dalam satu kontainer yang sama. Gunakan kontainer terpisah untuk setiap komponen.
+
+**💻 CONTOH KODE:**
+```python
+# (Jalankan perintah ini di Terminal untuk menjalankan kontainer di latar belakang)
+docker run -d -p 8000:8000 nama_aplikasi_ai
+```
+
+### 📖 KATA 86: Docker Image (dibaca: do-ker i-meij / artinya: Cetak Biru Kontainer)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Cetak biru (blueprint) atau file beku yang berisi seluruh kode program, sistem operasi mini, dan instruksi lengkap untuk menciptakan kontainer yang aktif.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti adonan kue instan dalam kemasan atau master CD game. Adonan tersebut bersifat pasif dan tidak bisa langsung dimakan, tetapi jika dimasukkan ke dalam oven (dijalankan lewat perintah `docker run`), adonan tersebut akan mengembang menjadi kontainer yang aktif.
+
+**⚠️ ATURAN WAJIB:**
+Docker Image bersifat *read-only* (tidak dapat diubah setelah dibuat). Jika ada perubahan kode program, Anda wajib membuat ulang Docker Image dengan versi terbaru (misalnya versi `v1.1`).
+
+**💻 CONTOH KODE:**
+```python
+# (Jalankan perintah ini di Terminal untuk melihat daftar Docker Image)
+docker images
+```
+
+### 📖 KATA 87: Dockerfile (dibaca: do-ker-fail / artinya: Resep Perakitan Kontainer)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Berkas konfigurasi berbasis teks polos tanpa ekstensi (bernama `Dockerfile`) yang berisi daftar instruksi berurutan untuk merakit sebuah Docker Image secara otomatis.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti kertas panduan resep masak atau instruksi perakitan mainan LEGO. Kertas tersebut berisi instruksi bertahap seperti: ambil bahan dasar Linux, pasang Python, salin kode program, dan jalankan server.
+
+**⚠️ ATURAN WAJIB:**
+Nama berkas wajib ditulis tepat `Dockerfile` dengan huruf 'D' kapital tanpa ekstensi berkas apa pun (seperti `.txt` atau `.py`).
+
+**💻 CONTOH KODE:**
+```dockerfile
+# (Isi tulisan teks di dalam file bernama Dockerfile)
+FROM python:3.10
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+# BAB 14: Menyewa Infrastruktur Cloud (Cloud & Deployment)
+*Bab 14 / Kamus Python (Cloud & Deployment)*
+
+### 📖 KATA 88: Cloud Computing (dibaca: Klaud Kom-pyu-ting / artinya: Komputasi Awan)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Layanan penyewaan sumber daya komputer (server, penyimpanan data, jaringan) milik perusahaan besar yang dapat diakses melalui internet, sehingga kita tidak perlu membeli perangkat keras fisik sendiri.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti menyewa stan atau ruko di pusat perbelanjaan (mal). Anda tidak perlu membangun mal atau instalasi listriknya; cukup membayar sewa bulanan dan Anda bisa langsung mulai berjualan.
+
+**⚠️ ATURAN WAJIB:**
+Selalu matikan mesin server cloud (terutama versi percobaan/trial) jika sedang tidak digunakan. Biaya sewa cloud dihitung secara real-time (per jam/detik), sehingga membiarkannya menyala terus menerus dapat menyebabkan tagihan membengkak.
+
+**💻 CONTOH KODE:**
+```python
+# (Perintah Terminal untuk menyebarkan aplikasi ke Cloud Google)
+gcloud run deploy nama-aplikasi-ai --source .
+```
+
+### 📖 KATA 89: AWS / GCP (dibaca: ei-dabel-yu-es / ji-si-pi)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Penyedia layanan infrastruktur cloud terbesar di dunia. AWS (*Amazon Web Services*) dikelola oleh Amazon, sedangkan GCP (*Google Cloud Platform*) dikelola oleh Google.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti memilih antara menyewa ruko di mall mewah A (AWS) atau mall mewah B (GCP). Keduanya sama-sama menawarkan fasilitas keamanan 24 jam dan jaminan listrik cadangan; pilihan biasanya didasarkan pada kecocokan harga atau promosi sewa.
+
+**⚠️ ATURAN WAJIB:**
+Untuk mengaktifkan akun cloud developer, Anda wajib menyertakan kartu kredit atau kartu debit internasional sebagai jaminan metode pembayaran.
+
+**💻 CONTOH ARSITEKTUR KODE:**
+```python
+# Alur Kerja AI Engineer:
+# 1. Menulis Kode (VS Code) -> 2. Mengemas (Docker) -> 3. Menyebarkan ke Server (AWS/GCP)
+```
+
+### 📖 KATA 90: Hugging Face Spaces (dibaca: Ha-ging Feis Spei-ses)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Platform hosting berbasis cloud gratisan yang dirancang khusus untuk para pengembang AI untuk membagikan dan memamerkan aplikasi demo AI mereka agar dapat langsung dicoba oleh publik.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti stan bazar gratis yang disediakan di lapangan komunitas. Anda dapat memajang karya Anda secara gratis, namun fasilitas ruang ("meja") yang diberikan sangat terbatas. Jika pengunjung ramai, respons aplikasi Anda akan melambat.
+
+**⚠️ ATURAN WAJIB:**
+Berkas Python utama yang berfungsi menjalankan antarmuka web wajib diberi nama `app.py`. Jika tidak, sistem Hugging Face tidak akan mendeteksi file utama yang harus dijalankan.
+
+**💻 CONTOH PEMAKAIAN:**
+```python
+# (Perintah Terminal untuk mengirim file proyek ke Hugging Face)
+git push huggingface main
+```
+
+### 📖 KATA 91: Streamlit / Gradio (dibaca: Strim-lit / Grei-di-o)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Pustaka Python yang digunakan untuk membuat antarmuka web interaktif secara instan dari skrip Python, tanpa memerlukan pemahaman mendalam tentang HTML, CSS, atau JavaScript.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti merakit furnitur instan untuk etalase toko Anda. Alih-alih merancang dan membuat meja kayu sendiri dari nol, Anda menggunakan lemari pajangan siap pakai untuk menyajikan produk menu restoran Anda.
+
+**⚠️ ATURAN WAJIB:**
+Skrip aplikasi Streamlit/Gradio tidak dapat dijalankan secara langsung lewat tombol "Run" biasa di IDE. Anda harus meluncurkannya menggunakan perintah terminal.
+
+**💻 CONTOH KODE:**
+```python
+import streamlit as st
+
+# Membuat Judul di Halaman Web
+st.title("🤖 Chatbot AI Restoran")
+
+# Membuat kotak input teks untuk pengguna
+st.chat_input("Ketik pesanan Anda di sini...")
+```
+
+### 📖 KATA 92: Live API (dibaca: Laif Ei-Pi-Ai)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Status yang menunjukkan bahwa API/layanan web Anda yang sebelumnya hanya berjalan di komputer lokal (`localhost`), kini telah aktif di internet dan dapat diakses secara publik.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti menyalakan lampu neon tanda "BUKA" di depan restoran Anda. Siapa pun yang melintas di jalan raya (internet) sekarang dapat melihat dan memesan layanan Anda.
+
+**⚠️ ATURAN WAJIB:**
+Ketika API Anda sudah berstatus Live, Anda wajib menerapkan protokol keamanan (seperti membatasi akses menggunakan kunci API/API Key) untuk mencegah penyalahgunaan lalu lintas data oleh pihak yang tidak bertanggung jawab.
+
+**💻 CONTOH KODE (Ilustrasi Perbedaan Alamat):**
+```python
+# 1. Alamat Lokal (Hanya dapat dibuka di komputer Anda sendiri):
+# http://localhost:8000/chat
+
+# 2. Alamat Live API (Dapat diakses oleh siapa pun melalui internet):
+# https://api-chatbot-rework.cloud.com/chat
+```
+
+### 📖 KATA 93: Endpoint (dibaca: End-poin / artinya: Titik Akhir / Loket Spesifik)
+
+**🗣️ PENJELASAN SEDERHANA:**
+Titik akses berupa URL ujung yang sangat spesifik pada sebuah API yang disediakan untuk menangani satu fungsi atau tugas tertentu.
+
+**💡 ANALOGI DUNIA NYATA:**
+Seperti nomor loket di bank yang memiliki fungsi spesifik. Loket 1 dikhususkan untuk setoran tunai, sedangkan Loket 2 dikhususkan untuk pembuatan rekening. Keduanya berada di gedung yang sama tetapi melayani kebutuhan yang berbeda.
+
+**⚠️ ATURAN WAJIB:**
+Nama rute Endpoint sebaiknya ditulis menggunakan huruf kecil semua, memiliki makna yang jelas, dan dipisahkan dengan tanda hubung `-` jika terdiri dari beberapa kata (kebab-case).
+
+**💻 CONTOH KODE (Ilustrasi Endpoint):**
+```python
+# Endpoint 1: Khusus untuk merangkum dokumen
+# https://ai-kita.com/api/v1/rangkum-dokumen
+
+# Endpoint 2: Khusus untuk menghasilkan gambar
+# https://ai-kita.com/api/v1/buat-gambar
+```
+
 # BAB 15: Pemantauan dan Evaluasi AI (LLMOps)
 *Bab 15 / Kamus Python (LLMOps & Monitoring)*
 
 
-### 📖 KATA 93: LangSmith (dibaca: leng-smit / artinya: Kamera Pengawas AI)
+### 📖 KATA 94: LangSmith (dibaca: leng-smit / artinya: Kamera Pengawas AI)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Platform pemantauan dari tim LangChain yang memungkinkan developer menelusuri dan menganalisis setiap langkah pemrosesan yang dilakukan oleh sistem AI, termasuk alur berpikir, penggunaan token, dan waktu respons.
@@ -1718,7 +1970,7 @@ os.environ["LANGCHAIN_TRACING_V2"] = "true"
 os.environ["LANGCHAIN_API_KEY"] = "kode_rahasia_cctv_anda"
 ```
 
-### 📖 KATA 94: Logging (dibaca: lo-ging / artinya: Pencatatan Jurnal)
+### 📖 KATA 95: Logging (dibaca: lo-ging / artinya: Pencatatan Jurnal)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Proses pencatatan otomatis setiap kejadian penting (berhasil atau gagal) yang terjadi selama program berjalan, lengkap dengan informasi waktu kejadiannya.
@@ -1738,7 +1990,7 @@ logging.info("Sistem AI berhasil dinyalakan.")
 logging.error("Gawat! API Key Google kita kadaluarsa!")
 ```
 
-### 📖 KATA 95: Too Many Requests (Error 429) (dibaca: tu me-ni ri-kues / artinya: Tilang Kuota Habis)
+### 📖 KATA 96: Too Many Requests (Error 429) (dibaca: tu me-ni ri-kues / artinya: Tilang Kuota Habis)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Respons error dari penyedia layanan AI yang menunjukkan bahwa program telah mengirimkan terlalu banyak permintaan dalam periode waktu tertentu, melebihi batas kuota yang diizinkan.
@@ -1758,7 +2010,7 @@ print("Batas kuota tercapai. Menunggu 10 detik sebelum mencoba kembali...")
 time.sleep(10) # Berhenti sejenak, lalu coba kirim lagi
 ```
 
-### 📖 KATA 96: Latency (dibaca: lei-ten-si / artinya: Waktu Tunggu / Jeda)
+### 📖 KATA 97: Latency (dibaca: lei-ten-si / artinya: Waktu Tunggu / Jeda)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Waktu yang dibutuhkan sistem mulai dari permintaan dikirimkan hingga respons pertama diterima dari AI.
@@ -1769,7 +2021,7 @@ Seperti waktu tunggu antara memesan dan menerima pesanan. Semakin pendek waktu t
 **⚠️ ATURAN WAJIB:**
 Penggunaan teknik RAG yang memproses dokumen berukuran besar dapat meningkatkan latency secara signifikan. Salah satu tugas utama AI Engineer adalah mengoptimalkan sistem agar tetap responsif meskipun memproses data yang kompleks.
 
-### 📖 KATA 97: Throughput (dibaca: tru-put / artinya: Kapasitas Layan)
+### 📖 KATA 98: Throughput (dibaca: tru-put / artinya: Kapasitas Layan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Jumlah permintaan atau tugas yang dapat diproses oleh sistem dalam satuan waktu tertentu (biasanya per detik atau per menit).
@@ -1780,7 +2032,7 @@ Seperti kapasitas layanan suatu sistem, yaitu berapa banyak pengguna atau permin
 **⚠️ ATURAN WAJIB:**
 Untuk meningkatkan throughput, perlu dilakukan optimasi pada infrastruktur (menyesuaikan kapasitas server) atau pada kode program agar pemrosesan lebih efisien.
 
-### 📖 KATA 98: Timeout (dibaca: taim-aut / artinya: Batas Waktu Terlampaui)
+### 📖 KATA 99: Timeout (dibaca: taim-aut / artinya: Batas Waktu Terlampaui)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Batas waktu maksimum yang ditetapkan untuk sebuah proses. Jika proses tidak selesai dalam waktu yang ditentukan, koneksi akan diputus secara otomatis.
@@ -1803,7 +2055,7 @@ respon = requests.get("https://alamat-api-ai.com", timeout=15)
 *Bab 16 / Kamus Python (AI-Accelerated Development)*
 
 
-### 📖 KATA 99: Agentic IDE (Seperti Cursor / Google Antigravity)
+### 📖 KATA 100: Agentic IDE (Seperti Cursor / Google Antigravity)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Lingkungan pengembangan kode (seperti VS Code) yang telah terintegrasi dengan AI. AI ini dapat membaca keseluruhan struktur proyek dan secara otomatis menulis, memodifikasi, atau menghapus kode berdasarkan instruksi yang diberikan.
@@ -1820,7 +2072,7 @@ Meskipun AI yang menghasilkan kode, pemahaman dasar Python (Bab 1–8) tetap dip
 # "Tolong buatkan fungsi Python untuk menyambung ke Vector Database Pinecone, lalu buatkan otomatis sistem Error Handling-nya."
 ```
 
-### 📖 KATA 100: Claude 3.5 Sonnet / Frontend AI (Model Spesialis Koding & Tampilan)
+### 📖 KATA 101: Claude 3.5 Sonnet / Frontend AI (Model Spesialis Koding & Tampilan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Model AI buatan Anthropic yang diakui luas di kalangan developer sebagai model paling andal untuk keperluan penulisan kode dan perancangan antarmuka aplikasi.
@@ -1836,7 +2088,7 @@ Model ini paling efektif digunakan untuk keperluan pengembangan antarmuka dan ar
 # "Saya memiliki kode backend FastAPI ini. Tolong buatkan antarmuka Streamlit agar pengguna dapat mengunggah file PDF ke API tersebut dengan tampilan yang rapi."
 ```
 
-### 📖 KATA 101: Reasoning Models (Seperti Gemini Deep Think / OpenAI o1)
+### 📖 KATA 102: Reasoning Models (Seperti Gemini Deep Think / OpenAI o1)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Model AI generasi terbaru yang dirancang untuk memproses masalah secara mendalam dan bertahap sebelum memberikan jawaban. Model ini sangat efektif untuk menangani bug kompleks atau permasalahan logika yang sulit.
@@ -1852,7 +2104,7 @@ Model ini tidak direkomendasikan untuk tugas-tugas sederhana karena proses berpi
 # "Ini kodingan LangGraph saya, dan ini pesan error 500 yang muncul di terminal. Tolong pikirkan langkah demi langkah kenapa agen saya terjebak dalam Infinite Loop dan berikan solusinya."
 ```
 
-### 📖 KATA 102: Pair Programming (dibaca: peir pro-gre-ming / artinya: Koding Berpasangan)
+### 📖 KATA 103: Pair Programming (dibaca: peir pro-gre-ming / artinya: Koding Berpasangan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian (programmer menentukan arah dan tujuan, sementara AI membantu mengeksekusi tugas-tugas teknis).
@@ -1875,12 +2127,11 @@ Programmer harus memiliki gambaran arsitektur yang jelas sebelum memulai. Tanpa 
 *Bab 17 / Kamus Python (Version Control & CI/CD)*
 
 
-### 📖 KATA 103: Git & GitHub (dibaca: git dan git-hab / artinya: Mesin Waktu & Gudang Kode)
+### 📖 KATA 104: Git & GitHub (dibaca: git dan git-hab / artinya: Mesin Waktu & Gudang Kode)
 
 **🗣️ PENJELASAN SEDERHANA:**
-Git: Sistem pencatatan versi kode yang terpasang di komputer lokal. Git merekam setiap perubahan yang dilakukan pada kode, sehingga memungkinkan developer untuk kembali ke versi sebelumnya kapan saja.
-
-                    GitHub: Platform penyimpanan kode berbasis cloud tempat tim developer menyimpan dan berkolaborasi pada kode dari berbagai perangkat yang berbeda.
+* **Git:** Sistem pencatatan versi kode yang terpasang di komputer lokal. Git merekam setiap perubahan yang dilakukan pada kode, sehingga memungkinkan pengembang untuk kembali ke versi sebelumnya kapan saja.
+* **GitHub:** Platform penyimpanan kode berbasis cloud tempat tim pengembang menyimpan dan berkolaborasi pada kode dari berbagai perangkat yang berbeda.
 
 **💡 ANALOGI DUNIA NYATA:**
 Git berfungsi seperti sistem kontrol versi dokumen yang secara otomatis menyimpan riwayat setiap perubahan tanpa perlu membuat file duplikat dengan nama berbeda. GitHub adalah layanan penyimpanan cloud untuk repositori tersebut, sekaligus memungkinkan kolaborasi tim secara bersamaan.
@@ -1897,7 +2148,7 @@ git commit -m "menambahkan fitur balas chat AI"
 git push origin main
 ```
 
-### 📖 KATA 104: Pull Request (PR) (dibaca: pul ri-kues / artinya: Minta Izin Penggabungan)
+### 📖 KATA 105: Pull Request (PR) (dibaca: pul ri-kues / artinya: Minta Izin Penggabungan)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Proses pengajuan formal untuk menggabungkan kode baru ke dalam basis kode utama tim, setelah melalui proses tinjauan oleh anggota tim lainnya.
@@ -1911,7 +2162,7 @@ Di lingkungan tim profesional, seorang developer tidak boleh menyetujui Pull Req
 **💻 CONTOH PEMAKAIAN:**
 Tidak ada kode Python. PR dilakukan dengan cara mengklik tombol "Create Pull Request" di dalam website GitHub.
 
-### 📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment) (dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)
+### 📖 KATA 106: CI/CD (Continuous Integration / Continuous Deployment) (dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)
 
 **🗣️ PENJELASAN SEDERHANA:**
 Sistem otomasi (seperti GitHub Actions) yang secara otomatis menjalankan serangkaian proses setiap kali kode baru diunggah: mulai dari pengujian otomatis, pemaketan ke Docker (Kata 83), hingga penerapan ke server (Kata 88), tanpa campur tangan manual.
