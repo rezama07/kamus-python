@@ -14,7 +14,7 @@
 
 ### 📖 KATA 1: Variable (dibaca: Variabel)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Tempat penyimpanan data agar nilainya dapat diakses dan digunakan kembali di bagian lain program.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -32,7 +32,7 @@ nama_peserta = "Budi"
 
 ### 📖 KATA 2: String (dibaca: string)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Data berupa teks. Semua data yang berbentuk huruf, kata, atau kalimat dalam Python disebut String.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -51,7 +51,7 @@ angka = "12345"
 
 ### 📖 KATA 3: Integer (sering disingkat: int)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Angka bulat utuh. Tidak ada koma atau desimal.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -70,7 +70,7 @@ umur = "25"
 
 ### 📖 KATA 4: Float (dibaca: flot)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Angka desimal atau angka yang memiliki nilai pecahan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -89,7 +89,7 @@ berat_badan = 65,5
 
 ### 📖 KATA 5: Boolean (dibaca: bu-li-an / sering disingkat: bool)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Tipe data kepastian. Nilainya hanya ada dua kemungkinan: Benar (True) atau Salah (False). Tidak ada nilai ketiga.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -112,7 +112,7 @@ sudah_lulus = "True"
 
 ### 📖 KATA 6: List (dibaca: list)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kumpulan banyak data yang disimpan secara berurutan dalam satu wadah.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -130,7 +130,7 @@ keranjang_buah = ["Apel", "Jeruk", "Mangga"]
 
 ### 📖 KATA 7: Dictionary (dibaca: dik-sio-ne-ri)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kumpulan data berpasangan yang terdiri dari "Kata Kunci" (Key) dan "Nilainya" (Value).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -150,7 +150,7 @@ kontak_hp = {"Budi": "0812345", "Andi": "0899999"}
 
 ### 📖 KATA 8: Tuple (dibaca: ta-pel)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kumpulan data berurutan (mirip List), namun isinya bersifat tetap (immutable). Isinya tidak dapat ditambah, dikurangi, atau diubah setelah dibuat.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -168,7 +168,7 @@ koordinat_bumi = (90.0, 180.0)
 
 ### 📖 KATA 9: Index (dibaca: in-deks)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Nomor urut posisi sebuah elemen di dalam suatu kelompok data.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -189,7 +189,7 @@ keranjang = ["Apel", "Jeruk", "Mangga"]
 
 ### 📖 KATA 10: Comment (dibaca: komen / komentar)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Teks catatan yang ditulis oleh programmer di dalam kode, khusus untuk dibaca oleh manusia. Komputer akan mengabaikan baris ini sepenuhnya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -208,7 +208,7 @@ umur = 25
 
 ### 📖 KATA 11: Syntax (dibaca: sin-taks)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Aturan mutlak mengenai tanda baca dan tata cara penulisan kode.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -226,7 +226,7 @@ nama = "Budi
 
 ### 📖 KATA 12: None (dibaca: nan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kosong. Tidak ada data sama sekali. Berbeda dari angka nol (0) atau teks kosong, None benar-benar berarti tidak ada nilai.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -250,7 +250,7 @@ saldo_budi = None
 
 ### 📖 KATA 13: print (dibaca: print)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menampilkan sesuatu ke layar. Tanpa perintah ini, komputer memproses data di balik layar namun hasilnya tidak akan terlihat oleh pengguna.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -269,7 +269,7 @@ print(umur)
 
 ### 📖 KATA 14: input (dibaca: in-put)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Meminta pengguna mengetikkan sesuatu melalui keyboard, kemudian menyimpan teks tersebut untuk diproses lebih lanjut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -287,7 +287,7 @@ nama_pelanggan = input("Siapa nama Anda? ")
 
 ### 📖 KATA 15: Function (dibaca: fang-syen / Fungsi)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Sekumpulan langkah atau perintah yang dibungkus dalam satu nama, sehingga dapat dipanggil kapan saja tanpa perlu menulis ulang dari awal.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -305,7 +305,7 @@ def bikin_kopi():
 
 ### 📖 KATA 16: Parameter (dibaca: pa-ra-me-ter)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Variabel khusus yang ditempatkan di dalam fungsi untuk menerima nilai dari luar, sehingga hasil fungsi dapat disesuaikan setiap kali dipanggil.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -324,7 +324,7 @@ def sapa_tamu(nama_tamu):
 
 ### 📖 KATA 17: Return (dibaca: ri-tern)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Mengembalikan hasil akhir dari sebuah fungsi kepada bagian kode yang memanggil fungsi tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -348,7 +348,7 @@ def tambah_angka():
 
 ### 📖 KATA 18: len (dibaca: len / singkatan dari kata bahasa Inggris Length yang berarti panjang)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menghitung jumlah elemen atau karakter dalam suatu data.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -369,7 +369,7 @@ len(["Apel", "Jeruk", "Mangga"])
 
 ### 📖 KATA 19: append (dibaca: a-pend)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menambahkan satu elemen baru ke dalam sebuah List. Elemen baru selalu ditempatkan di posisi paling akhir.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -389,7 +389,7 @@ keranjang.append("Mangga")
 
 ### 📖 KATA 20: type (dibaca: taip / tipe)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk memeriksa jenis tipe data dari suatu nilai (apakah String, Integer, Float, List, dsb.).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -408,7 +408,7 @@ print( type("25") )
 
 ### 📖 KATA 21: import (dibaca: im-port)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Memuat modul atau library tambahan yang tidak tersedia secara bawaan di Python.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -427,7 +427,7 @@ import pandas
 
 ### 📖 KATA 22: Operator Matematika (+, -, *, /)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Simbol yang digunakan untuk melakukan operasi perhitungan dasar.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -448,7 +448,7 @@ print("5 * 2")
 
 ### 📖 KATA 23: upper dan lower (dibaca: a-per / lo-wer)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk mengubah teks menjadi huruf kapital semua (upper) atau huruf kecil semua (lower).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -468,7 +468,7 @@ print( nama.lower() )
 
 ### 📖 KATA 24: f-string (dibaca: ef-string)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Cara yang ringkas dan efisien untuk menggabungkan teks biasa dengan nilai dari variabel.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -489,7 +489,7 @@ print( f"Halo {nama}, umur kamu {umur} tahun." )
 
 ### 📖 KATA 25: int() dan str() (Casting Pengubah Wujud)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk mengonversi (mengubah) tipe data. int() mengubah teks menjadi angka bulat, sedangkan str() mengubah angka menjadi teks biasa.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -514,7 +514,7 @@ print(umur_angka + 5)
 
 ### 📖 KATA 26: if (dibaca: if / artinya: Jika)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk memeriksa suatu kondisi. Jika kondisi tersebut terpenuhi (bernilai True), maka blok kode di dalamnya akan dijalankan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -538,7 +538,7 @@ if bawa_tiket == True:
 
 ### 📖 KATA 27: else (dibaca: els / artinya: Kalau Tidak)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Blok alternatif yang dijalankan ketika kondisi if di atasnya tidak terpenuhi (bernilai False).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -561,7 +561,7 @@ else:
 
 ### 📖 KATA 28: elif (dibaca: e-lif / Singkatan dari: Else If atau "Atau Jika")
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kondisi tambahan yang diperiksa setelah if tidak terpenuhi, dan sebelum else sebagai penanganan akhir.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -585,7 +585,7 @@ elif tiket == "Reguler":
 
 ### 📖 KATA 29: Operator Pembanding (>, >=, <, <=, !=)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Simbol untuk membandingkan dua nilai (apakah lebih besar, lebih kecil, atau tidak sama).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -608,7 +608,7 @@ if kecepatan > 100:
 
 ### 📖 KATA 30: and (dibaca: end / artinya: Dan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Operator logika yang mengharuskan SEMUA kondisi bernilai True agar hasilnya True. Jika satu saja kondisi bernilai False, seluruh ekspresi dianggap False.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -630,7 +630,7 @@ else:
 
 ### 📖 KATA 31: or (dibaca: or / artinya: Atau)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Operator logika yang menganggap hasilnya True jika minimal SATU kondisi bernilai True.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -650,7 +650,7 @@ if bawa_bayi == True or disabilitas == True:
 
 ### 📖 KATA 32: not (dibaca: not / artinya: Tidak / Bukan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Operator yang membalikkan nilai logika. Jika suatu kondisi bernilai True, penambahan not akan membuatnya menjadi False, dan sebaliknya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -671,7 +671,7 @@ if not hujan:
 
 ### 📖 KATA 33: in (dibaca: in / artinya: Di dalam)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Operator untuk memeriksa apakah suatu nilai terdapat di dalam sebuah List atau String, tanpa perlu memeriksa satu per satu secara manual.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -694,7 +694,7 @@ if "Apel" in keranjang:
 
 ### 📖 KATA 34: for (dibaca: for / artinya: Untuk setiap)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menjalankan suatu blok kode secara berulang untuk setiap elemen dalam suatu kumpulan data. Digunakan ketika jumlah pengulangan sudah diketahui sejak awal.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -714,7 +714,7 @@ for orang in tamu:
 
 ### 📖 KATA 35: while (dibaca: wail / artinya: Selama)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menjalankan suatu blok kode secara terus-menerus selama kondisi yang ditentukan masih bernilai True. Digunakan ketika jumlah pengulangan tidak diketahui sejak awal.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -734,7 +734,7 @@ while bensin > 0:
 
 ### 📖 KATA 36: range (dibaca: reinj / artinya: Jangkauan angka)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk menghasilkan urutan angka secara otomatis. Sering digunakan bersama for untuk menentukan berapa kali suatu proses diulang.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -753,7 +753,7 @@ for angka in range(5):
 
 ### 📖 KATA 37: break (dibaca: breik / artinya: Hancurkan/Hentikan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk menghentikan perulangan secara paksa dan langsung keluar, meskipun perulangan belum mencapai batas akhirnya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -773,7 +773,7 @@ for angka in range(10):
 
 ### 📖 KATA 38: continue (dibaca: kon-tin-yu / artinya: Lanjutkan/Lewati)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk melewati iterasi saat ini dan langsung melanjutkan ke iterasi berikutnya. Berbeda dengan break yang menghentikan seluruh perulangan, continue hanya melewati satu iterasi.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -799,7 +799,7 @@ for angka in range(5):
 
 ### 📖 KATA 39: def (dibaca: def / singkatan dari: Define / artinya: Menetapkan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Mendefinisikan fungsi baru. Saat kode mencapai blok def, Python hanya menyimpan definisinya dan belum menjalankannya. Fungsi baru akan dijalankan ketika namanya dipanggil di bagian lain kode.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -820,7 +820,7 @@ def bikin_kopi():
 
 ### 📖 KATA 40: return (dibaca: ri-tern / artinya: Kembalikan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah kepada fungsi untuk mengembalikan nilai hasil kerjanya agar dapat disimpan ke variabel atau diproses lebih lanjut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -842,7 +842,7 @@ print(tabungan_saya) # Layar akan mencetak: 15
 
 ### 📖 KATA 41: parameter & argument (dibaca: parameter & argumen / artinya: Bahan Masakan Khusus)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Parameter: Variabel kosong yang ditempatkan di dalam kurung fungsi (def), yang menunggu untuk diisi dengan nilai saat fungsi dipanggil.
 
                     Argument: Nilai nyata yang dimasukkan saat fungsi dipanggil, mengisi posisi parameter yang telah disiapkan.
@@ -866,7 +866,7 @@ sapa_tamu("Andi") # Layar mencetak: Selamat datang, Andi!
 
 ### 📖 KATA 42: default parameter (dibaca: difolt parameter / artinya: Bahan Masakan Cadangan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Nilai bawaan yang akan digunakan secara otomatis jika pengguna tidak menyediakan argument untuk parameter tersebut saat memanggil fungsi.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -887,7 +887,7 @@ pesan_kopi("Latte", "Less Sugar") # Hasil: Kopi Latte - Gula: Less Sugar
 
 ### 📖 KATA 42b: scope (dibaca: skop / artinya: Cakupan Variabel)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Aturan yang menentukan di bagian mana suatu variabel dapat diakses dan digunakan. Variabel yang didefinisikan di dalam fungsi (Lokal) hanya dapat digunakan di dalam fungsi tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -908,13 +908,13 @@ def rumah_budi():
 print(uang_kamar) # ERROR: Variabel lokal tidak dapat diakses dari luar fungsi
 ```
 
-# BAB 6: MEMINJAM ALAT TETANGGA
+# BAB 6: MENGGUNAKAN LIBRARY EKSTERNAL
 *Bab 6 / Kamus Python (Modul & Imports)*
 
 
 ### 📖 KATA 43: import (dibaca: im-port / artinya: Masukkan / Impor)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Memuat modul atau library dari luar ke dalam program agar fitur-fiturnya dapat digunakan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -934,7 +934,7 @@ print(hasil) # Layar mencetak: 5.0
 
 ### 📖 KATA 44: from ... import (dibaca: from ... im-port / artinya: Dari ... Ambil)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Memuat hanya satu atau beberapa fungsi tertentu dari sebuah modul, tanpa memuat keseluruhan modul tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -954,7 +954,7 @@ print("Angka dadu yang keluar:", angka_dadu)
 
 ### 📖 KATA 45: as (dibaca: es / artinya: Sebagai / Alias)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Memberikan nama alias (julukan) yang lebih pendek kepada modul yang diimpor, untuk memudahkan penulisan kode.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -975,7 +975,7 @@ print(data)
 
 ### 📖 KATA 46: pip install (dibaca: pip instal / artinya: Beli Alat Baru)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk mengunduh dan menginstal library Python dari internet ke dalam sistem lokal.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -994,7 +994,7 @@ pip install pandas
 
 ### 📖 KATA 47: pip list (dibaca: pip list / artinya: Cek Isi Gudang)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Perintah untuk menampilkan daftar semua library yang sudah terinstal di lingkungan Python saat ini.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1028,13 +1028,13 @@ def tambah_super(a, b):
     return a + b + 100
 ```
 
-# BAB 7: KOTAK P3K DAPUR
+# BAB 7: PENANGANAN ERROR & PENGECUALIAN
 *Bab 7 / Kamus Python (Penanganan Error / Exception Handling)*
 
 
 ### 📖 KATA 48: try (dibaca: trai / artinya: Coba lakukan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Memberi tahu Python bahwa blok kode berikut ini berpotensi menghasilkan error. Python diminta untuk mencoba menjalankannya, dan jika gagal, tidak langsung menghentikan program.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1053,7 +1053,7 @@ try:
 
 ### 📖 KATA 49: except (dibaca: ek-sep / artinya: Kecuali / Tangkap)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Blok kode yang dijalankan ketika instruksi di dalam try menghasilkan error. Ini adalah rencana cadangan agar program tetap dapat berjalan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1074,7 +1074,7 @@ except:
 
 ### 📖 KATA 50: finally (dibaca: fai-ne-li / artinya: Akhirnya / Bagaimanapun juga)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Blok kode yang selalu dijalankan terlepas dari apakah proses try berhasil atau menghasilkan error. Biasanya digunakan untuk operasi pembersihan seperti menutup koneksi atau file.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1098,7 +1098,7 @@ finally:
 
 ### 📖 KATA 51: else (dalam blok try-except) (dibaca: els / artinya: Jika Tidak Ada Masalah)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Blok kode yang hanya dijalankan jika instruksi di dalam try berhasil tanpa menghasilkan error sama sekali.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1121,7 +1121,7 @@ else:
 
 ### 📖 KATA 52: except Exception as e (dibaca: ek-sep ek-sep-syen es i / artinya: Tangkap dan Baca Laporannya)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Menangkap error dan menyimpan pesan detailnya ke dalam variabel (biasanya bernama e), sehingga informasi tentang penyebab error dapat ditampilkan atau dicatat untuk keperluan debugging.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1141,7 +1141,7 @@ except Exception as e:
 
 ### 📖 KATA 53: raise (dibaca: reis / artinya: Angkat Bendera Merah / Bunyikan Alarm)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Secara sengaja memicu error ketika kondisi tertentu melanggar aturan yang ditetapkan, meskipun secara teknis Python tidak menganggapnya sebagai error sistem.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1161,13 +1161,13 @@ def buat_kopi(jumlah_gula):
 buat_kopi(15) # Program akan berhenti dan menampilkan pesan error yang telah ditentukan.
 ```
 
-# BAB 8 (OPSIONAL): MEMBANGUN PABRIK CETAKAN
+# BAB 8 (OPSIONAL): PEMROGRAMAN BERORIENTASI OBJEK
 *Bab 8 / Kamus Python (Pengenalan OOP / Class)*
 
 
 ### 📖 KATA 54: class (dibaca: klas / artinya: Cetakan / Cetak Biru)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Template atau blueprint untuk membuat banyak objek yang memiliki struktur dan kemampuan yang sama, tanpa harus mendefinisikannya dari awal setiap kali.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1185,7 +1185,7 @@ class KueBintang:
 
 ### 📖 KATA 55: object / instance (dibaca: objek atau in-stens / artinya: Barang Nyata)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Hasil konkret yang dibuat berdasarkan blueprint class. Setiap objek memiliki struktur yang sama dengan class-nya, namun dapat memiliki nilai atribut yang berbeda-beda.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1205,7 +1205,7 @@ kue_keju = KueBintang()
 
 ### 📖 KATA 56: __init__ (dibaca: dunder in-it / singkatan dari: Initialization / artinya: Pengaturan Awal)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi khusus yang dijalankan secara otomatis setiap kali objek baru dibuat dari sebuah class. Digunakan untuk menetapkan nilai awal pada atribut objek.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1227,7 +1227,7 @@ robot_satu = RobotAI("Gemini")
 
 ### 📖 KATA 57: self (dibaca: self / artinya: Diriku Sendiri)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Referensi ke objek yang sedang aktif saat itu. Digunakan agar fungsi di dalam class tahu objek mana yang sedang dioperasikan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1251,7 +1251,7 @@ peliharaan_baru.mengeong() # Layar mencetak: Oyen berkata: Miaww!
 
 ### 📖 KATA 58: Attribute / Property (dibaca: a-tri-but / artinya: Sifat Bawaan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Data atau informasi yang melekat pada suatu objek, mendeskripsikan karakteristik atau keadaan objek tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1273,7 +1273,7 @@ oven_saya.suhu = 180
 
 ### 📖 KATA 59: Method (dibaca: me-tod / artinya: Kemampuan / Aksi)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi yang didefinisikan di dalam class dan merepresentasikan aksi atau perilaku yang dapat dilakukan oleh objek tersebut.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1292,7 +1292,7 @@ oven_saya.panaskan_makanan()
 
 ### 📖 KATA 60: Inheritance (dibaca: in-he-ri-tens / artinya: Pewarisan Cetakan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Mekanisme di mana sebuah class baru mewarisi semua atribut dan method dari class yang sudah ada, kemudian dapat ditambahkan atau dimodifikasi sesuai kebutuhan tanpa mengubah class aslinya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1320,7 +1320,7 @@ r2d2.sapa()
 
 ### 📖 KATA 61: super() (dibaca: su-per / artinya: Panggil Bos Induk)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi untuk mengakses method atau __init__ dari class induk di dalam class turunan. Berguna agar class turunan tidak perlu mendefinisikan ulang kode yang sudah ada di class induk.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1340,13 +1340,13 @@ class KokiPemula(MasterChef):
         self.buku_catatan = "Buku Resep Pemula"
 ```
 
-# BAB 9: BERKOMUNIKASI DENGAN KOKI ROBOT
+# BAB 9: INTEGRASI LAYANAN MODEL BAHASA (LLM)
 *Bab 9 / Kamus Python (Dasar LLM & API)*
 
 
 ### 📖 KATA 63: LLM (Large Language Model) (dibaca: el-el-em / artinya: Model Bahasa Raksasa)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Model kecerdasan buatan yang dilatih menggunakan data teks dalam jumlah sangat besar, sehingga mampu memahami dan menghasilkan teks layaknya manusia, termasuk menjawab pertanyaan, menulis kode, atau merangkum dokumen.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1371,7 +1371,7 @@ print(response.text)
 
 ### 📖 KATA 64: Prompt (dibaca: promp / artinya: Perintah / Instruksi)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Teks instruksi atau pertanyaan yang diberikan kepada model AI untuk memandu respons yang dihasilkan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1391,7 +1391,7 @@ jawaban = model_ai.generate_content(pesanan_saya)
 
 ### 📖 KATA 65: Token (dibaca: to-ken / artinya: Potongan Kata / Koin Biaya)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Satuan terkecil yang digunakan model AI untuk memproses teks. Sekaligus menjadi satuan penghitungan biaya penggunaan layanan AI.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1405,7 +1405,7 @@ Kata "Kucing" mungkin dihitung sebagai 1 token. Namun kata "Menyembunyikan" dapa
 
 ### 📖 KATA 66: API Key (dibaca: ei-pi-ai ki / artinya: Kunci Akses Layanan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Kode autentikasi unik yang diberikan oleh penyedia layanan AI kepada penggunanya. Kode ini diperlukan agar program Python diizinkan mengakses model AI melalui internet.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1430,7 +1430,7 @@ kunci_saya = os.getenv("RAHASIA_API_KEY")
 
 ### 📖 KATA 67: RAG (Retrieval-Augmented Generation) (dibaca: reg / artinya: Menjawab Sambil Buka Buku)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Teknik yang memaksa model AI untuk mencari (Retrieve) jawaban dari dokumen yang disediakan terlebih dahulu, sebelum menghasilkan respons. Pendekatan ini mencegah AI menjawab berdasarkan asumsi atau hafalannya sendiri.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1450,7 +1450,7 @@ ai.tanya("Berapa sisa cutiku?", referensi="database_karyawan.pdf")
 
 ### 📖 KATA 68: Chunking (dibaca: cang-king / artinya: Memotong-motong)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Proses memecah dokumen panjang menjadi potongan-potongan teks yang lebih kecil, agar dapat diproses oleh model AI tanpa melebihi batas kapasitas pemrosesannya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1470,7 +1470,7 @@ hasil_potongan = tukang_potong.potong("Buku_Tebal_1000_Halaman.pdf")
 
 ### 📖 KATA 69: Embeddings (dibaca: em-be-ding / artinya: Menerjemahkan ke Angka Koordinat)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Proses mengubah teks menjadi representasi numerik (vektor) sehingga komputer dapat mengukur kemiripan makna antara dua teks, bukan sekadar kesamaan karakter.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1489,7 +1489,7 @@ print(angka_vektor)
 
 ### 📖 KATA 70: Vector Database (dibaca: vek-tor da-ta-beis / artinya: Gudang Penyimpanan Makna)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Database khusus yang dirancang untuk menyimpan dan mencari data dalam format vektor (Embedding) secara efisien.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1509,7 +1509,7 @@ pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)
 
 ### 📖 KATA 71: Agent (dibaca: e-jen / artinya: Agen Pekerja Mandiri)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Sistem AI yang tidak hanya menghasilkan teks sebagai respons, tetapi diberikan kemampuan untuk berpikir, merencanakan langkah, dan mengambil tindakan secara mandiri untuk mencapai suatu tujuan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1531,7 +1531,7 @@ asisten_pribadi.kerjakan("Tolong cari harga tiket ke Bali lalu hitung total paja
 
 ### 📖 KATA 72: Tools / Function Calling (dibaca: tuls / fang-syen ko-ling / artinya: Pemanggilan Alat)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Fungsi atau aplikasi eksternal (seperti kalkulator, browser, atau kalender) yang diberikan kepada Agent sehingga ia dapat berinteraksi dengan dunia luar, bukan hanya menghasilkan teks.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1550,7 +1550,7 @@ def cek_cuaca(nama_kota):
 
 ### 📖 KATA 73: LangChain / LangGraph (dibaca: leng-cein / leng-graf / artinya: Rantai Orkestrasi)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Framework Python yang digunakan untuk mengintegrasikan model LLM, sistem RAG, dan Tools menjadi satu aplikasi AI yang terstruktur dan dapat dikonfigurasi.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1574,7 +1574,7 @@ rantai_kerja.jalankan()
 
 ### 📖 KATA 74: NumPy (dibaca: nam-pai / singkatan dari: Numerical Python)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Library Python yang dioptimalkan untuk melakukan operasi matematis pada data numerik dalam jumlah besar secara efisien.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1595,9 +1595,9 @@ harga_diskon = harga * 2
 print(harga_diskon)
 ```
 
-### 📖 KATA 75: Array (dibaca: a-rei / artinya: Susunan / Laci Angka)
+### 📖 KATA 75: Array (dibaca: a-rei / artinya: Larik / Susunan Terstruktur)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Struktur data khusus buatan NumPy yang dirancang untuk menyimpan kumpulan angka secara terstruktur dan efisien, mendukung berbagai dimensi (1D, 2D, 3D).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1619,7 +1619,7 @@ print(rak_angka[0]) # Akan mencetak: 10
 
 ### 📖 KATA 76: Pandas (dibaca: pan-das / singkatan dari: Python Data Analysis)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Library Python paling populer untuk membaca, mengolah, dan memanipulasi data berbentuk tabel. Catatan: nama ini tidak berkaitan dengan hewan Panda 🐼.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1638,7 +1638,7 @@ tabel_karyawan = pd.read_csv("data_gaji.csv")
 
 ### 📖 KATA 77: DataFrame (dibaca: de-ta-freim / artinya: Bingkai Data / Tabel)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Struktur data dua dimensi dalam Pandas yang menyerupai tabel, memiliki baris dan kolom dengan nama yang dapat diidentifikasi.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1660,7 +1660,7 @@ print(tabel_kita) # Akan tercetak rapi berbentuk baris dan kolom di layar
 
 ### 📖 KATA 78: Data Cleaning (dibaca: de-ta kli-ning / artinya: Cuci Data)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Proses mengidentifikasi dan memperbaiki data yang tidak lengkap, tidak konsisten, atau tidak valid sebelum data tersebut digunakan untuk melatih atau menjalankan model AI.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1677,7 +1677,7 @@ tabel_bersih = tabel_karyawan.dropna()
 
 ### 📖 KATA 79: Data Pipeline (dibaca: de-ta paip-lain / artinya: Pipa Saluran Data)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Rangkaian proses otomatis yang mengalirkan data dari sumber, melalui tahap pembersihan dan transformasi, hingga ke tujuan akhir (misalnya database atau model AI) tanpa intervensi manual.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1700,7 +1700,7 @@ kirim_ke_database_ai(data_bersih)
 
 ### 📖 KATA 93: LangSmith (dibaca: leng-smit / artinya: Kamera Pengawas AI)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Platform pemantauan dari tim LangChain yang memungkinkan developer menelusuri dan menganalisis setiap langkah pemrosesan yang dilakukan oleh sistem AI, termasuk alur berpikir, penggunaan token, dan waktu respons.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1720,7 +1720,7 @@ os.environ["LANGCHAIN_API_KEY"] = "kode_rahasia_cctv_anda"
 
 ### 📖 KATA 94: Logging (dibaca: lo-ging / artinya: Pencatatan Jurnal)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Proses pencatatan otomatis setiap kejadian penting (berhasil atau gagal) yang terjadi selama program berjalan, lengkap dengan informasi waktu kejadiannya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1740,7 +1740,7 @@ logging.error("Gawat! API Key Google kita kadaluarsa!")
 
 ### 📖 KATA 95: Too Many Requests (Error 429) (dibaca: tu me-ni ri-kues / artinya: Tilang Kuota Habis)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Respons error dari penyedia layanan AI yang menunjukkan bahwa program telah mengirimkan terlalu banyak permintaan dalam periode waktu tertentu, melebihi batas kuota yang diizinkan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1760,7 +1760,7 @@ time.sleep(10) # Berhenti sejenak, lalu coba kirim lagi
 
 ### 📖 KATA 96: Latency (dibaca: lei-ten-si / artinya: Waktu Tunggu / Jeda)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Waktu yang dibutuhkan sistem mulai dari permintaan dikirimkan hingga respons pertama diterima dari AI.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1771,7 +1771,7 @@ Penggunaan teknik RAG yang memproses dokumen berukuran besar dapat meningkatkan 
 
 ### 📖 KATA 97: Throughput (dibaca: tru-put / artinya: Kapasitas Layan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Jumlah permintaan atau tugas yang dapat diproses oleh sistem dalam satuan waktu tertentu (biasanya per detik atau per menit).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1780,9 +1780,9 @@ Seperti kapasitas layanan suatu sistem, yaitu berapa banyak pengguna atau permin
 **⚠️ ATURAN WAJIB:**
 Untuk meningkatkan throughput, perlu dilakukan optimasi pada infrastruktur (menyesuaikan kapasitas server) atau pada kode program agar pemrosesan lebih efisien.
 
-### 📖 KATA 98: Timeout (dibaca: taim-aut / artinya: Waktu Habis / Pingsan)
+### 📖 KATA 98: Timeout (dibaca: taim-aut / artinya: Batas Waktu Terlampaui)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Batas waktu maksimum yang ditetapkan untuk sebuah proses. Jika proses tidak selesai dalam waktu yang ditentukan, koneksi akan diputus secara otomatis.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1805,7 +1805,7 @@ respon = requests.get("https://alamat-api-ai.com", timeout=15)
 
 ### 📖 KATA 99: Agentic IDE (Seperti Cursor / Google Antigravity)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Lingkungan pengembangan kode (seperti VS Code) yang telah terintegrasi dengan AI. AI ini dapat membaca keseluruhan struktur proyek dan secara otomatis menulis, memodifikasi, atau menghapus kode berdasarkan instruksi yang diberikan.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1822,7 +1822,7 @@ Meskipun AI yang menghasilkan kode, pemahaman dasar Python (Bab 1–8) tetap dip
 
 ### 📖 KATA 100: Claude 3.5 Sonnet / Frontend AI (Model Spesialis Koding & Tampilan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Model AI buatan Anthropic yang diakui luas di kalangan developer sebagai model paling andal untuk keperluan penulisan kode dan perancangan antarmuka aplikasi.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1838,7 +1838,7 @@ Model ini paling efektif digunakan untuk keperluan pengembangan antarmuka dan ar
 
 ### 📖 KATA 101: Reasoning Models (Seperti Gemini Deep Think / OpenAI o1)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Model AI generasi terbaru yang dirancang untuk memproses masalah secara mendalam dan bertahap sebelum memberikan jawaban. Model ini sangat efektif untuk menangani bug kompleks atau permasalahan logika yang sulit.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1854,7 +1854,7 @@ Model ini tidak direkomendasikan untuk tugas-tugas sederhana karena proses berpi
 
 ### 📖 KATA 102: Pair Programming (dibaca: peir pro-gre-ming / artinya: Koding Berpasangan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Pendekatan pengembangan modern di mana programmer dan AI bekerja bersama secara bergantian (programmer menentukan arah dan tujuan, sementara AI membantu mengeksekusi tugas-tugas teknis).
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1877,7 +1877,7 @@ Programmer harus memiliki gambaran arsitektur yang jelas sebelum memulai. Tanpa 
 
 ### 📖 KATA 103: Git & GitHub (dibaca: git dan git-hab / artinya: Mesin Waktu & Gudang Kode)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Git: Sistem pencatatan versi kode yang terpasang di komputer lokal. Git merekam setiap perubahan yang dilakukan pada kode, sehingga memungkinkan developer untuk kembali ke versi sebelumnya kapan saja.
 
                     GitHub: Platform penyimpanan kode berbasis cloud tempat tim developer menyimpan dan berkolaborasi pada kode dari berbagai perangkat yang berbeda.
@@ -1899,7 +1899,7 @@ git push origin main
 
 ### 📖 KATA 104: Pull Request (PR) (dibaca: pul ri-kues / artinya: Minta Izin Penggabungan)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Proses pengajuan formal untuk menggabungkan kode baru ke dalam basis kode utama tim, setelah melalui proses tinjauan oleh anggota tim lainnya.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1913,7 +1913,7 @@ Tidak ada kode Python. PR dilakukan dengan cara mengklik tombol "Create Pull Req
 
 ### 📖 KATA 105: CI/CD (Continuous Integration / Continuous Deployment) (dibaca: si-ai si-di / artinya: Ban Berjalan Otomatis)
 
-**🗣️ ARTINYA DALAM BAHASA MANUSIA:**
+**🗣️ PENJELASAN SEDERHANA:**
 Sistem otomasi (seperti GitHub Actions) yang secara otomatis menjalankan serangkaian proses setiap kali kode baru diunggah: mulai dari pengujian otomatis, pemaketan ke Docker (Kata 83), hingga penerapan ke server (Kata 88), tanpa campur tangan manual.
 
 **💡 ANALOGI DUNIA NYATA:**
@@ -1934,7 +1934,7 @@ steps:
 ```
 
 # 📘 GLOSARIUM ISTILAH PYTHON
-*Kumpulan Lengkap Istilah & Bahasa Gaul Pemrograman*
+*Kumpulan Lengkap Jargon & Istilah Pemrograman*
 
 
 ## 📊 KATEGORI 1: DATA & MACHINE LEARNING DASAR
@@ -2508,7 +2508,7 @@ Error ini terjadi ketika dua tipe data yang tidak dapat digabungkan dipaksakan u
 **💊 Cara Mengobati:**
 Pada Bab 3 dan 4, seluruh kode yang berada di dalam blok if, for, atau while wajib menjorok ke dalam secara konsisten. Pastikan tidak ada baris yang kurang atau kelebihan spasi dibandingkan baris lainnya dalam satu blok yang sama.
 
-### 🔴 5. IndexError (Salah Nomor Laci)
+### 🔴 5. IndexError (Indeks Di Luar Batas Array/List)
 
 **🤖 Maksud Komputer:**
 "Python mencoba mengakses elemen pada posisi yang tidak ada dalam struktur data tersebut."
@@ -2516,7 +2516,7 @@ Pada Bab 3 dan 4, seluruh kode yang berada di dalam blok if, for, atau while waj
 **💊 Cara Mengobati:**
 Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi jumlah elemen yang tersedia. Ingat bahwa index dimulai dari 0. Jika List berisi 3 elemen, index yang valid adalah 0, 1, dan 2, bukan 3.
 
-### 🔴 6. KeyError (Kunci Brankas Salah)
+### 🔴 6. KeyError (Kunci Dictionary Tidak Ditemukan)
 
 **🤖 Maksud Komputer:**
 "Python tidak dapat menemukan Key yang diminta di dalam Dictionary karena Key tersebut tidak ada."
@@ -2532,7 +2532,7 @@ Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Pytho
 **💊 Cara Mengobati:**
 Berbeda dengan TypeError (tipe data salah), ValueError terjadi ketika tipe data sudah sesuai namun nilainya tidak dapat diproses. Contoh: mencoba mengonversi teks "Budi" menjadi angka menggunakan int(), karena teks tersebut tidak merepresentasikan angka yang valid. Pastikan data yang akan dikonversi memang berisi nilai numerik.
 
-### 🔴 8. AttributeError (Maksa Fitur yang Gak Ada)
+### 🔴 8. AttributeError (Memanggil Fitur yang Tidak Ada)
 
 **🤖 Maksud Komputer:**
 "Objek yang dimaksud tidak memiliki atribut atau method yang dipanggil."
@@ -2556,7 +2556,7 @@ Error ini tidak dapat diatasi dengan try-except. Hentikan program, buka Terminal
 **💊 Cara Mengobati:**
 Umumnya disebabkan oleh dua hal: (1) kesalahan penulisan nama file termasuk sensitivitas huruf besar-kecil (misalnya: "Data_karyawan.pdf" berbeda dengan "data_karyawan.pdf"), atau (2) file berada di direktori yang berbeda dari lokasi program Python berjalan. Periksa nama dan lokasi file, atau sertakan jalur lengkap ke file tersebut (contoh: C:/Dokumen/data_karyawan.pdf).
 
-### 🔴 11. TimeoutError (Koki Pingsan Nungguin Bahan)
+### 🔴 11. TimeoutError (Waktu Tunggu Server Terlampaui)
 
 **🤖 Maksud Komputer:**
 "Permintaan ke server atau layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan."
@@ -2566,7 +2566,7 @@ Error ini bukan disebabkan oleh kode Python, melainkan oleh faktor eksternal sep
 
 Sangat disarankan untuk membungkus panggilan API dengan try-except agar program dapat menampilkan pesan yang informatif kepada pengguna ketika terjadi timeout, alih-alih berhenti tanpa penjelasan.
 
-### 🔴 12. JSONDecodeError (Bahasa Alien)
+### 🔴 12. JSONDecodeError (Format JSON Tidak Valid)
 
 **🤖 Maksud Komputer:**
 "Python mencoba mengurai (parse) data sebagai format JSON, namun data yang diterima tidak memiliki format JSON yang valid."
