@@ -1161,7 +1161,7 @@ def buat_kopi(jumlah_gula):
 buat_kopi(15) # Program akan berhenti dan menampilkan pesan error yang telah ditentukan.
 ```
 
-# BAB 8 (OPSIONAL): Pemrograman Berorientasi Objek
+# BAB 8: Pemrograman Berorientasi Objek
 *Bab 8 / Kamus Python (Object-Oriented Programming)*
 
 
