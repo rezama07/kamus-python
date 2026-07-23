@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-    --bg-color: #0b1307;          /* Hijau hutan sangat gelap */
-    --sidebar-bg: #12240b;        /* Hijau gelap untuk sidebar */
-    --text-primary: #f0faf2;      /* Putih berseri dengan nuansa mint */
-    --text-secondary: #a3bfa8;    /* Hijau sage pudar untuk teks sekunder */
+    --bg-color: #101C07;          /* Hijau hutan sangat gelap (Primary) */
+    --sidebar-bg: #16270a;        /* Hijau gelap untuk sidebar */
+    --text-primary: #EEFFE3;      /* Teks cerah */
+    --text-secondary: #a8c494;    /* Teks sekunder (hijau sage pudar) */
     
-    --primary: #9EF3B9;           /* Hijau mint pastel (Aksen Utama aktif) */
-    --primary-dark: #1C4400;      /* Hijau daun tua */
-    --secondary: #DBFB56;         /* Neon Lime (Aksen Sorot/Tags) */
+    --primary: #5B9F2C;           /* Hijau aksen (Secondary) */
+    --primary-dark: #161F10;      /* Teks gelap */
+    --secondary: #7ebd43;         /* Hijau terang untuk sorotan */
     
-    --card-bg: rgba(28, 68, 0, 0.25);
-    --card-border: rgba(158, 243, 185, 0.15);
-    --accent: #9EF3B9;
-    --accent-hover: #DBFB56;
+    --card-bg: rgba(91, 159, 44, 0.08);
+    --card-border: rgba(91, 159, 44, 0.2);
+    --accent: #5B9F2C;
+    --accent-hover: #7ebd43;
     
     --font-sans: 'Open Sans', sans-serif;
     --font-mono: 'Fira Code', monospace;
@@ -204,7 +204,7 @@ body {
     padding: 4rem 5rem;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle at 50% 0%, #12240b 0%, #0b1307 70%);
+    background-image: radial-gradient(circle at 50% 0%, #1a2e0c 0%, #101C07 70%);
 }
 
 .content-container {
@@ -294,7 +294,7 @@ code[class*="language-"] {
     right: 0;
     height: 100vh;
     width: 500px;
-    background: #0f1d0a;
+    background: #16270a;
     border-left: 1px solid var(--card-border);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     z-index: 1000;
@@ -380,7 +380,7 @@ code[class*="language-"] {
     top: 100%;
     left: 1.5rem;
     right: 1.5rem;
-    background: #0f1d0a;
+    background: #16270a;
     border: 1px solid var(--card-border);
     border-radius: 0.5rem;
     max-height: 350px;
