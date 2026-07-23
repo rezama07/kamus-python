@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-    --bg-color: #050804;          /* Hampir hitam dengan rona hijau sangat gelap */
-    --sidebar-bg: #0a1007;        /* Hijau hutan sangat gelap untuk sidebar */
-    --text-primary: #EEFFE3;      /* Teks cerah */
-    --text-secondary: #8c9e84;    /* Teks sekunder (sage gelap pudar) */
+    --bg-color: #0E1B09;          /* Warna gelap solid */
+    --sidebar-bg: #0E1B09;        /* Warna gelap solid */
+    --text-primary: #FEFFFE;      /* Teks terang */
+    --text-secondary: rgba(254, 255, 254, 0.7); /* Teks sekunder */
     
-    --primary: #5B9F2C;           /* Hijau aksen */
-    --primary-dark: #050804;      /* Teks gelap */
-    --secondary: #7ebd43;         /* Hijau terang untuk sorotan */
+    --primary: #87FF1F;           /* Warna aktif (neon lime-green) */
+    --primary-dark: #0E1B09;      /* Teks gelap untuk tombol aktif */
+    --secondary: #87FF1F;         /* Warna sorotan */
     
-    --card-bg: rgba(91, 159, 44, 0.04);
-    --card-border: rgba(91, 159, 44, 0.12);
-    --accent: #5B9F2C;
-    --accent-hover: #7ebd43;
+    --card-bg: rgba(135, 255, 31, 0.03);
+    --card-border: rgba(135, 255, 31, 0.15);
+    --accent: #87FF1F;
+    --accent-hover: #a3ff4d;
     
     --font-sans: 'Open Sans', sans-serif;
     --font-mono: 'Fira Code', monospace;
@@ -204,7 +204,7 @@ body {
     padding: 4rem 5rem;
     display: flex;
     justify-content: center;
-    background-image: radial-gradient(circle at 50% 0%, #0d1a0a 0%, #050804 80%);
+    background-color: var(--bg-color);
 }
 
 .content-container {
@@ -294,7 +294,7 @@ code[class*="language-"] {
     right: 0;
     height: 100vh;
     width: 500px;
-    background: #0a1007;
+    background: var(--bg-color);
     border-left: 1px solid var(--card-border);
     box-shadow: -10px 0 30px rgba(0,0,0,0.5);
     z-index: 1000;
@@ -380,7 +380,7 @@ code[class*="language-"] {
     top: 100%;
     left: 1.5rem;
     right: 1.5rem;
-    background: #0a1007;
+    background: var(--bg-color);
     border: 1px solid var(--card-border);
     border-radius: 0.5rem;
     max-height: 350px;
