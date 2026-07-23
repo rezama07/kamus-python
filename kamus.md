@@ -8,8 +8,8 @@
 *Aturan Umum & Fondasi Pemrograman*
 
 
-# BAB 1: BAHAN BAKU & WADAH
-*Bab 1 / Kamus Python (Data & Variabel)*
+# BAB 1: Konsep Variabel dan Tipe Data
+*Bab 1 / Kamus Python (Variables & Data Types)*
 
 
 ### 📖 KATA 1: Variable (dibaca: Variabel)
@@ -244,8 +244,8 @@ saldo_budi = None
 # (Artinya Budi belum memiliki rekening sama sekali. Berbeda dengan saldo_budi = 0 yang artinya rekening ada tetapi saldonya kosong).
 ```
 
-# BAB 2: KOMPOR & PISAU
-*Bab 2 / Kamus Python (Aksi & Output)*
+# BAB 2: Operasi Dasar dan Output
+*Bab 2 / Kamus Python (Basic Operations & Output)*
 
 
 ### 📖 KATA 13: print (dibaca: print)
@@ -508,8 +508,8 @@ print(umur_angka + 5)
 # Python melakukan perhitungan, dan layar menampilkan angka 30
 ```
 
-# BAB 3: ATURAN RESEP
-*Bab 3 / Kamus Python (Logika Keputusan JIKA-MAKA)*
+# BAB 3: Struktur Kontrol Keputusan
+*Bab 3 / Kamus Python (Conditional Logic & Control Flow)*
 
 
 ### 📖 KATA 26: if (dibaca: if / artinya: Jika)
@@ -688,8 +688,8 @@ if "Apel" in keranjang:
     print("Yeay, kita punya Apel!")
 ```
 
-# BAB 4: PENGULANGAN PEKERJAAN
-*Bab 4 / Kamus Python (Loops)*
+# BAB 4: Struktur Perulangan
+*Bab 4 / Kamus Python (Loops & Iterations)*
 
 
 ### 📖 KATA 34: for (dibaca: for / artinya: Untuk setiap)
@@ -793,7 +793,7 @@ for angka in range(5):
 # (Hasil di layar: 0, 1, 3, 4. Angka 2 tidak muncul karena dilewati).
 ```
 
-# BAB 5: MEMBUAT BUKU RESEP SENDIRI
+# BAB 5: Pembuatan dan Penggunaan Fungsi
 *Bab 5 / Kamus Python (Functions)*
 
 
@@ -908,8 +908,8 @@ def rumah_budi():
 print(uang_kamar) # ERROR: Variabel lokal tidak dapat diakses dari luar fungsi
 ```
 
-# BAB 6: MENGGUNAKAN LIBRARY EKSTERNAL
-*Bab 6 / Kamus Python (Modul & Imports)*
+# BAB 6: Modul dan Library Eksternal
+*Bab 6 / Kamus Python (Modules & External Libraries)*
 
 
 ### 📖 KATA 43: import (dibaca: im-port / artinya: Masukkan / Impor)
@@ -1028,8 +1028,8 @@ def tambah_super(a, b):
     return a + b + 100
 ```
 
-# BAB 7: PENANGANAN ERROR & PENGECUALIAN
-*Bab 7 / Kamus Python (Penanganan Error / Exception Handling)*
+# BAB 7: Penanganan Error dan Pengecualian
+*Bab 7 / Kamus Python (Exception Handling)*
 
 
 ### 📖 KATA 48: try (dibaca: trai / artinya: Coba lakukan)
@@ -1161,8 +1161,8 @@ def buat_kopi(jumlah_gula):
 buat_kopi(15) # Program akan berhenti dan menampilkan pesan error yang telah ditentukan.
 ```
 
-# BAB 8 (OPSIONAL): PEMROGRAMAN BERORIENTASI OBJEK
-*Bab 8 / Kamus Python (Pengenalan OOP / Class)*
+# BAB 8 (OPSIONAL): Pemrograman Berorientasi Objek
+*Bab 8 / Kamus Python (Object-Oriented Programming)*
 
 
 ### 📖 KATA 54: class (dibaca: klas / artinya: Cetakan / Cetak Biru)
@@ -1340,8 +1340,8 @@ class KokiPemula(MasterChef):
         self.buku_catatan = "Buku Resep Pemula"
 ```
 
-# BAB 9: INTEGRASI LAYANAN MODEL BAHASA (LLM)
-*Bab 9 / Kamus Python (Dasar LLM & API)*
+# BAB 9: Integrasi Large Language Model (LLM)
+*Bab 9 / Kamus Python (LLM & API Basics)*
 
 
 ### 📖 KATA 63: LLM (Large Language Model) (dibaca: el-el-em / artinya: Model Bahasa Raksasa)
@@ -1424,8 +1424,8 @@ import os
 kunci_saya = os.getenv("RAHASIA_API_KEY")
 ```
 
-# BAB 10: MEMBERI INGATAN KHUSUS
-*Bab 10 / Kamus Python (Dasar RAG & Vector Data)*
+# BAB 10: Integrasi Vector Database & RAG
+*Bab 10 / Kamus Python (Vector Database & RAG)*
 
 
 ### 📖 KATA 67: RAG (Retrieval-Augmented Generation) (dibaca: reg / artinya: Menjawab Sambil Buka Buku)
@@ -1503,8 +1503,8 @@ import pinecone # Ini adalah salah satu aplikasi Vector Database
 pinecone.simpan(dokumen="SOP_Perusahaan", nilai_vektor=angka_vektor)
 ```
 
-# BAB 11: MEMBERIKAN TANGAN & KAKI
-*Bab 11 / Kamus Python (Dasar Agentic AI)*
+# BAB 11: Dasar Agentic AI & Tool Calling
+*Bab 11 / Kamus Python (Agentic AI & Tool Calling)*
 
 
 ### 📖 KATA 71: Agent (dibaca: e-jen / artinya: Agen Pekerja Mandiri)
@@ -1568,7 +1568,7 @@ rantai_kerja = Pesanan_User | Koki_LLM | Piring_Saji
 rantai_kerja.jalankan()
 ```
 
-# BAB 12: MENGOLAH BAHAN BAKU MENTAH
+# BAB 12: Pengolahan Data dengan NumPy & Pandas
 *Bab 12 / Kamus Python (Data Processing)*
 
 
@@ -1694,7 +1694,7 @@ data_bersih = cuci_data(data_mentah)
 kirim_ke_database_ai(data_bersih)
 ```
 
-# BAB 15: KAMERA CCTV & MANDOR DAPUR
+# BAB 15: Pemantauan dan Evaluasi AI (LLMOps)
 *Bab 15 / Kamus Python (LLMOps & Monitoring)*
 
 
@@ -1799,7 +1799,7 @@ import requests
 respon = requests.get("https://alamat-api-ai.com", timeout=15)
 ```
 
-# BAB 16: ROBOT ASISTEN SANG MANDOR
+# BAB 16: Pengembangan Berbantuan AI
 *Bab 16 / Kamus Python (AI-Accelerated Development)*
 
 
@@ -1871,7 +1871,7 @@ Programmer harus memiliki gambaran arsitektur yang jelas sebelum memulai. Tanpa 
 # AI: (merevisi baris 5 secara otomatis)
 ```
 
-# BAB 17: JALUR PERAKITAN OTOMATIS
+# BAB 17: Version Control & CI/CD Pipeline
 *Bab 17 / Kamus Python (Version Control & CI/CD)*
 
 
