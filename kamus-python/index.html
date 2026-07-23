@@ -19,7 +19,7 @@
         <a href="../index.html" class="back-link">&larr; Kembali ke Beranda Utama</a>
         <header class="page-header">
             <h1 class="page-title">Kamus Python</h1>
-            <p style="color: var(--text-secondary);">Panduan belajar Python.</p>
+            <p style="color: var(--text-secondary);">Panduan belajar pemrograman Python dan AI Engineering.</p>
         </header>
         
         <div style="display: flex; flex-direction: column; gap: 2rem; margin-bottom: 4rem;">
@@ -37,42 +37,42 @@
             <!-- Halaman Nol -->
             <div class="card" style="padding: 2rem;">
                 <h2 style="color: #fbbf24; margin-bottom: 1rem; font-size: 1.5rem; display: flex; align-items: center; gap: 0.5rem;"><span>📋</span> Konsep Dasar Python</h2>
-                <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Aturan Umum & Fondasi Pemrograman. Komputer menggunakan tanda baca khusus untuk memahami kode Anda. Berikut adalah 5 konsep dasar paling sering muncul:</p>
+                <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">Ketentuan umum dan fondasi dasar pemrograman. Sistem komputer menggunakan tanda baca khusus untuk menginterpretasikan kode program Anda. Berikut adalah 5 konsep dasar yang paling sering digunakan:</p>
                 
                 <div style="display: grid; gap: 1rem;">
                     <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">1. Tanda Sama Dengan ( = ) &rarr; "Pengisi Nilai"</h3>
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">1. Tanda Sama Dengan ( = ) &rarr; "Operator Penugasan (Assignment)"</h3>
                         <p style="color: var(--text-secondary); font-size: 0.95rem;">Dalam matematika, <code>=</code> berarti hasil akhir. Namun dalam Python, <code>=</code> adalah operator penugasan (<em>assignment</em>) yang berfungsi untuk memasukkan atau menyimpan data ke dalam suatu variabel.</p>
                         <div style="margin-top: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.75rem 1rem; border-radius: 0.5rem; border-left: 2px solid #a78bfa;">
-                            <code>nama = "Budi"</code> <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">(Artinya: Masukkan teks Budi ke dalam variabel bernama nama)</div>
+                            <code>nama = "Budi"</code> <div style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">(Penjelasan: Menyimpan nilai teks "Budi" ke dalam variabel bernama nama)</div>
                         </div>
                     </div>
                     
                     <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Tanda Koma ( , ) &rarr; "Pemisah Data"</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Digunakan untuk memisahkan beberapa elemen data yang ditulis secara berurutan agar komputer dapat mengenali setiap item secara terpisah.</p>
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">2. Tanda Koma ( , ) &rarr; "Pemisah Elemen Data"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Digunakan sebagai pemisah antarelemen data yang ditulis secara berurutan agar interpreter Python dapat mengidentifikasi setiap item secara terpisah.</p>
                         <div style="margin-top: 0.75rem; background: rgba(255,255,255,0.05); padding: 0.75rem 1rem; border-radius: 0.5rem; border-left: 2px solid #a78bfa;">
                             <code>["Apel", "Jeruk", "Mangga"]</code>
                         </div>
                     </div>
-
+ 
                     <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">3. Tanda Kutip ( " " atau ' ' ) &rarr; "Penanda String"</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Penanda wajib untuk mendefinisikan tipe data teks (String) agar Python memperlakukannya sebagai teks biasa dan tidak mengeksekusinya sebagai perintah.</p>
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">3. Tanda Kutip ( " " atau ' ' ) &rarr; "Penanda Literal Teks (String)"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Penanda wajib untuk mendefinisikan tipe data teks (String) agar sistem mengidentifikasinya sebagai nilai literal teks dan bukan sebagai instruksi program.</p>
                     </div>
-
+ 
                     <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">4. Tanda Pagar ( # ) &rarr; "Komentar"</h3>
-                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Digunakan untuk menulis catatan atau penjelasan kode (Comment). Semua teks di sebelah tanda pagar akan diabaikan oleh Python saat program dijalankan.</p>
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">4. Tanda Pagar ( # ) &rarr; "Catatan Penjelas (Komentar)"</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.95rem;">Digunakan untuk menulis catatan penjelasan di dalam kode program (Comment). Semua teks setelah tanda pagar pada baris yang sama akan diabaikan oleh interpreter saat program dijalankan.</p>
                     </div>
-
+ 
                     <div style="background: rgba(0,0,0,0.2); padding: 1.25rem 1.5rem; border-radius: 0.75rem;">
-                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">5. Tanda Kurung ( (), [], {} ) &rarr; "Pengelompok Data"</h3>
+                        <h3 style="font-size: 1.1rem; color: var(--text-primary); margin-bottom: 0.5rem;">5. Tanda Kurung ( (), [], {} ) &rarr; "Struktur Wadah Data"</h3>
                         <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 0.5rem;">Python membedakan jenis wadah penyimpanan data berdasarkan bentuk tanda kurung yang digunakan:</p>
                         <ul style="color: var(--text-secondary); font-size: 0.95rem; margin-left: 1.5rem; line-height: 1.6;">
-                            <li><code>[ ]</code> (Kurung Siku) untuk daftar data yang dinamis (List).</li>
-                            <li><code>( )</code> (Kurung Biasa) untuk daftar data yang bersifat permanen/tidak dapat diubah (Tuple).</li>
-                            <li><code>{ }</code> (Kurung Kurawal) untuk data berpasangan kunci-nilai (Dictionary).</li>
+                            <li><code>[ ]</code> (Kurung Siku) untuk struktur data bertipe daftar dinamis (List).</li>
+                            <li><code>( )</code> (Kurung Biasa) untuk struktur data bertipe daftar permanen yang nilainya tidak dapat diubah (Tuple).</li>
+                            <li><code>{ }</code> (Kurung Kurawal) untuk struktur data bertipe pasangan kunci-nilai (Dictionary).</li>
                         </ul>
                     </div>
                 </div>
