@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Fira+Code:wght@300..700&display=swap');
 
 :root {
-    --bg-color: #0E1B09;          /* Warna gelap solid */
-    --sidebar-bg: #0E1B09;        /* Warna gelap solid */
-    --text-primary: #FEFFFE;      /* Teks terang */
-    --text-secondary: rgba(254, 255, 254, 0.7); /* Teks sekunder */
+    --bg-color: #000000;          /* Warna gelap solid (Hitam) */
+    --sidebar-bg: #000000;        /* Warna gelap solid (Hitam) */
+    --text-primary: #FFFFFF;      /* Teks terang (Putih) */
+    --text-secondary: rgba(255, 255, 255, 0.7); /* Teks sekunder */
     
-    --primary: #87FF1F;           /* Warna aktif (neon lime-green) */
-    --primary-dark: #0E1B09;      /* Teks gelap untuk tombol aktif */
-    --secondary: #87FF1F;         /* Warna sorotan */
+    --primary: #A6FF84;           /* Judul di background gelap (Vibrant Mint) */
+    --primary-dark: #0E1B09;      /* Judul di background terang */
+    --secondary: #A6FF84;         /* Warna sorotan */
     
-    --card-bg: rgba(135, 255, 31, 0.03);
-    --card-border: rgba(135, 255, 31, 0.15);
-    --accent: #87FF1F;
-    --accent-hover: #a3ff4d;
+    --card-bg: rgba(166, 255, 132, 0.03);
+    --card-border: rgba(255, 255, 255, 0.15);
+    --accent: #A6FF84;
+    --accent-hover: #b8ff9c;
     
     --font-sans: 'Open Sans', sans-serif;
     --font-mono: 'Fira Code', monospace;
@@ -217,7 +217,7 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    color: var(--primary);
 }
 
 .page-header {
@@ -554,9 +554,6 @@ code[class*="language-"] {
 
 .home-hero h1 span {
     color: var(--primary);
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .home-hero p {
