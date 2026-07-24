@@ -32,6 +32,23 @@
                     <p>"Terdapat kesalahan penulisan pada kode. Harap periksa kembali apakah ada tanda baca yang hilang atau tidak sesuai."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">if True
+    print("Halo!")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">  File "main.py", line 1
+    if True
+           ^
+SyntaxError: expected ':'</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
                     <p>Periksa baris kode yang ditunjukkan oleh Python. Umumnya disebabkan oleh tanda kutip yang belum ditutup ("), kurung yang tidak lengkap ), atau tanda titik dua yang terlewat (:).</p>
                 </div>
@@ -42,6 +59,23 @@
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
                     <p>"Python tidak dapat menemukan variabel atau fungsi dengan nama yang disebutkan. Nama tersebut belum pernah didefinisikan sebelumnya."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">prind("hello world")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 1, in &lt;module&gt;
+    prind("hello world")
+    ^^^^^
+NameError: name 'prind' is not defined. Did you mean: 'print'?</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
@@ -56,6 +90,25 @@
                     <p>"Python tidak dapat melakukan operasi yang diminta karena tipe data yang terlibat tidak kompatibel satu sama lain."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">nama = "Budi"
+umur = 25
+print(nama + " berumur " + umur)</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 3, in &lt;module&gt;
+    print(nama + " berumur " + umur)
+          ~~~~~~~~~~~~~~~~~~~^~~~~~
+TypeError: can only concatenate str (not "int") to str</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
                     <p>Error ini terjadi ketika dua tipe data yang tidak dapat digabungkan dipaksakan untuk beroperasi bersama, misalnya mencoba menjumlahkan teks dengan angka (contoh: "Budi" + 10). Gunakan fungsi konversi int() atau str() (Bab 2) untuk menyamakan tipe data terlebih dahulu.</p>
                 </div>
@@ -66,6 +119,23 @@
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
                     <p>"Struktur indentasi (lekukan) dalam kode tidak konsisten atau tidak sesuai dengan aturan Python."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">if True:
+print("Halo!")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">  File "main.py", line 2
+    print("Halo!")
+    ^
+IndentationError: expected an indented block after 'if' statement on line 1</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
@@ -80,6 +150,24 @@
                     <p>"Python mencoba mengakses elemen pada posisi yang tidak ada dalam struktur data tersebut."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">buah = ["Apel", "Jeruk"]
+print(buah[2])</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(buah[2])
+          ~~~~^^^
+IndexError: list index out of range</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
                     <p>Error ini terjadi ketika mengakses List (Bab 1) dengan nomor Index yang melebihi jumlah elemen yang tersedia. Ingat bahwa index dimulai dari 0. Jika List berisi 3 elemen, index yang valid adalah 0, 1, dan 2, bukan 3.</p>
                 </div>
@@ -92,8 +180,26 @@
                     <p>"Python tidak dapat menemukan Key yang diminta di dalam Dictionary karena Key tersebut tidak ada."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">data = {"nama": "Budi"}
+print(data["umur"])</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    print(data["umur"])
+          ~~~~^^^^^^^^
+KeyError: 'umur'</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
-                    <p>Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Python bersifat case-sensitive, sehingga Key "umur" and Key "Umur" dianggap berbeda. Pastikan nama Key yang digunakan sesuai persis dengan yang ada dalam data.</p>
+                    <p>Sangat umum terjadi saat mengakses data dalam format JSON atau Dictionary. Python bersifat case-sensitive, sehingga Key "umur" dan Key "Umur" dianggap berbeda. Pastikan nama Key yang digunakan sesuai persis dengan yang ada dalam data.</p>
                 </div>
             </div>
 
@@ -102,6 +208,23 @@
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
                     <p>"Tipe data sudah benar, tetapi nilai yang diberikan tidak valid atau tidak dapat diproses untuk operasi yang diminta."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">angka = int("Budi")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 1, in &lt;module&gt;
+    angka = int("Budi")
+            ^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'Budi'</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
@@ -116,6 +239,24 @@
                     <p>"Objek yang dimaksud tidak memiliki atribut atau method yang dipanggil."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">teks = "Budi"
+teks.append("Santoso")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    teks.append("Santoso")
+    ^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'append'</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
                     <p>Terjadi ketika mencoba menggunakan method yang tidak dimiliki oleh tipe data tersebut, misalnya mencoba memanggil .append() pada variabel yang bertipe String. String tidak memiliki method append() yang hanya dimiliki oleh List. Pastikan tipe data objek yang sedang digunakan sesuai dengan method yang dipanggil.</p>
                 </div>
@@ -126,6 +267,22 @@
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
                     <p>"Python tidak dapat menemukan modul atau library yang diminta karena belum terinstal di lingkungan ini."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">import library_palsu</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 1, in &lt;module&gt;
+    import library_palsu
+ModuleNotFoundError: No module named 'library_palsu'</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
@@ -140,6 +297,24 @@
                     <p>"Python tidak dapat menemukan file yang diminta di lokasi yang disebutkan."</p>
                 </div>
                 <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">with open("file_ga_ada.txt", "r") as f:
+    content = f.read()</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 1, in &lt;module&gt;
+    with open("file_ga_ada.txt", "r") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'file_ga_ada.txt'</div>
+                    </div>
+                </div>
+                <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
                     <p>Umumnya disebabkan oleh dua hal: (1) kesalahan penulisan nama file termasuk sensitivitas huruf besar-kecil (misalnya: "Data_karyawan.pdf" berbeda dengan "data_karyawan.pdf"), atau (2) file berada di direktori yang berbeda dari lokasi program Python berjalan. Periksa nama dan lokasi file, atau sertakan jalur lengkap ke file tersebut (contoh: C:/Dokumen/data_karyawan.pdf).</p>
                 </div>
@@ -149,7 +324,25 @@
                 <h3 class="error-title">🔴 TimeoutError <span style="font-size: 0.9rem; color: var(--text-secondary); font-weight: normal;">(Waktu Tunggu Server Terlampaui)</span></h3>
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
-                    <p>"Permintaan ke server or layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan."</p>
+                    <p>"Permintaan ke server atau layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">import socket
+s = socket.create_connection(("google.com", 80), timeout=0.001)</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    s = socket.create_connection(("google.com", 80), timeout=0.001)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>
@@ -164,6 +357,24 @@
                 <div class="error-section">
                     <h4>🤖 Maksud Komputer:</h4>
                     <p>"Python mencoba mengurai (parse) data sebagai format JSON, namun data yang diterima tidak memiliki format JSON yang valid."</p>
+                </div>
+                <div class="error-section">
+                    <h4>❌ KODE YANG SALAH:</h4>
+                    <pre><code class="language-python">import json
+data = json.loads("{nama: Budi}")</code></pre>
+                </div>
+                <div class="error-section">
+                    <h4>📟 OUTPUT ERROR TERMINAL:</h4>
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span>&or;</span> TERMINAL
+                        </div>
+                        <div class="terminal-body" style="color: #f87171;">Traceback (most recent call last):
+  File "main.py", line 2, in &lt;module&gt;
+    data = json.loads("{nama: Budi}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)</div>
+                    </div>
                 </div>
                 <div class="error-section">
                     <h4>💊 Cara Mengatasi:</h4>

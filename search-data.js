@@ -1996,7 +1996,7 @@ const searchData = [
     },
     {
         "title": "🔴 Error: 🔴 TimeoutError",
-        "preview": "\"Permintaan ke server or layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan.\"",
+        "preview": "\"Permintaan ke server atau layanan eksternal tidak mendapatkan respons dalam batas waktu yang ditentukan.\"",
         "url": "peringatan-error/index.html#error-11",
         "category": "Peringatan Error",
         "keywords": "🔴 timeouterror"

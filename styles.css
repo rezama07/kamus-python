@@ -596,3 +596,34 @@ code[class*="language-"] {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
+
+/* Tiruan Konsol Terminal untuk Output Error */
+.terminal-box {
+    background-color: #0c0c0c !important;
+    border: 1px solid #333 !important;
+    border-radius: 0.5rem !important;
+    font-family: var(--font-mono) !important;
+    margin-top: 0.75rem;
+    overflow: hidden;
+}
+
+.terminal-header {
+    background-color: #1e1e1e !important;
+    color: #cccccc !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #2d2d2d !important;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.terminal-body {
+    padding: 1rem !important;
+    color: #f3f4f6 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    white-space: pre-wrap !important;
+    word-wrap: break-word !important;
+}
