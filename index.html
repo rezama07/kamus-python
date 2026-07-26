@@ -77,6 +77,13 @@
 
         <!-- MAIN CONTENT AREA -->
         <main class="content-wrapper">
+            <button id="sidebarToggleBtn" class="sidebar-toggle-btn" title="Toggle Sidebar">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
             <div class="content-container" id="mainContent">
                 <!-- CONTENT INJECTED BY ROUTER -->
             </div>
@@ -240,6 +247,26 @@
 
         window.addEventListener('hashchange', loadRoute);
         window.addEventListener('load', loadRoute);
+
+        // Sidebar Toggle & Mobile Responsive Logic
+        const sidebarToggleBtn = document.getElementById('sidebarToggleBtn');
+        const appLayout = document.querySelector('.app-layout');
+        
+        const sidebarOverlay = document.createElement('div');
+        sidebarOverlay.className = 'sidebar-overlay';
+        appLayout.appendChild(sidebarOverlay);
+        
+        sidebarToggleBtn.addEventListener('click', () => {
+            appLayout.classList.toggle('sidebar-active-mobile');
+        });
+        
+        sidebarOverlay.addEventListener('click', () => {
+            appLayout.classList.remove('sidebar-active-mobile');
+        });
+        
+        window.addEventListener('hashchange', () => {
+            appLayout.classList.remove('sidebar-active-mobile');
+        });
 
 
     </script>
