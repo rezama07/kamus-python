@@ -664,7 +664,7 @@ code[class*="language-"] {
     
     .content-wrapper {
         margin-left: 0;
-        padding: 4rem 1.5rem 2rem;
+        padding: 4rem 1rem 2rem;
     }
     
     .app-layout.sidebar-active-mobile .sidebar {
@@ -708,9 +708,14 @@ code[class*="language-"] {
         padding: 2rem 0;
     }
     
-    .word-card, .term-card, .error-card {
-        padding: 1.25rem;
+    .card, .word-card, .term-card, .error-card {
+        padding: 1rem !important;
         border-radius: 0.75rem;
+    }
+    
+    .card ol, .card ul {
+        margin-left: 0 !important;
+        padding-left: 1.25rem !important;
     }
     
     .word-title, .term-title, .error-title {
