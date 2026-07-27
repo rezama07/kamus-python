@@ -668,6 +668,8 @@ code[class*="language-"] {
     .content-wrapper {
         margin-left: 0;
         padding: 4rem 1rem 2rem;
+        display: block !important;
+        min-width: 0 !important;
     }
     
     .app-layout.sidebar-active-mobile .sidebar {
@@ -709,6 +711,10 @@ code[class*="language-"] {
 
     .content-container, .container {
         padding: 2rem 0;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
     }
     
     .card, .word-card, .term-card, .error-card {
